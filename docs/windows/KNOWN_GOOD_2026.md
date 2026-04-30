@@ -6,8 +6,8 @@ Policy: Windows Build Rescue is reproducibility first, not modernization. Do not
 
 ## Status
 
-- W0 packaged binary baseline: partially complete, not closed.
-- W1 source build reproduction: not started.
+- W0 packaged binary baseline: closed enough to proceed; screenshots remain a follow-up evidence improvement.
+- W1 source build reproduction: started.
 - Primary target: Windows 11, Release x64.
 - Primary renderer acceptance path: OpenGL 3+.
 - Secondary useful evidence: Vulkan plugin/device enumeration.
@@ -46,15 +46,15 @@ W0 remains open until screenshots are attached and the baseline is reviewed as a
 W1 must fill this section from the machine that successfully reproduces the build.
 
 ```text
-Windows version:
-CPU:
-GPU:
-Visual Studio version:
-MSVC toolset:
-Windows SDK:
-CMake:
-Git:
-PowerShell:
+Windows version: Windows 11 Home 10.0.26200 build 26200, 64-bit
+CPU: AMD Ryzen 7 7700 8-Core Processor, 8 cores / 16 logical processors
+GPU: NVIDIA GeForce RTX 4070 SUPER driver 32.0.15.9186; AMD Radeon(TM) Graphics driver 32.0.12011.1036
+Visual Studio version: VS2022 Build Tools 17.14.37027.9 first; VS2026 Build Tools 18.4.11612.150 also installed
+MSVC toolset: VS2022 14.44.35207 / compiler 19.44.35224 first; VS2026 14.50.35717 / compiler 19.50.35727 available
+Windows SDK: 10.0.26100.0
+CMake: not on normal PATH; VS2022 bundled CMake 3.31.6-msvc6; VS2026 bundled CMake 4.2.3-msvc3
+Git: 2.53.0.windows.2
+PowerShell: 7.6.0
 ```
 
 W1 rule: try Visual Studio 2022 first. If Ogre/MyGUI/SR3 dependency friction exceeds one focused pass, fall back to Visual Studio 2019 and document the blocker here.
@@ -160,4 +160,3 @@ tools/windows/Test-WindowsRuntimeBundle.ps1 -RuntimeDir "$SR3_ROOT\bin\Release"
 tools/windows/Start-WindowsSmoke.ps1 -RuntimeDir "$SR3_ROOT\bin\Release" -RunEditor
 tools/windows/Get-WindowsRuntimeManifest.ps1 -RuntimeDir "$SR3_ROOT\bin\Release" -OutputPath docs/windows/evidence/W1/runtime-manifest.csv
 ```
-

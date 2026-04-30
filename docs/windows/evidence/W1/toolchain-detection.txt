@@ -1,0 +1,158 @@
+# W1 Toolchain Detection
+
+Date: 2026-04-30
+Repo: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026
+
+## OS / Hardware
+Windows: Microsoft Windows 11 Home 10.0.26200 build 26200, 64-bit
+CPU: AMD Ryzen 7 7700 8-Core Processor              , cores=8, logical=16
+GPU: NVIDIA GeForce RTX 4070 SUPER, driver=32.0.15.9186, adapterRAM=4293918720
+GPU: AMD Radeon(TM) Graphics, driver=32.0.12011.1036, adapterRAM=536870912
+
+## Shell Tools
+Git: git version 2.53.0.windows.2
+PowerShell: 7.6.0 (Core)
+CMake on PATH: not found
+
+## Windows SDK
+Installed SDK Lib versions:
+- 10.0.26100.0
+
+## Visual Studio Instances
+[
+  {
+    "instanceId": "0b17bc85",
+    "installDate": "2026-03-20T02:23:30Z",
+    "installationName": "VisualStudio/18.4.1+11612.150",
+    "installationPath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools",
+    "installationVersion": "18.4.11612.150",
+    "productId": "Microsoft.VisualStudio.Product.BuildTools",
+    "productPath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\Common7\\Tools\\LaunchDevCmd.bat",
+    "state": 4294967295,
+    "isComplete": true,
+    "isLaunchable": true,
+    "isPrerelease": false,
+    "isRebootRequired": false,
+    "displayName": "Visual Studio Build Tools 2026",
+    "description": "Essential MSBuild and compiler tools ? no IDE required.",
+    "channelId": "VisualStudio.18.Release",
+    "channelUri": "https://aka.ms/vs/18/stable/channel",
+    "enginePath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Installer\\resources\\app\\ServiceHub\\Services\\Microsoft.VisualStudio.Setup.Service",
+    "installedChannelId": "VisualStudio.18.Release",
+    "installedChannelUri": "https://aka.ms/vs/18/stable/channel",
+    "releaseNotes": "https://docs.microsoft.com/en-us/visualstudio/releases/18/release-notes-v18.4#18.4.1",
+    "resolvedInstallationPath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools",
+    "thirdPartyNotices": "https://go.microsoft.com/fwlink/?LinkId=661480",
+    "updateDate": "2026-03-20T02:23:30.4068214Z",
+    "catalog": {
+      "buildBranch": "stable",
+      "buildVersion": "18.4.11612.150",
+      "featureReleaseMonth": "03",
+      "featureReleaseYear": "2026",
+      "id": "VisualStudio/18.4.1+11612.150",
+      "includeBuildVersionInDisplayVersion": "False",
+      "localBuild": "build-lab",
+      "manifestName": "VisualStudio",
+      "manifestType": "installer",
+      "productDisplayVersion": "18.4.1",
+      "productLine": "Dev18",
+      "productLineVersion": "18",
+      "productMilestone": "RTW",
+      "productMilestoneIsPreRelease": "False",
+      "productName": "Visual Studio",
+      "productPatchVersion": "1",
+      "productPreReleaseMilestoneSuffix": "1.0",
+      "productRelease": "RTW",
+      "productSemanticVersion": "18.4.1+11612.150",
+      "requiredEngineVersion": "4.4.38.63497"
+    },
+    "properties": {
+      "appLocalWPF": "false",
+      "campaignId": "",
+      "channelManifestId": "VisualStudio.18.Release/18.4.1+11612.150",
+      "includeRecommended": "0",
+      "nickname": "",
+      "setupEngineFilePath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Installer\\setup.exe"
+    }
+  },
+  {
+    "instanceId": "45eca2ac",
+    "installDate": "2026-04-01T01:53:46Z",
+    "installationName": "VisualStudio/17.14.28+37027.9",
+    "installationPath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools",
+    "installationVersion": "17.14.37027.9",
+    "productId": "Microsoft.VisualStudio.Product.BuildTools",
+    "productPath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\LaunchDevCmd.bat",
+    "state": 4294967295,
+    "isComplete": true,
+    "isLaunchable": true,
+    "isPrerelease": false,
+    "isRebootRequired": false,
+    "displayName": "Visual Studio Build Tools 2022",
+    "description": "The Visual Studio Build Tools allows you to build native and managed MSBuild-based applications without requiring the Visual Studio IDE. There are options to install the Visual C++ compilers and libraries, MFC, ATL, and C++/CLI support.",
+    "channelId": "VisualStudio.17.Release",
+    "channelUri": "https://aka.ms/vs/17/release/channel",
+    "enginePath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Installer\\resources\\app\\ServiceHub\\Services\\Microsoft.VisualStudio.Setup.Service",
+    "installChannelUri": "https://aka.ms/vs/17/release/626741582_-1218794322/channel",
+    "installedChannelId": "VisualStudio.17.Release",
+    "installedChannelUri": "https://aka.ms/vs/17/release/channel",
+    "releaseNotes": "https://docs.microsoft.com/en-us/visualstudio/releases/2022/release-notes-v17.14#17.14.28",
+    "resolvedInstallationPath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools",
+    "thirdPartyNotices": "https://go.microsoft.com/fwlink/?LinkId=661288",
+    "updateDate": "2026-04-01T01:53:46.1757628Z",
+    "catalog": {
+      "buildBranch": "d17.14",
+      "buildVersion": "17.14.37027.9",
+      "id": "VisualStudio/17.14.28+37027.9",
+      "localBuild": "build-lab",
+      "manifestName": "VisualStudio",
+      "manifestType": "installer",
+      "productDisplayVersion": "17.14.28",
+      "productLine": "Dev17",
+      "productLineVersion": "2022",
+      "productMilestone": "RTW",
+      "productMilestoneIsPreRelease": "False",
+      "productName": "Visual Studio",
+      "productPatchVersion": "28",
+      "productPreReleaseMilestoneSuffix": "1.0",
+      "productSemanticVersion": "17.14.28+37027.9",
+      "requiredEngineVersion": "3.14.2086.54749"
+    },
+    "properties": {
+      "appLocalWPF": "false",
+      "campaignId": "",
+      "channelManifestId": "VisualStudio.17.Release/17.14.28+37027.9",
+      "includeRecommended": "0",
+      "nickname": "",
+      "setupEngineFilePath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Installer\\setup.exe"
+    }
+  }
+]
+
+## VS2022 Developer Environment Probe
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe
+Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35224 for x64
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+usage: cl [ option... ] filename... [ /link linkoption... ]
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\amd64\MSBuild.exe
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe
+17.14.40.60911
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe
+cmake version 3.31.6-msvc6
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+
+## VS2026 Developer Environment Probe
+C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.50.35717\bin\Hostx64\x64\cl.exe
+Microsoft (R) C/C++ Optimizing Compiler Version 19.50.35727 for x64
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+usage: cl [ option... ] filename... [ /link linkoption... ]
+C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\MSBuild\Current\Bin\amd64\MSBuild.exe
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe
+18.4.0.7901
+C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe
+cmake version 4.2.3-msvc3
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).

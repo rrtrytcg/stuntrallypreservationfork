@@ -1,0 +1,18 @@
+# Visible OpenGL result
+Date: 2026-04-30
+
+Runtime: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release
+Executable: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release\StuntRally3.exe
+Track corpus: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks
+Launch start: 04/30/2026 21:35:15
+Process result: stopped-after-screenshot
+Screenshot: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\docs\windows\evidence\W1-followups\tracks3-visible-opengl\screenshot.png
+
+Config handling:
+- Backed up live ogre.cfg to config/ogre.cfg.before.
+- Set Render System=OpenGL 3+ Rendering Subsystem for this run.
+- Set OpenGL Full Screen=No for easier visible screenshot capture.
+- Captured config/ogre.cfg.forced-opengl and config/ogre.cfg.after.
+- Restored live ogre.cfg from config/ogre.cfg.before after evidence capture.
+
+No rebuild, reconfigure, source edit, or runtime DLL restage was performed.

@@ -1,0 +1,36 @@
+# tracks3 visible OpenGL result
+Date: 2026-04-30
+
+Verdict:
+
+Restoring the expected `tracks3` checkout at `data\tracks` resolved the previous `Error: NO tracks !!! in data/tracks/ crashing.` blocker for visible OpenGL menu evidence.
+
+Track corpus:
+
+- Source: https://github.com/stuntrally/tracks3.git
+- Local path: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks
+- Branch: main
+- Commit: 84d77b69b512e4bde2fc1faaa5d51ab010bbaf76
+- Top-level directories: 270, including `.github`, `.vscode`, `_previews`, and track folders.
+- scene.xml files: 267
+- `_previews` exists: True
+
+Runtime validation:
+
+- `tools/windows/Test-WindowsRuntimeBundle.ps1 -RuntimeDir "C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release"` passed.
+
+Visible OpenGL launch:
+
+- `StuntRally3.exe` launched visibly from the W1 runtime root.
+- OpenGL 3+ was selected through the live config for this run.
+- Fresh `Ogre.log` confirms `OpenGL 3+ Rendering Subsystem created`.
+- Fresh `Ogre.log` confirms `Created GL 4.5 context`.
+- Fresh `Ogre.log` confirms `GL_RENDERER = NVIDIA GeForce RTX 4070 SUPER/PCIe/SSE2`.
+- Fresh `Ogre.log` records `Loaded Collections: 48` and `Total tracks: 238, total time: 11:29 h:m`.
+- Fresh `MyGUI.log` records `Gui successfully initialized`.
+- The accepted screenshot is `screenshot-after-tracks3-opengl.png`, showing the source-built game window at the tutorial/track selection UI.
+- The process was stopped after screenshot capture; this pass does not claim clean process exit or gameplay testing.
+
+W1 impact:
+
+W1 remains closed. This follow-up improves visible runtime/content evidence after W1 by restoring the expected separate track corpus checkout.

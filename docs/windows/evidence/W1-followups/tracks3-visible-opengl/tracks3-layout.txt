@@ -1,0 +1,106 @@
+# tracks3 layout
+Date: 2026-04-30
+
+Path: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks
+Remote:
+origin	https://github.com/stuntrally/tracks3.git (fetch) origin	https://github.com/stuntrally/tracks3.git (push)
+Branch: main
+Commit: 84d77b69b512e4bde2fc1faaa5d51ab010bbaf76
+
+Top-level directory count: 270
+scene.xml file count: 267
+_previews exists: True
+
+First 40 top-level directories:
+
+Name               LastWriteTime
+----               -------------
+_previews          30/4/2026 9:34:12 pm
+.github            30/4/2026 9:34:07 pm
+.vscode            30/4/2026 9:34:07 pm
+Aln1-AlienBase     30/4/2026 9:34:07 pm
+Aln2-Freefall      30/4/2026 9:34:07 pm
+Aln3-MushroomBeach 30/4/2026 9:34:07 pm
+Aln4-EjeloOutpost  30/4/2026 9:34:07 pm
+Aln5-WhiteLemon    30/4/2026 9:34:07 pm
+Aln6-Overgrowth    30/4/2026 9:34:07 pm
+Ano0-AnomalyFun    30/4/2026 9:34:07 pm
+Ano0-AnomalyFun2   30/4/2026 9:34:07 pm
+Ano1-Glitchy       30/4/2026 9:34:07 pm
+Ano2-Bug           30/4/2026 9:34:07 pm
+Ano3-Oversize      30/4/2026 9:34:07 pm
+Apo1-TarFields     30/4/2026 9:34:07 pm
+Apo2-Toxicity      30/4/2026 9:34:07 pm
+Atm1-Autumn        30/4/2026 9:34:07 pm
+Atm10-LakeCity     30/4/2026 9:34:07 pm
+Atm2-RedOakPark    30/4/2026 9:34:07 pm
+Atm3-Orange        30/4/2026 9:34:07 pm
+Atm4-Scary         30/4/2026 9:34:07 pm
+Atm5-Twister       30/4/2026 9:34:07 pm
+Atm6-Sunset        30/4/2026 9:34:07 pm
+Atm7-Industrial    30/4/2026 9:34:07 pm
+Atm8-Ultima        30/4/2026 9:34:07 pm
+Atm9-SchwabAutumn  30/4/2026 9:34:07 pm
+Aus1-StuntPark     30/4/2026 9:34:07 pm
+Aus10-PreythCity   30/4/2026 9:34:07 pm
+Aus2-PipeCoil      30/4/2026 9:34:07 pm
+Aus3-Canyon        30/4/2026 9:34:07 pm
+Aus4-Snake         30/4/2026 9:34:07 pm
+Aus5-TopTwist      30/4/2026 9:34:07 pm
+Aus6-Cannon        30/4/2026 9:34:07 pm
+Aus7-MiningCity    30/4/2026 9:34:07 pm
+Aus8-Cliff         30/4/2026 9:34:07 pm
+Aus9-RedDesert     30/4/2026 9:34:07 pm
+Blk1-Darkness      30/4/2026 9:34:07 pm
+Blk2-Sawtooth      30/4/2026 9:34:08 pm
+Can1-Hairpins      30/4/2026 9:34:08 pm
+Can10-SandyCanyon  30/4/2026 9:34:08 pm
+
+
+
+First 40 scene.xml files:
+
+FullName                                                                                Length
+--------                                                                                ------
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Aln1-AlienBase\scene.xml      18798
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Aln2-Freefall\scene.xml       27472
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Aln3-MushroomBeach\scene.xml  13493
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Aln4-EjeloOutpost\scene.xml   14628
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Aln5-WhiteLemon\scene.xml     13702
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Aln6-Overgrowth\scene.xml     18669
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Ano0-AnomalyFun\scene.xml     18856
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Ano0-AnomalyFun2\scene.xml    24866
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Ano1-Glitchy\scene.xml        33816
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Ano2-Bug\scene.xml            32724
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Ano3-Oversize\scene.xml       30297
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Apo1-TarFields\scene.xml      56333
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Apo2-Toxicity\scene.xml       30523
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Atm1-Autumn\scene.xml         12529
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Atm10-LakeCity\scene.xml      27139
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Atm2-RedOakPark\scene.xml     11963
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Atm3-Orange\scene.xml         14999
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Atm4-Scary\scene.xml          13512
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Atm5-Twister\scene.xml        11660
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Atm6-Sunset\scene.xml         12503
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Atm7-Industrial\scene.xml     25958
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Atm8-Ultima\scene.xml         11006
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Atm9-SchwabAutumn\scene.xml   21379
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Aus1-StuntPark\scene.xml      12264
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Aus10-PreythCity\scene.xml    20339
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Aus2-PipeCoil\scene.xml       11243
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Aus3-Canyon\scene.xml         19850
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Aus4-Snake\scene.xml          12024
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Aus5-TopTwist\scene.xml       13028
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Aus6-Cannon\scene.xml         13257
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Aus7-MiningCity\scene.xml     28377
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Aus8-Cliff\scene.xml          17364
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Aus9-RedDesert\scene.xml      12207
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Blk1-Darkness\scene.xml       12245
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Blk2-Sawtooth\scene.xml       22815
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Can1-Hairpins\scene.xml       13645
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Can10-SandyCanyon\scene.xml   20392
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Can2-CanyonRun\scene.xml      13948
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Can3-Vast\scene.xml           16235
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks\Can4-Sway\scene.xml           12192
+
+

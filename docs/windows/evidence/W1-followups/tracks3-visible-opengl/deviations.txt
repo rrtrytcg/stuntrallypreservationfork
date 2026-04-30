@@ -1,0 +1,8 @@
+# tracks3 visible OpenGL deviations
+Date: 2026-04-30
+
+- The first screenshot attempt captured the desktop/browser instead of the game window. It is retained as `screenshot.png` but is not the acceptance screenshot.
+- A second visible launch was run. The game window was foregrounded before `screenshot-after-tracks3-opengl.png` was captured.
+- The live `ogre.cfg` was temporarily changed to `Render System=OpenGL 3+ Rendering Subsystem` and `Full Screen=No` for visible screenshot capture, then restored from backup.
+- The process was still running after the screenshot and was stopped manually. This is visible launch/menu evidence, not clean process-exit smoke.
+- `data\tracks` is a separate nested `tracks3` Git checkout created according to `docs/BuildingVS.md`. The full corpus was not added to the preservation fork commit.

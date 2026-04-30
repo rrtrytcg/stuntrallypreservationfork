@@ -1,0 +1,70 @@
+21:36:38  |  Platform  |  Info  |  * Initialise: RenderManager  |  C:\dev\mygui-next\Platforms\Ogre2\Ogre2Platform\src\MyGUI_Ogre2RenderManager.cpp  |  79
+21:36:38  |  Platform  |  Info  |  RenderManager successfully initialized  |  C:\dev\mygui-next\Platforms\Ogre2\Ogre2Platform\src\MyGUI_Ogre2RenderManager.cpp  |  114
+21:36:38  |  Platform  |  Info  |  * Initialise: DataManager  |  C:\dev\mygui-next\Platforms\Ogre2\Ogre2Platform\src\MyGUI_Ogre2DataManager.cpp  |  27
+21:36:38  |  Platform  |  Info  |  DataManager successfully initialized  |  C:\dev\mygui-next\Platforms\Ogre2\Ogre2Platform\src\MyGUI_Ogre2DataManager.cpp  |  35
+21:36:38  |  Core  |  Info  |  * Initialise: Gui  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_Gui.cpp  |  61
+21:36:38  |  Core  |  Info  |  * MyGUI version 3.2.3  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_Gui.cpp  |  66
+21:36:38  |  Core  |  Info  |  * Initialise: ResourceManager  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ResourceManager.cpp  |  32
+21:36:38  |  Core  |  Info  |  ResourceManager successfully initialized  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ResourceManager.cpp  |  40
+21:36:38  |  Core  |  Info  |  * Initialise: LayerManager  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_LayerManager.cpp  |  33
+21:36:38  |  Core  |  Info  |  LayerManager successfully initialized  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_LayerManager.cpp  |  41
+21:36:38  |  Core  |  Info  |  * Initialise: WidgetManager  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_WidgetManager.cpp  |  53
+21:36:38  |  Core  |  Info  |  WidgetManager successfully initialized  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_WidgetManager.cpp  |  84
+21:36:38  |  Core  |  Info  |  * Initialise: InputManager  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_InputManager.cpp  |  46
+21:36:38  |  Core  |  Info  |  InputManager successfully initialized  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_InputManager.cpp  |  66
+21:36:38  |  Core  |  Info  |  * Initialise: SubWidgetManager  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_SubWidgetManager.cpp  |  36
+21:36:38  |  Core  |  Info  |  SubWidgetManager successfully initialized  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_SubWidgetManager.cpp  |  56
+21:36:38  |  Core  |  Info  |  * Initialise: SkinManager  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_SkinManager.cpp  |  36
+21:36:38  |  Core  |  Info  |  SkinManager successfully initialized  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_SkinManager.cpp  |  46
+21:36:38  |  Core  |  Info  |  * Initialise: FontManager  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_FontManager.cpp  |  32
+21:36:38  |  Core  |  Info  |  FontManager successfully initialized  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_FontManager.cpp  |  42
+21:36:38  |  Core  |  Info  |  * Initialise: ControllerManager  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ControllerManager.cpp  |  33
+21:36:38  |  Core  |  Info  |  ControllerManager successfully initialized  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ControllerManager.cpp  |  42
+21:36:38  |  Core  |  Info  |  * Initialise: PointerManager  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_PointerManager.cpp  |  43
+21:36:38  |  Core  |  Info  |  PointerManager successfully initialized  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_PointerManager.cpp  |  62
+21:36:38  |  Core  |  Info  |  * Initialise: ClipboardManager  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ClipboardManager.cpp  |  32
+21:36:38  |  Core  |  Info  |  ClipboardManager successfully initialized  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ClipboardManager.cpp  |  39
+21:36:38  |  Core  |  Info  |  * Initialise: LayoutManager  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_LayoutManager.cpp  |  28
+21:36:38  |  Core  |  Info  |  LayoutManager successfully initialized  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_LayoutManager.cpp  |  35
+21:36:38  |  Core  |  Info  |  * Initialise: DynLibManager  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_DynLibManager.cpp  |  26
+21:36:38  |  Core  |  Info  |  DynLibManager successfully initialized  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_DynLibManager.cpp  |  30
+21:36:38  |  Core  |  Info  |  * Initialise: PluginManager  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_PluginManager.cpp  |  30
+21:36:38  |  Core  |  Info  |  PluginManager successfully initialized  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_PluginManager.cpp  |  34
+21:36:38  |  Core  |  Info  |  * Initialise: LanguageManager  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_LanguageManager.cpp  |  30
+21:36:38  |  Core  |  Info  |  LanguageManager successfully initialized  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_LanguageManager.cpp  |  34
+21:36:38  |  Core  |  Info  |  * Initialise: FactoryManager  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_FactoryManager.cpp  |  25
+21:36:38  |  Core  |  Info  |  FactoryManager successfully initialized  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_FactoryManager.cpp  |  27
+21:36:38  |  Core  |  Info  |  * Initialise: ToolTipManager  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ToolTipManager.cpp  |  33
+21:36:38  |  Core  |  Info  |  ToolTipManager successfully initialized  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ToolTipManager.cpp  |  45
+21:36:38  |  Core  |  Info  |  Load ini file 'core_font.xml'  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ResourceManager.cpp  |  114
+21:36:38  |  Core  |  Info  |  Load ini file 'core_images.xml'  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ResourceManager.cpp  |  114
+21:36:38  |  Core  |  Info  |  Load ini file 'core_commonskins.xml'  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ResourceManager.cpp  |  114
+21:36:38  |  Core  |  Info  |  Load ini file 'core_blackbluetheme.xml'  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ResourceManager.cpp  |  114
+21:36:38  |  Core  |  Info  |  Load ini file 'core_blackblueimages.xml'  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ResourceManager.cpp  |  114
+21:36:38  |  Core  |  Info  |  Load ini file 'core_blackblueskins.xml'  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ResourceManager.cpp  |  114
+21:36:38  |  Core  |  Info  |  Load ini file 'core_blackbluetemplates.xml'  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ResourceManager.cpp  |  114
+21:36:38  |  Core  |  Info  |  Load ini file 'core_pointers.xml'  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ResourceManager.cpp  |  114
+21:36:38  |  Core  |  Info  |  Load ini file 'core_layers.xml'  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ResourceManager.cpp  |  114
+21:36:38  |  Core  |  Info  |  Load ini file 'core_language.xml'  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ResourceManager.cpp  |  114
+21:36:38  |  Core  |  Info  |  Load ini file 'core_settings.xml'  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ResourceManager.cpp  |  114
+21:36:38  |  Core  |  Info  |  Load ini file 'MessageBoxIcons.xml'  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ResourceManager.cpp  |  114
+21:36:38  |  Core  |  Info  |  Gui successfully initialized  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_Gui.cpp  |  111
+21:36:38  |  Core  |  Info  |  ResourceTrueTypeFont: Font 'font.small' using texture size 256 x 256.  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ResourceTrueTypeFont.cpp  |  787
+21:36:38  |  Core  |  Info  |  ResourceTrueTypeFont: Font 'font.small' using real height 14 pixels.  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ResourceTrueTypeFont.cpp  |  788
+21:36:38  |  Core  |  Info  |  ResourceTrueTypeFont: Font 'font.normal' using texture size 256 x 256.  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ResourceTrueTypeFont.cpp  |  787
+21:36:38  |  Core  |  Info  |  ResourceTrueTypeFont: Font 'font.normal' using real height 16 pixels.  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ResourceTrueTypeFont.cpp  |  788
+21:36:38  |  Core  |  Info  |  ResourceTrueTypeFont: Font 'font.big' using texture size 256 x 512.  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ResourceTrueTypeFont.cpp  |  787
+21:36:38  |  Core  |  Info  |  ResourceTrueTypeFont: Font 'font.big' using real height 19 pixels.  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ResourceTrueTypeFont.cpp  |  788
+21:36:38  |  Core  |  Info  |  ResourceTrueTypeFont: Font 'hud.text' using texture size 512 x 256.  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ResourceTrueTypeFont.cpp  |  787
+21:36:38  |  Core  |  Info  |  ResourceTrueTypeFont: Font 'hud.text' using real height 21 pixels.  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ResourceTrueTypeFont.cpp  |  788
+21:36:38  |  Core  |  Warning  |  : Property 'SpaceWidth' in font '' is deprecated; remove it to use automatic calculation.  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ResourceTrueTypeFont.cpp  |  326
+21:36:38  |  Core  |  Info  |  ResourceTrueTypeFont: Font 'hud.replay' using texture size 64 x 128.  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ResourceTrueTypeFont.cpp  |  787
+21:36:38  |  Core  |  Info  |  ResourceTrueTypeFont: Font 'hud.replay' using real height 15 pixels.  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ResourceTrueTypeFont.cpp  |  788
+21:36:38  |  Core  |  Warning  |  : Property 'SpaceWidth' in font '' is deprecated; remove it to use automatic calculation.  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ResourceTrueTypeFont.cpp  |  326
+21:36:38  |  Core  |  Info  |  ResourceTrueTypeFont: Font 'DigGear' using texture size 128 x 256.  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ResourceTrueTypeFont.cpp  |  787
+21:36:38  |  Core  |  Info  |  ResourceTrueTypeFont: Font 'DigGear' using real height 46 pixels.  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ResourceTrueTypeFont.cpp  |  788
+21:36:38  |  Core  |  Warning  |  : Property 'SpaceWidth' in font '' is deprecated; remove it to use automatic calculation.  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ResourceTrueTypeFont.cpp  |  326
+21:36:38  |  Core  |  Info  |  ResourceTrueTypeFont: Font 'hud.fps' using texture size 128 x 128.  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ResourceTrueTypeFont.cpp  |  787
+21:36:38  |  Core  |  Info  |  ResourceTrueTypeFont: Font 'hud.fps' using real height 14 pixels.  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ResourceTrueTypeFont.cpp  |  788
+21:36:38  |  Core  |  Warning  |  Widget property 'FontName' not found [Game.layout]  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_Widget.cpp  |  1208
+21:36:38  |  Core  |  Warning  |  Widget property 'TextColour' not found [Game.layout]  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_Widget.cpp  |  1208

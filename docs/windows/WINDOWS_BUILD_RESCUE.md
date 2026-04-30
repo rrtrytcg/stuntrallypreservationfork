@@ -687,6 +687,40 @@ Recommended next action:
 - Run a narrow content-corpus restoration pass. Prefer cloning `https://github.com/stuntrally/tracks3.git` into `$SR3_ROOT\data\tracks`, record branch/commit/counts, compare with the packaged 3.3 specimen, then rerun visible OpenGL menu evidence.
 - If the live `tracks3` repository does not match the packaged 3.3 corpus, document the mismatch and consider a separate packaged-corpus preservation import from `C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks`.
 
+### W1 Follow-up: tracks3 Visible OpenGL Evidence
+
+Full captured evidence:
+
+```text
+docs/windows/evidence/W1-followups/tracks3-visible-opengl/tracks3-command.txt
+docs/windows/evidence/W1-followups/tracks3-visible-opengl/tracks3-layout.txt
+docs/windows/evidence/W1-followups/tracks3-visible-opengl/runtime-bundle-report.txt
+docs/windows/evidence/W1-followups/tracks3-visible-opengl/visible-opengl-launch-output.txt
+docs/windows/evidence/W1-followups/tracks3-visible-opengl/visible-opengl-launch-output-second-run.txt
+docs/windows/evidence/W1-followups/tracks3-visible-opengl/tracks3-result.txt
+docs/windows/evidence/W1-followups/tracks3-visible-opengl/deviations.txt
+docs/windows/evidence/W1-followups/tracks3-visible-opengl/logs/
+docs/windows/evidence/W1-followups/tracks3-visible-opengl/config/
+docs/windows/evidence/W1-followups/tracks3-visible-opengl/screenshot-after-tracks3-opengl.png
+```
+
+Result:
+
+- `tracks3` was cloned into `C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks`.
+- Source remote: `https://github.com/stuntrally/tracks3.git`.
+- Branch: `main`.
+- Commit: `84d77b69b512e4bde2fc1faaa5d51ab010bbaf76`.
+- The checkout contains 270 top-level directories, including `.github`, `.vscode`, `_previews`, and track folders.
+- The checkout contains 267 `scene.xml` files.
+- Runtime bundle validation still passed.
+- Visible OpenGL launch reached the Stunt Rally 3 window and tutorial/track selection UI.
+- Fresh `Ogre.log` confirms `OpenGL 3+ Rendering Subsystem created`, `Created GL 4.5 context`, and `GL_RENDERER = NVIDIA GeForce RTX 4070 SUPER/PCIe/SSE2`.
+- Fresh `Ogre.log` reports `Loaded Collections: 48` and `Total tracks: 238, total time: 11:29 h:m`.
+- Fresh `MyGUI.log` reports `Gui successfully initialized`.
+- The accepted screenshot is `screenshot-after-tracks3-opengl.png`.
+- The process was stopped after screenshot capture; this remains visible launch/menu evidence, not clean-exit smoke or gameplay testing.
+- W1 remains closed.
+
 ## W3 Script Inventory
 
 Scripts live in `tools/windows/`.

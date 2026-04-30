@@ -1,0 +1,10 @@
+# Visible OpenGL launch output, second run
+Date: 2026-04-30
+Runtime: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release
+Executable: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release\StuntRally3.exe
+
+Started process id 6604 at 04/30/2026 21:36:34
+AppActivate setup dialog: False
+Foregrounded main window: Stunt Rally 3 handle=5440788
+Process still running after second screenshot; stopping process id 6604.
+Second run result: stopped-after-second-screenshot

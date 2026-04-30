@@ -1,0 +1,15 @@
+# tracks3 visible OpenGL evidence command
+Date: 2026-04-30
+
+Commands performed:
+
+1. git push
+2. git clone https://github.com/stuntrally/tracks3.git tracks
+   Working directory: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data
+3. Inspect tracks3 branch/commit/layout.
+4. tools/windows/Test-WindowsRuntimeBundle.ps1 -RuntimeDir "C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release"
+5. Force live game config to OpenGL 3+ for visible launch, preserving backup and after snapshots.
+6. Launch StuntRally3.exe visibly from bin\Release.
+7. Capture logs, config, and screenshot evidence.
+
+No rebuild, reconfigure, runtime restage, source edit, or dependency build was performed.

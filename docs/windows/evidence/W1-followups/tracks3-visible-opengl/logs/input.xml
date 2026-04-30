@@ -1,0 +1,33 @@
+<Controller>
+    <Global oneAxisThrottleBrake="false"/>
+    <Control name="0" autoChangeDirectionOnLimitsAfterStop="false" autoReverseToInitialValue="true" initialValue="0" stepSize="MAX" stepsPerSeconds="MAX" axisBindable="false">
+        <KeyBinder key="Tab" direction="INCREASE"/>
+        <Channel number="0" direction="DIRECT" percentage="1"/>
+    </Control>
+    <Control name="1" autoChangeDirectionOnLimitsAfterStop="false" autoReverseToInitialValue="true" initialValue="0" stepSize="MAX" stepsPerSeconds="MAX" axisBindable="false">
+        <KeyBinder key="F2" direction="INCREASE"/>
+        <Channel number="1" direction="DIRECT" percentage="1"/>
+    </Control>
+    <Control name="2" autoChangeDirectionOnLimitsAfterStop="false" autoReverseToInitialValue="true" initialValue="0" stepSize="MAX" stepsPerSeconds="MAX" axisBindable="false">
+        <KeyBinder key="F3" direction="INCREASE"/>
+        <Channel number="2" direction="DIRECT" percentage="1"/>
+    </Control>
+    <Control name="3" autoChangeDirectionOnLimitsAfterStop="false" autoReverseToInitialValue="true" initialValue="0" stepSize="MAX" stepsPerSeconds="MAX" axisBindable="false">
+        <KeyBinder key="F5" direction="INCREASE"/>
+        <Channel number="3" direction="DIRECT" percentage="1"/>
+    </Control>
+    <Control name="4" autoChangeDirectionOnLimitsAfterStop="false" autoReverseToInitialValue="true" initialValue="0" stepSize="MAX" stepsPerSeconds="MAX" axisBindable="false">
+        <KeyBinder key="F4" direction="INCREASE"/>
+        <Channel number="4" direction="DIRECT" percentage="1"/>
+    </Control>
+    <Control name="5" autoChangeDirectionOnLimitsAfterStop="false" autoReverseToInitialValue="true" initialValue="0" stepSize="MAX" stepsPerSeconds="MAX" axisBindable="false">
+        <KeyBinder key="F12" direction="INCREASE"/>
+        <Channel number="5" direction="DIRECT" percentage="1"/>
+    </Control>
+    <Control name="6" autoChangeDirectionOnLimitsAfterStop="false" autoReverseToInitialValue="true" initialValue="0" stepSize="MAX" stepsPerSeconds="MAX" axisBindable="false">
+        <Channel number="6" direction="DIRECT" percentage="1"/>
+    </Control>
+    <Control name="7" autoChangeDirectionOnLimitsAfterStop="false" autoReverseToInitialValue="true" initialValue="0" stepSize="MAX" stepsPerSeconds="MAX" axisBindable="false">
+        <Channel number="7" direction="DIRECT" percentage="1"/>
+    </Control>
+</Controller>

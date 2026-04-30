@@ -1,0 +1,130 @@
+# SR3 configure output
+Date: 2026-04-30
+
+**********************************************************************
+** Visual Studio 2022 Developer Command Prompt v17.14.28
+** Copyright (c) 2025 Microsoft Corporation
+**********************************************************************
+-- Build DIR: C:/Games/stuntrally3-3.3/fork/stuntrally3-2026/build-windows-release
+CMake Deprecation Warning at CMakeLists.txt:32 (cmake_policy):
+  The OLD behavior for policy CMP0127 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+
+
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.26200.
+-- The C compiler identification is MSVC 19.44.35224.0
+-- The CXX compiler identification is MSVC 19.44.35224.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Using conan: OFF
+-- ---------- Windows Build Rescue dependency root
+-- C:/dev
+-- ---------- setup Ogre
+-- Ogre - FALSE
+-- Detected DLL build of Ogre
+CMake Error at C:/dev/Ogre/ogre-next/Dependencies/cmake/SDL2Targets.cmake:85 (message):
+  The imported target "SDL2::SDL2" references the file
+
+     "C:/dev/Ogre/ogre-next/Dependencies/bin/SDL2.dll"
+
+  but this file does not exist.  Possible reasons include:
+
+  * The file was deleted, renamed, or moved to another location.
+
+  * An install or uninstall procedure did not complete successfully.
+
+  * The installation package was faulty and contained
+
+     "C:/dev/Ogre/ogre-next/Dependencies/cmake/SDL2Targets.cmake"
+
+  but not all the files it references.
+
+Call Stack (most recent call first):
+  C:/dev/Ogre/ogre-next/Dependencies/cmake/SDL2Config.cmake:38 (include)
+  CMake/Dependencies/OGRE.cmake:296 (find_package)
+  CMakeLists.txt:143 (setupOgre)
+
+
+-- Configuring incomplete, errors occurred!
+
+# Retry after SDL2 configure-path fix
+
+**********************************************************************
+** Visual Studio 2022 Developer Command Prompt v17.14.28
+** Copyright (c) 2025 Microsoft Corporation
+**********************************************************************
+-- Build DIR: C:/Games/stuntrally3-3.3/fork/stuntrally3-2026/build-windows-release
+CMake Deprecation Warning at CMakeLists.txt:32 (cmake_policy):
+  The OLD behavior for policy CMP0127 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+
+
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.26200.
+-- The C compiler identification is MSVC 19.44.35224.0
+-- The CXX compiler identification is MSVC 19.44.35224.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Using conan: OFF
+-- ---------- Windows Build Rescue dependency root
+-- C:/dev
+-- ---------- setup Ogre
+-- Ogre - FALSE
+-- Detected DLL build of Ogre
+-- WBR configure-only pass: using verified Ogre deps SDL2 paths
+-- Detected Atmosphere Component. Linking against it.
+-- Copying DLLs and generating Plugins.cfg for Debug
+-- Copying DLLs and generating Plugins.cfg for Release
+-- WBR configure-only pass: skipping DLL copy C:/dev/Ogre/ogre-next//build/bin/Release/RenderSystem_Direct3D11.dll -> C:/Games/stuntrally3-3.3/fork/stuntrally3-2026/bin/Release
+-- WBR configure-only pass: skipping DLL copy C:/dev/Ogre/ogre-next//build/bin/Release/RenderSystem_GL3Plus.dll -> C:/Games/stuntrally3-3.3/fork/stuntrally3-2026/bin/Release
+-- WBR configure-only pass: skipping DLL copy C:/dev/Ogre/ogre-next//build/bin/Release/Plugin_ParticleFX.dll -> C:/Games/stuntrally3-3.3/fork/stuntrally3-2026/bin/Release
+-- WBR configure-only pass: skipping DLL copy C:/dev/Ogre/ogre-next//build/bin/Release/RenderSystem_Vulkan.dll -> C:/Games/stuntrally3-3.3/fork/stuntrally3-2026/bin/Release
+-- WBR configure-only pass: skipping DLL copy C:/dev/Ogre/ogre-next//build/bin/Release/OgreMain.dll -> C:/Games/stuntrally3-3.3/fork/stuntrally3-2026/bin/Release
+-- WBR configure-only pass: skipping DLL copy C:/dev/Ogre/ogre-next//build/bin/Release/OgreOverlay.dll -> C:/Games/stuntrally3-3.3/fork/stuntrally3-2026/bin/Release
+-- WBR configure-only pass: skipping DLL copy C:/dev/Ogre/ogre-next//build/bin/Release/OgreHlmsPbs.dll -> C:/Games/stuntrally3-3.3/fork/stuntrally3-2026/bin/Release
+-- WBR configure-only pass: skipping DLL copy C:/dev/Ogre/ogre-next//build/bin/Release/OgreHlmsUnlit.dll -> C:/Games/stuntrally3-3.3/fork/stuntrally3-2026/bin/Release
+-- Copying DLLs and generating Plugins.cfg for RelWithDebInfo
+-- Copying DLLs and generating Plugins.cfg for MinSizeRel
+-- ---------- SR sources
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - not found
+-- Found Threads: TRUE
+-- --- Bullet: 
+-- Configuring: StuntRally3
+-- BUILD_TYPE: Release
+-- Configuring: SR-Editor3
+-- BUILD_TYPE: Release
+-- Configuring: SR-Translator
+-- ---------- SR end
+-- Configuring done (3.3s)
+-- Generating done (0.2s)
+-- Build files have been written to: C:/Games/stuntrally3-3.3/fork/stuntrally3-2026/build-windows-release

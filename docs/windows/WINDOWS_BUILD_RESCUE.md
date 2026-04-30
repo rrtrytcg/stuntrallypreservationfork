@@ -115,7 +115,7 @@ Checklist:
 - [x] Download/clone/build dependencies following `docs/BuildingVS.md` before attempting any package-manager replacement. Ogre-next-deps and non-Ogre SR3 dependencies are now reproduced or documented.
 - [x] Build Ogre-Next branch `v3-0` with Atmosphere and Planar Reflections enabled.
 - [x] Build MyGUI-next branch `ogre3` against the reproduced Ogre-Next output.
-- [ ] Configure SR3 Release x64 using the historical Windows release CMake route, documenting every path edit or file rename.
+- [x] Configure SR3 Release x64 using the historical Windows release CMake route, documenting every path edit or file rename.
 - [ ] Build `StuntRally3.exe` and `SR-Editor3.exe`.
 - [ ] Stage runtime DLLs and `plugins.cfg` using the W3 scripts where possible.
 - [ ] Validate the built runtime bundle, generate a W1 manifest, and run launch smoke.
@@ -364,6 +364,60 @@ Layout checker result after non-Ogre dependencies:
 Next recommended W1 step:
 
 - Begin the SR3 configure pass only: prepare the historical Windows Release CMake route in the source fork, map the hardcoded `D:/_/sr`, `D:/_/sr/og3`, `C:/b/boost_1_81_0`, and `DIR_ONE_ABOVE` assumptions to the verified W1 dependency roots, record every file rename/path edit, configure Release x64, and stop before broad CMake cleanup or dependency automation.
+
+### W1 SR3 Release Configure Evidence
+
+Full captured evidence:
+
+```text
+docs/windows/evidence/W1/sr3-configure-plan.txt
+docs/windows/evidence/W1/sr3-renames-edits.txt
+docs/windows/evidence/W1/sr3-active-route-diff.patch
+docs/windows/evidence/W1/sr3-dependency-paths.txt
+docs/windows/evidence/W1/sr3-configure-command.txt
+docs/windows/evidence/W1/sr3-configure-output.txt
+docs/windows/evidence/W1/sr3-cache-summary.txt
+docs/windows/evidence/W1/sr3-configure-result.txt
+docs/windows/evidence/W1/sr3-deviations.txt
+```
+
+Result:
+
+- The historical Windows Release route was prepared in the source fork.
+- `CMakeLists-WindowsRelease.txt` was copied over active `CMakeLists.txt`.
+- `bin\Release\plugins_Windows.cfg` was copied over active `bin\Release\plugins.cfg`.
+- `CMakeManual\*` was copied over active `CMake\*` so `CMake/Dependencies/OGRE.cmake` and other manual-route modules resolve.
+- Previous active `CMakeLists.txt` and `plugins.cfg` snapshots were preserved as evidence only.
+- Hardcoded historical paths were mapped to verified W1 roots under `C:\dev`.
+- Build directory: `build-windows-release`.
+- Generator/toolchain: VS2022 developer environment, `Visual Studio 17 2022`, platform `x64`, bundled CMake `3.31.6-msvc6`.
+
+First configure attempt:
+
+- Failed before generation because Ogre's `Dependencies` SDL2 CMake package referenced `C:/dev/Ogre/ogre-next/Dependencies/bin/SDL2.dll`, while the reproduced Ogre deps layout contains configuration-specific DLLs under `bin/Release`, `bin/Debug`, and `bin/RelWithDebInfo`.
+
+Focused configure fixes:
+
+- Added `WBR_SKIP_CONFIGURE_DLL_COPY=ON` and a guard in `CMake/Dependencies/OGRE.cmake` so this configure-only pass does not stage Ogre runtime DLLs into `bin\Release`.
+- Under `WBR_DEPS_ROOT`, `CMake/Dependencies/OGRE.cmake` uses the verified Ogre deps SDL2 include path instead of the stale `find_package(SDL2)` package metadata.
+
+Retry configure result:
+
+- Configure: success.
+- Generate: success.
+- Generated solution: `build-windows-release\StuntRally3.sln`.
+- Cache summary records `CMAKE_GENERATOR=Visual Studio 17 2022`, `CMAKE_GENERATOR_PLATFORM=x64`, `StuntRally3_SOURCE_DIR`, `StuntRally3_BINARY_DIR`, `OGRE_BINARIES=C:/dev/Ogre/ogre-next//build`, and all `WBR_*` roots.
+
+Not performed:
+
+- `StuntRally3.exe` was not built.
+- `SR-Editor3.exe` was not built.
+- Runtime DLL staging was not performed.
+- Smoke tests were not run.
+
+Next recommended W1 step:
+
+- Begin the SR3 build pass only: build `StuntRally3.exe` and `SR-Editor3.exe` from `build-windows-release\StuntRally3.sln` in Release x64, capture build output, make only focused link/compile fixes if necessary, and stop before runtime staging or smoke tests.
 
 ## W3 Script Inventory
 

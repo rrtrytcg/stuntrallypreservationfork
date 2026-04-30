@@ -1,0 +1,25 @@
+# SR3 Configure Plan
+Date: 2026-04-30
+Scope: Windows Build Rescue W1 SR3 configure pass only. No SR3 build, runtime staging, or smoke test.
+
+Historical route from docs/BuildingVS.md:
+- Replace CMakeLists.txt with CMakeLists-WindowsRelease.txt.
+- Replace bin\Release\plugins.cfg with bin\Release\plugins_Windows.cfg.
+- Use manual Windows CMake route, historically CMakeManual -> CMake.
+- Configure with Visual Studio generator, Release x64.
+
+2026 mapped route:
+- Source root: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026
+- Build dir: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\build-windows-release
+- Generator: Visual Studio 17 2022
+- Architecture: x64
+- CMake: VS2022 bundled CMake 3.31.6-msvc6
+
+Planned source-tree preparation:
+- Copy CMakeManual\* over CMake\* so the historical Windows Release CMake include paths resolve.
+- Copy CMakeLists-WindowsRelease.txt to CMakeLists.txt.
+- Copy bin\Release\plugins_Windows.cfg to bin\Release\plugins.cfg.
+- Edit active CMakeLists.txt only for verified W1 dependency paths.
+
+Stop rule:
+- Stop after configure/generate evidence. Do not run cmake --build.

@@ -1,0 +1,21 @@
+# SR3 Configure Result
+Date: 2026-04-30
+
+First configure attempt:
+- ExitCode: 1
+- Blocker: Ogre Dependencies SDL2 CMake package referenced C:/dev/Ogre/ogre-next/Dependencies/bin/SDL2.dll, but reproduced Ogre deps place SDL2.dll under bin/Release, bin/Debug, and bin/RelWithDebInfo.
+
+Focused fix:
+- CMake/Dependencies/OGRE.cmake now uses verified Ogre deps SDL2 include paths when WBR_DEPS_ROOT is set instead of invoking the stale SDL2 CMake package.
+- CMake/Dependencies/OGRE.cmake now honors WBR_SKIP_CONFIGURE_DLL_COPY to prevent configure-time runtime DLL staging.
+
+Retry configure attempt:
+- RetryExitCode: 0
+- Configure: success
+- Generate: success
+- Solution generated: build-windows-release/StuntRally3.sln
+
+Build status:
+- SR3 build intentionally not attempted in this pass.
+- Runtime DLL staging intentionally not performed.
+- Smoke tests intentionally not performed.

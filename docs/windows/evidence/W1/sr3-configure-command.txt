@@ -1,0 +1,9 @@
+# SR3 configure command
+Date: 2026-04-30
+PWD: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026
+CMD: cmake -S "C:\Games\stuntrally3-3.3\fork\stuntrally3-2026" -B "C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\build-windows-release" -G "Visual Studio 17 2022" -A x64 -DCMAKE_BUILD_TYPE=Release -DWBR_DEPS_ROOT="C:/dev" -DWBR_OGRE_ROOT="C:/dev/Ogre/ogre-next" -DWBR_MYGUI_ROOT="C:/dev/mygui-next" -DWBR_SKIP_CONFIGURE_DLL_COPY=ON
+
+
+# Retry after SDL2 configure-path fix
+CMD: cmake -S "C:\Games\stuntrally3-3.3\fork\stuntrally3-2026" -B "C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\build-windows-release" -G "Visual Studio 17 2022" -A x64 -DCMAKE_BUILD_TYPE=Release -DWBR_DEPS_ROOT="C:/dev" -DWBR_OGRE_ROOT="C:/dev/Ogre/ogre-next" -DWBR_MYGUI_ROOT="C:/dev/mygui-next" -DWBR_SKIP_CONFIGURE_DLL_COPY=ON
+

@@ -1,0 +1,16 @@
+# SR3 Configure Deviations
+Date: 2026-04-30
+
+- Used VS2022 Build Tools and generator Visual Studio 17 2022 instead of upstream VS2019.
+- Used VS2022 bundled CMake because plain-shell CMake is not on normal PATH.
+- Used source root C:\Games\stuntrally3-3.3\fork\stuntrally3-2026 instead of historical c:\dev\sr3.
+- Used build directory build-windows-release instead of historical build to keep W1 Release configure evidence explicit.
+- Replaced the active CMake route with CMakeLists-WindowsRelease.txt and CMakeManual content, as instructed by the upstream Windows ritual.
+- Mapped hardcoded D:/_/sr, D:/_/sr/og3, C:/b/boost_1_81_0, and ../og3 assumptions to verified W1 dependency roots under C:/dev.
+- Added WBR_SKIP_CONFIGURE_DLL_COPY because the manual Ogre helper copies DLLs during configure; this pass must not stage runtime DLLs.
+- First configure attempt failed on stale SDL2 package metadata in Ogre Dependencies. Focused fix bypassed find_package(SDL2) under WBR_DEPS_ROOT and uses verified Ogre deps SDL2 include/lib paths instead.
+- Direct3D11 import library is still linked by the historical CMake route because Ogre produced it by default; Direct3D11 remains out of W0-W3 acceptance scope.
+- ENet winmm.lib and Ws2_32.lib remain in the historical route; no link-error fixing was attempted.
+
+Tracking note:
+- CMake\Dependencies\OGRE.cmake is force-added despite the repository's CMake* ignore rule because active CMakeLists.txt includes it directly.

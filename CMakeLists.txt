@@ -1,10 +1,27 @@
+# INFO
 
-# This CMake is for CI/CD auto builds in github Actions tab.
-# See in docs/Building.md and BuildingVS.md for building from sources.
-# Conan is used to get SR deps, or not if using FORCE_SYSTEM_DEPENDENCIES.
+# This config assumes you used bat script to get and build latest Ogre-next from sources
+# and your Ogre source code is above, in ../Ogre/ogre-next and ../Ogre/ogre-next-deps
+# Also assuming all dependencies were built from sources.
+
+# This is only for Windows, Release version.
+# Have to set manual paths below to yours. All start with  D:/_/sr/ and also C:/b/ for boost
+
+# To use: rename this file to CMakeLists.txt and folder CMakeManual\ to CMake\
+# Details in docs\BuildingVS.md
+
+# Tested on Windows 10.
+# see CMake/DependenciesConfig.cmake
+# Conan is not used
 
 
 cmake_minimum_required( VERSION 3.16 )
+# Include path for additional CMake library finding scripts
+set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/CMake/" ${CMAKE_MODULE_PATH})
+
+message(STATUS "Build DIR: ${CMAKE_BINARY_DIR}")
+
+
 #  Include path for additional CMake library finding scripts
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/CMake/" ${CMAKE_MODULE_PATH})
 
@@ -13,40 +30,55 @@ set(CMAKE_CONFIGURATION_TYPES "Debug" "Release" CACHE STRING "Configuration type
 
 if (${CMAKE_VERSION} VERSION_GREATER_EQUAL "3.22")
     cmake_policy(SET CMP0127 OLD)
-endif ()
-
-set(CMAKE_FIND_PACKAGE_PREFER_CONFIG ON)
+endif()
+cmake_policy(SET CMP0111 NEW)
 
 include(CMakeDependentOption)
 include(Macros)
+#find_package(PkgConfig REQUIRED)
 include(FeatureSummary)
 
-if (NOT WIN32)
-    find_package(PkgConfig)
-endif ()
 
 project( StuntRally3 )
 
 
 #  User Options  to disable building components  --------
-option(BUILD_GAME           "Build the game binary."    ON)
-option(BUILD_EDITOR         "Build the track editor."   ON)
-option(BUILD_GAME_SERVER    "Build the game list server app."  ON)
-option(BUILD_TRANSL_TOOL    "Build the tool for translation updating, it creates .pot"  ON)
-
+option(BUILD_GAME             "Build the game binary."    ON)
+option(BUILD_EDITOR           "Build the track editor."   ON)
+option(BUILD_MASTER_SERVER    "Build the game list master server."  OFF)
+option(BUILD_TRANSL_TOOL      "Build the tool for translation updating, it creates .pot"  ON)
+#^ ?
 
 #  Linux prefers lower-case exe names
 if (WIN32 OR APPLE)
     set(GAME_EXE StuntRally3)
     set(EDITOR_EXE SR-Editor3)
-    set(SERVER_EXE SR-GameServer)
+    set(SERVER_EXE SR-MasterServer)
     set(TRANSL_EXE SR-Translator)
-else ()
+else()
     set(GAME_EXE stuntrally3)
     set(EDITOR_EXE sr-editor3)
-    set(SERVER_EXE sr-gameserver)
+    set(SERVER_EXE sr-masterserver)
     set(TRANSL_EXE sr-translator)
-endif ()
+endif()
+
+set(_PREFIX "SR_")
+
+#  Test if conan is installed
+#- find_program(CONAN_CMD_TEST conan NO_CACHE)  // fixme?
+#- cmake_dependent_option(USE_PACKAGE_MANAGER "Use conan" ON "NOT CONAN_CMD_TEST STREQUAL CONAN_CMD_TEST-NOTFOUND" OFF)
+set(USE_PACKAGE_MANAGER OFF)
+message(STATUS "Using conan: ${USE_PACKAGE_MANAGER}")
+
+#  Allow user to globally set the library preference for external libraries
+cmd_option(${_PREFIX}LIB_PREFERENCE
+        "Library preference [SYSTEM (if available), CONAN]"
+        "CONAN"
+        STRINGS "SYSTEM" "CONAN"
+        )
+
+#  Special mode, that will force dependencies to the packages provided by system unless they were set to conan explicitly.
+option(${_PREFIX}FORCE_SYSTEM_DEPENDENCIES "Force the use of system packages")
 
 
 #  Avoid source tree pollution
@@ -54,34 +86,77 @@ if (CMAKE_SOURCE_DIR STREQUAL CMAKE_BINARY_DIR)
     message(FATAL_ERROR "In-source builds are not permitted. Make a separate folder for building:\nmkdir build; cd build; cmake ..\nBefore that, remove the files already created:\nrm -rf CMakeCache.txt CMakeFiles")
 endif (CMAKE_SOURCE_DIR STREQUAL CMAKE_BINARY_DIR)
 
+
 #  exe path  ----
 set( EXECUTABLE_OUTPUT_PATH "${CMAKE_CURRENT_SOURCE_DIR}/bin/${CMAKE_BUILD_TYPE}" )
 
 #  Set CXX compile flags
-set(CMAKE_CXX_STANDARD 17)
+if( NOT MSVC )
+	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -Wno-comment -Wno-dangling-else -Wno-deprecated-declarations -Wno-parentheses")
+endif()
 
 if (CMAKE_COMPILER_IS_GNUCXX)
     message(STATUS "GCC detected, adding compile flags")
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC")
-endif ()
+endif()
 
-if (MSVC)
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /MP")
-    add_definitions(-DUNICODE -D_UNICODE)
-endif ()
+if( MSVC )
+	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /MP")
+	if( NOT PLATFORM_X64 )
+		set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /arch:SSE2")
+	endif()
+	add_definitions( -DUNICODE -D_UNICODE )
+endif()
 
 
 #  deps  ----
 
 #  Check for dependencies
-include(DependenciesConfig)
+# include(DependenciesConfig)
 
-macro(add_recursive dir retVal)
-    file(GLOB GLOB_RESULT ${dir}/*.h ${dir}/*.cpp ${dir}/*.c)
-    list(APPEND ${retVal} ${GLOB_RESULT})
+#- message( STATUS "---------- resolve_conan_dependencies" )
+#- resolve_conan_dependencies()
+
+
+#  Windows Build Rescue W1 dependency roots
+set( WBR_DEPS_ROOT "C:/dev" CACHE PATH "Windows Build Rescue dependency root" )
+set( WBR_OGRE_ROOT "${WBR_DEPS_ROOT}/Ogre/ogre-next" CACHE PATH "Windows Build Rescue Ogre-Next root" )
+set( WBR_MYGUI_ROOT "${WBR_DEPS_ROOT}/mygui-next" CACHE PATH "Windows Build Rescue MyGUI-next root" )
+set( WBR_SKIP_CONFIGURE_DLL_COPY ON CACHE BOOL "Skip configure-time runtime DLL staging during W1 configure pass" )
+
+message( STATUS "---------- Windows Build Rescue dependency root" )
+message( STATUS ${WBR_DEPS_ROOT} )
+
+set( OGRE_NEXT_DIR ${WBR_OGRE_ROOT} )
+
+#  Fix 1  Ogre
+set( OGRE_SOURCE ${OGRE_NEXT_DIR}/ )
+
+set( OGRE_BINARIES ${OGRE_NEXT_DIR}/build )
+
+include( CMake/Dependencies/OGRE.cmake )
+
+
+#  This scripts will add all the cpp and h files from src and include folders
+message( STATUS "---------- setup Ogre" )
+
+setupOgre( OGRE_SOURCE, OGRE_BINARIES, OGRE_LIBRARIES, FALSE, FALSE )
+
+#  Fix 2  SDL
+include_directories( "/usr/include/SDL2" )
+include_directories( ${WBR_DEPS_ROOT}/Ogre/ogre-next-deps/build/ogredeps/include )  #for rapidjson
+
+#  MyGui
+include_directories( ${WBR_MYGUI_ROOT}/MyGUIEngine/include )
+include_directories( ${WBR_MYGUI_ROOT}/Platforms/Ogre2/Ogre2Platform/include )
+
+
+macro( add_recursive dir retVal )
+	file( GLOB GLOB_RESULT ${dir}/*.h ${dir}/*.cpp ${dir}/*.c )
+	list( APPEND ${retVal} ${GLOB_RESULT})
 endmacro()
 
-message(STATUS "---------- SR sources")
+message( STATUS "---------- SR sources" )
 
 #  Compiler  ----
 set( COMMON_SRC_DIRS
@@ -93,7 +168,7 @@ set( COMMON_SRC_DIRS
 	#  libs
 	./src/btOgre2
 	./src/libs
-
+	
 	#  sources
 	./src/common
 	./src/common/data
@@ -116,12 +191,11 @@ set( COMMON_SRC_DIRS
 	./src/vdrift
 )
 
-#  game
+#  game only
 set( GAME_SRC_DIRS ${COMMON_SRC_DIRS} )
 list( APPEND GAME_SRC_DIRS ./src/game )
 list( APPEND GAME_SRC_DIRS ./src/game/data )
-#list( APPEND GAME_SRC_DIRS ./src/sound )
-#list( APPEND GAME_SRC_DIRS ./src/vdrift )
+
 list( APPEND GAME_SRC_DIRS ./src/oics )  # libs
 list( APPEND GAME_SRC_DIRS ./src/network )
 
@@ -133,136 +207,224 @@ list( APPEND EDITOR_SRC_DIRS ./src/editor )
 
 #  exe list  game and editor
 if (BUILD_GAME)
-    list( APPEND EXE_LIST ${GAME_EXE} )
-endif ()
+	list( APPEND EXE_LIST ${GAME_EXE} )
+endif()
 if (BUILD_EDITOR)
-    list( APPEND EXE_LIST ${EDITOR_EXE} )
-endif ()
+	list( APPEND EXE_LIST ${EDITOR_EXE} )
+endif()
+
+
+
+#  fix 4  OpenAL  since conan failed  - common, meh
+# find_package( OpenAL REQUIRED )
+# include_directories( ${OPENAL_INCLUDE_DIR} )
+
+find_package( Threads )
+
+# find_package( Boost COMPONENTS system thread REQUIRED )
+
+
+#  fix 5  bullet
+# find_package( Bullet REQUIRED )
+
+message( STATUS "--- Bullet: " ${BULLET_FOUND} )
+# message( STATUS "--- Bullet: " ${BULLET_INCLUDE_DIRS} )
+# message( STATUS "--- Bullet: " ${BULLET_LIBRARIES} )
+
+# find_package(OGG REQUIRED)
+# find_package(Vorbis REQUIRED)
+
 
 ##  Executables
 ##------------------------------------------------------------------------------------------------------
 foreach( EXE ${EXE_LIST} )
 
-    message(STATUS "Configuring: " ${EXE})
+	message( STATUS "Configuring: " ${EXE} )
 
-    #  sources  ----
-    set(EXE_SOURCES "")
+	#  sources  ----
+	set( EXE_SOURCES "")
 
-    if (${EXE} STREQUAL ${EDITOR_EXE})  # ed
-        set(SRC_DIRS ${EDITOR_SRC_DIRS})
-    else ()
-        set(SRC_DIRS ${GAME_SRC_DIRS})
-    endif ()
+	if ( ${EXE} STREQUAL ${EDITOR_EXE} )  # ed
+		set( SRC_DIRS ${EDITOR_SRC_DIRS} )
+	else()
+		set( SRC_DIRS ${GAME_SRC_DIRS} )
+	endif()
 
-    foreach (subdir ${SRC_DIRS})
-        #message( STATUS ${subdir} )
-        add_recursive(${subdir} EXE_SOURCES)
-    endforeach ()
+	foreach( subdir ${SRC_DIRS} )
+		#message( STATUS ${subdir} )
+		add_recursive( ${subdir} EXE_SOURCES )
+	endforeach()
 
-    #  exe  ----
-    add_executable(${EXE} WIN32 ${EXE_SOURCES})
+	#  exe  ----
+	add_executable( ${EXE} WIN32 ${EXE_SOURCES} )
 
-    # Generate source groups for use in IDEs
-    source_group(TREE ${CMAKE_CURRENT_LIST_DIR} FILES ${EXE_SOURCES})
 
-    foreach (subdir ${SRC_DIRS})
-        #message( STATUS ${subdir} )
-        target_include_directories(${EXE} PRIVATE ${subdir})
-    endforeach ()
-    #  pch.h
-    if (${EXE} STREQUAL ${EDITOR_EXE})  # ed
-        set_target_properties(${EXE} PROPERTIES COMPILE_FLAGS "-DSR_EDITOR")
-        target_precompile_headers(${EXE} PRIVATE src/editor/pch.h)
-    else ()
-        target_precompile_headers(${EXE} PRIVATE src/game/pch.h)
-    endif ()
+	#  add includes  ----
+	foreach( subdir ${SRC_DIRS} )
+		#message( STATUS ${subdir} )
+		target_include_directories( ${EXE} PRIVATE ${subdir} )
+	endforeach()
 
-    target_link_libraries(
-            ${EXE} 
-            PRIVATE
-            boost::boost
-            Bullet::Bullet
-            enet::enet
-            MyGUI::MyGUI
-            Ogg::ogg
-            OGRE::OGRE
-            OpenAL::OpenAL
-            rapidjson
-            SDL2::SDL2
-            Threads::Threads
-            tinyxml2::tinyxml2
-            Vorbis::vorbis
-            Vorbis::vorbisfile
-    )
+	target_include_directories( ${EXE} PRIVATE ${BULLET_INCLUDE_DIRS} )
 
-    if (WIN32)
-        install(TARGETS ${EXE} DESTINATION .)
+	#  fix 5  ENet  since conan fails
+	# find_package( ENet REQUIRED )  # inside Dep..cmake
+	if ( ${EXE} STREQUAL ${GAME_EXE} )  # game, once
+		target_include_directories( ${EXE} PRIVATE ${ENet_INCLUDE_DIRS} )
+		target_include_directories( ${EXE} PRIVATE ${Boost_INCLUDE_DIRS} )
+	endif()
 
-        # add a post-build command to copy DLLs beside the executable
-        add_custom_command(
-            TARGET ${EXE}
-            POST_BUILD
-            COMMAND ${CMAKE_COMMAND}
-                -DEXECUTABLE="$<TARGET_FILE:${EXE}>"
-                -DBIN_DIR="${CMAKE_BINARY_DIR}"
-                -DLIB_DIR="$<TARGET_FILE_DIR:${EXE}>"
-                -P "${CMAKE_SOURCE_DIR}/CMake/FixupBundle.cmake"
-        )
-    endif ()
-endforeach ()
+
+	#  vs2019  paths  ------------------------
+	SET(BUILD_TYPE "Release")
+	#  tinyxml2
+	target_include_directories( ${EXE} PRIVATE "${WBR_DEPS_ROOT}/tinyxml2-9.0.0" )
+	target_link_directories( ${EXE} PRIVATE "${WBR_DEPS_ROOT}/tinyxml2-9.0.0/build/${BUILD_TYPE}" )
+	target_link_libraries( ${EXE} "tinyxml2.lib" )
+
+	#  boost
+	target_include_directories( ${EXE} PRIVATE "${WBR_DEPS_ROOT}/boost_1_81_0-msvc-14.3" )
+	target_link_directories( ${EXE} PRIVATE "${WBR_DEPS_ROOT}/boost_1_81_0-msvc-14.3/lib64-msvc-14.3" )
+
+	#  enet
+	target_include_directories( ${EXE} PRIVATE "${WBR_DEPS_ROOT}/enet-1.3.17/include" )
+	target_link_directories( ${EXE} PRIVATE "${WBR_DEPS_ROOT}/enet-1.3.17/build/${BUILD_TYPE}" )
+	target_link_libraries( ${EXE} "enet.lib" )
+	target_link_libraries( ${EXE} "winmm.lib" )
+	target_link_libraries( ${EXE} "Ws2_32.lib" )
+
+	#  vorbis
+	target_include_directories( ${EXE} PRIVATE "${WBR_DEPS_ROOT}/libvorbis-1.3.7/include" )
+	target_link_directories( ${EXE} PRIVATE "${WBR_DEPS_ROOT}/libvorbis-1.3.7/build/lib/${BUILD_TYPE}" )
+	target_link_libraries( ${EXE} "vorbis.lib" )
+	target_link_libraries( ${EXE} "vorbisfile.lib" )
+	#  ogg
+	target_include_directories( ${EXE} PRIVATE "${WBR_DEPS_ROOT}/libogg-1.3.5/include" )
+	target_link_directories( ${EXE} PRIVATE "${WBR_DEPS_ROOT}/libogg-1.3.5/build/${BUILD_TYPE}" )
+	target_link_libraries( ${EXE} "ogg.lib" )
+
+	#  sdl2
+	target_include_directories( ${EXE} PRIVATE "${WBR_DEPS_ROOT}/Ogre/ogre-next-deps/src/SDL2/include" )
+	target_link_directories( ${EXE} PRIVATE "${WBR_DEPS_ROOT}/Ogre/ogre-next-deps/build/ogredeps/lib" )
+	target_link_libraries( ${EXE} "SDL2.lib" )
+	
+	#  bullet
+	# target_compile_definitions( ${EXE} PRIVATE BT_USE_DOUBLE_PRECISION=1 )
+	target_include_directories( ${EXE} PRIVATE "${WBR_DEPS_ROOT}/bullet3-3.25/src" )
+	target_include_directories( ${EXE} PRIVATE "${WBR_DEPS_ROOT}/bullet3-3.25/Extras/Serialize" )
+	target_link_directories( ${EXE} PRIVATE "${WBR_DEPS_ROOT}/bullet3-3.25/bin" )
+	message(STATUS "BUILD_TYPE: " ${BUILD_TYPE})
+	target_link_libraries( ${EXE} "LinearMath_vs2010_x64_release.lib" )
+	target_link_libraries( ${EXE} "BulletCollision_vs2010_x64_release.lib" )
+	target_link_libraries( ${EXE} "BulletDynamics_vs2010_x64_release.lib" )
+	target_link_libraries( ${EXE} "BulletFileLoader_vs2010_x64_release.lib" )
+	target_link_libraries( ${EXE} "BulletWorldImporter_vs2010_x64_release.lib" )
+
+	#  openal-soft
+	target_include_directories( ${EXE} PRIVATE "${WBR_DEPS_ROOT}/openal-soft-1.23.1/include" )
+	target_link_directories( ${EXE} PRIVATE "${WBR_DEPS_ROOT}/openal-soft-1.23.1/build/${BUILD_TYPE}" )
+	target_link_libraries( ${EXE} "OpenAL32.lib" )
+	
+	#  ogre
+	target_compile_definitions( ${EXE} PRIVATE _HAS_AUTO_PTR_ETC=1 )
+	target_link_directories( ${EXE} PRIVATE "${WBR_OGRE_ROOT}/build/lib/${BUILD_TYPE}" )
+	if (${BUILD_TYPE} STREQUAL "Debug")
+    	set(SUFFIX_D "_d")
+	else()
+		set(SUFFIX_D "")
+	endif()
+	target_link_libraries( ${EXE} "OgreMain.lib" )
+	target_link_libraries( ${EXE} "OgreHlmsPbs.lib" )
+	target_link_libraries( ${EXE} "OgreHlmsUnlit.lib" )
+	target_link_libraries( ${EXE} "OgreAtmosphere.lib" )
+	target_link_libraries( ${EXE} "Plugin_ParticleFX.lib" )
+	target_link_libraries( ${EXE} "RenderSystem_Direct3D11.lib" )
+	target_link_libraries( ${EXE} "RenderSystem_GL3Plus.lib" )
+
+	#  mygui
+	target_link_directories( ${EXE} PRIVATE "${WBR_MYGUI_ROOT}/build/lib/${BUILD_TYPE}" )
+	target_link_libraries( ${EXE} "MyGUIEngine.lib" )
+	target_link_libraries( ${EXE} "MyGUI.Ogre2Platform.lib" )
+
+	#  -------------------------------------
+
+
+	#  pch.h
+	if ( ${EXE} STREQUAL ${EDITOR_EXE} )  # ed
+	    set_target_properties( ${EXE} PROPERTIES COMPILE_FLAGS "-DSR_EDITOR" )
+		target_precompile_headers( ${EXE} PRIVATE src/editor/pch.h )
+	else()
+		target_precompile_headers( ${EXE} PRIVATE src/game/pch.h )
+	endif()
+
+	#  c++
+	#target_compile_options(  ${EXE} PRIVATE -Wswitch )
+	target_compile_features( ${EXE} PRIVATE cxx_std_17 )
+
+
+	#  add linker  ----
+	#  threads
+	target_link_libraries( ${EXE} ${CMAKE_THREAD_LIBS_INIT} )
+
+
+	#  OpenAL
+	#target_link_libraries( ${EXE} "${OPENAL_LIBRARY}" )
+
+	#  bullet
+	#target_link_libraries( ${EXE} ${BULLET_LIBRARIES} -lBulletWorldImporter )
+
+
+	#  Ogre  ----
+	target_link_libraries( ${EXE} ${OGRE_LIBRARIES} )
+
+	#  SDL
+	#target_link_libraries( ${EXE} "-lSDL2" )
+
+
+	#  MyGui  ----   # todo: windows ..
+	#if (${CMAKE_BUILD_TYPE} STREQUAL "Debug")
+    #	set(SUFFIX_D "_d")
+	#else()
+		set(SUFFIX_D "")
+	#endif()
+
+	#target_link_libraries( ${EXE} ${DIR_ONE_ABOVE}/mygui-next/build/${CMAKE_BUILD_TYPE}/lib/libMyGUI.Ogre2Platform${SUFFIX_D}.a )
+
+	if ( ${EXE} STREQUAL ${GAME_EXE} )  # game, once
+		#add_library( libMyGUIEngine SHARED IMPORTED )
+	endif()
+	#set_target_properties( libMyGUIEngine PROPERTIES IMPORTED_LOCATION ${DIR_ONE_ABOVE}/mygui-next/build/${CMAKE_BUILD_TYPE}/lib/libMyGUIEngine${SUFFIX_D}.so )
+	#target_link_libraries( ${EXE} libMyGUIEngine )
+
+
+	#  ENet, boost  for networking  ----
+	if ( ${EXE} STREQUAL ${GAME_EXE} )  # game, once
+		#target_link_libraries( ${EXE} ${Boost_LIBRARIES} )
+		#target_link_libraries( ${EXE} ${ENet_LIBRARIES} )
+	endif()
+
+	#  rest
+	#message( STATUS "Libs  " ${EXE} "  " ${LIBS} )
+	target_link_libraries( ${EXE} ${LIBS} )
+
+endforeach()
+
 
 ##  Translations tool
 ##------------------------------------------------------------------------------------------------------
 if (BUILD_TRANSL_TOOL)
-    message(STATUS "Configuring: " ${TRANSL_EXE})
+	message( STATUS "Configuring: " ${TRANSL_EXE} )
 
-    add_executable(${TRANSL_EXE} WIN32 ./src/transl/main.cpp)
-    target_include_directories(${TRANSL_EXE} PRIVATE ./src/transl)
+	add_executable( ${TRANSL_EXE} WIN32 ./src/transl/main.cpp )
+	target_include_directories( ${TRANSL_EXE} PRIVATE ./src/transl )
 
-    target_precompile_headers(${TRANSL_EXE} PRIVATE src/transl/pch.h)
+	target_precompile_headers( ${TRANSL_EXE} PRIVATE src/transl/pch.h )
+	#  c++
+	# target_compile_options(  ${TRANSL_EXE} PRIVATE -Wswitch )
+	target_compile_features( ${TRANSL_EXE} PRIVATE cxx_std_17 )
+
+	set_target_properties( ${TRANSL_EXE} PROPERTIES LINKER_LANGUAGE CXX )
+	# target_link_libraries( ${TRANSL_EXE} ${LIBS} )
 endif()
 
-message(STATUS "---------- SR end")
-
-
-#  Install targets
-# -----------------------
-
-if (WIN32)
-    install(DIRECTORY ${CMAKE_SOURCE_DIR}/data/ DESTINATION . PATTERN ".git/*" EXCLUDE)
-    install(DIRECTORY ${EXECUTABLE_OUTPUT_PATH}/ DESTINATION . FILES_MATCHING PATTERN "*.dll" )
-    install(FILES ${CMAKE_SOURCE_DIR}/dist/plugins_Windows.cfg DESTINATION . RENAME plugins.cfg)
-    install(FILES ${CMAKE_SOURCE_DIR}/dist/resources2.cfg DESTINATION .)
-endif ()
-
-
-#  CPack
-# -----------------------
-set(CPACK_PACKAGE_NAME "Stunt Rally")
-set(CPACK_PACKAGE_FILE_NAME "stunt-rally-${CMAKE_PROJECT_VERSION}")
-set(CPACK_PACKAGE_DESCRIPTION "Stunt Rally is a 3D racing game with own Track Editor")
-set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "Stunt Rally is a 3D racing game with own Track Editor")
-set(CPACK_PACKAGE_VENDOR "Crystal Hammer")
-set(CPACK_RESOURCE_FILE_LICENSE "${CMAKE_SOURCE_DIR}/License.txt")
-set(CPACK_PACKAGE_EXECUTABLES "StuntRally3" "Stunt Rally 3")
-
-if (WIN32)
-    set(CPACK_GENERATOR INNOSETUP)
-    set(CPACK_ADD_REMOVE TRUE)
-    set(CPACK_CREATE_DESKTOP_LINKS "StuntRally3" "Stunt Rally 3")
-
-    set(CPACK_INNOSETUP_ALLOW_CUSTOM_DIRECTORY ON)
-    set(CPACK_INNOSETUP_USE_MODERN_WIZARD ON)
-    # set(CPACK_INNOSETUP_ICON_FILE "${CMAKE_CURRENT_SOURCE_DIR}/sr3.ico")
-    set(CPACK_INNOSETUP_SETUP_AppId "{{67B750C8-691F-4AAB-A79C-7557314B24A4}")
-
-    set(CPACK_PACKAGE_INSTALL_DIRECTORY "${CPACK_PACKAGE_NAME}")
-    # set(CPACK_INNOSETUP_SETUP_DiskSpanning True)
-else ()
-    set(CPACK_GENERATOR 7Z)
-endif ()
-
-include(CPack)
-
-
-feature_summary(WHAT ALL)
+message( STATUS "---------- SR end" )

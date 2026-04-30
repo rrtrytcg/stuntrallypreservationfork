@@ -7,7 +7,7 @@ Policy: Windows Build Rescue is reproducibility first, not modernization. Do not
 ## Status
 
 - W0 packaged binary baseline: closed enough to proceed; screenshots remain a follow-up evidence improvement.
-- W1 source build reproduction: started.
+- W1 source build reproduction: SR3 Release x64 configure/generate succeeded; build not started.
 - Primary target: Windows 11, Release x64.
 - Primary renderer acceptance path: OpenGL 3+.
 - Secondary useful evidence: Vulkan plugin/device enumeration.
@@ -83,6 +83,42 @@ W1 layout pass status:
 - `docs/windows/evidence/W1/deps-non-ogre-outputs.txt` records the verified non-Ogre dependency outputs.
 
 W1 must freeze exact dependency paths and versions here after a successful source build.
+
+## SR3 Release Configure
+
+W1 verified the historical Windows Release configure route on 2026-04-30:
+
+- Active route: `CMakeLists-WindowsRelease.txt` copied over `CMakeLists.txt`; `CMakeManual\*` copied over `CMake\*`; `bin\Release\plugins_Windows.cfg` copied over `bin\Release\plugins.cfg`.
+- Source root: `C:\Games\stuntrally3-3.3\fork\stuntrally3-2026`.
+- Build directory: `C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\build-windows-release`.
+- Generator and architecture: `Visual Studio 17 2022`, `x64`.
+- CMake: VS2022 bundled CMake `3.31.6-msvc6`.
+- Configure/generate result: success after one focused SDL2 configure-path fix.
+- Generated solution: `build-windows-release\StuntRally3.sln`.
+
+Configure-only W1 path variables:
+
+```text
+WBR_DEPS_ROOT = C:/dev
+WBR_OGRE_ROOT = C:/dev/Ogre/ogre-next
+WBR_MYGUI_ROOT = C:/dev/mygui-next
+WBR_SKIP_CONFIGURE_DLL_COPY = ON
+```
+
+Verified configure-path notes:
+
+- Historical `D:/_/sr`, `D:/_/sr/og3`, `C:/b/boost_1_81_0`, and `../og3/` assumptions are mapped to the W1 dependency roots above in active `CMakeLists.txt`.
+- Ogre build root used by configure: `C:/dev/Ogre/ogre-next/build`.
+- MyGUI library path used by configure: `C:/dev/mygui-next/build/lib/Release`.
+- Boost library path used by configure: `C:/dev/boost_1_81_0-msvc-14.3/lib64-msvc-14.3`.
+- `WBR_SKIP_CONFIGURE_DLL_COPY=ON` prevents the manual Ogre helper from staging runtime DLLs during configure.
+- The first configure attempt failed because Ogre's SDL2 CMake package referenced a non-existent unconfigured `Dependencies/bin/SDL2.dll`; the successful retry uses verified Ogre deps SDL2 paths under `C:/dev/Ogre/ogre-next-deps`.
+
+Build status:
+
+- `StuntRally3.exe` not built yet.
+- `SR-Editor3.exe` not built yet.
+- Runtime staging and smoke tests not run yet.
 
 ## Dependency Versions
 

@@ -1,0 +1,19 @@
+# SR3 Configure Renames / Edits
+Date: 2026-04-30
+
+Pre-edit status:
+- CMakeLists.txt already existed and represented the repo's default/package route.
+- bin\Release\plugins.cfg already existed and matched the Windows plugin policy.
+- CMake\ already existed and represented the repo's default/package route.
+
+Historical route preparation performed for W1:
+- Copied CMakeLists-WindowsRelease.txt -> CMakeLists.txt.
+- Copied bin\Release\plugins_Windows.cfg -> bin\Release\plugins.cfg.
+- Copied CMakeManual\* -> CMake\* because CMakeLists-WindowsRelease.txt includes CMake/Dependencies/OGRE.cmake and other manual-route modules.
+- Saved pre-existing CMakeLists.txt and plugins.cfg snapshots as evidence files only.
+
+Path edits to active CMakeLists.txt are captured by git diff and summarized in sr3-dependency-paths.txt / sr3-deviations.txt.
+
+Repo tracking note:
+- .gitignore ignores new CMake* paths, so the needed copied manual route file CMake\Dependencies\OGRE.cmake must be force-added for reproducibility.
+- Other ignored CMakeManual copies remain available from tracked CMakeManual\ and are not required by the successful configure path beyond the tracked/force-added files.

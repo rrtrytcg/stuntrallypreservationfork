@@ -622,6 +622,36 @@ Recommended next milestones:
 - W3: improve guardrail scripts, especially runtime staging from multiple dependency roots and smoke behavior that can distinguish initialized-window evidence from timeout.
 - Follow-up evidence: capture visible screenshots, preferably including a forced OpenGL game run, without reopening W1 build reproduction.
 
+### W1 Follow-up: Visible OpenGL Evidence
+
+Full captured evidence:
+
+```text
+docs/windows/evidence/W1-followups/visible-opengl-bundle-report.txt
+docs/windows/evidence/W1-followups/visible-opengl-command.txt
+docs/windows/evidence/W1-followups/visible-opengl-launch-output.txt
+docs/windows/evidence/W1-followups/visible-opengl-menu-launch-output.txt
+docs/windows/evidence/W1-followups/visible-opengl-fast-screenshot-output.txt
+docs/windows/evidence/W1-followups/visible-opengl-result.txt
+docs/windows/evidence/W1-followups/visible-opengl-deviations.txt
+docs/windows/evidence/W1-followups/visible-opengl-log/
+docs/windows/evidence/W1-followups/visible-opengl-config/
+docs/windows/evidence/W1-followups/visible-opengl-screenshot.png
+docs/windows/evidence/W1-followups/visible-opengl-fast-screenshot.png
+docs/windows/evidence/W1-followups/visible-opengl-game-screenshot.png
+```
+
+Result:
+
+- Runtime bundle validation passed before the visible OpenGL run.
+- The live game `ogre.cfg` was backed up, set to `OpenGL 3+ Rendering Subsystem`, then restored after evidence capture.
+- A visible Ogre setup screenshot was captured with OpenGL 3+ selected.
+- A fullscreen black OpenGL render-window screenshot was captured shortly after accepting the setup dialog.
+- Fresh `Ogre.log` confirms GL3Plus loaded, a GL 4.5 context was created, and the renderer was `NVIDIA GeForce RTX 4070 SUPER/PCIe/SSE2`.
+- The run exited before a menu screenshot could be captured because `data\tracks` is missing in the source worktree.
+- No tracks were cloned, copied, or junctioned in this pass.
+- W1 remains closed; this follow-up records an honest runtime-content/layout blocker for fuller visible menu evidence.
+
 ## W3 Script Inventory
 
 Scripts live in `tools/windows/`.

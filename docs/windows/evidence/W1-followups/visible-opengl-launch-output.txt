@@ -1,0 +1,7 @@
+# Visible OpenGL Launch Output
+Date: 2026-04-30
+RuntimeDir: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release
+
+Started StuntRally3.exe pid=21520 at 2026-04-30T21:19:55.9132825+08:00
+Screenshot: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\docs\windows\evidence\W1-followups\visible-opengl-screenshot.png
+Process still running after screenshot; stopping pid=21520 at 2026-04-30T21:20:08.0879421+08:00

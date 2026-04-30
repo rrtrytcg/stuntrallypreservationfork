@@ -1,0 +1,126 @@
+# Visible OpenGL Log Summary
+Date: 2026-04-30
+LogRoot: C:\Users\julie\AppData\Roaming\stuntrally3
+
+
+Name                  Length LastWriteTime
+----                  ------ -------------
+brushes.ini            34275 19/9/2024 9:22:08 am
+brushes.png          1942065 19/9/2024 9:22:08 am
+editor.cfg              3231 29/4/2026 9:57:53 pm
+editor.cfg.bak_audit    3226 29/4/2026 9:56:42 pm
+game.cfg                6097 29/4/2026 9:56:26 pm
+input_p0.xml            4098 29/4/2026 9:56:27 pm
+input_p1.xml            3713 29/4/2026 9:56:27 pm
+input_p2.xml            3713 29/4/2026 9:56:27 pm
+input_p3.xml            3718 29/4/2026 9:56:27 pm
+input_p4.xml            3305 29/4/2026 9:56:27 pm
+input_p5.xml            3305 29/4/2026 9:56:27 pm
+input.xml               2451 29/4/2026 9:56:27 pm
+MyGUI_ed.log           11388 29/4/2026 9:58:06 pm
+MyGUI.log              10400 30/4/2026 9:21:58 pm
+ogre_ed.cfg              515 29/4/2026 9:58:06 pm
+Ogre_ed.log             5573 30/4/2026 9:04:43 pm
+ogre.cfg                 514 30/4/2026 9:21:57 pm
+Ogre.log               59697 30/4/2026 9:21:58 pm
+paint.cfg               2805 29/4/2026 9:56:26 pm
+progress_rev.xml       22249 30/4/2026 9:21:58 pm
+progress.xml           22249 30/4/2026 9:21:58 pm
+progressC.xml           4356 30/4/2026 9:21:58 pm
+progressL_rev.xml      34170 30/4/2026 9:21:58 pm
+progressL.xml          34170 30/4/2026 9:21:58 pm
+tracks.xml             12330 29/4/2026 9:56:26 pm
+
+
+
+Key log lines:
+
+
+docs\windows\evidence\W1-followups\visible-opengl-log\MyGUI.log:31:21:21:58  |  Core  |  Info  |  * Initialise: PluginManager  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_PluginManager.cpp  |  30
+docs\windows\evidence\W1-followups\visible-opengl-log\MyGUI.log:32:21:21:58  |  Core  |  Info  |  PluginManager successfully initialized  |  C:\dev\mygui-next\MyGUIEngine\src\MyGUI_PluginManager.cpp  |  34
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:1:21:21:54: Creating resource group General
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:2:21:21:54: Creating resource group Internal
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:3:21:21:54: Creating resource group Autodetect
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:30:21:21:54: Loading library .\RenderSystem_GL3Plus
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:31:21:21:54: Installing plugin: GL 3+ RenderSystem
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:32:21:21:54: OpenGL 3+ Rendering Subsystem created.
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:33:21:21:54: Plugin successfully installed
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:34:21:21:54: Loading library .\RenderSystem_Vulkan
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:35:21:21:54: Installing plugin: Vulkan RenderSystem
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:36:21:21:54: [Vulkan] Initializing VkInstance
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:64:21:21:54: [Vulkan] Found 2 devices
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:65:21:21:54: [Vulkan] Found devices:
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:68:21:21:54: Plugin successfully installed
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:69:21:21:54: Loading library .\Plugin_ParticleFX
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:70:21:21:54: Installing plugin: ParticleFX
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:87:21:21:54: Plugin successfully installed
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:88:21:21:54: *-*-* OGRE Initialising
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:108:21:21:58: GL3PlusRenderSystem::_createRenderWindow "Stunt Rally 3", 1024x768 fullscreen  miscParams: FSAA=1 externalWindowHandle=2163806 gamma=Yes reverse_depth=Yes title=Stunt Rally 3 vsync=No 
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:111:21:21:58: GL_VERSION = 4.5.0 NVIDIA 591.86
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:377:21:21:58: GL_KHR_no_error
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:409:21:21:58: GL_NV_draw_vulkan_image
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:518:21:21:58: Supported WGL extensions: WGL_ARB_buffer_region WGL_ARB_create_context WGL_ARB_create_context_no_error WGL_ARB_create_context_profile WGL_ARB_create_context_robustness WGL_ARB_context_flush_control WGL_ARB_extensions_string WGL_ARB_make_current_read WGL_ARB_multisample WGL_ARB_pbuffer WGL_ARB_pixel_format WGL_ARB_pixel_format_float WGL_ARB_render_texture WGL_ATI_pixel_format_float WGL_EXT_colorspace WGL_EXT_create_context_es_profile WGL_EXT_create_context_es2_profile WGL_EXT_extensions_string WGL_EXT_framebuffer_sRGB WGL_EXT_pixel_format_packed_float WGL_EXT_swap_control WGL_EXT_swap_control_tear WGL_NVX_DX_interop WGL_NV_DX_interop WGL_NV_DX_interop2 WGL_NV_copy_image WGL_NV_delay_before_swap WGL_NV_float_buffer WGL_NV_multisample_coverage WGL_NV_multigpu_context WGL_NV_render_depth_texture WGL_NV_render_texture_rectangle 
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:520:21:21:58: ***   OpenGL 3+ Renderer Started   ***
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:523:21:21:58: RenderSystem capabilities
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:525:21:21:58: RenderSystem Name: OpenGL 3+ Rendering Subsystem
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:620:21:21:58: Creating resource group Essential
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:657:21:21:58: Creating resource group Popular
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:681:21:21:58: WARNING: The cached Hlms is out of date. The templates have changed. We will parse the templates again. If you experience crashes or shader compiler errors, delete the cache
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:685:21:21:58: WARNING: The cached Hlms is out of date. The templates have changed. We will parse the templates again. If you experience crashes or shader compiler errors, delete the cache
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:689:21:21:58: WARNING: The cached Hlms is out of date. The templates have changed. We will parse the templates again. If you experience crashes or shader compiler errors, delete the cache
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:833:21:21:58: @  OpenAL Soft on Realtek HD Audio 2nd output (Realtek(R) Audio)
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:834:21:21:58: @  OpenAL Soft on Speakers (iOX Bar III)
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:837:21:21:58: @  vendor: OpenAL Community
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:839:21:21:58: @  renderer: OpenAL Soft
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:860:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/TestC12-SR/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:861:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/TestC12-SR/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:862:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/TestC12-SR/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:863:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/TestC12-SR/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:864:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Sav3-Loops/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:865:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Jng3-Rocky/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:866:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Sav4-Hills/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:867:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Sav4-Hills/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:868:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Des1-Dunes/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:869:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Des4-SBridge/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:870:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Des5-LowJumps/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:871:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Des6-HighJumps/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:872:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Des8-Technical/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:873:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Sav7-HighMadness/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:874:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Jng6-Fun/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:875:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Mud2-Bumps/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:876:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Jng11-Temple/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:877:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Jng11-Temple/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:878:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/For9-MadMntnDark/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:879:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Grc1-Long/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:880:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Aus3-Canyon/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:881:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Vlc1-Dark/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:882:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Isl5-Shore/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:883:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Sav13-Hole/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:884:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Sav13-Hole/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:885:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Sav13-Hole/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:886:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/For12-HighPeaks/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:887:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Can1-Hairpins/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:888:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/For13-Castle/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:889:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/For13-Castle/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:890:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/For13-Castle/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:891:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Atm3-Orange/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:892:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Wnt17-FrozenGarden/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:893:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Uni7-GlassStairs/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:894:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Uni7-GlassStairs/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:895:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Uni7-GlassStairs/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:896:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Uni7-GlassStairs/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:897:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Uni7-GlassStairs/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:898:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Sur7-UaraHills/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:899:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Cry5-CrystalIslands/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:900:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Spc4-Crossing/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:901:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Spc4-Crossing/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:902:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/TestC6-Temp/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:903:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/TestC6-Temp/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:904:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/TestC6-Temp/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:905:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/TestC4-Ow/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:906:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Test13-Hills/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:907:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Test14-Terrains/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:914:21:21:58: C::# Init MyGui
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:926:21:21:58: Error: NO tracks !!!  in data/tracks/  crashing.
+
+

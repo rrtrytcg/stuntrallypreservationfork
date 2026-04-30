@@ -1,0 +1,47 @@
+# Visible OpenGL Follow-up Result
+Date: 2026-04-30
+
+Scope:
+- Follow-up evidence after W1 closure.
+- No build, configure, dependency, DLL staging, source, CMake, gameplay, or renderer-policy changes were made.
+
+Runtime directory:
+- `C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release`
+
+Pre-launch validation:
+- `tools/windows/Test-WindowsRuntimeBundle.ps1 -RuntimeDir "C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release"` passed.
+
+Config action:
+- Backed up `%APPDATA%\stuntrally3\ogre.cfg` to `visible-opengl-config\ogre-before-visible-opengl.cfg`.
+- Changed the live game config from `Render System=Vulkan Rendering Subsystem` to `Render System=OpenGL 3+ Rendering Subsystem`.
+- Captured the forced config as `visible-opengl-config\ogre-forced-visible-opengl.cfg` and the post-run config as `visible-opengl-config\ogre.cfg`.
+- Restored the live user config from `visible-opengl-config\ogre-before-visible-opengl.cfg` after evidence capture and saved the restored copy as `visible-opengl-config\ogre-restored-after-visible-opengl.cfg`.
+
+Visible evidence captured:
+- `visible-opengl-screenshot.png`: visible Ogre setup dialog with `OpenGL 3+ Rendering Subsystem` selected.
+- `visible-opengl-fast-screenshot.png`: full-screen black OpenGL render window captured shortly after pressing OK.
+- `visible-opengl-game-screenshot.png`: late screenshot after the process had already exited; this is desktop only and is retained as evidence of the failed menu-screenshot attempt, not as game-window evidence.
+
+OpenGL evidence from fresh log:
+- Fresh `Ogre.log` was written.
+- `RenderSystem_GL3Plus` loaded.
+- `OpenGL 3+ Rendering Subsystem created.`
+- Win32 GL subsystem started.
+- GL render window was created: `GL3PlusRenderSystem::_createRenderWindow "Stunt Rally 3", 1024x768 fullscreen`.
+- OpenGL context created: `Created GL 4.5 context`.
+- `GL_VERSION = 4.5.0 NVIDIA 591.86`.
+- `GL_RENDERER = NVIDIA GeForce RTX 4070 SUPER/PCIe/SSE2`.
+- OpenAL initialized.
+- MyGUI initialization began.
+
+Blocker observed after OpenGL initialization:
+- The game exited before a menu screenshot could be captured.
+- `Ogre.log` reports: `Error: NO tracks !!!  in data/tracks/  crashing.`
+- `data\tracks` does not exist in the source worktree.
+- This is a runtime content/layout follow-up, not a W1 build/runtime-DLL blocker.
+
+Verdict:
+- Visible OpenGL renderer/setup evidence was captured.
+- The source-built game initialized OpenGL and created a fullscreen render window.
+- A visible game menu screenshot was not captured because the run stopped on missing `data/tracks` content.
+- W1 remains closed; this follow-up does not change the W1 closure verdict.

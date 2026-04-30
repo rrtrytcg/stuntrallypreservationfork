@@ -1,0 +1,9 @@
+# Visible OpenGL Fast Screenshot Output
+Date: 2026-04-30
+RuntimeDir: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release
+
+Started StuntRally3.exe pid=24748 at 2026-04-30T21:21:54.3061507+08:00
+AppActivate OGRE setup: True
+Sent ENTER to OGRE setup dialog
+Screenshot: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\docs\windows\evidence\W1-followups\visible-opengl-fast-screenshot.png
+Process exited before stop check. ExitCode=-1

@@ -1,0 +1,23 @@
+# Visible OpenGL Follow-up Deviations
+Date: 2026-04-30
+
+Deviations and caveats:
+- The live user game config `%APPDATA%\stuntrally3\ogre.cfg` was changed to select OpenGL 3+ for this follow-up evidence run, then restored after evidence capture.
+- The original config was preserved as `visible-opengl-config\ogre-before-visible-opengl.cfg`.
+- The Ogre setup dialog appeared despite the forced config; pressing OK was required to continue.
+- The game reached OpenGL window creation, then exited before a menu screenshot could be captured.
+- The precise blocker was missing track content: `Error: NO tracks !!!  in data/tracks/  crashing.`
+- No attempt was made to clone, copy, junction, or otherwise add tracks in this pass.
+- No packaged-binary assets were copied into the fork.
+
+Not performed:
+- No dependency rebuild.
+- No SR3 reconfigure.
+- No SR3 rebuild.
+- No DLL restaging.
+- No source code change.
+- No CMake cleanup.
+- No gameplay testing.
+
+Recommended follow-up:
+- Add a narrow runtime-content evidence pass that obtains the documented `tracks3` data into `data/tracks` or records the intended external track-data layout, then repeats visible OpenGL screenshot evidence.

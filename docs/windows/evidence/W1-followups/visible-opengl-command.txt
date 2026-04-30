@@ -1,0 +1,17 @@
+# Visible OpenGL Command
+Date: 2026-04-30
+
+RuntimeDir:
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release
+
+Config action:
+Copied %APPDATA%\stuntrally3\ogre.cfg to visible-opengl-config\ogre-before-visible-opengl.cfg, then changed Render System=Vulkan Rendering Subsystem to Render System=OpenGL 3+ Rendering Subsystem in the live user config for this visible evidence run. After evidence capture, restored the live config from the backup.
+
+Launch command:
+Start-Process -FilePath "C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release\StuntRally3.exe" -WorkingDirectory "C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release" -PassThru
+
+Screenshot command:
+PowerShell/.NET System.Drawing full-screen capture after launch delay.
+
+Scope:
+Visible game launch evidence only. No gameplay testing, rebuild, reconfigure, or restaging.

@@ -1,0 +1,1 @@
+Restored live ogre.cfg from docs\windows\evidence\W1-followups\visible-opengl-config\ogre-before-visible-opengl.cfg at 2026-04-30T21:23:48.0436038+08:00

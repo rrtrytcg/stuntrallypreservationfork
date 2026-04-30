@@ -263,6 +263,32 @@ Smoke caveat:
 - This is W1 launch evidence, not a clean-exit smoke pass.
 - A narrow follow-up should capture visible/OpenGL game evidence, but no build/runtime-bundle blocker remains from this pass.
 
+## W1 Follow-up: Visible OpenGL Evidence
+
+Follow-up evidence was captured on 2026-04-30 after W1 closure.
+
+Result:
+
+- Runtime bundle validation still passed.
+- The game config was temporarily forced to `OpenGL 3+ Rendering Subsystem`, then restored after evidence capture.
+- A visible Ogre setup screenshot was captured with OpenGL 3+ selected.
+- A fullscreen OpenGL render-window screenshot was captured shortly after accepting the setup dialog.
+- Fresh `Ogre.log` confirmed:
+  - `RenderSystem_GL3Plus` loaded.
+  - `OpenGL 3+ Rendering Subsystem created.`
+  - `GL3PlusRenderSystem::_createRenderWindow "Stunt Rally 3", 1024x768 fullscreen`.
+  - `Created GL 4.5 context`.
+  - `GL_VERSION = 4.5.0 NVIDIA 591.86`.
+  - `GL_RENDERER = NVIDIA GeForce RTX 4070 SUPER/PCIe/SSE2`.
+
+Caveat:
+
+- A visible menu screenshot was not captured.
+- The run exited after OpenGL/MyGUI initialization because the source worktree has no `data\tracks` directory.
+- Fresh `Ogre.log` reports: `Error: NO tracks !!!  in data/tracks/  crashing.`
+- No tracks were cloned, copied, or junctioned during this follow-up.
+- This does not reopen W1 closure because W1 build/runtime-bundle reproduction remains valid; it identifies the next runtime-content evidence gap.
+
 ## Dependency Versions
 
 Starting point from `docs/BuildingVS.md`:

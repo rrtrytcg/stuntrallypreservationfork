@@ -1,0 +1,9 @@
+# Visible OpenGL Menu Launch Output
+Date: 2026-04-30
+RuntimeDir: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release
+
+Started StuntRally3.exe pid=8240 at 2026-04-30T21:20:33.9410535+08:00
+AppActivate OGRE setup: True
+Sent ENTER to OGRE setup dialog
+Screenshot: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\docs\windows\evidence\W1-followups\visible-opengl-game-screenshot.png
+Process exited before stop check. ExitCode=-1073740791

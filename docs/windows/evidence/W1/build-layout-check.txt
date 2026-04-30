@@ -1,0 +1,10 @@
+OK: SR3 root -> C:\Games\stuntrally3-3.3\fork\stuntrally3-2026
+OK: upstream Windows ritual -> C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\docs\BuildingVS.md
+OK: historical Windows release CMake -> C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\CMakeLists-WindowsRelease.txt
+OK: historical Windows plugins config -> C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release\plugins_Windows.cfg
+OK: SR3 data directory -> C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data
+Missing dependency root -> C:\dev
+Missing Ogre-Next root -> C:\dev\Ogre\ogre-next
+Missing Ogre-Next runtime output -> C:\dev\Ogre\ogre-next\build\bin\Release
+Missing MyGUI-next root -> C:\dev\mygui-next
+Missing MyGUI-next build directory -> C:\dev\mygui-next\build

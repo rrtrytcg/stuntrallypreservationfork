@@ -110,8 +110,8 @@ Checklist:
 
 - [x] Detect installed Windows version, CPU, GPU, Git, PowerShell, Visual Studio instances, MSVC toolsets, Windows SDKs, MSBuild, and CMake availability.
 - [x] Record that plain shell `cmake` is not on PATH; bundled CMake exists inside Visual Studio developer environments.
-- [ ] Choose the first W1 compiler lane: VS2022 Build Tools unless the first focused dependency pass proves it too costly.
-- [ ] Confirm or create a dependency root, expected initially as `C:\dev`.
+- [x] Choose the first W1 compiler lane: VS2022 Build Tools unless the first focused dependency pass proves it too costly.
+- [x] Confirm planned source/specimen/dependency layout and capture current missing dependency folders.
 - [ ] Download/clone/build dependencies following `docs/BuildingVS.md` before attempting any package-manager replacement.
 - [ ] Build Ogre-Next branch `v3-0` with Atmosphere and Planar Reflections enabled.
 - [ ] Build MyGUI-next branch `ogre3` against the reproduced Ogre-Next output.
@@ -146,6 +146,43 @@ Initial W1 lane decision:
 - Use VS2022 Build Tools first because it is closer to the upstream VS2019 ritual than VS2026.
 - Use the VS2022 developer environment to access bundled CMake unless a standalone CMake install is added deliberately and documented.
 - If Ogre/MyGUI/SR3 dependency friction exceeds one focused pass under VS2022, document the blocker and fall back toward VS2019 compatibility instead of drifting into compiler modernization.
+
+### W1 Dependency Layout Evidence
+
+Full captured evidence:
+
+```text
+docs/windows/evidence/W1/dependency-layout-plan.txt
+docs/windows/evidence/W1/build-layout-check.txt
+```
+
+Detected/planned layout:
+
+- Specimen/audit parent: `C:\Games\stuntrally3-3.3`.
+- Preserved packaged binary: `C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3`.
+- Clean source fork for W1 source-build work: `C:\Games\stuntrally3-3.3\fork\stuntrally3-2026`.
+- Dependency root: `C:\dev`.
+- Ogre-Next root: `C:\dev\Ogre\ogre-next`.
+- MyGUI-next root: `C:\dev\mygui-next`.
+
+Correction recorded: `$SR3_ROOT` for W1 source-build work should mean the clean source fork, not the specimen/audit parent. Use `$SPECIMEN_ROOT` for `C:\Games\stuntrally3-3.3` when referring to the external preserved binary context.
+
+Layout checker result:
+
+- Expected failure because no dependency root has been created yet.
+- Source fork checks passed: `docs/BuildingVS.md`, `CMakeLists-WindowsRelease.txt`, `bin\Release\plugins_Windows.cfg`, and `data`.
+- Missing dependency paths: `C:\dev`, `C:\dev\Ogre\ogre-next`, `C:\dev\Ogre\ogre-next\build\bin\Release`, `C:\dev\mygui-next`, and `C:\dev\mygui-next\build`.
+
+Upstream ritual mismatches to carry into the next pass:
+
+- `docs/BuildingVS.md` uses `C:\dev` examples, but `CMakeLists-WindowsRelease.txt` still contains historical `D:/_/sr/...`, `D:/_/sr/og3/...`, and `C:/b/boost_1_81_0` paths.
+- `CMakeLists-WindowsRelease.txt` sets `DIR_ONE_ABOVE` to `../og3/`, which does not match the planned `C:\dev` layout without path edits or a compatibility folder.
+- Boost is documented as a VS2019 `msvc-14.2` binary package; VS2022 first lane uses MSVC 14.44, so Boost binary compatibility remains unresolved.
+- The Ogre-Next build script named in the upstream ritual is VS2019-specific; use VS2022 first, but document the blocker and fall back if this becomes compiler modernization.
+
+Next recommended W1 step:
+
+- Create or confirm `C:\dev`, then begin the Ogre-Next reproduction pass only: fetch the upstream Ogre VS build script, pin branch `v3-0`, apply only the documented Planar Reflections setting, run under the VS2022 developer environment, and capture all deviations. Do not start MyGUI or SR3 until Ogre-Next output exists and is documented.
 
 ## W3 Script Inventory
 

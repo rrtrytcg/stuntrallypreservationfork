@@ -64,13 +64,23 @@ W1 rule: try Visual Studio 2022 first. If Ogre/MyGUI/SR3 dependency friction exc
 Use replaceable variables in documentation and scripts.
 
 ```text
-$SR3_ROOT   = C:\Games\stuntrally3-3.3
-$DEPS_ROOT  = C:\dev
-$OGRE_ROOT  = $DEPS_ROOT\Ogre\ogre-next
-$MYGUI_ROOT = $DEPS_ROOT\mygui-next
+$SPECIMEN_ROOT = C:\Games\stuntrally3-3.3
+$PACKAGE_ROOT  = $SPECIMEN_ROOT\windows binaries\Stunt Rally 3.3
+$SR3_ROOT      = C:\Games\stuntrally3-3.3\fork\stuntrally3-2026
+$DEPS_ROOT     = C:\dev
+$OGRE_ROOT     = $DEPS_ROOT\Ogre\ogre-next
+$MYGUI_ROOT    = $DEPS_ROOT\mygui-next
 ```
 
-W1 must freeze exact paths and versions here after a successful source build.
+W1 layout pass status:
+
+- `$SPECIMEN_ROOT` exists and remains the preserved binary/audit parent.
+- `$PACKAGE_ROOT` exists and remains the known-good packaged binary specimen.
+- `$SR3_ROOT` exists and is the clean Git source fork for source-build reproduction.
+- `$DEPS_ROOT`, `$OGRE_ROOT`, and `$MYGUI_ROOT` are planned but currently missing.
+- `docs/windows/evidence/W1/dependency-layout-plan.txt` records the full folder plan and current missing paths.
+
+W1 must freeze exact dependency paths and versions here after a successful source build.
 
 ## Dependency Versions
 

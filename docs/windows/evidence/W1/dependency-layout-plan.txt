@@ -1,0 +1,132 @@
+# W1 Dependency Layout Plan
+
+Date: 2026-04-30
+Scope: evidence-only dependency layout pass. No dependency builds were started.
+
+## Source and Specimen Roots
+
+Corrected W1 variables:
+
+```text
+$SPECIMEN_ROOT = C:\Games\stuntrally3-3.3
+$PACKAGE_ROOT  = C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3
+$SR3_ROOT      = C:\Games\stuntrally3-3.3\fork\stuntrally3-2026
+$DEPS_ROOT     = C:\dev
+$OGRE_ROOT     = C:\dev\Ogre\ogre-next
+$MYGUI_ROOT    = C:\dev\mygui-next
+```
+
+Correction note: the original shorthand `$SR3_ROOT = C:\Games\stuntrally3-3.3` points at the specimen/audit parent, not the clean source fork. W1 source-build work should use the clean fork path as `$SR3_ROOT` to avoid polluting the preserved binary specimen.
+
+## Expected Layout from docs/BuildingVS.md
+
+`docs/BuildingVS.md` expects a dependency root such as `C:\dev` and describes these folders:
+
+```text
+C:\dev\bullet3-3.25
+C:\dev\enet-1.3.17
+C:\dev\libogg-1.3.5
+C:\dev\libvorbis-1.3.7
+C:\dev\openal-soft-1.23.1
+C:\dev\tinyxml2-9.0.0
+C:\dev\Ogre\ogre-next
+C:\dev\Ogre\ogre-next-deps
+C:\dev\mygui-next
+```
+
+The upstream ritual also describes cloning SR3 as `C:\dev\sr3`, but this preservation fork already has the source worktree at:
+
+```text
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026
+```
+
+W1 should keep using that fork as the source root, while placing third-party dependency sources/builds under `C:\dev`.
+
+## Expected Build / Output Folders
+
+Planned W1 build/output folders:
+
+```text
+$DEPS_ROOT\bullet3-3.25\vs2010\0_Bullet3Solution.sln
+$DEPS_ROOT\bullet3-3.25\bin
+$DEPS_ROOT\enet-1.3.17\build
+$DEPS_ROOT\libogg-1.3.5\build
+$DEPS_ROOT\libvorbis-1.3.7\build
+$DEPS_ROOT\openal-soft-1.23.1\build
+$DEPS_ROOT\tinyxml2-9.0.0\build
+$DEPS_ROOT\Ogre\ogre-next\build
+$DEPS_ROOT\Ogre\ogre-next\build\bin\Release
+$DEPS_ROOT\Ogre\ogre-next\build\lib\Release
+$DEPS_ROOT\Ogre\ogre-next-deps\build\ogredeps
+$DEPS_ROOT\mygui-next\build
+$SR3_ROOT\build
+$SR3_ROOT\bin\Release
+```
+
+## Dependencies from docs/BuildingVS.md
+
+| Dependency | Upstream version / source | Planned W1 location | Current status |
+| --- | --- | --- | --- |
+| tinyxml2 | 9.0.0 source archive | `C:\dev\tinyxml2-9.0.0` | Missing |
+| Bullet | 3.25 source archive | `C:\dev\bullet3-3.25` | Missing |
+| Boost | 1.81, VS2019 msvc-14.2 binary noted | `C:\dev\boost_1_81_0` or documented alternative | Missing; path/version needs W1 decision because VS2022 uses newer MSVC |
+| Enet | 1.3.17 source archive | `C:\dev\enet-1.3.17` | Missing |
+| Ogg | 1.3.5 source archive | `C:\dev\libogg-1.3.5` | Missing |
+| Vorbis | 1.3.7 source archive | `C:\dev\libvorbis-1.3.7` | Missing |
+| OpenAL Soft | 1.23.1 source archive | `C:\dev\openal-soft-1.23.1` | Missing |
+| Ogre-Next | 3.0 / branch `v3-0`, script-built | `C:\dev\Ogre\ogre-next` | Missing |
+| Ogre-Next deps / SDL2 | Built by Ogre script | `C:\dev\Ogre\ogre-next-deps` | Missing |
+| MyGUI-next | branch `ogre3` | `C:\dev\mygui-next` | Missing |
+
+## Current Folder Existence
+
+```text
+C:\Games\stuntrally3-3.3                       exists, specimen/audit parent
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026 exists, clean source fork
+C:\dev                                          missing
+C:\dev\Ogre                                    missing
+C:\dev\Ogre\ogre-next                          missing
+C:\dev\Ogre\ogre-next\build                    missing
+C:\dev\Ogre\ogre-next\build\bin\Release        missing
+C:\dev\mygui-next                              missing
+C:\dev\mygui-next\build                        missing
+C:\dev\bullet3-3.25                            missing
+C:\dev\enet-1.3.17                             missing
+C:\dev\libogg-1.3.5                            missing
+C:\dev\libvorbis-1.3.7                         missing
+C:\dev\openal-soft-1.23.1                      missing
+C:\dev\tinyxml2-9.0.0                          missing
+```
+
+## Layout Checker Result
+
+Captured output:
+
+```text
+docs/windows/evidence/W1/build-layout-check.txt
+```
+
+Result: expected failure. The source fork layout is present, but dependency roots are missing because W1 has not downloaded or built dependencies yet.
+
+Missing paths reported by checker:
+
+```text
+C:\dev
+C:\dev\Ogre\ogre-next
+C:\dev\Ogre\ogre-next\build\bin\Release
+C:\dev\mygui-next
+C:\dev\mygui-next\build
+```
+
+## Upstream Ritual Mismatches / Uncertainties
+
+- `docs/BuildingVS.md` uses `C:\dev` examples, but `CMakeLists-WindowsRelease.txt` contains older hardcoded paths rooted at `D:/_/sr/`, `D:/_/sr/og3/`, and `C:/b/boost_1_81_0`.
+- `CMakeLists-WindowsRelease.txt` sets `DIR_ONE_ABOVE` to `../og3/`, which does not match the planned `C:\dev` layout without path edits or a compatibility folder.
+- Boost is documented as `boost_1_81_0-msvc-14.2-64.exe` for VS2019. W1 first lane is VS2022 / MSVC 14.44, so Boost binary compatibility is an explicit uncertainty to resolve before SR3 link.
+- Ogre-Next script in the upstream ritual is VS2019-specific (`build_ogre_Visual_Studio_16_2019_x64.bat`). W1 should try VS2022 carefully, but fall back or document blocker if the script/toolset friction becomes the task.
+- MyGUI-next Windows instructions are external and fork-specific; no local MyGUI checkout exists yet.
+- `amd_ags_x64.dll` is described as obtained from the internet in the upstream ritual; W1 should identify a reproducible source or record it as a binary runtime prerequisite before final W1 closure.
+
+## Next Recommended W1 Step
+
+Create or confirm `C:\dev`, then begin the Ogre-Next reproduction pass only: fetch the Ogre-Next VS build script, pin branch `v3-0`, patch only the documented Planar Reflections setting, run it under the VS2022 developer environment, and capture all deviations. Do not start MyGUI or SR3 until Ogre-Next output is present and documented.

@@ -1,0 +1,15 @@
+# SR3 Build Outputs
+Date: 2026-04-30
+
+Generated executable outputs:
+
+| Target | Path | Size bytes |
+| --- | --- | ---: |
+| StuntRally3 | C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release\Release\StuntRally3.exe | 4248064 |
+| SR-Editor3 | C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release\Release\SR-Editor3.exe | 3037696 |
+
+Output path note:
+- The historical Windows Release CMake route currently places built executables under `bin\Release\Release\`.
+- `bin\Release\StuntRally3.exe` and `bin\Release\SR-Editor3.exe` were not produced by this build command.
+- Runtime staging and smoke checks must account for this layout or document a later focused path correction.
+

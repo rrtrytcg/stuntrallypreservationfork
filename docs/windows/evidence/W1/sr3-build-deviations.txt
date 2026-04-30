@@ -1,0 +1,12 @@
+# SR3 Build Deviations
+Date: 2026-04-30
+
+Deviations from `docs/BuildingVS.md`:
+- Build was run from the VS2022 developer shell rather than opening the generated solution in the Visual Studio GUI.
+- Generator/toolchain remained `Visual Studio 17 2022` / VS2022 Build Tools instead of upstream VS2019.
+- The build command targeted only `StuntRally3` and `SR-Editor3`; `ALL_BUILD` and `SR-Translator` were not built because this pass is scoped to game/editor executables only.
+- Built executables landed under `bin\Release\Release\`, not directly under `bin\Release\`.
+
+No dependency rebuilds were performed during this pass.
+No runtime DLL staging or launch smoke was performed during this pass.
+

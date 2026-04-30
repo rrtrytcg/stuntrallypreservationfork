@@ -1,0 +1,15 @@
+# SR3 Build Command
+Date: 2026-04-30
+
+Working directory:
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026
+
+VS developer shell:
+Import-Module "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\Tools\Microsoft.VisualStudio.DevShell.dll"
+Enter-VsDevShell -VsInstallPath "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools" -SkipAutomaticLocation -DevCmdArguments "-arch=x64 -host_arch=x64"
+
+Build command:
+cmake --build "C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\build-windows-release" --config Release --target StuntRally3 SR-Editor3 -- /m
+
+Scope:
+Build only StuntRally3 and SR-Editor3. Do not stage runtime DLLs. Do not run smoke tests.

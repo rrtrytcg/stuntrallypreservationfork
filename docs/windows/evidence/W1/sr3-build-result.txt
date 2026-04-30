@@ -1,0 +1,21 @@
+# SR3 Build Result
+Date: 2026-04-30
+
+Build command:
+cmake --build "C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\build-windows-release" --config Release --target StuntRally3 SR-Editor3 -- /m
+
+Result:
+- ExitCode: 0.
+- Target StuntRally3: built successfully.
+- Target SR-Editor3: built successfully.
+
+Produced outputs:
+- C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release\Release\StuntRally3.exe
+- C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release\Release\SR-Editor3.exe
+
+Not performed:
+- Runtime DLL staging was intentionally not performed.
+- StuntRally3.exe was intentionally not launched.
+- SR-Editor3.exe was intentionally not launched.
+- Smoke tests were intentionally not run.
+

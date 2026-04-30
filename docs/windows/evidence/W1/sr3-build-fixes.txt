@@ -1,0 +1,14 @@
+# SR3 Build Fixes
+Date: 2026-04-30
+
+Focused fixes made during this build pass:
+- None.
+
+Reason:
+- Both requested Release x64 targets built successfully from the previously generated solution.
+- No compile or link blocker appeared.
+
+Existing configure-pass fixes still in force:
+- `WBR_SKIP_CONFIGURE_DLL_COPY=ON` avoids configure-time runtime DLL staging.
+- `CMake/Dependencies/OGRE.cmake` uses verified Ogre deps SDL2 paths under `C:/dev/Ogre/ogre-next-deps` instead of stale SDL2 package metadata.
+

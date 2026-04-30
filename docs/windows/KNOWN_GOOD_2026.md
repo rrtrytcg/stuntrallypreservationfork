@@ -7,7 +7,7 @@ Policy: Windows Build Rescue is reproducibility first, not modernization. Do not
 ## Status
 
 - W0 packaged binary baseline: closed enough to proceed; screenshots remain a follow-up evidence improvement.
-- W1 source build reproduction: SR3 Release x64 configure/generate succeeded; build not started.
+- W1 source build reproduction: SR3 Release x64 configure/generate succeeded; game/editor build succeeded; runtime staging and smoke not started.
 - Primary target: Windows 11, Release x64.
 - Primary renderer acceptance path: OpenGL 3+.
 - Secondary useful evidence: Vulkan plugin/device enumeration.
@@ -116,9 +116,41 @@ Verified configure-path notes:
 
 Build status:
 
-- `StuntRally3.exe` not built yet.
-- `SR-Editor3.exe` not built yet.
+- `StuntRally3.exe` built successfully from `build-windows-release\StuntRally3.sln`.
+- `SR-Editor3.exe` built successfully from `build-windows-release\StuntRally3.sln`.
+- Built executable path note: current generated output directory is `bin\Release\Release`, not historical runtime root `bin\Release`.
 - Runtime staging and smoke tests not run yet.
+
+## SR3 Release Build
+
+W1 verified the historical Windows Release build route on 2026-04-30:
+
+- Build directory: `C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\build-windows-release`.
+- Solution: `build-windows-release\StuntRally3.sln`.
+- Generator and architecture: `Visual Studio 17 2022`, `x64`.
+- Toolchain: VS2022 Build Tools.
+- CMake: VS2022 bundled CMake `3.31.6-msvc6`.
+- Build command: `cmake --build "C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\build-windows-release" --config Release --target StuntRally3 SR-Editor3 -- /m`.
+- Build result: success, exit code `0`.
+- Focused build fixes required: none.
+
+Produced executables:
+
+```text
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release\Release\StuntRally3.exe  4248064 bytes
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release\Release\SR-Editor3.exe    3037696 bytes
+```
+
+Build warnings observed but not fixed in W1:
+
+- `warning C4244` from `src/road/Grid.cpp`.
+- `warning C4005` for `M_PI`, `WINVER`, and `_WIN32_WINNT` macro redefinitions.
+
+Not yet verified:
+
+- Runtime DLL/plugin staging.
+- Runtime bundle validation against the W1-built executables.
+- Game/editor launch smoke.
 
 ## Dependency Versions
 

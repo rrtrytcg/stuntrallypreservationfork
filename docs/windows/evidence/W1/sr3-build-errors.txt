@@ -1,0 +1,16 @@
+# SR3 Build Errors And Warnings
+Date: 2026-04-30
+
+Errors:
+- No compile errors captured.
+- No link errors captured.
+- Build exit code was 0.
+
+Warnings observed:
+- `warning C4244` from MSVC tuple instantiation while compiling `src/road/Grid.cpp` for both `StuntRally3` and `SR-Editor3`.
+- `warning C4005` for `M_PI` macro redefinition while compiling `src/vdrift/game.cpp` for `StuntRally3`.
+- `warning C4005` for `WINVER` and `_WIN32_WINNT` macro redefinition while compiling editor precompiled header for `SR-Editor3`.
+
+Decision:
+- No source or CMake fix was made because warnings did not block the W1 build-only pass.
+

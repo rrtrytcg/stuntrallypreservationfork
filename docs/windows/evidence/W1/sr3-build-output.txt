@@ -1,0 +1,520 @@
+# SR3 Build Output
+Date: 2026-04-30
+Start: 2026-04-30T20:54:25.5753840+08:00
+Command: cmake --build "C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\build-windows-release" --config Release --target StuntRally3 SR-Editor3 -- /m
+
+MSBuild version 17.14.40+3e7442088 for .NET Framework
+
+  1>Checking Build System
+  Building Custom Rule C:/Games/stuntrally3-3.3/fork/stuntrally3-2026/CMakeLists.txt
+  cmake_pch.cxx
+  BtOgreExtras.cpp
+  BtOgreGP.cpp
+  BtOgrePG.cpp
+  AppGui_Compositor.cpp
+  AppGui_CompositorUtil.cpp
+  AppGui_CubeReflect.cpp
+  AppGui_Fps.cpp
+  AppGui_GI.cpp
+  AppGui_Init.cpp
+  AppGui_SSAO.cpp
+  AppGui_Shadows.cpp
+  AppGui_Util.cpp
+  AppGui_UtilMem.cpp
+  App_SceneCollects.cpp
+  App_SceneEmitters.cpp
+  App_SceneFields.cpp
+  App_SceneObjects.cpp
+  Atmosphere.cpp
+  Axes.cpp
+  CGui_Tools.cpp
+  CScene.cpp
+  CScene_Sky.cpp
+  CScene_Terrain.cpp
+  CScene_Terrain2.cpp
+  CScene_Trail.cpp
+  CScene_Veget.cpp
+  FluidsReflect.cpp
+  GraphView.cpp
+  Grass_Mesh.cpp
+  GuiCom_Options.cpp
+  GuiCom_Presets.cpp
+  GuiCom_Screen.cpp
+  GuiCom_Track.cpp
+  GuiCom_TrackUpd.cpp
+  GuiCom_TweakMat.cpp
+  GuiCom_Util.cpp
+  Gui_Popup.cpp
+  HlmsPbs2.cpp
+  HudRenderable.cpp
+  Main.cpp
+  MultiList2.cpp
+  PreviewScene.cpp
+  PreviewTex.cpp
+  Slider.cpp
+  SliderValue.cpp
+  TrackGhost.cpp
+  ViewDim.cpp
+  settings_com.cpp
+  simplexnoise.cpp
+  BltObjects.cpp
+  CAllowed.cpp
+  CData.cpp
+  FluidsXml.cpp
+  PresetsXml.cpp
+  SColor.cpp
+  SceneClasses.cpp
+  SceneXml.cpp
+  SceneXml_Load.cpp
+  SceneXml_Save.cpp
+  TracksXml.cpp
+  MessageBox.cpp
+  MessageBoxStyle.cpp
+  Grid.cpp
+  Grid_Mesh.cpp
+  PaceNotes.cpp
+  PaceNotesGen.cpp
+  Road_Edit.cpp
+  Road_File.cpp
+  Road_Markers.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\tuple(132,47): warning C4244: 'initializing': conversion from '_Ty' to '_Ty', possible loss of data [C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\build-windows-release\StuntRally3.vcxproj]
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\tuple(132,47): warning C4244:         with [C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\build-windows-release\StuntRally3.vcxproj]
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\tuple(132,47): warning C4244:         [ [C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\build-windows-release\StuntRally3.vcxproj]
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\tuple(132,47): warning C4244:             _Ty=Ogre::Real [C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\build-windows-release\StuntRally3.vcxproj]
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\tuple(132,47): warning C4244:         ] [C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\build-windows-release\StuntRally3.vcxproj]
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\tuple(132,47): warning C4244:         and [C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\build-windows-release\StuntRally3.vcxproj]
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\tuple(132,47): warning C4244:         [ [C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\build-windows-release\StuntRally3.vcxproj]
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\tuple(132,47): warning C4244:             _Ty=short [C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\build-windows-release\StuntRally3.vcxproj]
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\tuple(132,47): warning C4244:         ] [C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\build-windows-release\StuntRally3.vcxproj]
+  (compiling source file '../src/road/Grid.cpp')
+      C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\tuple(132,47):
+      the template instantiation context (the oldest one first) is
+          C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\src\road\Grid.cpp(29,19):
+          see reference to function template instantiation 'std::tuple<short,short,short>::tuple<float,float,float,0>(std::tuple<float,float,float> &&) noexcept' being compiled
+              C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\src\road\Grid.cpp(29,2):
+              see the first reference to 'std::tuple<short,short,short>::tuple' in 'GridCells::From'
+          C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\tuple(375,16):
+          see reference to function template instantiation 'std::tuple<short,short,short>::tuple<std::_Unpack_tuple_t,std::tuple<float,float,float>,0>(_Tag,_Tpl &&)' being compiled
+          with
+          [
+              _Tag=std::_Unpack_tuple_t,
+              _Tpl=std::tuple<float,float,float>
+          ]
+          C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\tuple(308,16):
+          see reference to function template instantiation 'std::tuple<short,short,short>::tuple<std::_Unpack_tuple_t,_Ty,0,1,2,0>(_Tag,_Tpl &&,std::integer_sequence<size_t,0,1,2>)' being compiled
+          with
+          [
+              _Ty=std::tuple<float,float,float>,
+              _Tag=std::_Unpack_tuple_t,
+              _Tpl=std::tuple<float,float,float>
+          ]
+          C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\tuple(983,12):
+          see reference to function template instantiation 'std::tuple<short,short,short>::tuple<std::_Exact_args_t,float,float,float,0>(_Tag,_This2 &&,float &&,float &&)' being compiled
+          with
+          [
+              _Tag=std::_Exact_args_t,
+              _This2=float
+          ]
+          C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\tuple(301,102):
+          see reference to function template instantiation 'std::_Tuple_val<_This>::_Tuple_val<_Ty>(_Other &&)' being compiled
+          with
+          [
+              _This=short,
+              _Ty=Ogre::Real,
+              _Other=Ogre::Real
+          ]
+  
+  Road_Mesh.cpp
+  Road_Prepass.cpp
+  Road_Rebuild.cpp
+  SplineBase.cpp
+  BaseSystem.cpp
+  GameEntityManager.cpp
+  GraphicsSystem.cpp
+  GraphicsSystemCache.cpp
+  GraphicsSystemEntity.cpp
+  LogicSystem.cpp
+  SdlInputHandler.cpp
+  MainEntryPoints.cpp
+  StaticPluginLoader.cpp
+  AndroidSystems.cpp
+  MainLoopMultiThreaded.cpp
+  MainLoopSingleThreaded.cpp
+  UnitTesting.cpp
+  MessageQueueSystem.cpp
+  HdrUtils.cpp
+  MeshUtils.cpp
+  MiscUtils.cpp
+  ScreenSpaceReflections.cpp
+  SmaaUtils.cpp
+  TestUtils.cpp
+  OgrePlanarReflectionActor.cpp
+  OgrePlanarReflections.cpp
+  Terra.cpp
+  Terra2.cpp
+  TerraShadowMapper.cpp
+  TerraWorkspaceListener.cpp
+  TerrainCell.cpp
+  OgreHlmsJsonTerra.cpp
+  OgreHlmsTerra.cpp
+  OgreHlmsTerraDatablock.cpp
+  OgreHlmsPbsTerraShadows.cpp
+  SoundBase.cpp
+  SoundBaseMgr.cpp
+  SoundBaseMgrUtil.cpp
+  SoundDynamic.cpp
+  SoundMgr_Init.cpp
+  SoundMgr_Update.cpp
+  Buoyancy.cpp
+  aabb.cpp
+  car.cpp
+  car_sound.cpp
+  caraero.cpp
+  carbrake.cpp
+  carclutch.cpp
+  carcontrolmap_local.cpp
+  cardifferential.cpp
+  cardynamics.cpp
+  cardynamics_load.cpp
+  cardynamics_simulate.cpp
+  cardynamics_update.cpp
+  carengine.cpp
+  carsuspension.cpp
+  cartire.cpp
+  cartransmission.cpp
+  carwheel.cpp
+  collision_world.cpp
+  configfile.cpp
+  crashdetection.cpp
+  endian_utility.cpp
+  forcefeedback.cpp
+  game.cpp
+  linearframe.cpp
+  linearinterp.cpp
+  mathplane.cpp
+  mathvector.cpp
+  optional.cpp
+  par.cpp
+  paths.cpp
+  quaternion.cpp
+  reseatable_reference.cpp
+  rigidbody.cpp
+  rotationalframe.cpp
+  suspensionbump.cpp
+  timer.cpp
+  toggle.cpp
+  BaseApp.cpp
+  BaseApp_Create.cpp
+  BaseApp_Old.cpp
+  CGame.cpp
+  CGui_Menu.cpp
+  CHud.cpp
+  CInput.cpp
+  CarModel_Config.cpp
+  CarModel_Create.cpp
+  CarModel_Update.cpp
+  CarPosInfo.cpp
+  Challenges.cpp
+  ChampChall.cpp
+  Championships.cpp
+  Collections.cpp
+  FollowCamera.cpp
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\src\vdrift\game.cpp(34,9): warning C4005: 'M_PI': macro redefinition [C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\build-windows-release\StuntRally3.vcxproj]
+  (compiling source file '../src/vdrift/game.cpp')
+      C:\dev\Ogre\ogre-next-deps\src\SDL2\include\SDL_stdinc.h(638,9):
+      see previous definition of 'M_PI'
+  
+  Game_Create.cpp
+  Game_SceneInit.cpp
+  Game_Update.cpp
+  Gui_Events.cpp
+  Gui_Games.cpp
+  Gui_Init.cpp
+  Gui_InitCar.cpp
+  Gui_InitGames.cpp
+  Gui_Input.cpp
+  Gui_KeyPress.cpp
+  Gui_Network.cpp
+  Gui_Paints.cpp
+  Gui_ProgressLoad.cpp
+  Gui_Replay.cpp
+  Gui_TweakSim.cpp
+  Gui_Util.cpp
+  Gui_UtilCar.cpp
+  Hud_Arrow.cpp
+  Hud_Create.cpp
+  Hud_Graphs.cpp
+  Hud_Size.cpp
+  Hud_UpdDebug.cpp
+  Hud_Update.cpp
+  Hud_UpdatesAll.cpp
+  PaintsIni.cpp
+  Replay.cpp
+  Rewind.cpp
+  Update_PerfTest.cpp
+  Update_Poses.cpp
+  Update_Thread.cpp
+  settings.cpp
+  CareerXml.cpp
+  ChallengesXml.cpp
+  ChampsXml.cpp
+  CollectXml.cpp
+  ICSChannel.cpp
+  ICSControl.cpp
+  ICSInputControlSystem.cpp
+  ICSInputControlSystem_joystick.cpp
+  ICSInputControlSystem_keyboard.cpp
+  ICSInputControlSystem_mouse.cpp
+  ICSPrerequisites.cpp
+  gameclient.cpp
+  masterclient.cpp
+  StuntRally3.vcxproj -> C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release\Release\StuntRally3.exe
+MSBuild version 17.14.40+3e7442088 for .NET Framework
+
+  Building Custom Rule C:/Games/stuntrally3-3.3/fork/stuntrally3-2026/CMakeLists.txt
+  cmake_pch.cxx
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\src\editor\pch.h(31,10): warning C4005: 'WINVER': macro redefinition [C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\build-windows-release\SR-Editor3.vcxproj]
+  (compiling source file 'CMakeFiles/SR-Editor3.dir/cmake_pch.cxx')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\sdkddkver.h(249,9):
+      see previous definition of 'WINVER'
+  
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\src\editor\pch.h(32,10): warning C4005: '_WIN32_WINNT': macro redefinition [C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\build-windows-release\SR-Editor3.vcxproj]
+  (compiling source file 'CMakeFiles/SR-Editor3.dir/cmake_pch.cxx')
+      C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\sdkddkver.h(228,10):
+      see previous definition of '_WIN32_WINNT'
+  
+  BtOgreExtras.cpp
+  BtOgreGP.cpp
+  BtOgrePG.cpp
+  AppGui_Compositor.cpp
+  AppGui_CompositorUtil.cpp
+  AppGui_CubeReflect.cpp
+  AppGui_Fps.cpp
+  AppGui_GI.cpp
+  AppGui_Init.cpp
+  AppGui_SSAO.cpp
+  AppGui_Shadows.cpp
+  AppGui_Util.cpp
+  AppGui_UtilMem.cpp
+  App_SceneCollects.cpp
+  App_SceneEmitters.cpp
+  App_SceneFields.cpp
+  App_SceneObjects.cpp
+  Atmosphere.cpp
+  Axes.cpp
+  CGui_Tools.cpp
+  CScene.cpp
+  CScene_Sky.cpp
+  CScene_Terrain.cpp
+  CScene_Terrain2.cpp
+  CScene_Trail.cpp
+  CScene_Veget.cpp
+  FluidsReflect.cpp
+  GraphView.cpp
+  Grass_Mesh.cpp
+  GuiCom_Options.cpp
+  GuiCom_Presets.cpp
+  GuiCom_Screen.cpp
+  GuiCom_Track.cpp
+  GuiCom_TrackUpd.cpp
+  GuiCom_TweakMat.cpp
+  GuiCom_Util.cpp
+  Gui_Popup.cpp
+  HlmsPbs2.cpp
+  HudRenderable.cpp
+  Main.cpp
+  MultiList2.cpp
+  PreviewScene.cpp
+  PreviewTex.cpp
+  Slider.cpp
+  SliderValue.cpp
+  TrackGhost.cpp
+  ViewDim.cpp
+  settings_com.cpp
+  simplexnoise.cpp
+  BltObjects.cpp
+  CAllowed.cpp
+  CData.cpp
+  FluidsXml.cpp
+  PresetsXml.cpp
+  SColor.cpp
+  SceneClasses.cpp
+  SceneXml.cpp
+  SceneXml_Load.cpp
+  SceneXml_Save.cpp
+  TracksXml.cpp
+  MessageBox.cpp
+  MessageBoxStyle.cpp
+  Grid.cpp
+  Grid_Mesh.cpp
+  PaceNotes.cpp
+  PaceNotesGen.cpp
+  Road_Edit.cpp
+  Road_File.cpp
+  Road_Markers.cpp
+  Road_Mesh.cpp
+  Road_Prepass.cpp
+  Road_Rebuild.cpp
+  SplineBase.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\tuple(132,47): warning C4244: 'initializing': conversion from '_Ty' to '_Ty', possible loss of data [C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\build-windows-release\SR-Editor3.vcxproj]
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\tuple(132,47): warning C4244:         with [C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\build-windows-release\SR-Editor3.vcxproj]
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\tuple(132,47): warning C4244:         [ [C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\build-windows-release\SR-Editor3.vcxproj]
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\tuple(132,47): warning C4244:             _Ty=Ogre::Real [C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\build-windows-release\SR-Editor3.vcxproj]
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\tuple(132,47): warning C4244:         ] [C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\build-windows-release\SR-Editor3.vcxproj]
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\tuple(132,47): warning C4244:         and [C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\build-windows-release\SR-Editor3.vcxproj]
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\tuple(132,47): warning C4244:         [ [C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\build-windows-release\SR-Editor3.vcxproj]
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\tuple(132,47): warning C4244:             _Ty=short [C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\build-windows-release\SR-Editor3.vcxproj]
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\tuple(132,47): warning C4244:         ] [C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\build-windows-release\SR-Editor3.vcxproj]
+  (compiling source file '../src/road/Grid.cpp')
+      C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\tuple(132,47):
+      the template instantiation context (the oldest one first) is
+          C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\src\road\Grid.cpp(29,19):
+          see reference to function template instantiation 'std::tuple<short,short,short>::tuple<float,float,float,0>(std::tuple<float,float,float> &&) noexcept' being compiled
+              C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\src\road\Grid.cpp(29,2):
+              see the first reference to 'std::tuple<short,short,short>::tuple' in 'GridCells::From'
+          C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\tuple(375,16):
+          see reference to function template instantiation 'std::tuple<short,short,short>::tuple<std::_Unpack_tuple_t,std::tuple<float,float,float>,0>(_Tag,_Tpl &&)' being compiled
+          with
+          [
+              _Tag=std::_Unpack_tuple_t,
+              _Tpl=std::tuple<float,float,float>
+          ]
+          C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\tuple(308,16):
+          see reference to function template instantiation 'std::tuple<short,short,short>::tuple<std::_Unpack_tuple_t,_Ty,0,1,2,0>(_Tag,_Tpl &&,std::integer_sequence<size_t,0,1,2>)' being compiled
+          with
+          [
+              _Ty=std::tuple<float,float,float>,
+              _Tag=std::_Unpack_tuple_t,
+              _Tpl=std::tuple<float,float,float>
+          ]
+          C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\tuple(983,12):
+          see reference to function template instantiation 'std::tuple<short,short,short>::tuple<std::_Exact_args_t,float,float,float,0>(_Tag,_This2 &&,float &&,float &&)' being compiled
+          with
+          [
+              _Tag=std::_Exact_args_t,
+              _This2=float
+          ]
+          C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\tuple(301,102):
+          see reference to function template instantiation 'std::_Tuple_val<_This>::_Tuple_val<_Ty>(_Other &&)' being compiled
+          with
+          [
+              _This=short,
+              _Ty=Ogre::Real,
+              _Other=Ogre::Real
+          ]
+  
+  BaseSystem.cpp
+  GameEntityManager.cpp
+  GraphicsSystem.cpp
+  GraphicsSystemCache.cpp
+  GraphicsSystemEntity.cpp
+  LogicSystem.cpp
+  SdlInputHandler.cpp
+  MainEntryPoints.cpp
+  StaticPluginLoader.cpp
+  AndroidSystems.cpp
+  MainLoopMultiThreaded.cpp
+  MainLoopSingleThreaded.cpp
+  UnitTesting.cpp
+  MessageQueueSystem.cpp
+  HdrUtils.cpp
+  MeshUtils.cpp
+  MiscUtils.cpp
+  ScreenSpaceReflections.cpp
+  SmaaUtils.cpp
+  TestUtils.cpp
+  OgrePlanarReflectionActor.cpp
+  OgrePlanarReflections.cpp
+  Terra.cpp
+  Terra2.cpp
+  TerraShadowMapper.cpp
+  TerraWorkspaceListener.cpp
+  TerrainCell.cpp
+  OgreHlmsJsonTerra.cpp
+  OgreHlmsTerra.cpp
+  OgreHlmsTerraDatablock.cpp
+  OgreHlmsPbsTerraShadows.cpp
+  SoundBase.cpp
+  SoundBaseMgr.cpp
+  SoundBaseMgrUtil.cpp
+  SoundDynamic.cpp
+  SoundMgr_Init.cpp
+  SoundMgr_Update.cpp
+  Buoyancy.cpp
+  aabb.cpp
+  car.cpp
+  car_sound.cpp
+  caraero.cpp
+  carbrake.cpp
+  carclutch.cpp
+  carcontrolmap_local.cpp
+  cardifferential.cpp
+  cardynamics.cpp
+  cardynamics_load.cpp
+  cardynamics_simulate.cpp
+  cardynamics_update.cpp
+  carengine.cpp
+  carsuspension.cpp
+  cartire.cpp
+  cartransmission.cpp
+  carwheel.cpp
+  collision_world.cpp
+  configfile.cpp
+  crashdetection.cpp
+  endian_utility.cpp
+  forcefeedback.cpp
+  game.cpp
+  linearframe.cpp
+  linearinterp.cpp
+  mathplane.cpp
+  mathvector.cpp
+  optional.cpp
+  par.cpp
+  paths.cpp
+  quaternion.cpp
+  reseatable_reference.cpp
+  rigidbody.cpp
+  rotationalframe.cpp
+  suspensionbump.cpp
+  timer.cpp
+  toggle.cpp
+  AlignTerToRoad.cpp
+  App_Cursors.cpp
+  App_Render2tex.cpp
+  App_SceneInitEd.cpp
+  App_TerrainEdit.cpp
+  BaseApp.cpp
+  BaseApp_Old.cpp
+  BrushesIni.cpp
+  CApp.cpp
+  CGui.cpp
+  ExportRoR.cpp
+  ExportRoR_Objects.cpp
+  ExportRoR_Road.cpp
+  ExportRoR_Terrain.cpp
+  ExportRoR_Tools.cpp
+  ExportRoR_Veget.cpp
+  ExportRoR_WaterSky.cpp
+  Gui_Events.cpp
+  Gui_EventsPick.cpp
+  Gui_EventsTer.cpp
+  Gui_Init.cpp
+  Gui_InitLists.cpp
+  Gui_TerrainBrushes.cpp
+  Gui_Tools.cpp
+  Gui_Util.cpp
+  Gui_UtilitySystem.cpp
+  Gui_Warnings.cpp
+  Update_EditKeyTxt.cpp
+  Update_EditMouse.cpp
+  Update_Frame.cpp
+  Update_Frame2.cpp
+  Update_Key.cpp
+  Update_KeyEdit.cpp
+  Update_KeyRoad.cpp
+  settings.cpp
+  SR-Editor3.vcxproj -> C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release\Release\SR-Editor3.exe
+
+End: 2026-04-30T20:55:08.8317109+08:00
+ExitCode: 0
+

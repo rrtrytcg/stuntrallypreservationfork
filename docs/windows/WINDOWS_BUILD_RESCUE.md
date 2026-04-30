@@ -116,7 +116,7 @@ Checklist:
 - [x] Build Ogre-Next branch `v3-0` with Atmosphere and Planar Reflections enabled.
 - [x] Build MyGUI-next branch `ogre3` against the reproduced Ogre-Next output.
 - [x] Configure SR3 Release x64 using the historical Windows release CMake route, documenting every path edit or file rename.
-- [ ] Build `StuntRally3.exe` and `SR-Editor3.exe`.
+- [x] Build `StuntRally3.exe` and `SR-Editor3.exe`.
 - [ ] Stage runtime DLLs and `plugins.cfg` using the W3 scripts where possible.
 - [ ] Validate the built runtime bundle, generate a W1 manifest, and run launch smoke.
 - [ ] Promote the final successful machine/toolchain/dependency layout into `KNOWN_GOOD_2026.md`.
@@ -418,6 +418,52 @@ Not performed:
 Next recommended W1 step:
 
 - Begin the SR3 build pass only: build `StuntRally3.exe` and `SR-Editor3.exe` from `build-windows-release\StuntRally3.sln` in Release x64, capture build output, make only focused link/compile fixes if necessary, and stop before runtime staging or smoke tests.
+
+### W1 SR3 Release Build Evidence
+
+Full captured evidence:
+
+```text
+docs/windows/evidence/W1/sr3-build-command.txt
+docs/windows/evidence/W1/sr3-build-output.txt
+docs/windows/evidence/W1/sr3-build-result.txt
+docs/windows/evidence/W1/sr3-build-errors.txt
+docs/windows/evidence/W1/sr3-build-fixes.txt
+docs/windows/evidence/W1/sr3-build-outputs.txt
+docs/windows/evidence/W1/sr3-build-deviations.txt
+```
+
+Result:
+
+- Build command was run from the VS2022 developer shell.
+- Build directory: `build-windows-release`.
+- Build command: `cmake --build ... --config Release --target StuntRally3 SR-Editor3 -- /m`.
+- Target `StuntRally3`: success.
+- Target `SR-Editor3`: success.
+- Build exit code: `0`.
+- No source or CMake fixes were needed during the build pass.
+
+Produced executables:
+
+- `C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release\Release\StuntRally3.exe` (`4248064` bytes).
+- `C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release\Release\SR-Editor3.exe` (`3037696` bytes).
+
+Observed warnings:
+
+- `warning C4244` from MSVC tuple instantiation while compiling `src/road/Grid.cpp`.
+- `warning C4005` for `M_PI` macro redefinition while compiling `src/vdrift/game.cpp`.
+- `warning C4005` for `WINVER` and `_WIN32_WINNT` macro redefinition while compiling the editor precompiled header.
+
+Not performed:
+
+- Runtime DLL staging was not performed.
+- `StuntRally3.exe` was not launched.
+- `SR-Editor3.exe` was not launched.
+- Smoke tests were not run.
+
+Next recommended W1 step:
+
+- Begin the runtime staging pass only: decide whether to stage against the produced `bin\Release\Release` executable location or make a focused output-path correction to match the historical `bin\Release` runtime directory, copy only the documented W1 DLL/plugin set, validate with `Test-WindowsRuntimeBundle.ps1`, generate a W1 runtime manifest, and stop before launch smoke unless explicitly asked.
 
 ## W3 Script Inventory
 

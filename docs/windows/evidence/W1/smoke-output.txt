@@ -1,0 +1,27 @@
+# W1 Smoke Output
+Date: 2026-04-30
+RuntimeDir: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release
+Command: tools/windows/Start-WindowsSmoke.ps1 -RuntimeDir "C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release" -RunEditor -ArgumentList "check" -TimeoutSeconds 45
+
+Starting smoke: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release\StuntRally3.exe check
+Smoke timed out after 45 seconds; stopping process id 15484.
+Game smoke exit code: 124
+Starting smoke: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release\SR-Editor3.exe check
+Smoke timed out after 45 seconds; stopping process id 7536.
+Editor smoke exit code: 124
+Expected log/config directory: C:\Users\julie\AppData\Roaming\stuntrally3
+
+Name         Length LastWriteTime
+----         ------ -------------
+editor.cfg     3231 29/4/2026 9:57:53 pm
+game.cfg       6097 29/4/2026 9:56:26 pm
+MyGUI_ed.log  11388 29/4/2026 9:58:06 pm
+MyGUI.log     16311 29/4/2026 9:56:26 pm
+ogre_ed.cfg     515 29/4/2026 9:58:06 pm
+Ogre_ed.log       0 30/4/2026 9:04:43 pm
+ogre.cfg        511 29/4/2026 9:56:00 pm
+Ogre.log       5573 30/4/2026 9:03:59 pm
+
+
+ExitCode: 124
+

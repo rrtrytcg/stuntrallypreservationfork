@@ -1,0 +1,4 @@
+# W1 Smoke Process Check
+Date: 2026-04-30
+
+No StuntRally3 or SR-Editor3 processes remained after smoke helper timeout/stop.

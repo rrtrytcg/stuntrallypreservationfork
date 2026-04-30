@@ -118,7 +118,7 @@ Checklist:
 - [x] Configure SR3 Release x64 using the historical Windows release CMake route, documenting every path edit or file rename.
 - [x] Build `StuntRally3.exe` and `SR-Editor3.exe`.
 - [x] Stage runtime DLLs and `plugins.cfg` using the W3 scripts where possible.
-- [ ] Validate the built runtime bundle, generate a W1 manifest, and run launch smoke.
+- [x] Validate the built runtime bundle, generate a W1 manifest, and run launch smoke.
 - [ ] Promote the final successful machine/toolchain/dependency layout into `KNOWN_GOOD_2026.md`.
 
 ### W1 Machine Detection Snapshot
@@ -524,6 +524,64 @@ W0 comparison:
 Next recommended W1 step:
 
 - Begin launch smoke only: run `StuntRally3.exe` and `SR-Editor3.exe` from the staged W1 runtime root, capture logs/config deltas, record renderer/API behavior, and make only focused runtime-bundle corrections if a missing DLL/plugin/config blocker appears.
+
+### W1 Launch Smoke Evidence
+
+Full captured evidence:
+
+```text
+docs/windows/evidence/W1/smoke-command.txt
+docs/windows/evidence/W1/smoke-output.txt
+docs/windows/evidence/W1/smoke-result.txt
+docs/windows/evidence/W1/smoke-deviations.txt
+docs/windows/evidence/W1/smoke-log-times-before.txt
+docs/windows/evidence/W1/smoke-log-times-after.txt
+docs/windows/evidence/W1/smoke-process-check.txt
+docs/windows/evidence/W1/runtime-bundle-report-after-smoke.txt
+docs/windows/evidence/W1/runtime-manifest-after-smoke.csv
+docs/windows/evidence/W1/logs-after-smoke/
+docs/windows/evidence/W1/config-after-smoke/
+```
+
+Result:
+
+- Pre-smoke runtime bundle validation passed.
+- `StuntRally3.exe` launched from `bin\Release`.
+- `SR-Editor3.exe` launched from `bin\Release`.
+- Both hidden-window smoke launches timed out after 45 seconds and were stopped by the helper.
+- Fresh Ogre logs were captured for both game and editor.
+- MyGUI logs and config files were copied after smoke for context; their timestamps did not update during this hidden-window smoke run.
+- No immediate missing-DLL, missing-plugin, or missing-config blocker was observed.
+- No focused runtime-bundle correction was needed.
+- Runtime manifest after smoke was generated.
+
+Game launch evidence:
+
+- Fresh `Ogre.log` at 21:03:58-21:03:59.
+- Loaded `RenderSystem_GL3Plus`.
+- Loaded `RenderSystem_Vulkan`.
+- Loaded `Plugin_ParticleFX`.
+- Enumerated Vulkan devices: `NVIDIA GeForce RTX 4070 SUPER` and `AMD Radeon(TM) Graphics`.
+- Current `ogre.cfg` selects `Vulkan Rendering Subsystem`.
+
+Editor launch evidence:
+
+- Fresh `Ogre_ed.log` at 21:04:43.
+- Loaded `RenderSystem_GL3Plus`.
+- Loaded `RenderSystem_Vulkan`.
+- Loaded `Plugin_ParticleFX`.
+- Enumerated Vulkan devices: `NVIDIA GeForce RTX 4070 SUPER` and `AMD Radeon(TM) Graphics`.
+- Current `ogre_ed.cfg` selects `OpenGL 3+ Rendering Subsystem`.
+
+Interpretation:
+
+- W1 source-built launch evidence is present for both game and editor.
+- The smoke helper timeout is a recorded caveat, not a clean-exit pass.
+- A game-specific OpenGL rendered-window smoke remains useful follow-up evidence because the current game config selected Vulkan, while editor config selected OpenGL 3+.
+
+Next recommended W1 step:
+
+- Run a W1 closure/promotion pass: mark W1 closed with the timeout caveat, promote the successful known-good ritual into `KNOWN_GOOD_2026.md`, and optionally add a narrow follow-up item for visible/OpenGL screenshot evidence without reopening build reproduction.
 
 ## W3 Script Inventory
 

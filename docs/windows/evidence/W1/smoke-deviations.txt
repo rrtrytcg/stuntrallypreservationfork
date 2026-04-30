@@ -1,0 +1,16 @@
+# W1 Launch Smoke Deviations
+Date: 2026-04-30
+
+Deviations and caveats:
+- The smoke helper launches windows hidden and waits for process exit. Both game and editor timed out after 45 seconds and were stopped by the helper.
+- Timeout is not treated as a clean exit.
+- Fresh Ogre logs are used as the launch evidence because they show both source-built executables reached Ogre initialization and loaded required plugins.
+- Game `ogre.cfg` currently selects Vulkan. Editor `ogre_ed.cfg` currently selects OpenGL 3+.
+- OpenGL 3+ plugin loading is verified for both processes, and editor config selects OpenGL 3+, but a game-specific OpenGL rendered-window smoke remains useful follow-up evidence.
+
+Focused corrections made:
+- None. No missing DLL/plugin/config blocker appeared.
+
+Direct3D11:
+- Not required for W0-W3 and not used as an acceptance path.
+

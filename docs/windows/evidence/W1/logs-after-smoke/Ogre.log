@@ -1,0 +1,89 @@
+21:03:58: Creating resource group General
+21:03:58: Creating resource group Internal
+21:03:58: Creating resource group Autodetect
+21:03:58: SceneManagerFactory for type 'DefaultSceneManager' registered.
+21:03:58: Registering ResourceManager for type Material
+21:03:58: Registering ResourceManager for type Mesh
+21:03:58: Registering ResourceManager for type Mesh2
+21:03:58: Registering ResourceManager for type OldSkeleton
+21:03:58: MovableObjectFactory for type 'ParticleSystem' registered.
+21:03:58: ArchiveFactory for archive type FileSystem registered.
+21:03:58: ArchiveFactory for archive type Zip registered.
+21:03:58: ArchiveFactory for archive type EmbeddedZip registered.
+21:03:58: DDS codec registering
+21:03:58: FreeImage version: 3.18.0
+21:03:58: This program uses FreeImage, a free, open source image library supporting all common bitmap formats. See http://freeimage.sourceforge.net for details
+21:03:58: Supported formats: bmp,ico,jpg,jif,jpeg,jpe,jng,koa,iff,lbm,mng,pbm,pbm,pcd,pcx,pgm,pgm,png,ppm,ppm,ras,tga,targa,tif,tiff,wap,wbmp,wbm,psd,psb,cut,xbm,xpm,gif,hdr,g3,sgi,rgb,rgba,bw,exr,j2k,j2c,jp2,pfm,pct,pict,pic,3fr,arw,bay,bmq,cap,cine,cr2,crw,cs1,dc2,dcr,drf,dsc,dng,erf,fff,ia,iiq,k25,kc2,kdc,mdc,mef,mos,mrw,nef,nrw,orf,pef,ptx,pxn,qtk,raf,raw,rdc,rw2,rwl,rwz,sr2,srf,srw,sti,x3f,webp,jxr,wdp,hdp
+21:03:58: OITD codec registering
+21:03:58: Registering ResourceManager for type HighLevelGpuProgram
+21:03:58: MovableObjectFactory for type 'Decal' registered.
+21:03:58: MovableObjectFactory for type 'InternalCubemapProbe' registered.
+21:03:58: MovableObjectFactory for type 'Entity' registered.
+21:03:58: MovableObjectFactory for type 'Item' registered.
+21:03:58: MovableObjectFactory for type 'Light' registered.
+21:03:58: MovableObjectFactory for type 'Rectangle2Dv2' registered.
+21:03:58: MovableObjectFactory for type 'BillboardSet' registered.
+21:03:58: MovableObjectFactory for type 'ManualObject2' registered.
+21:03:58: MovableObjectFactory for type 'BillboardChain' registered.
+21:03:58: MovableObjectFactory for type 'RibbonTrail' registered.
+21:03:58: MovableObjectFactory for type 'WireAabb' registered.
+21:03:58: Loading library .\RenderSystem_GL3Plus
+21:03:58: Installing plugin: GL 3+ RenderSystem
+21:03:58: OpenGL 3+ Rendering Subsystem created.
+21:03:58: Plugin successfully installed
+21:03:58: Loading library .\RenderSystem_Vulkan
+21:03:58: Installing plugin: Vulkan RenderSystem
+21:03:58: [Vulkan] Initializing VkInstance
+21:03:58: Found instance extension: VK_KHR_device_group_creation
+21:03:58: Found instance extension: VK_KHR_display
+21:03:58: Found instance extension: VK_KHR_external_fence_capabilities
+21:03:58: Found instance extension: VK_KHR_external_memory_capabilities
+21:03:58: Found instance extension: VK_KHR_external_semaphore_capabilities
+21:03:58: Found instance extension: VK_KHR_get_display_properties2
+21:03:58: Found instance extension: VK_KHR_get_physical_device_properties2
+21:03:58: Found instance extension: VK_KHR_get_surface_capabilities2
+21:03:58: Found instance extension: VK_KHR_surface
+21:03:58: Found instance extension: VK_KHR_surface_maintenance1
+21:03:58: Found instance extension: VK_KHR_surface_protected_capabilities
+21:03:58: Found instance extension: VK_KHR_win32_surface
+21:03:58: Found instance extension: VK_EXT_debug_report
+21:03:58: Found instance extension: VK_EXT_debug_utils
+21:03:58: Found instance extension: VK_EXT_direct_mode_display
+21:03:58: Found instance extension: VK_EXT_surface_maintenance1
+21:03:58: Found instance extension: VK_EXT_swapchain_colorspace
+21:03:58: Found instance extension: VK_NV_external_memory_capabilities
+21:03:58: Found instance extension: VK_KHR_portability_enumeration
+21:03:58: Found instance extension: VK_LUNARG_direct_driver_loading
+21:03:58: Found instance layer: VK_LAYER_NV_optimus
+21:03:58: Found instance layer: VK_LAYER_NV_present
+21:03:58: Found instance layer: VK_LAYER_AMD_switchable_graphics
+21:03:58: Found instance layer: VK_LAYER_OBS_HOOK
+21:03:58: Requesting Instance Extension: VK_KHR_get_physical_device_properties2
+21:03:58: Requesting Instance Extension: VK_KHR_win32_surface
+21:03:58: Requesting Instance Extension: VK_KHR_surface
+21:03:59: [Vulkan] Found 2 devices
+21:03:59: [Vulkan] Found devices:
+21:03:59: NVIDIA GeForce RTX 4070 SUPER #0
+21:03:59: AMD Radeon(TM) Graphics #1
+21:03:59: Plugin successfully installed
+21:03:59: Loading library .\Plugin_ParticleFX
+21:03:59: Installing plugin: ParticleFX
+21:03:59: Particle Emitter Type 'Point' registered
+21:03:59: Particle Emitter Type 'Box' registered
+21:03:59: Particle Emitter Type 'Ellipsoid' registered
+21:03:59: Particle Emitter Type 'Cylinder' registered
+21:03:59: Particle Emitter Type 'Ring' registered
+21:03:59: Particle Emitter Type 'HollowEllipsoid' registered
+21:03:59: Particle Affector Type 'LinearForce' registered
+21:03:59: Particle Affector Type 'ColourFader' registered
+21:03:59: Particle Affector Type 'ColourFader2' registered
+21:03:59: Particle Affector Type 'ColourImage' registered
+21:03:59: Particle Affector Type 'ColourInterpolator' registered
+21:03:59: Particle Affector Type 'ScaleInterpolator' registered
+21:03:59: Particle Affector Type 'Scaler' registered
+21:03:59: Particle Affector Type 'Rotator' registered
+21:03:59: Particle Affector Type 'DirectionRandomiser' registered
+21:03:59: Particle Affector Type 'DeflectorPlane' registered
+21:03:59: Plugin successfully installed
+21:03:59: *-*-* OGRE Initialising
+21:03:59: *-*-* Version 3.0.0 (Eris)

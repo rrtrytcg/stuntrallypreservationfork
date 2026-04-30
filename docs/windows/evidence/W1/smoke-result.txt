@@ -1,0 +1,45 @@
+# W1 Launch Smoke Result
+Date: 2026-04-30
+
+Runtime directory:
+`C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release`
+
+Pre-smoke validation:
+- `tools/windows/Test-WindowsRuntimeBundle.ps1` passed.
+
+Smoke command:
+- `tools/windows/Start-WindowsSmoke.ps1 -RuntimeDir "C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release" -RunEditor -ArgumentList "check" -TimeoutSeconds 45`
+
+Game result:
+- `StuntRally3.exe` launched from the staged W1 runtime root.
+- The hidden-window smoke helper timed out after 45 seconds and stopped the process.
+- Fresh `Ogre.log` was written at 21:03:58-21:03:59.
+- The log shows GL3Plus, Vulkan, and ParticleFX plugins loaded successfully.
+- The log shows Vulkan device enumeration for `NVIDIA GeForce RTX 4070 SUPER` and `AMD Radeon(TM) Graphics`.
+- No immediate missing-DLL, missing-plugin, or missing-config blocker was observed in the captured log.
+- Current `ogre.cfg` selects `Vulkan Rendering Subsystem` for the game.
+
+Editor result:
+- `SR-Editor3.exe` launched from the staged W1 runtime root.
+- The hidden-window smoke helper timed out after 45 seconds and stopped the process.
+- Fresh `Ogre_ed.log` was written at 21:04:43.
+- The log shows GL3Plus, Vulkan, and ParticleFX plugins loaded successfully.
+- The log shows Vulkan device enumeration for `NVIDIA GeForce RTX 4070 SUPER` and `AMD Radeon(TM) Graphics`.
+- No immediate missing-DLL, missing-plugin, or missing-config blocker was observed in the captured log.
+- Current `ogre_ed.cfg` selects `OpenGL 3+ Rendering Subsystem` for the editor.
+
+Interpretation:
+- This is accepted as W1 launch evidence: both source-built executables started from the built runtime root and initialized Ogre/plugin loading far enough to rule out immediate runtime-bundle failures.
+- It is not recorded as a clean process-exit smoke because the hidden smoke helper timed out and killed both processes.
+
+Not performed:
+- No dependency rebuild.
+- No SR3 reconfigure.
+- No SR3 rebuild.
+- No runtime-bundle correction.
+- No gameplay testing.
+
+Snapshot note:
+- `logs-after-smoke/` and `config-after-smoke/` contain the post-smoke copied `%APPDATA%\stuntrally3` files.
+- `Ogre.log` and `Ogre_ed.log` were freshly updated by this W1 smoke pass.
+- MyGUI logs and config files were copied after smoke for context, but their timestamps did not update during this hidden-window smoke run.

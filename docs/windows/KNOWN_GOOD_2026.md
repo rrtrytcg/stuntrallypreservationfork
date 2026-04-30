@@ -7,7 +7,7 @@ Policy: Windows Build Rescue is reproducibility first, not modernization. Do not
 ## Status
 
 - W0 packaged binary baseline: closed enough to proceed; screenshots remain a follow-up evidence improvement.
-- W1 source build reproduction: SR3 Release x64 configure/generate succeeded; game/editor build succeeded; runtime staging and bundle validation succeeded; smoke not started.
+- W1 source build reproduction: SR3 Release x64 configure/generate succeeded; game/editor build succeeded; runtime staging and bundle validation succeeded; launch smoke produced game/editor initialization evidence with timeout caveat.
 - Primary target: Windows 11, Release x64.
 - Primary renderer acceptance path: OpenGL 3+.
 - Secondary useful evidence: Vulkan plugin/device enumeration.
@@ -149,7 +149,8 @@ Build warnings observed but not fixed in W1:
 
 Not yet verified:
 
-- Game/editor launch smoke.
+- Clean process-exit smoke.
+- Game-specific OpenGL rendered-window smoke.
 
 ## W1 Runtime Staging
 
@@ -197,7 +198,44 @@ Runtime source notes:
 
 Not yet verified:
 
-- Game/editor launch smoke from the W1 runtime root.
+- Clean process-exit smoke from the W1 runtime root.
+- Game-specific OpenGL rendered-window smoke from the W1 runtime root.
+
+## W1 Launch Smoke
+
+W1 launch smoke was attempted on 2026-04-30 from:
+
+```text
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release
+```
+
+Command:
+
+```powershell
+tools/windows/Start-WindowsSmoke.ps1 -RuntimeDir "C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release" -RunEditor -ArgumentList "check" -TimeoutSeconds 45
+```
+
+Result:
+
+- Pre-smoke bundle validation passed.
+- `StuntRally3.exe` launched and wrote a fresh `Ogre.log`.
+- `SR-Editor3.exe` launched and wrote a fresh `Ogre_ed.log`.
+- Both hidden-window smoke launches timed out after 45 seconds and were stopped by the helper.
+- No immediate missing-DLL, missing-plugin, or missing-config blocker appeared in the captured logs.
+- No runtime-bundle correction was made.
+
+Captured launch signals:
+
+- Game log loaded `RenderSystem_GL3Plus`, `RenderSystem_Vulkan`, and `Plugin_ParticleFX`.
+- Editor log loaded `RenderSystem_GL3Plus`, `RenderSystem_Vulkan`, and `Plugin_ParticleFX`.
+- Game/editor logs enumerated Vulkan devices: `NVIDIA GeForce RTX 4070 SUPER` and `AMD Radeon(TM) Graphics`.
+- Game config selected `Vulkan Rendering Subsystem`.
+- Editor config selected `OpenGL 3+ Rendering Subsystem`.
+
+Smoke caveat:
+
+- This is W1 launch evidence, not a clean-exit smoke pass.
+- A narrow follow-up should capture visible/OpenGL game evidence, but no build/runtime-bundle blocker remains from this pass.
 
 ## Dependency Versions
 

@@ -1,0 +1,52 @@
+# Ogre build result
+Date: 2026-04-30
+Branch: v3-0
+Commit: 
+20da67178c571efe1c909db73b710698d60bf3b3
+Generator: Visual Studio 17 2022
+Platform: x64
+Build config: Release
+Configure result: success
+Build result: success
+Install result: success
+
+Produced runtime/plugin candidates:
+
+## C:\dev\Ogre\ogre-next\build\bin\Release
+amd_ags_x64.dll	164864
+OgreAtmosphere.dll	68096
+OgreHlmsPbs.dll	610304
+OgreHlmsUnlit.dll	154624
+OgreMain.dll	11030528
+OgreMeshLodGenerator.dll	237568
+OgreOverlay.dll	757760
+OgrePlanarReflections.dll	64000
+OgreSceneFormat.dll	182272
+openvr_api.dll	598816
+Plugin_ParticleFX.dll	163328
+RenderSystem_Direct3D11.dll	559104
+RenderSystem_GL3Plus.dll	574464
+RenderSystem_NULL.dll	121856
+RenderSystem_Vulkan.dll	4078592
+SDL2.dll	1670144
+
+## C:\dev\Ogre\ogre-next\build\lib\Release
+No DLL files found directly in this folder.
+
+## C:\dev\Ogre\ogre-next\build\sdk\bin\Release
+amd_ags_x64.dll	164864
+OgreAtmosphere.dll	68096
+OgreHlmsPbs.dll	610304
+OgreHlmsUnlit.dll	154624
+OgreMain.dll	11030528
+OgreMeshLodGenerator.dll	237568
+OgreOverlay.dll	757760
+OgrePlanarReflections.dll	64000
+OgreSceneFormat.dll	182272
+openvr_api.dll	598816
+Plugin_ParticleFX.dll	163328
+RenderSystem_Direct3D11.dll	559104
+RenderSystem_GL3Plus.dll	574464
+RenderSystem_NULL.dll	121856
+RenderSystem_Vulkan.dll	4078592
+SDL2.dll	1670144

@@ -1,0 +1,24 @@
+# Ogre W1 Deviations
+
+Date: 2026-04-30
+Scope: Ogre-Next reproduction only.
+
+## Deviations from docs/BuildingVS.md / upstream Ogre VS2019 script
+
+1. Dependency root `C:\dev` was created because it did not exist.
+2. The upstream script `build_ogre_Visual_Studio_16_2019_x64.bat` was downloaded and preserved at `C:\dev\build_ogre_Visual_Studio_16_2019_x64.bat`.
+3. The upstream script assumes standalone CMake in `C:\Program Files\CMake` or `C:\Program Files (x86)\CMake`; this machine has no plain-shell CMake and uses VS2022 bundled CMake instead.
+4. The upstream script uses generator `Visual Studio 16 2019`; W1 first lane is VS2022, so configure used generator `Visual Studio 17 2022` with platform `x64`.
+5. Branch was pinned to `v3-0` as required by `docs/BuildingVS.md`.
+6. `OGRE_BUILD_COMPONENT_PLANAR_REFLECTIONS=1` was added as required by `docs/BuildingVS.md`.
+7. `OGRE_BUILD_COMPONENT_ATMOSPHERE=1` was added explicitly so both SR3-required components are visible in cache evidence.
+8. Upstream `mklink /D Dependencies ..\ogre-next-deps\build\ogredeps` failed because the shell lacks symlink privilege. A directory junction was created instead with `mklink /J Dependencies ..\ogre-next-deps\build\ogredeps`. This preserves the same path shape for the build.
+
+## Non-deviations / preserved policy
+
+- No Ogre upgrade was attempted.
+- No MyGUI work was started.
+- No Stunt Rally 3 configure/build was started.
+- No Conan, vcpkg, or package-manager replacement was introduced.
+- No SR3 CMake hardcoded paths were edited.
+- Direct3D11 was produced because Ogre defaults generated it; SR3 renderer policy remains OpenGL 3+ primary, Vulkan useful evidence, Direct3D11 out of scope for W0-W3 acceptance.

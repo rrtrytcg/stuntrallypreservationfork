@@ -112,8 +112,8 @@ Checklist:
 - [x] Record that plain shell `cmake` is not on PATH; bundled CMake exists inside Visual Studio developer environments.
 - [x] Choose the first W1 compiler lane: VS2022 Build Tools unless the first focused dependency pass proves it too costly.
 - [x] Confirm planned source/specimen/dependency layout and capture current missing dependency folders.
-- [ ] Download/clone/build dependencies following `docs/BuildingVS.md` before attempting any package-manager replacement.
-- [ ] Build Ogre-Next branch `v3-0` with Atmosphere and Planar Reflections enabled.
+- [ ] Download/clone/build dependencies following `docs/BuildingVS.md` before attempting any package-manager replacement. Ogre-next-deps are built; non-Ogre SR3 dependencies remain pending.
+- [x] Build Ogre-Next branch `v3-0` with Atmosphere and Planar Reflections enabled.
 - [ ] Build MyGUI-next branch `ogre3` against the reproduced Ogre-Next output.
 - [ ] Configure SR3 Release x64 using the historical Windows release CMake route, documenting every path edit or file rename.
 - [ ] Build `StuntRally3.exe` and `SR-Editor3.exe`.
@@ -183,6 +183,64 @@ Upstream ritual mismatches to carry into the next pass:
 Next recommended W1 step:
 
 - Create or confirm `C:\dev`, then begin the Ogre-Next reproduction pass only: fetch the upstream Ogre VS build script, pin branch `v3-0`, apply only the documented Planar Reflections setting, run under the VS2022 developer environment, and capture all deviations. Do not start MyGUI or SR3 until Ogre-Next output exists and is documented.
+
+### W1 Ogre-Next Reproduction Evidence
+
+Full captured evidence:
+
+```text
+docs/windows/evidence/W1/ogre-fetch.txt
+docs/windows/evidence/W1/ogre-branch-commit.txt
+docs/windows/evidence/W1/ogre-configure-command.txt
+docs/windows/evidence/W1/ogre-configure-output.txt
+docs/windows/evidence/W1/ogre-cache-summary.txt
+docs/windows/evidence/W1/ogre-build-command.txt
+docs/windows/evidence/W1/ogre-build-output.txt
+docs/windows/evidence/W1/ogre-install-output.txt
+docs/windows/evidence/W1/ogre-build-result.txt
+docs/windows/evidence/W1/ogre-deviations.txt
+```
+
+Result:
+
+- `C:\dev` created.
+- Upstream Ogre VS2019 script downloaded and preserved at `C:\dev\build_ogre_Visual_Studio_16_2019_x64.bat`.
+- Ogre-next-deps cloned, configured, built, and installed for Debug and Release.
+- Ogre-Next cloned to `C:\dev\Ogre\ogre-next`.
+- Ogre-Next branch: `v3-0`.
+- Ogre-Next commit: `20da67178c571efe1c909db73b710698d60bf3b3` (`20da67178c Merge branch 'v2-3' into v3-0`).
+- Generator/toolchain: VS2022 developer environment, `Visual Studio 17 2022`, platform `x64`, bundled CMake `3.31.6-msvc6`.
+- Configure result: success.
+- Release build result: success.
+- Release install result: success.
+
+Required Ogre settings verified in `C:\dev\Ogre\ogre-next\build\CMakeCache.txt`:
+
+- `OGRE_BUILD_COMPONENT_ATMOSPHERE:BOOL=1`.
+- `OGRE_BUILD_COMPONENT_PLANAR_REFLECTIONS:BOOL=1`.
+
+Produced Release runtime/plugin DLLs include:
+
+- `OgreMain.dll`
+- `OgreHlmsPbs.dll`
+- `OgreHlmsUnlit.dll`
+- `OgreAtmosphere.dll`
+- `OgrePlanarReflections.dll`
+- `Plugin_ParticleFX.dll`
+- `RenderSystem_GL3Plus.dll`
+- `RenderSystem_Vulkan.dll`
+- `RenderSystem_Direct3D11.dll`
+
+Recorded deviations:
+
+- The upstream script is VS2019-named and assumes generator `Visual Studio 16 2019`; W1 used `Visual Studio 17 2022` because VS2022 is the selected first lane.
+- The upstream script assumes standalone CMake; W1 used VS2022 bundled CMake because plain-shell CMake is not on PATH.
+- `mklink /D Dependencies ...` failed due to missing symlink privilege; W1 used `mklink /J` directory junction for the same target path.
+- `OGRE_BUILD_COMPONENT_ATMOSPHERE=1` was set explicitly along with the documented Planar Reflections setting so both SR3-required components are cache-verifiable.
+
+Next recommended W1 step:
+
+- Begin MyGUI-next reproduction only: clone `https://github.com/cryham/mygui-next` branch `ogre3`, configure it against the verified Ogre-Next output at `C:\dev\Ogre\ogre-next`, capture the exact CMake settings/deviations, and stop after MyGUI build evidence. Do not configure or build SR3 yet.
 
 ## W3 Script Inventory
 

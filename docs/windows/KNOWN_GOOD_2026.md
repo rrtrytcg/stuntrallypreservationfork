@@ -95,20 +95,22 @@ Starting point from `docs/BuildingVS.md`:
 | Ogg | 1.3.5 | TBD |
 | Vorbis | 1.3.7 | TBD |
 | OpenAL Soft | 1.23.1 | TBD |
-| Ogre-Next | 3.0 / branch `v3-0` | TBD |
+| Ogre-Next | 3.0 / branch `v3-0` | branch `v3-0`, commit `20da67178c571efe1c909db73b710698d60bf3b3` |
 | MyGUI-next | branch `ogre3` | TBD |
 
 ## Ogre-Next Required Settings
 
 W1 must verify and record:
 
-- Ogre-Next branch.
-- Exact commit.
-- Generator and architecture.
-- `OGRE_BUILD_COMPONENT_ATMOSPHERE=ON`.
-- `OGRE_BUILD_COMPONENT_PLANAR_REFLECTIONS=ON`.
-- Render systems built and staged.
-- Any source patches or debug-only assert changes.
+- Ogre-Next branch: `v3-0`.
+- Exact commit: `20da67178c571efe1c909db73b710698d60bf3b3`.
+- Generator and architecture: `Visual Studio 17 2022`, `x64`, under VS2022 Build Tools.
+- CMake: VS2022 bundled CMake `3.31.6-msvc6`.
+- `OGRE_BUILD_COMPONENT_ATMOSPHERE:BOOL=1`.
+- `OGRE_BUILD_COMPONENT_PLANAR_REFLECTIONS:BOOL=1`.
+- Release configure/build/install result: success.
+- Release runtime/plugins produced: `OgreMain.dll`, `OgreHlmsPbs.dll`, `OgreHlmsUnlit.dll`, `OgreAtmosphere.dll`, `OgrePlanarReflections.dll`, `Plugin_ParticleFX.dll`, `RenderSystem_GL3Plus.dll`, `RenderSystem_Vulkan.dll`, `RenderSystem_Direct3D11.dll`.
+- Source patch status: no Ogre source patches. `Dependencies` path uses a directory junction because symlink creation was not permitted.
 
 ## MyGUI-next Required Settings
 

@@ -1,0 +1,819 @@
+
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026>call "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\Tools\VsDevCmd.bat" -arch=x64 -host_arch=x64 
+**********************************************************************
+** Visual Studio 2022 Developer Command Prompt v17.14.28
+** Copyright (c) 2025 Microsoft Corporation
+**********************************************************************
+MSBuild version 17.14.40+3e7442088 for .NET Framework
+
+  OgrePrecompiledHeaders.cpp
+  OgreAbiUtils.cpp
+  OgreAlignedAllocator.cpp
+  OgreAnimable.cpp
+  OgreAnimation.cpp
+  OgreAnimationState.cpp
+  OgreAnimationTrack.cpp
+  OgreAny.cpp
+  OgreArchive.cpp
+  OgreArchiveManager.cpp
+  OgreAssert.cpp
+  OgreAsyncTextureTicket.cpp
+  OgreAtomicScalar.cpp
+  OgreAutoParamDataSource.cpp
+  OgreAxisAlignedBox.cpp
+  OgreBillboard.cpp
+  OgreBillboardChain.cpp
+  OgreBillboardParticleRenderer.cpp
+  OgreBillboardSet.cpp
+  OgreCamera.cpp
+  OgreCodec.cpp
+  OgreColourValue.cpp
+  OgreCommon.cpp
+  OgreConfigFile.cpp
+  OgreConstBufferPool.cpp
+  OgreControllerManager.cpp
+  OgreConvexBody.cpp
+  OgreDataStream.cpp
+  OgreDecal.cpp
+  OgreDefaultHardwareBufferManager.cpp
+  OgreDefaultSceneQueries.cpp
+  OgreDeflate.cpp
+  OgreDepthBuffer.cpp
+  OgreDescriptorSetTexture.cpp
+  OgreDescriptorSetUav.cpp
+  OgreDistanceLodStrategy.cpp
+  OgreDualQuaternion.cpp
+  OgreDynLib.cpp
+  OgreDynLibManager.cpp
+  OgreEdgeListBuilder.cpp
+  OgreEntity.cpp
+  OgreException.cpp
+  OgreExternalTextureSource.cpp
+  OgreExternalTextureSourceManager.cpp
+  OgreFileSystem.cpp
+  OgreForward3D.cpp
+  OgreForwardClustered.cpp
+  OgreForwardPlusBase.cpp
+  OgreFrustum.cpp
+  OgreGpuProgram.cpp
+  OgreGpuProgramManager.cpp
+  OgreGpuProgramParams.cpp
+  OgreGpuProgramUsage.cpp
+  OgreGpuResource.cpp
+  OgreHardwareBufferManager.cpp
+  OgreHardwareIndexBuffer.cpp
+  OgreHardwareOcclusionQuery.cpp
+  OgreHardwareVertexBuffer.cpp
+  OgreHiddenAreaMeshVr.cpp
+  OgreHighLevelGpuProgram.cpp
+  OgreHighLevelGpuProgramManager.cpp
+  OgreHlms.cpp
+  OgreHlmsCompute.cpp
+  OgreHlmsComputeJob.cpp
+  OgreHlmsDatablock.cpp
+  OgreHlmsDiskCache.cpp
+  OgreHlmsJson.cpp
+  OgreHlmsJsonCompute.cpp
+  OgreHlmsLowLevel.cpp
+  OgreHlmsLowLevelDatablock.cpp
+  OgreHlmsManager.cpp
+  OgreHlmsSamplerblock.cpp
+  OgreImage2.cpp
+  OgreImageDownsampler.cpp
+  OgreInternalCubemapProbe.cpp
+  OgreItem.cpp
+  OgreKeyFrame.cpp
+  OgreLight.cpp
+  OgreLodStrategy.cpp
+  OgreLodStrategyManager.cpp
+  OgreLog.cpp
+  OgreLogManager.cpp
+  OgreLwString.cpp
+  OgreManualObject.cpp
+  OgreManualObject2.cpp
+  OgreMaterial.cpp
+  OgreMaterialManager.cpp
+  OgreMaterialSerializer.cpp
+  OgreMath.cpp
+  OgreMatrix3.cpp
+  OgreMatrix4.cpp
+  OgreMemoryTrackAlloc.cpp
+  OgreMemoryTracker.cpp
+  OgreMesh.cpp
+  OgreMesh2.cpp
+  OgreMesh2Serializer.cpp
+  OgreMesh2SerializerImpl.cpp
+  OgreMeshManager.cpp
+  OgreMeshManager2.cpp
+  OgreMeshSerializer.cpp
+  OgreMeshSerializerImpl.cpp
+  OgreMovableObject.cpp
+  OgreMovablePlane.cpp
+  OgreNode.cpp
+  OgreNumerics.cpp
+  OgreOITDCodec.cpp
+  OgreObjCmdBuffer.cpp
+  OgreOfflineProfiler.cpp
+  OgreOldBone.cpp
+  OgreOldNode.cpp
+  OgreOldSkeletonInstance.cpp
+  OgreOldSkeletonManager.cpp
+  OgreOptimisedUtil.cpp
+  OgreOptimisedUtilGeneral.cpp
+  OgreOptimisedUtilSSE.cpp
+  OgreParticle.cpp
+  OgreParticleEmitter.cpp
+  OgreParticleEmitterCommands.cpp
+  OgreParticleIterator.cpp
+  OgreParticleSystem.cpp
+  OgreParticleSystemManager.cpp
+  OgrePass.cpp
+  OgrePatchMesh.cpp
+  OgrePatchSurface.cpp
+  OgrePixelCountLodStrategy.cpp
+  OgrePixelFormatGpuUtils.cpp
+  OgrePlane.cpp
+  OgrePlatformInformation.cpp
+  OgrePolygon.cpp
+  OgrePose.cpp
+  OgrePredefinedControllers.cpp
+  OgrePrefabFactory.cpp
+  OgreProfiler.cpp
+  OgrePsoCacheHelper.cpp
+  OgreQuaternion.cpp
+  OgreRadialDensityMask.cpp
+  OgreRectangle2D.cpp
+  OgreRectangle2D2.cpp
+  OgreRenderPassDescriptor.cpp
+  OgreRenderQueue.cpp
+  OgreRenderSystem.cpp
+  OgreRenderSystemCapabilities.cpp
+  OgreRenderSystemCapabilitiesManager.cpp
+  OgreRenderSystemCapabilitiesSerializer.cpp
+  OgreRenderable.cpp
+  OgreResource.cpp
+  OgreResourceBackgroundQueue.cpp
+  OgreResourceGroupManager.cpp
+  OgreResourceManager.cpp
+  OgreResourceTransition.cpp
+  OgreRibbonTrail.cpp
+  OgreRoot.cpp
+  OgreRootLayout.cpp
+  OgreRotationSpline.cpp
+  OgreSceneManager.cpp
+  OgreSceneManagerEnumerator.cpp
+  OgreSceneNode.cpp
+  OgreSceneQuery.cpp
+  OgreScriptCompiler.cpp
+  OgreScriptLexer.cpp
+  OgreScriptParser.cpp
+  OgreScriptTranslator.cpp
+  OgreSerializer.cpp
+  OgreShaderParams.cpp
+  OgreShadowCameraSetup.cpp
+  OgreShadowCameraSetupConcentric.cpp
+  OgreShadowCameraSetupFocused.cpp
+  OgreShadowCameraSetupPSSM.cpp
+  OgreShadowCameraSetupPlaneOptimal.cpp
+  OgreSimpleRenderable.cpp
+  OgreSimpleSpline.cpp
+  OgreSkeleton.cpp
+  OgreSkeletonSerializer.cpp
+  OgreSmallVector.cpp
+  OgreStagingTexture.cpp
+  OgreStagingTextureBufferImpl.cpp
+  OgreStreamSerialiser.cpp
+  OgreString.cpp
+  OgreStringConverter.cpp
+  OgreStringInterface.cpp
+  OgreSubEntity.cpp
+  OgreSubItem.cpp
+  OgreSubMesh.cpp
+  OgreSubMesh2.cpp
+  OgreTangentSpaceCalc.cpp
+  OgreTechnique.cpp
+  OgreTextureBox.cpp
+  OgreTextureFilters.cpp
+  OgreTextureGpu.cpp
+  OgreTextureGpuManager.cpp
+  OgreTextureGpuManagerListener.cpp
+  OgreTextureUnitState.cpp
+  OgreUTFString.cpp
+  OgreUnifiedHighLevelGpuProgram.cpp
+  OgreUserObjectBindings.cpp
+  OgreVector2.cpp
+  OgreVector3.cpp
+  OgreVector4.cpp
+  OgreVertexIndexData.cpp
+  OgreVertexShadowMapHelper.cpp
+  OgreViewport.cpp
+  OgreWindow.cpp
+  OgreWindowEventUtilities.cpp
+  OgreWireAabb.cpp
+  OgreWireBoundingBox.cpp
+  OgreWorkQueue.cpp
+  OgreWorkarounds.cpp
+  OgreBone.cpp
+  OgreSkeletonAnimManager.cpp
+  OgreSkeletonAnimation.cpp
+  OgreSkeletonAnimationDef.cpp
+  OgreSkeletonDef.cpp
+  OgreSkeletonInstance.cpp
+  OgreSkeletonManager.cpp
+  OgreSkeletonTrack.cpp
+  OgreCbDrawCall.cpp
+  OgreCbLowLevelMaterial.cpp
+  OgreCbPipelineStateObject.cpp
+  OgreCbShaderBuffer.cpp
+  OgreCbTexture.cpp
+  OgreCommandBuffer.cpp
+  OgreCompositorManager2.cpp
+  OgreCompositorNode.cpp
+  OgreCompositorNodeDef.cpp
+  OgreCompositorShadowNode.cpp
+  OgreCompositorShadowNodeDef.cpp
+  OgreCompositorWorkspace.cpp
+  OgreCompositorWorkspaceDef.cpp
+  OgreTextureDefinition.cpp
+  OgreCompositorPass.cpp
+  OgreCompositorPassDef.cpp
+  OgreCompositorPassClear.cpp
+  OgreCompositorPassCompute.cpp
+  OgreCompositorPassDepthCopy.cpp
+  OgreCompositorPassIblSpecular.cpp
+  OgreCompositorPassMipmap.cpp
+  OgreCompositorPassQuad.cpp
+  OgreCompositorPassScene.cpp
+  OgreCompositorPassShadows.cpp
+  OgreCompositorPassStencil.cpp
+  OgreCompositorPassTargetBarrier.cpp
+  OgreCompositorPassUav.cpp
+  OgreCompositorPassWarmUp.cpp
+  OgreComputeTools.cpp
+  MurmurHash3.cpp
+  OgreArrayMemoryManager.cpp
+  OgreBoneArrayMemoryManager.cpp
+  OgreBoneMemoryManager.cpp
+  OgreKfTransformArrayMemoryManager.cpp
+  OgreNodeArrayMemoryManager.cpp
+  OgreNodeMemoryManager.cpp
+  OgreObjectDataArrayMemoryManager.cpp
+  OgreObjectMemoryManager.cpp
+  OgreAabb.cpp
+  OgreAsyncTicket.cpp
+  OgreBufferInterface.cpp
+  OgreBufferPacked.cpp
+  OgreIndirectBufferPacked.cpp
+  OgreMultiSourceVertexBufferPool.cpp
+  OgreStagingBuffer.cpp
+  OgreUavBufferPacked.cpp
+  OgreVaoManager.cpp
+  OgreVertexArrayObject.cpp
+  OgreVertexBufferDownloadHelper.cpp
+  OgreVertexBufferPacked.cpp
+  OgreMathlibSSE2.cpp
+  OgreMathlibNEON.cpp
+  OgreFreeImageCodec2.cpp
+  OgreDDSCodec2.cpp
+  OgreZip.cpp
+  OgreOptimisedUtilDirectXMath.cpp
+  OgreConfigDialog.cpp
+  OgreErrorDialog.cpp
+  OgreFileSystemLayer.cpp
+  OgreTimer.cpp
+  OgreBarrierWin.cpp
+  OgreLightweightMutexWin.cpp
+  OgreThreadsWin.cpp
+  OgreSemaphore.cpp
+  OgreWaitableEvent.cpp
+  OgreDefaultWorkQueueStandard.cpp
+  OgreTagPoint.cpp
+  OgreTagPoint.cpp
+  OgreArrayAabb.cpp
+  OgreArrayMatrix4.cpp
+  OgreArrayMatrixAf4x3.cpp
+  OgreArrayQuaternion.cpp
+  OgreArrayVector3.cpp
+  OgreArrayAabb.cpp
+  OgreArrayMatrix4.cpp
+  OgreArrayMatrixAf4x3.cpp
+  OgreArrayQuaternion.cpp
+  OgreArrayVector3.cpp
+     Creating library C:/dev/Ogre/ogre-next/build/lib/Release/OgreMain.lib and object C:/dev/Ogre/ogre-next/build/lib/Release/OgreMain.exp
+  OgreMain.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\OgreMain.dll
+  OgreAtmosphereNpr.cpp
+     Creating library C:/dev/Ogre/ogre-next/build/lib/Release/OgreAtmosphere.lib and object C:/dev/Ogre/ogre-next/build/lib/Release/OgreAtmosphere.exp
+  OgreAtmosphere.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\OgreAtmosphere.dll
+  main.cpp
+  OgreCmgenToCubemap.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\OgreCmgenToCubemap.exe
+  OgrePlanarReflectionActor.cpp
+  OgrePlanarReflections.cpp
+     Creating library C:/dev/Ogre/ogre-next/build/lib/Release/OgrePlanarReflections.lib and object C:/dev/Ogre/ogre-next/build/lib/Release/OgrePlanarReflections.exp
+  OgrePlanarReflections.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\OgrePlanarReflections.dll
+  OgreHlmsBufferManager.cpp
+  OgreCubemapProbe.cpp
+  OgreParallaxCorrectedCubemap.cpp
+  OgreParallaxCorrectedCubemapAuto.cpp
+  OgreParallaxCorrectedCubemapBase.cpp
+  OgrePccPerPixelGridPlacement.cpp
+  OgreInstantRadiosity.cpp
+  OgreIfdProbeVisualizer.cpp
+  OgreIrradianceField.cpp
+  OgreIrradianceFieldRaster.cpp
+  OgreIesLoader.cpp
+  OgreLightProfiles.cpp
+  OgreHlmsJsonPbs.cpp
+  OgreHlmsPbs.cpp
+  OgreHlmsPbsDatablock.cpp
+  OgreIrradianceVolume.cpp
+  OgreVctCascadedVoxelizer.cpp
+  OgreVctImageVoxelizer.cpp
+  OgreVctLighting.cpp
+  OgreVctMaterial.cpp
+  OgreVctVoxelizer.cpp
+  OgreVctVoxelizerSourceBase.cpp
+  OgreVoxelVisualizer.cpp
+  OgreVoxelizedMeshCache.cpp
+C:\dev\Ogre\ogre-next\Components\Hlms\Pbs\src\Vct\OgreVctVoxelizer.cpp(210,60): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?) [C:\dev\Ogre\ogre-next\build\Components\Hlms\Pbs\OgreHlmsPbs.vcxproj]
+C:\dev\Ogre\ogre-next\Components\Hlms\Pbs\src\Vct\OgreVctVoxelizer.cpp(236,60): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?) [C:\dev\Ogre\ogre-next\build\Components\Hlms\Pbs\OgreHlmsPbs.vcxproj]
+C:\dev\Ogre\ogre-next\Components\Hlms\Pbs\src\Vct\OgreVctVoxelizer.cpp(319,79): warning C4267: '+=': conversion from 'size_t' to 'Ogre::uint32', possible loss of data [C:\dev\Ogre\ogre-next\build\Components\Hlms\Pbs\OgreHlmsPbs.vcxproj]
+C:\dev\Ogre\ogre-next\Components\Hlms\Pbs\src\Vct\OgreVctVoxelizer.cpp(431,74): warning C4267: '+=': conversion from 'size_t' to 'Ogre::uint32', possible loss of data [C:\dev\Ogre\ogre-next\build\Components\Hlms\Pbs\OgreHlmsPbs.vcxproj]
+     Creating library C:/dev/Ogre/ogre-next/build/lib/Release/OgreHlmsPbs.lib and object C:/dev/Ogre/ogre-next/build/lib/Release/OgreHlmsPbs.exp
+  OgreHlmsPbs.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\OgreHlmsPbs.dll
+  OgreHlmsBufferManager.cpp
+  OgreHlmsJsonUnlit.cpp
+  OgreHlmsUnlit.cpp
+  OgreHlmsUnlitDatablock.cpp
+  OgreTextureAnimationController.cpp
+  OgreUnlitProperty.cpp
+     Creating library C:/dev/Ogre/ogre-next/build/lib/Release/OgreHlmsUnlit.lib and object C:/dev/Ogre/ogre-next/build/lib/Release/OgreHlmsUnlit.exp
+  OgreHlmsUnlit.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\OgreHlmsUnlit.dll
+  OgreLodBuffer.cpp
+  OgreLodCollapseCost.cpp
+  OgreLodCollapseCostCurvature.cpp
+  OgreLodCollapseCostOutside.cpp
+  OgreLodCollapseCostProfiler.cpp
+  OgreLodCollapseCostQuadric.cpp
+  OgreLodCollapser.cpp
+  OgreLodConfig.cpp
+  OgreLodConfigSerializer.cpp
+  OgreLodData.cpp
+  OgreLodInputProvider.cpp
+  OgreLodInputProviderBuffer.cpp
+  OgreLodInputProviderMesh.cpp
+  OgreLodOutputProviderBuffer.cpp
+  OgreLodOutputProviderCompressedBuffer.cpp
+  OgreLodOutputProviderCompressedMesh.cpp
+  OgreLodOutputProviderMesh.cpp
+  OgreLodOutsideMarker.cpp
+  OgreLodWorkQueueInjector.cpp
+  OgreLodWorkQueueWorker.cpp
+  OgreMeshLodGenerator.cpp
+     Creating library C:/dev/Ogre/ogre-next/build/lib/Release/OgreMeshLodGenerator.lib and object C:/dev/Ogre/ogre-next/build/lib/Release/OgreMeshLodGenerator.exp
+  OgreMeshLodGenerator.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\OgreMeshLodGenerator.dll
+  OgreXMLMeshSerializer.cpp
+  OgreXMLSkeletonSerializer.cpp
+  tinystr.cpp
+  tinyxml.cpp
+  tinyxmlerror.cpp
+  tinyxmlparser.cpp
+  main.cpp
+  ReorganiseVertexBuffers.cpp
+  SimpleMeshOperations.cpp
+  OgreMeshTool.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\OgreMeshTool.exe
+  OgreBorderPanelOverlayElement.cpp
+  OgreFont.cpp
+  OgreFontManager.cpp
+  OgreOverlay.cpp
+  OgreOverlayContainer.cpp
+  OgreOverlayElement.cpp
+  OgreOverlayElementCommands.cpp
+  OgreOverlayElementFactory.cpp
+  OgreOverlayManager.cpp
+  OgreOverlayProfileSessionListener.cpp
+  OgreOverlaySystem.cpp
+  OgrePanelOverlayElement.cpp
+  OgreTextAreaOverlayElement.cpp
+     Creating library C:/dev/Ogre/ogre-next/build/lib/Release/OgreOverlay.lib and object C:/dev/Ogre/ogre-next/build/lib/Release/OgreOverlay.exp
+  OgreOverlay.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\OgreOverlay.dll
+  BaseSystem.cpp
+  CameraController.cpp
+  GameEntityManager.cpp
+  GraphicsSystem.cpp
+  LogicSystem.cpp
+  SdlInputHandler.cpp
+  AndroidSystems.cpp
+  MainEntryPoints.cpp
+  StaticPluginLoader.cpp
+  MessageQueueSystem.cpp
+  TutorialGameState.cpp
+  HdrUtils.cpp
+  MeshUtils.cpp
+  MiscUtils.cpp
+  ScreenSpaceReflections.cpp
+  SmaaUtils.cpp
+  TestUtils.cpp
+  MainLoopMultiThreaded.cpp
+  MainLoopSingleThreaded.cpp
+  UnitTesting.cpp
+C:\dev\Ogre\ogre-next\Samples\2.0\Common\src\System\Desktop\MainLoopMultiThreaded.cpp(214,29): warning C4244: 'initializing': conversion from 'Ogre::uint64' to 'unsigned long', possible loss of data [C:\dev\Ogre\ogre-next\build\Samples\2.0\Common\OgreSamplesCommon.vcxproj]
+C:\dev\Ogre\ogre-next\Samples\2.0\Common\src\System\Desktop\MainLoopMultiThreaded.cpp(231,37): warning C4244: '=': conversion from 'Ogre::uint64' to 'unsigned long', possible loss of data [C:\dev\Ogre\ogre-next\build\Samples\2.0\Common\OgreSamplesCommon.vcxproj]
+  OgreSamplesCommon.vcxproj -> C:\dev\Ogre\ogre-next\build\lib\Release\OgreSamplesCommon.lib
+  OgreSceneFormatBase.cpp
+  OgreSceneFormatExporter.cpp
+  OgreSceneFormatImporter.cpp
+     Creating library C:/dev/Ogre/ogre-next/build/lib/Release/OgreSceneFormat.lib and object C:/dev/Ogre/ogre-next/build/lib/Release/OgreSceneFormat.exp
+  OgreSceneFormat.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\OgreSceneFormat.dll
+  OgreAreaEmitter.cpp
+  OgreBoxEmitter.cpp
+  OgreColourFaderAffector.cpp
+  OgreColourFaderAffector2.cpp
+  OgreColourImageAffector.cpp
+  OgreColourInterpolatorAffector.cpp
+  OgreCylinderEmitter.cpp
+  OgreDeflectorPlaneAffector.cpp
+  OgreDirectionRandomiserAffector.cpp
+  OgreEllipsoidEmitter.cpp
+  OgreHollowEllipsoidEmitter.cpp
+  OgreLinearForceAffector.cpp
+  OgreParticleFX.cpp
+  OgreParticleFXPlugin.cpp
+  OgrePointEmitter.cpp
+  OgreRingEmitter.cpp
+  OgreRotationAffector.cpp
+  OgreScaleAffector.cpp
+  OgreScaleInterpolatorAffector.cpp
+     Creating library C:/dev/Ogre/ogre-next/build/lib/Release/Plugin_ParticleFX.lib and object C:/dev/Ogre/ogre-next/build/lib/Release/Plugin_ParticleFX.exp
+  Plugin_ParticleFX.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Plugin_ParticleFX.dll
+  OgreD3D11AsyncTextureTicket.cpp
+  OgreD3D11Device.cpp
+  OgreD3D11DeviceResource.cpp
+  OgreD3D11Driver.cpp
+  OgreD3D11DriverList.cpp
+  OgreD3D11EngineDll.cpp
+  OgreD3D11GpuProgramManager.cpp
+  OgreD3D11HLSLProgram.cpp
+  OgreD3D11HLSLProgramFactory.cpp
+  OgreD3D11HardwareBuffer.cpp
+  OgreD3D11HardwareBufferManager.cpp
+  OgreD3D11HardwareIndexBuffer.cpp
+  OgreD3D11HardwareOcclusionQuery.cpp
+  OgreD3D11HardwareVertexBuffer.cpp
+  OgreD3D11Mappings.cpp
+  OgreD3D11PixelFormatToShaderType.cpp
+  OgreD3D11Plugin.cpp
+  OgreD3D11RenderPassDescriptor.cpp
+  OgreD3D11RenderSystem.cpp
+  OgreD3D11StagingTexture.cpp
+  OgreD3D11StereoDriverAMD.cpp
+  OgreD3D11StereoDriverBridge.cpp
+  OgreD3D11StereoDriverNVIDIA.cpp
+  OgreD3D11TextureGpu.cpp
+  OgreD3D11TextureGpuManager.cpp
+  OgreD3D11TextureGpuWindow.cpp
+  OgreD3D11VideoMode.cpp
+  OgreD3D11VideoModeList.cpp
+  OgreD3D11Window.cpp
+  OgreMonitorInfo.cpp
+  OgreNsightChecker.cpp
+  OgreD3D11AsyncTicket.cpp
+  OgreD3D11BufferInterface.cpp
+  OgreD3D11BufferInterfaceBase.cpp
+  OgreD3D11CompatBufferInterface.cpp
+  OgreD3D11ConstBufferPacked.cpp
+  OgreD3D11DynamicBuffer.cpp
+  OgreD3D11ReadOnlyBufferPacked.cpp
+  OgreD3D11StagingBuffer.cpp
+  OgreD3D11TexBufferPacked.cpp
+  OgreD3D11UavBufferPacked.cpp
+  OgreD3D11VaoManager.cpp
+  OgreD3D11VertexArrayObject.cpp
+  OgreD3D11AmdExtension.cpp
+  OgreD3D11VendorExtension.cpp
+  OgreD3D11WindowHwnd.cpp
+  OgreD3D11WindowWinRT.cpp
+     Creating library C:/dev/Ogre/ogre-next/build/lib/Release/RenderSystem_Direct3D11.lib and object C:/dev/Ogre/ogre-next/build/lib/Release/RenderSystem_Direct3D11.exp
+  RenderSystem_Direct3D11.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\RenderSystem_Direct3D11.dll
+  OgreGLSLExtSupport.cpp
+  OgreGLSLMonolithicProgram.cpp
+  OgreGLSLMonolithicProgramManager.cpp
+  OgreGLSLPreprocessor.cpp
+  OgreGLSLProgram.cpp
+  OgreGLSLProgramManager.cpp
+  OgreGLSLShader.cpp
+  OgreGLSLShaderFactory.cpp
+  OgreGLSLShaderManager.cpp
+  OgreWin32Context.cpp
+  OgreWin32GLSupport.cpp
+  OgreWin32Window.cpp
+  OgreGL3PlusAsyncTextureTicket.cpp
+  OgreGL3PlusContext.cpp
+  OgreGL3PlusDefaultHardwareBufferManager.cpp
+  OgreGL3PlusEngineDll.cpp
+  OgreGL3PlusHardwareBufferManager.cpp
+  OgreGL3PlusHardwareIndexBuffer.cpp
+  OgreGL3PlusHardwareOcclusionQuery.cpp
+  OgreGL3PlusHardwareVertexBuffer.cpp
+  OgreGL3PlusMappings.cpp
+  OgreGL3PlusPixelFormatToShaderType.cpp
+  OgreGL3PlusPlugin.cpp
+  OgreGL3PlusRenderPassDescriptor.cpp
+  OgreGL3PlusRenderSystem.cpp
+  OgreGL3PlusStagingTexture.cpp
+  OgreGL3PlusSupport.cpp
+  OgreGL3PlusTextureGpu.cpp
+  OgreGL3PlusTextureGpuManager.cpp
+  OgreGL3PlusTextureGpuWindow.cpp
+  OgreGL3PlusVertexArrayObject.cpp
+  OgreGL3PlusAsyncTicket.cpp
+  OgreGL3PlusBufferInterface.cpp
+  OgreGL3PlusConstBufferPacked.cpp
+  OgreGL3PlusDynamicBuffer.cpp
+  OgreGL3PlusMultiSourceVertexBufferPool.cpp
+  OgreGL3PlusReadOnlyBufferPacked.cpp
+  OgreGL3PlusStagingBuffer.cpp
+  OgreGL3PlusTexBufferEmulatedPacked.cpp
+  OgreGL3PlusTexBufferPacked.cpp
+  OgreGL3PlusUavBufferPacked.cpp
+  OgreGL3PlusVaoManager.cpp
+  gl3w.cpp
+     Creating library C:/dev/Ogre/ogre-next/build/lib/Release/RenderSystem_GL3Plus.lib and object C:/dev/Ogre/ogre-next/build/lib/Release/RenderSystem_GL3Plus.exp
+  RenderSystem_GL3Plus.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\RenderSystem_GL3Plus.dll
+  OgreNULLAsyncTextureTicket.cpp
+  OgreNULLEngineDll.cpp
+  OgreNULLPlugin.cpp
+  OgreNULLRenderSystem.cpp
+  OgreNULLStagingTexture.cpp
+  OgreNULLTextureGpu.cpp
+  OgreNULLTextureGpuManager.cpp
+  OgreNULLWindow.cpp
+  OgreNULLConstBufferPacked.cpp
+  OgreNULLMultiSourceVertexBufferPool.cpp
+  OgreNULLStagingBuffer.cpp
+  OgreNULLTexBufferPacked.cpp
+  OgreNULLUavBufferPacked.cpp
+  OgreNULLVaoManager.cpp
+  OgreOgreNULLAsyncTicket.cpp
+  OgreOgreNULLBufferInterface.cpp
+     Creating library C:/dev/Ogre/ogre-next/build/lib/Release/RenderSystem_NULL.lib and object C:/dev/Ogre/ogre-next/build/lib/Release/RenderSystem_NULL.exp
+  RenderSystem_NULL.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\RenderSystem_NULL.dll
+  OgreVulkanAsyncTextureTicket.cpp
+  OgreVulkanCache.cpp
+  OgreVulkanDelayedFuncs.cpp
+  OgreVulkanDescriptorPool.cpp
+  OgreVulkanDescriptorSets.cpp
+  OgreVulkanDevice.cpp
+  OgreVulkanDiscardBufferManager.cpp
+  OgreVulkanEngineDll.cpp
+  OgreVulkanGpuProgramManager.cpp
+  OgreVulkanHardwareBufferCommon.cpp
+  OgreVulkanHardwareBufferManager.cpp
+  OgreVulkanHardwareIndexBuffer.cpp
+  OgreVulkanHardwareVertexBuffer.cpp
+  OgreVulkanHlmsPso.cpp
+  OgreVulkanMappings.cpp
+  OgreVulkanPixelFormatToShaderType.cpp
+  OgreVulkanPlugin.cpp
+  OgreVulkanProgram.cpp
+  OgreVulkanProgramFactory.cpp
+  OgreVulkanQueue.cpp
+  OgreVulkanRenderPassDescriptor.cpp
+  OgreVulkanRenderSystem.cpp
+  OgreVulkanRootLayout.cpp
+  OgreVulkanStagingTexture.cpp
+  OgreVulkanSupport.cpp
+  OgreVulkanTextureGpu.cpp
+  OgreVulkanTextureGpuManager.cpp
+  OgreVulkanTextureGpuWindow.cpp
+  OgreVulkanUtils.cpp
+  OgreVulkanWindow.cpp
+  OgreVulkanAsyncTicket.cpp
+  OgreVulkanBufferInterface.cpp
+  OgreVulkanConstBufferPacked.cpp
+  OgreVulkanDynamicBuffer.cpp
+C:\dev\Ogre\ogre-next\RenderSystems\Vulkan\src\OgreVulkanRootLayout.cpp(505,80): warning C4805: '&': unsafe mix of type 'const bool' and type 'int' in operation [C:\dev\Ogre\ogre-next\build\RenderSystems\Vulkan\RenderSystem_Vulkan.vcxproj]
+C:\dev\Ogre\ogre-next\RenderSystems\Vulkan\src\OgreVulkanRootLayout.cpp(508,103): warning C4805: '&': unsafe mix of type 'const bool' and type 'int' in operation [C:\dev\Ogre\ogre-next\build\RenderSystems\Vulkan\RenderSystem_Vulkan.vcxproj]
+  OgreVulkanMultiSourceVertexBufferPool.cpp
+  OgreVulkanReadOnlyBufferPacked.cpp
+  OgreVulkanStagingBuffer.cpp
+  OgreVulkanTexBufferPacked.cpp
+  OgreVulkanUavBufferPacked.cpp
+  OgreVulkanVaoManager.cpp
+  OgreVulkanWin32Support.cpp
+  OgreVulkanWin32Window.cpp
+C:\dev\Ogre\ogre-next\RenderSystems\Vulkan\src\Vao\OgreVulkanVaoManager.cpp(189,71): warning C4267: 'argument': conversion from 'size_t' to 'unsigned long', possible loss of data [C:\dev\Ogre\ogre-next\build\RenderSystems\Vulkan\RenderSystem_Vulkan.vcxproj]
+  spirv_reflect.c
+     Creating library C:/dev/Ogre/ogre-next/build/lib/Release/RenderSystem_Vulkan.lib and object C:/dev/Ogre/ogre-next/build/lib/Release/RenderSystem_Vulkan.exp
+  RenderSystem_Vulkan.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\RenderSystem_Vulkan.dll
+  AnimationTagPoint.cpp
+  AnimationTagPointGameState.cpp
+  Sample_AnimationTagPoint.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_AnimationTagPoint.exe
+  AreaApproxLights.cpp
+  AreaApproxLightsGameState.cpp
+  Sample_AreaApproxLights.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_AreaApproxLights.exe
+  Atmosphere.cpp
+  AtmosphereGameState.cpp
+  Sample_Atmosphere.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_Atmosphere.exe
+  CustomRenderable.cpp
+  CustomRenderableGameState.cpp
+  MyCustomRenderable.cpp
+  Sample_CustomRenderable.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_CustomRenderable.exe
+  Decals.cpp
+  DecalsGameState.cpp
+  Sample_Decals.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_Decals.exe
+  DynamicGeometry.cpp
+  DynamicGeometryGameState.cpp
+  Sample_DynamicGeometry.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_DynamicGeometry.exe
+  Forward3D.cpp
+  Forward3DGameState.cpp
+  Sample_Forward3D.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_Forward3D.exe
+  Hdr.cpp
+  HdrGameState.cpp
+  Sample_Hdr.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_Hdr.exe
+  HdrSmaa.cpp
+  HdrSmaaGameState.cpp
+  Sample_HdrSmaa.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_HdrSmaa.exe
+  IesProfiles.cpp
+  IesProfilesGameState.cpp
+  Sample_IesProfiles.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_IesProfiles.exe
+  ImageVoxelizer.cpp
+  ImageVoxelizerGameState.cpp
+  Sample_ImageVoxelizer.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_ImageVoxelizer.exe
+  ImportAnimationsShareSkeletonInstance.cpp
+  ImportAnimationsShareSkeletonInstanceGameState.cpp
+  Sample_ImportAnimationsShareSkeletonInstance.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_ImportAnimationsShareSkeletonInstance.exe
+  InstancedStereo.cpp
+  InstancedStereoGameState.cpp
+  Sample_InstancedStereo.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_InstancedStereo.exe
+  InstantRadiosity.cpp
+  InstantRadiosityGameState.cpp
+  Sample_InstantRadiosity.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_InstantRadiosity.exe
+  LocalCubemaps.cpp
+  LocalCubemapsGameState.cpp
+  Sample_LocalCubemaps.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_LocalCubemaps.exe
+  LocalCubemapsManualProbes.cpp
+  LocalCubemapsManualProbesGameState.cpp
+  Sample_LocalCubemapsManualProbes.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_LocalCubemapsManualProbes.exe
+  MeshLod.cpp
+  MeshLodGameState.cpp
+  Sample_MeshLod.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_MeshLod.exe
+  MorphAnimations.cpp
+  MorphAnimationsGameState.cpp
+  Sample_MorphAnimations.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_MorphAnimations.exe
+  ParticleFX.cpp
+  ParticleFXGameState.cpp
+  Sample_ParticleFX.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_ParticleFX.exe
+  PbsMaterials.cpp
+  PbsMaterialsGameState.cpp
+  Sample_PbsMaterials.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_PbsMaterials.exe
+  PccPerPixelGridPlacement.cpp
+  PccPerPixelGridPlacementGameState.cpp
+  Sample_PccPerPixelGridPlacement.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_PccPerPixelGridPlacement.exe
+  PlanarReflections.cpp
+  PlanarReflectionsGameState.cpp
+  Sample_PlanarReflections.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_PlanarReflections.exe
+  Postprocessing.cpp
+  PostprocessingGameState.cpp
+  Sample_Postprocessing.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_Postprocessing.exe
+  Refractions.cpp
+  RefractionsGameState.cpp
+  Sample_Refractions.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_Refractions.exe
+  SceneFormat.cpp
+  SceneFormatGameState.cpp
+  Sample_SceneFormat.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_SceneFormat.exe
+  ScreenSpaceReflectionsGameState.cpp
+  ScreenSpaceReflectionsMain.cpp
+  Sample_ScreenSpaceReflections.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_ScreenSpaceReflections.exe
+  ShadowMapDebugging.cpp
+  ShadowMapDebuggingGameState.cpp
+  Sample_ShadowMapDebugging.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_ShadowMapDebugging.exe
+  ShadowMapFromCode.cpp
+  ShadowMapFromCodeGameState.cpp
+  Sample_ShadowMapFromCode.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_ShadowMapFromCode.exe
+  StaticShadowMaps.cpp
+  StaticShadowMapsGameState.cpp
+  Sample_StaticShadowMaps.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_StaticShadowMaps.exe
+  StencilTest.cpp
+  StencilTestGameState.cpp
+  Sample_StencilTest.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_StencilTest.exe
+  StereoRendering.cpp
+  StereoRenderingGameState.cpp
+  Sample_StereoRendering.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_StereoRendering.exe
+  Tutorial00_Basic.cpp
+  Sample_Tutorial00_Basic.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_Tutorial00_Basic.exe
+  Tutorial01Tutorial01_Initialization.cpp
+  Sample_Tutorial01_Initialization.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_Tutorial01_Initialization.exe
+  MyGameState.cpp
+  Tutorial02_VariableFramerate.cpp
+  Sample_Tutorial02_VariableFramerate.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_Tutorial02_VariableFramerate.exe
+  MyGameState.cpp
+  Tutorial03_DeterministicLoop.cpp
+  Sample_Tutorial03_DeterministicLoop.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_Tutorial03_DeterministicLoop.exe
+  GraphicsGameState.cpp
+  LogicGameState.cpp
+  Tutorial04_InterpolationLoop.cpp
+  Sample_Tutorial04_InterpolationLoop.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_Tutorial04_InterpolationLoop.exe
+  GraphicsGameState.cpp
+  Tutorial05_MultithreadingBasics.cpp
+  Sample_Tutorial05_MultithreadingBasics.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_Tutorial05_MultithreadingBasics.exe
+  GraphicsGameState.cpp
+  LogicGameState.cpp
+  Tutorial06_Multithreading.cpp
+  Sample_Tutorial06_Multithreading.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_Tutorial06_Multithreading.exe
+  TutorialCompute01_UavTexture.cpp
+  TutorialCompute01_UavTextureGameState.cpp
+  Sample_TutorialCompute01_UavTexture.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_TutorialCompute01_UavTexture.exe
+  TutorialCompute02_UavBuffer.cpp
+  TutorialCompute02_UavBufferGameState.cpp
+  Sample_TutorialCompute02_UavBuffer.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_TutorialCompute02_UavBuffer.exe
+  TutorialSky_Postprocess.cpp
+  TutorialSky_PostprocessGameState.cpp
+  Sample_TutorialSky_Postprocess.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_TutorialSky_Postprocess.exe
+  TutorialUav01_Setup.cpp
+  TutorialUav01_SetupGameState.cpp
+  Sample_TutorialUav01_Setup.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_TutorialUav01_Setup.exe
+  TutorialUav02_Setup.cpp
+  TutorialUav02_SetupGameState.cpp
+  Sample_TutorialUav02_Setup.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_TutorialUav02_Setup.exe
+  Tutorial_Distortion.cpp
+  Tutorial_DistortionGameState.cpp
+  Sample_Tutorial_Distortion.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_Tutorial_Distortion.exe
+  Tutorial_DynamicCubemap.cpp
+  Tutorial_DynamicCubemapGameState.cpp
+  Sample_Tutorial_DynamicCubemap.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_Tutorial_DynamicCubemap.exe
+  Tutorial_Memory.cpp
+  Tutorial_MemoryGameState.cpp
+  Sample_Tutorial_Memory.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_Tutorial_Memory.exe
+  Tutorial_ReconstructPosFromDepth.cpp
+  Tutorial_ReconstructPosFromDepthGameState.cpp
+  Sample_Tutorial_ReconstructPosFromDepth.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_Tutorial_ReconstructPosFromDepth.exe
+  Tutorial_SMAA.cpp
+  Tutorial_SMAAGameState.cpp
+  Sample_Tutorial_SMAA.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_Tutorial_SMAA.exe
+  Tutorial_SSAO.cpp
+  Tutorial_SSAOGameState.cpp
+  Sample_Tutorial_SSAO.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_Tutorial_SSAO.exe
+  OgreHlmsJsonTerra.cpp
+  OgreHlmsTerra.cpp
+  OgreHlmsTerraDatablock.cpp
+  OgreHlmsPbsTerraShadows.cpp
+  Terra.cpp
+  TerraShadowMapper.cpp
+  TerraWorkspaceListener.cpp
+  TerrainCell.cpp
+  Tutorial_Terrain.cpp
+  Tutorial_TerrainGameState.cpp
+  Sample_Tutorial_Terrain.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_Tutorial_Terrain.exe
+  Tutorial_TextureBaking.cpp
+  Tutorial_TextureBakingGameState.cpp
+  Sample_Tutorial_TextureBaking.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_Tutorial_TextureBaking.exe
+  Tutorial_VulkanExternal.cpp
+  Sample_Tutorial_VulkanExternal.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_Tutorial_VulkanExternal.exe
+  UpdatingDecalsAndAreaLightTex.cpp
+  UpdatingDecalsAndAreaLightTexGameState.cpp
+  Sample_UpdatingDecalsAndAreaLightTex.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_UpdatingDecalsAndAreaLightTex.exe
+  V1Interfaces.cpp
+  V1InterfacesGameState.cpp
+  Sample_V1Interfaces.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_V1Interfaces.exe
+  V2ManualObject.cpp
+  V2ManualObjectGameState.cpp
+  Sample_V2ManualObject.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_V2ManualObject.exe
+  V2Mesh.cpp
+  V2MeshGameState.cpp
+  Sample_V2Mesh.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Sample_V2Mesh.exe
+  ArrayTextures.cpp
+  Test_ArrayTextures.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Test_ArrayTextures.exe
+  BillboardTest.cpp
+  BillboardTestGameState.cpp
+  Test_BillboardTest.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Test_BillboardTest.exe
+  EndFrameOnceFailure.cpp
+  EndFrameOnceFailureGameState.cpp
+  Test_EndFrameOnceFailure.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Test_EndFrameOnceFailure.exe
+  InternalCore.cpp
+  InternalCoreGameState.cpp
+  Test_InternalCore.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Test_InternalCore.exe
+  MemoryCleanup.cpp
+  MemoryCleanupGameState.cpp
+  Test_MemoryCleanup.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Test_MemoryCleanup.exe
+  NearFarProjection.cpp
+  NearFarProjectionGameState.cpp
+  Test_NearFarProjection.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Test_NearFarProjection.exe
+  Readback.cpp
+  ReadbackGameState.cpp
+  Test_Readback.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Test_Readback.exe
+  Restart.cpp
+  RestartGameState.cpp
+  Test_Restart.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Test_Restart.exe
+  TextureResidency.cpp
+  TextureResidencyGameState.cpp
+  Test_TextureResidency.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Test_TextureResidency.exe
+  Voxelizer.cpp
+  VoxelizerGameState.cpp
+C:\dev\Ogre\ogre-next\Samples\2.0\Tests\Voxelizer\VoxelizerGameState.cpp(406,34): warning C4244: 'initializing': conversion from 'size_t' to 'float', possible loss of data [C:\dev\Ogre\ogre-next\build\Samples\2.0\Tests\Voxelizer\Test_Voxelizer.vcxproj]
+C:\dev\Ogre\ogre-next\Samples\2.0\Tests\Voxelizer\VoxelizerGameState.cpp(406,30): warning C4244: 'initializing': conversion from 'size_t' to 'const float', possible loss of data [C:\dev\Ogre\ogre-next\build\Samples\2.0\Tests\Voxelizer\Test_Voxelizer.vcxproj]
+  Test_Voxelizer.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Test_Voxelizer.exe
+  NullCompositorListener.cpp
+  OpenVRCompositorListener.cpp
+  Tutorial_OpenVR.cpp
+  Tutorial_OpenVRGameState.cpp
+  Tutorial_OpenVR.vcxproj -> C:\dev\Ogre\ogre-next\build\bin\Release\Tutorial_OpenVR.exe

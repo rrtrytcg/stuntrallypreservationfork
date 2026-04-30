@@ -1,0 +1,36 @@
+# Ogre configure/build command plan
+Date: 2026-04-30
+Scope: Ogre-Next reproduction only. MyGUI and SR3 are out of scope.
+
+Upstream script inspected: C:\dev\build_ogre_Visual_Studio_16_2019_x64.bat
+Upstream script assumptions:
+- OGRE_BRANCH_NAME=master before manual edit
+- Generator: Visual Studio 16 2019
+- Standalone CMake paths: C:\Program Files\CMake or C:\Program Files (x86)\CMake
+
+W1 VS2022 lane deviations:
+- Branch pinned to v3-0 as docs/BuildingVS.md requires.
+- Generator changed to Visual Studio 17 2022 because VS2019 is not installed and W1 first lane is VS2022.
+- CMake path set to VS2022 bundled CMake because plain shell cmake is not on PATH and standalone CMake is not installed in the script's expected path.
+- OGRE_BUILD_COMPONENT_PLANAR_REFLECTIONS=1 added to configure command as docs/BuildingVS.md requires.
+- OGRE_BUILD_COMPONENT_ATMOSPHERE=1 added explicitly so both SR3-required components are visible in CMakeCache evidence.
+
+VS2022 developer environment:
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\Tools\VsDevCmd.bat
+CMake:
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe
+
+Commands:
+mkdir C:\dev\Ogre
+cd C:\dev\Ogre
+git clone --recurse-submodules --shallow-submodules https://github.com/OGRECave/ogre-next-deps
+cmake -G 'Visual Studio 17 2022' -A x64 ..   # in C:\dev\Ogre\ogre-next-deps\build
+cmake --build . --config Debug
+cmake --build . --target install --config Debug
+cmake --build . --config Release
+cmake --build . --target install --config Release
+git clone --branch v3-0 https://github.com/OGRECave/ogre-next
+mklink /D Dependencies ..\ogre-next-deps\build\ogredeps   # in C:\dev\Ogre\ogre-next if needed
+cmake -D OGRE_CONFIG_THREAD_PROVIDER=0 -D OGRE_CONFIG_THREADS=0 -D OGRE_BUILD_COMPONENT_SCENE_FORMAT=1 -D OGRE_BUILD_COMPONENT_PLANAR_REFLECTIONS=1 -D OGRE_BUILD_COMPONENT_ATMOSPHERE=1 -D OGRE_BUILD_SAMPLES2=1 -D OGRE_BUILD_TESTS=1 -D OGRE_DEPENDENCIES_DIR=..\..\ogre-next-deps\build\ogredeps -G 'Visual Studio 17 2022' -A x64 ..   # in C:\dev\Ogre\ogre-next\build
+cmake --build . --config Release
+cmake --build . --target install --config Release

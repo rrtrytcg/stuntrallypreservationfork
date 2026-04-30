@@ -1,0 +1,264 @@
+
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026>call "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\Tools\VsDevCmd.bat" -arch=x64 -host_arch=x64 
+**********************************************************************
+** Visual Studio 2022 Developer Command Prompt v17.14.28
+** Copyright (c) 2025 Microsoft Corporation
+**********************************************************************
+CMake Deprecation Warning at CMakeLists.txt:17 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.26200.
+-- The C compiler identification is MSVC 19.44.35224.0
+-- The CXX compiler identification is MSVC 19.44.35224.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring OGRE 3.0.0
+-- Check size of void*
+-- Check size of void* - done
+-- Search path: C:/dev/Ogre/ogre-next-deps/build/ogredeps;C:/dev/Ogre/ogre-next/build/Dependencies;C:/dev/Ogre/ogre-next/Dependencies;C:/dev/Ogre/ogre-next/build/../Dependencies;C:/dev/Ogre/ogre-next/../Dependencies
+-- Looking for ZLIB...
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+-- Found ZLIB: optimized;C:/dev/Ogre/ogre-next-deps/build/ogredeps/lib/Release/zlib.lib;debug;C:/dev/Ogre/ogre-next-deps/build/ogredeps/lib/Debug/zlib_d.lib
+-- Looking for ZZip...
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+-- Found ZZip: optimized;C:/dev/Ogre/ogre-next-deps/build/ogredeps/lib/Release/zziplib.lib;debug;C:/dev/Ogre/ogre-next-deps/build/ogredeps/lib/Debug/zziplib_d.lib
+-- Looking for FreeImage...
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+-- Found FreeImage: optimized;C:/dev/Ogre/ogre-next-deps/build/ogredeps/lib/Release/FreeImage.lib;debug;C:/dev/Ogre/ogre-next-deps/build/ogredeps/lib/Debug/FreeImage_d.lib
+-- Looking for FREETYPE...
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+-- CMAKE_PREFIX_PATH: C:/dev/Ogre/ogre-next-deps/build/ogredeps;C:/dev/Ogre/ogre-next/build/Dependencies;C:/dev/Ogre/ogre-next/Dependencies;C:/dev/Ogre/ogre-next/build/../Dependencies;C:/dev/Ogre/ogre-next/../Dependencies
+-- CMAKE_PREFIX_PATH: C:/dev/Ogre/ogre-next-deps/build/ogredeps;C:/dev/Ogre/ogre-next/build/Dependencies;C:/dev/Ogre/ogre-next/Dependencies;C:/dev/Ogre/ogre-next/build/../Dependencies;C:/dev/Ogre/ogre-next/../Dependencies
+-- Found FREETYPE: optimized;C:/dev/Ogre/ogre-next-deps/build/ogredeps/lib/Release/freetype.lib;debug;C:/dev/Ogre/ogre-next-deps/build/ogredeps/lib/Debug/freetype_d.lib
+-- Found Vulkan: C:/dev/Ogre/ogre-next-deps/build/ogredeps/lib/Release/vulkan-1.lib
+-- Looking for Rapidjson...
+-- Rapidjson_PREFIX_PATH changed.
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+-- Found Rapidjson: C:/dev/Ogre/ogre-next-deps/build/ogredeps/include/
+-- Looking for RenderDoc...
+-- RenderDoc_PREFIX_PATH changed.
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+-- Found RenderDoc: C:/dev/Ogre/ogre-next-deps/build/ogredeps/include/
+-- Found OpenGL: opengl32
+-- Looking for DirectX11...
+-- Found DirectX11 headers: C:/Program Files (x86)/Windows Kits/10/Include/10.0.26100.0/um
+-- Found DirectX11: d3d11.lib;dxgi.lib;dxguid.lib
+-- Looking for AMDAGS...
+-- AMDAGS_PREFIX_PATH changed.
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+-- Found AMDAGS: optimized;C:/dev/Ogre/ogre-next-deps/build/ogredeps/lib/release/amd_ags_x64.lib;debug;C:/dev/Ogre/ogre-next-deps/build/ogredeps/lib/debug/amd_ags_x64.lib
+-- Looking for OpenVR...
+-- OpenVR_PREFIX_PATH changed.
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+-- Found OpenVR: optimized;C:/dev/Ogre/ogre-next-deps/build/ogredeps/lib/release/openvr_api.lib;debug;C:/dev/Ogre/ogre-next-deps/build/ogredeps/lib/debug/openvr_api.lib
+-- Looking for Remotery...
+-- Remotery_PREFIX_PATH changed.
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+-- Found Remotery: C:/dev/Ogre/ogre-next-deps/build/ogredeps/include/
+-- Looking for POCO...
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+-- Could not locate POCO
+-- Looking for TBB...
+-- Could not locate TBB
+-- Looking for GLSL_Optimizer...
+-- GLSL_Optimizer_PREFIX_PATH changed.
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+-- Could not locate GLSL_Optimizer
+-- Looking for HLSL2GLSL...
+-- HLSL2GLSL_PREFIX_PATH changed.
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+-- Could not locate HLSL2GLSL
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - not found
+-- Found Threads: TRUE
+-- Found SDL2: winmm;imm32;version;msimg32;C:/dev/Ogre/ogre-next-deps/build/ogredeps/lib/SDL2main.lib;C:/dev/Ogre/ogre-next-deps/build/ogredeps/lib/SDL2.lib
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+-- Looking for Softimage...
+-- Softimage_PREFIX_PATH changed.
+-- Could not locate Softimage
+-- Could NOT find TinyXML (missing: TINYXML_INCLUDE_DIR TINYXML_LIBRARIES) 
+-- Looking for CppUnit...
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+-- Could not locate CppUnit
+-- 
+-----------------------------------------------------------------------------
+-- The following external packages were located on your system.
+-- This installation will have the extra features provided by these packages.
++ zlib
++ zziplib
++ freeimage
++ freetype
++ vulkan-sdk
++ rapidjson
++ RenderDoc
++ OpenGL
++ OpenGL 3+
++ OpenGL ES 2.x
++ OpenGL ES 3.x
++ DirectX11
++ AMDAGS
++ OpenVR
++ Remotery
++ SDL2
+-----------------------------------------------------------------------------
+-- The following OPTIONAL packages could NOT be located on your system.
+-- Consider installing them to enable more features from this software.
++ POCO: POCO framework <http://pocoproject.org/>
++ tbb: Threading Building Blocks <http://www.threadingbuildingblocks.org/>
++ GLSL Optimizer: GLSL Optimizer <http://github.com/aras-p/glsl-optimizer/>
++ HLSL2GLSL: HLSL2GLSL <http://hlsl2glslfork.googlecode.com/>
++ Doxygen: Tool for building API documentation <http://doxygen.org>
++ Softimage: Softimage SDK needed for building XSIExporter <FALSE>
++ TinyXML: TinyXML needed for building OgreXMLConverter <FALSE>
++ CppUnit: Library for performing unit tests <http://cppunit.sourceforge.net>
+-----------------------------------------------------------------------------
+
+-- Installing target: OgreMain  TRUE
+-- Installing target: RenderSystem_Direct3D11 /opt OFF
+-- Installing target: RenderSystem_GL3Plus /opt OFF
+-- Installing target: RenderSystem_Vulkan /opt OFF
+-- Installing target: RenderSystem_NULL /opt OFF
+-- Installing target: Plugin_ParticleFX /opt OFF
+-- Installing target: OgreAtmosphere  FALSE
+-- Installing target: OgreHlmsPbs  FALSE
+-- OGRE_NEXT_PREFIX: OGRE
+-- Installing target: OgreHlmsUnlit  FALSE
+-- Installing target: OgrePlanarReflections  FALSE
+-- Installing target: OgreSceneFormat  FALSE
+-- Installing target: OgreMeshLodGenerator  FALSE
+-- Installing target: OgreOverlay  FALSE
+-- Installing target: Sample_AnimationTagPoint /opt/samples FALSE
+-- Installing target: Sample_AreaApproxLights /opt/samples FALSE
+-- Installing target: Sample_Atmosphere /opt/samples FALSE
+-- Installing target: Sample_ImportAnimationsShareSkeletonInstance /opt/samples FALSE
+-- Installing target: Sample_CustomRenderable /opt/samples FALSE
+-- Installing target: Sample_Decals /opt/samples FALSE
+-- Installing target: Sample_DynamicGeometry /opt/samples FALSE
+-- Installing target: Sample_IesProfiles /opt/samples FALSE
+-- Installing target: Sample_ImageVoxelizer /opt/samples FALSE
+-- Installing target: Sample_InstancedStereo /opt/samples FALSE
+-- Installing target: Sample_InstantRadiosity /opt/samples FALSE
+-- Installing target: Sample_LocalCubemaps /opt/samples FALSE
+-- Installing target: Sample_LocalCubemapsManualProbes /opt/samples FALSE
+-- Installing target: Sample_MeshLod /opt/samples FALSE
+-- Installing target: Sample_MorphAnimations /opt/samples FALSE
+-- Installing target: Sample_ParticleFX /opt/samples FALSE
+-- Installing target: Sample_Refractions /opt/samples FALSE
+-- Installing target: Sample_V1Interfaces /opt/samples FALSE
+-- Installing target: Sample_V2Mesh /opt/samples FALSE
+-- Installing target: Sample_V2ManualObject /opt/samples FALSE
+-- Installing target: Sample_PccPerPixelGridPlacement /opt/samples FALSE
+-- Installing target: Sample_PlanarReflections /opt/samples FALSE
+-- Installing target: Sample_SceneFormat /opt/samples FALSE
+-- Installing target: Sample_ScreenSpaceReflections /opt/samples FALSE
+-- Installing target: Sample_StaticShadowMaps /opt/samples FALSE
+-- Installing target: Sample_StencilTest /opt/samples FALSE
+-- Installing target: Sample_StereoRendering /opt/samples FALSE
+-- Installing target: Sample_ShadowMapDebugging /opt/samples FALSE
+-- Installing target: Sample_ShadowMapFromCode /opt/samples FALSE
+-- Installing target: Sample_UpdatingDecalsAndAreaLightTex /opt/samples FALSE
+-- Installing target: Sample_Forward3D /opt/samples FALSE
+-- Installing target: Sample_Hdr /opt/samples FALSE
+-- Installing target: Sample_HdrSmaa /opt/samples FALSE
+-- Installing target: Sample_PbsMaterials /opt/samples FALSE
+-- Installing target: Sample_Postprocessing /opt/samples FALSE
+-- Installing target: Sample_Tutorial00_Basic /opt/samples FALSE
+-- Installing target: Sample_Tutorial01_Initialization /opt/samples FALSE
+-- Installing target: Sample_Tutorial02_VariableFramerate /opt/samples FALSE
+-- Installing target: Sample_Tutorial03_DeterministicLoop /opt/samples FALSE
+-- Installing target: Sample_Tutorial04_InterpolationLoop /opt/samples FALSE
+-- Installing target: Sample_Tutorial05_MultithreadingBasics /opt/samples FALSE
+-- Installing target: Sample_Tutorial06_Multithreading /opt/samples FALSE
+-- Installing target: Sample_TutorialCompute01_UavTexture /opt/samples FALSE
+-- Installing target: Sample_TutorialCompute02_UavBuffer /opt/samples FALSE
+-- Installing target: Sample_Tutorial_Distortion /opt/samples FALSE
+-- Installing target: Sample_Tutorial_DynamicCubemap /opt/samples FALSE
+-- Installing target: Sample_Tutorial_Memory /opt/samples FALSE
+-- Installing target: Tutorial_OpenVR /opt/samples FALSE
+-- Installing target: Sample_Tutorial_ReconstructPosFromDepth /opt/samples FALSE
+-- Installing target: Sample_TutorialSky_Postprocess /opt/samples FALSE
+-- Installing target: Sample_Tutorial_SSAO /opt/samples FALSE
+-- Installing target: Sample_Tutorial_SMAA /opt/samples FALSE
+-- Installing target: Sample_Tutorial_Terrain /opt/samples FALSE
+-- Installing target: Sample_Tutorial_TextureBaking /opt/samples FALSE
+-- Installing target: Sample_TutorialUav01_Setup /opt/samples FALSE
+-- Installing target: Sample_TutorialUav02_Setup /opt/samples FALSE
+-- Installing target: Sample_Tutorial_VulkanExternal /opt/samples FALSE
+-- Installing target: Test_ArrayTextures /opt/samples FALSE
+-- Installing target: Test_BillboardTest /opt/samples FALSE
+-- Installing target: Test_EndFrameOnceFailure /opt/samples FALSE
+-- Installing target: Test_InternalCore /opt/samples FALSE
+-- Installing target: Test_MemoryCleanup /opt/samples FALSE
+-- Installing target: Test_NearFarProjection /opt/samples FALSE
+-- Installing target: Test_Readback /opt/samples FALSE
+-- Installing target: Test_Restart /opt/samples FALSE
+-- Installing target: Test_TextureResidency /opt/samples FALSE
+-- Installing target: Test_Voxelizer /opt/samples FALSE
+-- Installing target: OgreCmgenToCubemap  FALSE
+-- Installing target: OgreMeshTool  FALSE
+-- 
+----------------------------------------------------------------------------
+  FEATURE SUMMARY
+----------------------------------------------------------------------------
+
+Building components:
+  + MeshLodGenerator
+  + Atmosphere
+  + PlanarReflections
+  + SceneFormat
+  + Overlay
+Building plugins:
+  + Particle FX
+Building rendersystems:
+  + Direct3D 11
+  + OpenGL 3.3+
+  + Vulkan
+Building executables:
+  + Samples
+  + Tests
+  + Tools
+Building core features:
+  + Mesh Lod
+  + DDS image codec
+  + FreeImage codec
+  + rapidjson
+  + ZIP archives
+  + RenderDoc Integration
+  + AMD AGS D3D11 Vendor extensions
+
+Build type:                      dynamic
+Threading support:               none
+Use double precision:            disabled
+Nodes inherit transform:         disabled
+Assert mode:                     standard
+Allocator type:                  none
+STL containers use allocator:    disabled
+Strings use allocator:           disabled
+Memory tracker (debug):          disabled
+Memory tracker (release):        disabled
+Use SIMD (SSE2):                 enabled
+Use SIMD (NEON):                 enabled
+
+----------------------------------------------------------------------------
+
+-- Configuring done (8.7s)
+-- Generating done (1.5s)
+-- Build files have been written to: C:/dev/Ogre/ogre-next/build

@@ -1,0 +1,21 @@
+
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026>cd /d C:\dev\Ogre\ogre-next 
+
+C:\dev\Ogre\ogre-next>if not exist Dependencies mklink /J Dependencies ..\ogre-next-deps\build\ogredeps 
+Junction created for Dependencies <<===>> ..\ogre-next-deps\build\ogredeps
+
+C:\dev\Ogre\ogre-next>dir Dependencies 
+ Volume in drive C is Windows
+ Volume Serial Number is 1A86-5087
+
+ Directory of C:\dev\Ogre\ogre-next\Dependencies
+
+30/04/2026  07:54 pm    <DIR>          .
+30/04/2026  07:55 pm    <DIR>          ..
+30/04/2026  07:57 pm    <DIR>          bin
+30/04/2026  07:54 pm    <DIR>          cmake
+30/04/2026  07:55 pm    <DIR>          include
+30/04/2026  07:55 pm    <DIR>          lib
+30/04/2026  07:54 pm    <DIR>          licenses
+               0 File(s)              0 bytes
+               7 Dir(s)  387,655,921,664 bytes free

@@ -1,0 +1,51 @@
+
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026>call "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\Tools\VsDevCmd.bat" -arch=x64 -host_arch=x64 
+**********************************************************************
+** Visual Studio 2022 Developer Command Prompt v17.14.28
+** Copyright (c) 2025 Microsoft Corporation
+**********************************************************************
+Cloning into 'ogre-next'...
+Updating files:  63% (2623/4128)
+Updating files:  64% (2642/4128)
+Updating files:  65% (2684/4128)
+Updating files:  66% (2725/4128)
+Updating files:  67% (2766/4128)
+Updating files:  68% (2808/4128)
+Updating files:  69% (2849/4128)
+Updating files:  70% (2890/4128)
+Updating files:  71% (2931/4128)
+Updating files:  72% (2973/4128)
+Updating files:  73% (3014/4128)
+Updating files:  74% (3055/4128)
+Updating files:  75% (3096/4128)
+Updating files:  76% (3138/4128)
+Updating files:  77% (3179/4128)
+Updating files:  78% (3220/4128)
+Updating files:  79% (3262/4128)
+Updating files:  80% (3303/4128)
+Updating files:  81% (3344/4128)
+Updating files:  82% (3385/4128)
+Updating files:  83% (3427/4128)
+Updating files:  84% (3468/4128)
+Updating files:  85% (3509/4128)
+Updating files:  86% (3551/4128)
+Updating files:  87% (3592/4128)
+Updating files:  88% (3633/4128)
+Updating files:  89% (3674/4128)
+Updating files:  90% (3716/4128)
+Updating files:  91% (3757/4128)
+Updating files:  92% (3798/4128)
+Updating files:  93% (3840/4128)
+Updating files:  94% (3881/4128)
+Updating files:  95% (3922/4128)
+Updating files:  96% (3963/4128)
+Updating files:  97% (4005/4128)
+Updating files:  98% (4046/4128)
+Updating files:  99% (4087/4128)
+Updating files:  99% (4126/4128)
+Updating files: 100% (4128/4128)
+Updating files: 100% (4128/4128), done.
+v3-0
+20da67178c571efe1c909db73b710698d60bf3b3
+20da67178c Merge branch 'v2-3' into v3-0
+You do not have sufficient privilege to perform this operation.

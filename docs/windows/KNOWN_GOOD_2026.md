@@ -7,7 +7,7 @@ Policy: Windows Build Rescue is reproducibility first, not modernization. Do not
 ## Status
 
 - W0 packaged binary baseline: closed enough to proceed; screenshots remain a follow-up evidence improvement.
-- W1 source build reproduction: SR3 Release x64 configure/generate succeeded; game/editor build succeeded; runtime staging and smoke not started.
+- W1 source build reproduction: SR3 Release x64 configure/generate succeeded; game/editor build succeeded; runtime staging and bundle validation succeeded; smoke not started.
 - Primary target: Windows 11, Release x64.
 - Primary renderer acceptance path: OpenGL 3+.
 - Secondary useful evidence: Vulkan plugin/device enumeration.
@@ -119,7 +119,8 @@ Build status:
 - `StuntRally3.exe` built successfully from `build-windows-release\StuntRally3.sln`.
 - `SR-Editor3.exe` built successfully from `build-windows-release\StuntRally3.sln`.
 - Built executable path note: current generated output directory is `bin\Release\Release`, not historical runtime root `bin\Release`.
-- Runtime staging and smoke tests not run yet.
+- Runtime staging and bundle validation succeeded.
+- Smoke tests not run yet.
 
 ## SR3 Release Build
 
@@ -148,9 +149,55 @@ Build warnings observed but not fixed in W1:
 
 Not yet verified:
 
-- Runtime DLL/plugin staging.
-- Runtime bundle validation against the W1-built executables.
 - Game/editor launch smoke.
+
+## W1 Runtime Staging
+
+W1 verified runtime staging and bundle validation on 2026-04-30:
+
+- Runtime root: `C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release`.
+- Staging approach: copied built executables from `bin\Release\Release` into the historical `bin\Release` runtime root.
+- CMake output paths were not changed during staging.
+- Runtime bundle validation: passed with `tools/windows/Test-WindowsRuntimeBundle.ps1`.
+- Runtime manifest: `docs/windows/evidence/W1/runtime-manifest.csv`.
+
+Staged executable files:
+
+```text
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release\StuntRally3.exe  4248064 bytes
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release\SR-Editor3.exe    3037696 bytes
+```
+
+Staged DLL/config files:
+
+```text
+plugins.cfg
+MyGUIEngine.dll
+OgreAtmosphere.dll
+OgreHlmsPbs.dll
+OgreHlmsUnlit.dll
+OgreMain.dll
+OgreOverlay.dll
+OgrePlanarReflections.dll
+OpenAL32.dll
+Plugin_ParticleFX.dll
+RenderSystem_GL3Plus.dll
+RenderSystem_Vulkan.dll
+SDL2.dll
+amd_ags_x64.dll
+```
+
+Runtime source notes:
+
+- MyGUI DLL came from `C:\dev\mygui-next\build\bin\Release`.
+- Ogre DLLs/plugins, `SDL2.dll`, and `amd_ags_x64.dll` came from `C:\dev\Ogre\ogre-next\build\bin\Release`.
+- `OpenAL32.dll` came from `C:\dev\openal-soft-1.23.1\build\Release`.
+- No files were copied from the preserved packaged binary specimen.
+- `RenderSystem_Direct3D11.dll` was not staged because Direct3D11 is not a W0-W3 acceptance requirement.
+
+Not yet verified:
+
+- Game/editor launch smoke from the W1 runtime root.
 
 ## Dependency Versions
 

@@ -1,0 +1,9 @@
+# W1 Runtime Bundle Validation
+Date: 2026-04-30
+RuntimeDir: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release
+Command: tools/windows/Test-WindowsRuntimeBundle.ps1 -RuntimeDir "C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release"
+
+Runtime bundle OK: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release
+
+ExitCode: 0
+

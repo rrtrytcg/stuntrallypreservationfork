@@ -1,0 +1,37 @@
+# W1 Runtime Staging Plan
+Date: 2026-04-30
+
+Decision:
+- Use the historical runtime root `C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release`.
+- Copy the built executables from `bin\Release\Release` into `bin\Release` for this staging pass.
+- Do not change CMake output paths in this pass.
+
+Reason:
+- The build pass already produced valid executables.
+- The upstream ritual and existing W3 scripts expect the runtime root to be `bin\Release`.
+- Copying the executables is a narrow staging action; output-path correction can be considered later after W1 launch evidence exists.
+
+Runtime root:
+`C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release`
+
+Executable sources:
+- `C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release\Release\StuntRally3.exe`
+- `C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release\Release\SR-Editor3.exe`
+
+DLL/config sources:
+- `plugins.cfg`: active historical Windows config already present at `bin\Release\plugins.cfg`.
+- MyGUI: `C:\dev\mygui-next\build\bin\Release\MyGUIEngine.dll`.
+- Ogre runtime/plugins: `C:\dev\Ogre\ogre-next\build\bin\Release`.
+- OpenAL Soft: `C:\dev\openal-soft-1.23.1\build\Release\OpenAL32.dll`.
+- `amd_ags_x64.dll`: copied from the reproduced Ogre output at `C:\dev\Ogre\ogre-next\build\bin\Release\amd_ags_x64.dll`, not from the preserved packaged specimen.
+
+Validation:
+- Run `tools/windows/Test-WindowsRuntimeBundle.ps1` against the runtime root.
+- Generate `docs/windows/evidence/W1/runtime-manifest.csv`.
+- Compare the W1 runtime against `docs/windows/evidence/W0/runtime-manifest.csv` as informative evidence only; exact hash match is not expected because W1 executables and source-built DLLs differ from the packaged specimen.
+
+Not performed:
+- Do not launch the game.
+- Do not launch the editor.
+- Do not run smoke tests.
+

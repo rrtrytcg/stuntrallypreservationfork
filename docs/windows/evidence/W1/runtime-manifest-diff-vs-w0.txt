@@ -1,0 +1,11 @@
+# W1 Runtime Manifest Comparison Against W0
+Date: 2026-04-30
+RuntimeDir: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release
+BaselineManifest: docs/windows/evidence/W0/runtime-manifest.csv
+Note: Differences are expected because W1 uses source-built executables and dependency DLLs while W0 is the packaged specimen.
+
+Command: tools/windows/Compare-WindowsRuntimeManifest.ps1 -ManifestPath docs/windows/evidence/W0/runtime-manifest.csv -RuntimeDir "C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release"
+
+
+ExitCode: 1
+

@@ -117,7 +117,7 @@ Checklist:
 - [x] Build MyGUI-next branch `ogre3` against the reproduced Ogre-Next output.
 - [x] Configure SR3 Release x64 using the historical Windows release CMake route, documenting every path edit or file rename.
 - [x] Build `StuntRally3.exe` and `SR-Editor3.exe`.
-- [ ] Stage runtime DLLs and `plugins.cfg` using the W3 scripts where possible.
+- [x] Stage runtime DLLs and `plugins.cfg` using the W3 scripts where possible.
 - [ ] Validate the built runtime bundle, generate a W1 manifest, and run launch smoke.
 - [ ] Promote the final successful machine/toolchain/dependency layout into `KNOWN_GOOD_2026.md`.
 
@@ -464,6 +464,66 @@ Not performed:
 Next recommended W1 step:
 
 - Begin the runtime staging pass only: decide whether to stage against the produced `bin\Release\Release` executable location or make a focused output-path correction to match the historical `bin\Release` runtime directory, copy only the documented W1 DLL/plugin set, validate with `Test-WindowsRuntimeBundle.ps1`, generate a W1 runtime manifest, and stop before launch smoke unless explicitly asked.
+
+### W1 Runtime Staging And Bundle Validation Evidence
+
+Full captured evidence:
+
+```text
+docs/windows/evidence/W1/runtime-staging-plan.txt
+docs/windows/evidence/W1/runtime-staging-command.txt
+docs/windows/evidence/W1/runtime-staging-output.txt
+docs/windows/evidence/W1/runtime-bundle-report.txt
+docs/windows/evidence/W1/runtime-manifest.csv
+docs/windows/evidence/W1/runtime-manifest-diff-vs-w0.txt
+docs/windows/evidence/W1/runtime-staging-result.txt
+docs/windows/evidence/W1/runtime-staging-deviations.txt
+```
+
+Result:
+
+- Runtime root chosen: `C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release`.
+- Built executables were copied from `bin\Release\Release` into the historical `bin\Release` runtime root.
+- Required DLLs were staged from verified W1 dependency outputs.
+- Existing historical `plugins.cfg` in `bin\Release` was retained and validated.
+- `tools/windows/Test-WindowsRuntimeBundle.ps1` passed.
+- W1 runtime manifest was generated.
+- No game/editor launch or smoke test was run.
+
+Required runtime files validated:
+
+- `StuntRally3.exe`.
+- `SR-Editor3.exe`.
+- `plugins.cfg`.
+- `MyGUIEngine.dll`.
+- `OgreAtmosphere.dll`.
+- `OgreHlmsPbs.dll`.
+- `OgreHlmsUnlit.dll`.
+- `OgreMain.dll`.
+- `OgreOverlay.dll`.
+- `OgrePlanarReflections.dll`.
+- `OpenAL32.dll`.
+- `Plugin_ParticleFX.dll`.
+- `RenderSystem_GL3Plus.dll`.
+- `RenderSystem_Vulkan.dll`.
+- `SDL2.dll`.
+- `amd_ags_x64.dll`.
+
+Dependency/runtime source notes:
+
+- `amd_ags_x64.dll` was copied from `C:\dev\Ogre\ogre-next\build\bin\Release`, not from the preserved packaged specimen.
+- No files were copied from the preserved packaged binary specimen.
+- `RenderSystem_Direct3D11.dll` was not staged and is not a W0-W3 acceptance requirement.
+
+W0 comparison:
+
+- The W1 manifest was compared against the W0 packaged manifest for information only.
+- Differences were expected: source-built executables and DLLs have different hashes/sizes from the packaged specimen.
+- W0-only extras not present in W1 include `RenderSystem_Direct3D11.dll`, `SR-Editor3 cfg.bat`, `StuntRally3 cfg.bat`, and `SR-Translator.exe`.
+
+Next recommended W1 step:
+
+- Begin launch smoke only: run `StuntRally3.exe` and `SR-Editor3.exe` from the staged W1 runtime root, capture logs/config deltas, record renderer/API behavior, and make only focused runtime-bundle corrections if a missing DLL/plugin/config blocker appears.
 
 ## W3 Script Inventory
 

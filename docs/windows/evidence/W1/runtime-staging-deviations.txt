@@ -1,0 +1,14 @@
+# W1 Runtime Staging Deviations
+Date: 2026-04-30
+
+Deviations from `docs/BuildingVS.md`:
+- The built executables were produced under `bin\Release\Release`, so W1 copied them into the historical runtime root `bin\Release` for staging.
+- DLL staging used explicit source-built dependency paths instead of a single manual copy pile.
+- `amd_ags_x64.dll` came from the reproduced Ogre output at `C:\dev\Ogre\ogre-next\build\bin\Release\amd_ags_x64.dll`; it was not copied from the preserved packaged specimen.
+- `RenderSystem_Direct3D11.dll` was not staged because Direct3D11 is not a W0-W3 acceptance requirement and `plugins.cfg` has it commented out.
+
+Manifest comparison notes:
+- Comparing W1 against the W0 packaged manifest reported expected hash/size changes for source-built executables and source-built DLLs.
+- W0-only files not present in W1 include `RenderSystem_Direct3D11.dll`, `SR-Editor3 cfg.bat`, `StuntRally3 cfg.bat`, and `SR-Translator.exe`.
+- These differences do not invalidate the W1 bundle validation result because the W1 contract requires the game/editor executables, OpenGL/Vulkan/ParticleFX plugins, MyGUI/Ogre/OpenAL/SDL2/AGS DLLs, and valid `plugins.cfg`.
+

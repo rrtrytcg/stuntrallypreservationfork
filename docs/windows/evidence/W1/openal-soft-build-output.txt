@@ -1,0 +1,169 @@
+# OpenAL Soft build
+PWD: C:\dev\openal-soft-1.23.1
+CMD: cmake --build build --config Release --target INSTALL
+
+**********************************************************************
+** Visual Studio 2022 Developer Command Prompt v17.14.28
+** Copyright (c) 2025 Microsoft Corporation
+**********************************************************************
+MSBuild version 17.14.40+3e7442088 for .NET Framework
+
+  1>Checking Build System
+  Generating version_witness.txt
+  Building Custom Rule C:/dev/openal-soft-1.23.1/CMakeLists.txt
+  Building Custom Rule C:/dev/openal-soft-1.23.1/CMakeLists.txt
+  alcomplex.cpp
+  alfstream.cpp
+  almalloc.cpp
+  alstring.cpp
+  dynload.cpp
+  polyphase_resampler.cpp
+  ringbuffer.cpp
+  strutils.cpp
+  threads.cpp
+  Generating Code...
+  common.vcxproj -> C:\dev\openal-soft-1.23.1\build\Release\common.lib
+  Generating default_hrtf.txt
+  Building Custom Rule C:/dev/openal-soft-1.23.1/CMakeLists.txt
+  auxeffectslot.cpp
+  buffer.cpp
+  effect.cpp
+  effects.cpp
+  error.cpp
+  event.cpp
+  extension.cpp
+  filter.cpp
+  listener.cpp
+  source.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\xutility(5053,27): warning C4244: '=': conversion from 'const ALdouble' to 'float', possible loss of data [C:\dev\openal-soft-1.23.1\build\OpenAL.vcxproj]
+  (compiling source file '../al/source.cpp')
+      C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\xutility(5053,27):
+      the template instantiation context (the oldest one first) is
+          C:\dev\openal-soft-1.23.1\al\source.cpp(3114,10):
+          see reference to function template instantiation '_OutIt *std::copy_n<const ALdouble*,ALuint,float*>(_InIt,_Diff,_OutIt)' being compiled
+          with
+          [
+              _OutIt=float *,
+              _InIt=const ALdouble *,
+              _Diff=ALuint
+          ]
+  
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\xutility(5053,27): warning C4244: '=': conversion from 'double' to 'float', possible loss of data [C:\dev\openal-soft-1.23.1\build\OpenAL.vcxproj]
+  (compiling source file '../al/source.cpp')
+      C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\xutility(5053,27):
+      the template instantiation context (the oldest one first) is
+          C:\dev\openal-soft-1.23.1\al\source.cpp(3292,14):
+          see reference to function template instantiation '_OutIt std::copy_n<double*,ALuint,ALfloat*>(_InIt,_Diff,_OutIt)' being compiled
+          with
+          [
+              _OutIt=ALfloat *,
+              _InIt=double *,
+              _Diff=ALuint
+          ]
+  
+  state.cpp
+  api.cpp
+  call.cpp
+  exception.cpp
+  fx_slot_index.cpp
+  fx_slots.cpp
+  globals.cpp
+  utils.cpp
+  alc.cpp
+  alu.cpp
+  Generating Code...
+  Compiling...
+  alconfig.cpp
+  panning.cpp
+  base.cpp
+  loopback.cpp
+  winmm.cpp
+  dsound.cpp
+  wasapi.cpp
+  wave.cpp
+  ambdec.cpp
+  ambidefs.cpp
+  bformatdec.cpp
+  bs2b.cpp
+  bsinc_tables.cpp
+  buffer_storage.cpp
+  converter.cpp
+  cpu_caps.cpp
+  cubic_tables.cpp
+  devformat.cpp
+  effectslot.cpp
+  except.cpp
+  Generating Code...
+  Compiling...
+  biquad.cpp
+  nfc.cpp
+  splitter.cpp
+  fmt_traits.cpp
+  fpu_ctrl.cpp
+  helpers.cpp
+  hrtf.cpp
+  logging.cpp
+  mastering.cpp
+  mixer.cpp
+  uhjfilter.cpp
+  uiddefs.cpp
+  voice.cpp
+C:\dev\openal-soft-1.23.1\core\voice.cpp(299,73): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data [C:\dev\openal-soft-1.23.1\build\OpenAL.vcxproj]
+C:\dev\openal-soft-1.23.1\core\voice.cpp(315,60): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data [C:\dev\openal-soft-1.23.1\build\OpenAL.vcxproj]
+  mixer_c.cpp
+  mixer_sse.cpp
+  mixer_sse2.cpp
+  mixer_sse3.cpp
+  mixer_sse41.cpp
+  Generating Code...
+  autowah.cpp
+  chorus.cpp
+  compressor.cpp
+  convolution.cpp
+  dedicated.cpp
+  distortion.cpp
+  echo.cpp
+  equalizer.cpp
+  fshifter.cpp
+  modulator.cpp
+  null.cpp
+  pshifter.cpp
+  reverb.cpp
+  vmorpher.cpp
+  context.cpp
+  device.cpp
+  autowah.cpp
+  chorus.cpp
+  compressor.cpp
+  convolution.cpp
+  dedicated.cpp
+  distortion.cpp
+  echo.cpp
+  equalizer.cpp
+  fshifter.cpp
+  modulator.cpp
+  null.cpp
+  pshifter.cpp
+  reverb.cpp
+  vmorpher.cpp
+  null.cpp
+  context.cpp
+  device.cpp
+     Creating library C:/dev/openal-soft-1.23.1/build/Release/OpenAL32.lib and object C:/dev/openal-soft-1.23.1/build/Release/OpenAL32.exp
+  OpenAL.vcxproj -> C:\dev\openal-soft-1.23.1\build\Release\OpenAL32.dll
+  Building Custom Rule C:/dev/openal-soft-1.23.1/CMakeLists.txt
+  1>
+  -- Install configuration: "Release"
+  -- Installing: C:/dev/openal-soft-1.23.1/install/lib/OpenAL32.lib
+  -- Installing: C:/dev/openal-soft-1.23.1/install/bin/OpenAL32.dll
+  -- Installing: C:/dev/openal-soft-1.23.1/install/lib/cmake/OpenAL/OpenALTargets.cmake
+  -- Installing: C:/dev/openal-soft-1.23.1/install/lib/cmake/OpenAL/OpenALTargets-release.cmake
+  -- Installing: C:/dev/openal-soft-1.23.1/install/include/AL
+  -- Installing: C:/dev/openal-soft-1.23.1/install/include/AL/al.h
+  -- Installing: C:/dev/openal-soft-1.23.1/install/include/AL/alc.h
+  -- Installing: C:/dev/openal-soft-1.23.1/install/include/AL/alext.h
+  -- Installing: C:/dev/openal-soft-1.23.1/install/include/AL/efx-creative.h
+  -- Installing: C:/dev/openal-soft-1.23.1/install/include/AL/efx-presets.h
+  -- Installing: C:/dev/openal-soft-1.23.1/install/include/AL/efx.h
+  -- Installing: C:/dev/openal-soft-1.23.1/install/lib/pkgconfig/openal.pc
+  -- Installing: C:/dev/openal-soft-1.23.1/install/lib/cmake/OpenAL/OpenALConfig.cmake

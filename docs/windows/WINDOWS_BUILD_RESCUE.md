@@ -112,7 +112,7 @@ Checklist:
 - [x] Record that plain shell `cmake` is not on PATH; bundled CMake exists inside Visual Studio developer environments.
 - [x] Choose the first W1 compiler lane: VS2022 Build Tools unless the first focused dependency pass proves it too costly.
 - [x] Confirm planned source/specimen/dependency layout and capture current missing dependency folders.
-- [ ] Download/clone/build dependencies following `docs/BuildingVS.md` before attempting any package-manager replacement. Ogre-next-deps are built; non-Ogre SR3 dependencies remain pending.
+- [x] Download/clone/build dependencies following `docs/BuildingVS.md` before attempting any package-manager replacement. Ogre-next-deps and non-Ogre SR3 dependencies are now reproduced or documented.
 - [x] Build Ogre-Next branch `v3-0` with Atmosphere and Planar Reflections enabled.
 - [x] Build MyGUI-next branch `ogre3` against the reproduced Ogre-Next output.
 - [ ] Configure SR3 Release x64 using the historical Windows release CMake route, documenting every path edit or file rename.
@@ -298,6 +298,72 @@ Layout checker result after MyGUI:
 Next recommended W1 step:
 
 - Reproduce the remaining non-Ogre SR3 dependencies only: tinyxml2, Bullet, Boost, Enet, Ogg, Vorbis, and OpenAL Soft. Do not configure SR3 until those dependency roots/build outputs are present and documented.
+
+### W1 Non-Ogre Dependency Reproduction Evidence
+
+Full captured evidence:
+
+```text
+docs/windows/evidence/W1/deps-non-ogre-plan.txt
+docs/windows/evidence/W1/deps-non-ogre-fetch.txt
+docs/windows/evidence/W1/deps-non-ogre-source-revisions.txt
+docs/windows/evidence/W1/deps-non-ogre-build-commands.txt
+docs/windows/evidence/W1/deps-non-ogre-outputs.txt
+docs/windows/evidence/W1/deps-non-ogre-runtime-model.txt
+docs/windows/evidence/W1/deps-non-ogre-deviations.txt
+docs/windows/evidence/W1/tinyxml2-result.txt
+docs/windows/evidence/W1/bullet-result.txt
+docs/windows/evidence/W1/boost-result.txt
+docs/windows/evidence/W1/enet-result.txt
+docs/windows/evidence/W1/ogg-result.txt
+docs/windows/evidence/W1/vorbis-result.txt
+docs/windows/evidence/W1/openal-soft-result.txt
+docs/windows/evidence/W1/build-layout-check-after-non-ogre-deps.txt
+```
+
+Result:
+
+- tinyxml2 `9.0.0` cloned from tag `9.0.0`, configured with `BUILD_SHARED_LIBS=OFF`, and built Release x64.
+- Bullet `3.25` cloned from tag `3.25`, generated with the upstream premake VS2010 path, built required Release x64 legacy-named libs, retained `--dynamic-runtime`, and removed `--double`.
+- Boost `1.81.0` source build was attempted with `runtime-link=shared` but failed before producing libraries; the VS2022-compatible `boost_1_81_0-msvc-14.3-64.exe` binary package was downloaded and installed to `C:\dev\boost_1_81_0-msvc-14.3`.
+- ENet `1.3.17` cloned from tag `v1.3.17`, configured with CMake, and built Release x64 `enet.lib`.
+- Ogg `1.3.5` downloaded from the Xiph release archive, configured with `BUILD_SHARED_LIBS=OFF`, and built/installed Release x64 `ogg.lib`.
+- Vorbis `1.3.7` downloaded from the Xiph release archive, configured against `C:\dev\libogg-1.3.5\install`, and built/installed Release x64 `vorbis.lib` and `vorbisfile.lib`.
+- OpenAL Soft `1.23.1` cloned from tag `1.23.1`, configured with `LIBTYPE=SHARED`, and built/installed `OpenAL32.dll` and `OpenAL32.lib`.
+
+Verified outputs include:
+
+- `C:\dev\tinyxml2-9.0.0\build\Release\tinyxml2.lib`.
+- `C:\dev\bullet3-3.25\bin\BulletCollision_vs2010_x64_release.lib`.
+- `C:\dev\bullet3-3.25\bin\BulletDynamics_vs2010_x64_release.lib`.
+- `C:\dev\bullet3-3.25\bin\BulletFileLoader_vs2010_x64_release.lib`.
+- `C:\dev\bullet3-3.25\bin\BulletWorldImporter_vs2010_x64_release.lib`.
+- `C:\dev\bullet3-3.25\bin\LinearMath_vs2010_x64_release.lib`.
+- `C:\dev\boost_1_81_0-msvc-14.3\lib64-msvc-14.3\boost_system-vc143-mt-x64-1_81.lib`.
+- `C:\dev\boost_1_81_0-msvc-14.3\lib64-msvc-14.3\boost_thread-vc143-mt-x64-1_81.lib`.
+- `C:\dev\boost_1_81_0-msvc-14.3\lib64-msvc-14.3\libboost_system-vc143-mt-x64-1_81.lib`.
+- `C:\dev\boost_1_81_0-msvc-14.3\lib64-msvc-14.3\libboost_thread-vc143-mt-x64-1_81.lib`.
+- `C:\dev\enet-1.3.17\build\Release\enet.lib`.
+- `C:\dev\libogg-1.3.5\build\Release\ogg.lib`.
+- `C:\dev\libvorbis-1.3.7\build\lib\Release\vorbis.lib`.
+- `C:\dev\libvorbis-1.3.7\build\lib\Release\vorbisfile.lib`.
+- `C:\dev\openal-soft-1.23.1\build\Release\OpenAL32.dll`.
+- `C:\dev\openal-soft-1.23.1\build\Release\OpenAL32.lib`.
+
+Recorded deviations:
+
+- VS2022 Build Tools and shell CMake were used instead of the upstream VS2019 CMake-Gui flow.
+- ENet has no generated `INSTALL` target, so W1 recorded the Release build output in place.
+- Bullet's first VS2022 build failed because premake generated `v100` projects; retry used `/p:PlatformToolset=v143` without editing generated files.
+- Boost source build failed in the mixed VS2022/VS2026 environment while making the MSVC setup target; W1 used the Boost 1.81 `msvc-14.3` x64 binary package instead of the upstream VS2019 `msvc-14.2` package.
+
+Layout checker result after non-Ogre dependencies:
+
+- Passed for the current W1 guard scope. The checker validates source root, dependency root, Ogre output, and MyGUI output; the new non-Ogre evidence files record the additional dependency outputs.
+
+Next recommended W1 step:
+
+- Begin the SR3 configure pass only: prepare the historical Windows Release CMake route in the source fork, map the hardcoded `D:/_/sr`, `D:/_/sr/og3`, `C:/b/boost_1_81_0`, and `DIR_ONE_ABOVE` assumptions to the verified W1 dependency roots, record every file rename/path edit, configure Release x64, and stop before broad CMake cleanup or dependency automation.
 
 ## W3 Script Inventory
 

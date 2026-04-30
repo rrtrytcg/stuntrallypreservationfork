@@ -1,0 +1,100 @@
+# OpenAL Soft configure
+PWD: C:\dev\openal-soft-1.23.1
+CMD: cmake -S . -B build -G "Visual Studio 17 2022" -A x64 -DLIBTYPE=SHARED -DALSOFT_UTILS=OFF -DALSOFT_EXAMPLES=OFF -DALSOFT_INSTALL_CONFIG=OFF -DALSOFT_INSTALL_HRTF_DATA=OFF -DALSOFT_INSTALL_AMBDEC_PRESETS=OFF -DCMAKE_INSTALL_PREFIX=C:/dev/openal-soft-1.23.1/install
+
+**********************************************************************
+** Visual Studio 2022 Developer Command Prompt v17.14.28
+** Copyright (c) 2025 Microsoft Corporation
+**********************************************************************
+CMake Deprecation Warning at CMakeLists.txt:3 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.26200.
+-- The C compiler identification is MSVC 19.44.35224.0
+-- The CXX compiler identification is MSVC 19.44.35224.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+-- Performing Test HAVE___RESTRICT
+-- Performing Test HAVE___RESTRICT - Success
+-- Performing Test HAVE_LIBATOMIC
+-- Performing Test HAVE_LIBATOMIC - Failed
+-- Performing Test HAVE_PERMISSIVE_SWITCH
+-- Performing Test HAVE_PERMISSIVE_SWITCH - Success
+-- Looking for xmmintrin.h
+-- Looking for xmmintrin.h - found
+-- Looking for emmintrin.h
+-- Looking for emmintrin.h - found
+-- Looking for pmmintrin.h
+-- Looking for pmmintrin.h - found
+-- Looking for smmintrin.h
+-- Looking for smmintrin.h - found
+-- Looking for arm_neon.h
+-- Looking for arm_neon.h - not found
+-- Performing Test HAVE_SSE_INTRINSICS
+-- Performing Test HAVE_SSE_INTRINSICS - Success
+-- Looking for malloc.h
+-- Looking for malloc.h - found
+-- Looking for cpuid.h
+-- Looking for cpuid.h - not found
+-- Looking for intrin.h
+-- Looking for intrin.h - found
+-- Looking for guiddef.h
+-- Looking for guiddef.h - found
+-- Looking for pow in m
+-- Looking for pow in m - not found
+-- Looking for clock_gettime in rt
+-- Looking for clock_gettime in rt - not found
+-- Looking for dlfcn.h
+-- Looking for dlfcn.h - not found
+-- Looking for dlopen in dl
+-- Looking for dlopen in dl - not found
+-- Performing Test HAVE_CPUID_INTRINSIC
+-- Performing Test HAVE_CPUID_INTRINSIC - Success
+-- Looking for posix_memalign
+-- Looking for posix_memalign - not found
+-- Looking for _aligned_malloc
+-- Looking for _aligned_malloc - found
+-- Looking for proc_pidpath
+-- Looking for proc_pidpath - not found
+-- Looking for getopt
+-- Looking for getopt - not found
+-- Could NOT find PulseAudio (missing: PULSEAUDIO_LIBRARY PULSEAUDIO_INCLUDE_DIR) 
+-- Looking for dsound.h
+-- Looking for dsound.h - found
+-- Looking for mmdeviceapi.h
+-- Looking for mmdeviceapi.h - found
+-- Could NOT find JACK (missing: JACK_LIBRARY JACK_INCLUDE_DIR) 
+-- Could NOT find OpenSL (missing: OPENSL_LIBRARY OPENSL_INCLUDE_DIR OPENSL_ANDROID_INCLUDE_DIR) 
+-- Could NOT find PortAudio (missing: PORTAUDIO_LIBRARY PORTAUDIO_INCLUDE_DIR) 
+-- Found Git: C:/Program Files/Git/cmd/git.exe (found version "2.53.0.windows.2")
+-- 
+-- Building OpenAL with support for the following backends:
+--     WinMM, DirectSound, WASAPI, WaveFile, Null
+-- 
+-- Building with support for CPU extensions:
+--     Default, SSE, SSE2, SSE3, SSE4.1
+-- 
+-- Building with legacy EAX extension support
+-- 
+-- Embedding HRTF datasets
+-- 
+-- Installing library and headers
+-- 
+-- Configuring done (13.0s)
+-- Generating done (0.1s)
+-- Build files have been written to: C:/dev/openal-soft-1.23.1/build

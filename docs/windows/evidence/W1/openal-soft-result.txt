@@ -1,0 +1,9 @@
+# OpenAL Soft W1 Result
+Version: 1.23.1
+Root: C:\dev\openal-soft-1.23.1
+Source: git tag 1.23.1
+Build: CMake, Visual Studio 17 2022, x64, Release
+Settings: LIBTYPE=SHARED; utilities/examples disabled; config/HRTF/ambdec extra installs disabled
+Result: success
+Outputs: build\Release\OpenAL32.dll; build\Release\OpenAL32.lib; install\bin\OpenAL32.dll; install\lib\OpenAL32.lib
+Runtime model: shared OpenAL DLL produced; VS Release /MD by generated project default.

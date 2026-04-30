@@ -1,0 +1,198 @@
+# Boost build system thread release x64
+PWD: C:\dev\boost_1_81_0
+CMD: b2 -j16 --with-system --with-thread toolset=msvc-14.3 address-model=64 architecture=x86 variant=release link=static runtime-link=shared threading=multi stage
+
+**********************************************************************
+** Visual Studio 2022 Developer Command Prompt v17.14.28
+** Copyright (c) 2025 Microsoft Corporation
+**********************************************************************
+Performing configuration checks
+
+    - default address-model    : none [1]
+    - default architecture     : none [1]
+
+[1] msvc-14.3
+
+Component configuration:
+
+    - atomic                   : not building
+    - chrono                   : not building
+    - container                : not building
+    - context                  : not building
+    - contract                 : not building
+    - coroutine                : not building
+    - date_time                : not building
+    - exception                : not building
+    - fiber                    : not building
+    - filesystem               : not building
+    - graph                    : not building
+    - graph_parallel           : not building
+    - headers                  : not building
+    - iostreams                : not building
+    - json                     : not building
+    - locale                   : not building
+    - log                      : not building
+    - math                     : not building
+    - mpi                      : not building
+    - nowide                   : not building
+    - program_options          : not building
+    - python                   : not building
+    - random                   : not building
+    - regex                    : not building
+    - serialization            : not building
+    - stacktrace               : not building
+    - system                   : building
+    - test                     : not building
+    - thread                   : building
+    - timer                    : not building
+    - type_erasure             : not building
+    - url                      : not building
+    - wave                     : not building
+
+...patience...
+...patience...
+...found 1568 targets...
+...updating 83 targets...
+boost-install.generate-cmake-config-version- bin.v2\tools\boost_install\BoostConfigVersion.cmake
+boost-install.generate-cmake-config- bin.v2\libs\system\build\stage\boost_system-config.cmake
+boost-install.generate-cmake-config-version- bin.v2\libs\system\build\stage\boost_system-config-version.cmake
+boost-install.generate-cmake-config- bin.v2\libs\headers\build\stage\boost_headers-config.cmake
+boost-install.generate-cmake-config-version- bin.v2\libs\headers\build\stage\boost_headers-config-version.cmake
+boost-install.generate-cmake-config- bin.v2\libs\chrono\build\stage\boost_chrono-config.cmake
+boost-install.generate-cmake-config-version- bin.v2\libs\chrono\build\stage\boost_chrono-config-version.cmake
+boost-install.generate-cmake-config- bin.v2\libs\thread\build\stage\boost_thread-config.cmake
+boost-install.generate-cmake-config-version- bin.v2\libs\thread\build\stage\boost_thread-config-version.cmake
+common.copy C:\dev\boost_1_81_0\stage\lib\cmake\BoostDetectToolset-1.81.0.cmake
+C:\dev\boost_1_81_0\tools\boost_install\BoostDetectToolset.cmake
+        1 file(s) copied.
+common.copy C:\dev\boost_1_81_0\stage\lib\cmake\boost_system-1.81.0\boost_system-config.cmake
+bin.v2\libs\system\build\stage\boost_system-config.cmake
+        1 file(s) copied.
+common.copy C:\dev\boost_1_81_0\stage\lib\cmake\Boost-1.81.0\BoostConfig.cmake
+C:\dev\boost_1_81_0\tools\boost_install\BoostConfig.cmake
+        1 file(s) copied.
+common.copy C:\dev\boost_1_81_0\stage\lib\cmake\Boost-1.81.0\BoostConfigVersion.cmake
+bin.v2\tools\boost_install\BoostConfigVersion.cmake
+        1 file(s) copied.
+common.copy C:\dev\boost_1_81_0\stage\lib\cmake\boost_headers-1.81.0\boost_headers-config.cmake
+bin.v2\libs\headers\build\stage\boost_headers-config.cmake
+        1 file(s) copied.
+common.copy C:\dev\boost_1_81_0\stage\lib\cmake\boost_thread-1.81.0\boost_thread-config.cmake
+bin.v2\libs\thread\build\stage\boost_thread-config.cmake
+        1 file(s) copied.
+common.copy C:\dev\boost_1_81_0\stage\lib\cmake\boost_thread-1.81.0\boost_thread-config-version.cmake
+bin.v2\libs\thread\build\stage\boost_thread-config-version.cmake
+        1 file(s) copied.
+common.copy C:\dev\boost_1_81_0\stage\lib\cmake\boost_chrono-1.81.0\boost_chrono-config.cmake
+bin.v2\libs\chrono\build\stage\boost_chrono-config.cmake
+        1 file(s) copied.
+...skipped <pbin.v2\libs\system\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threading-multi>error_code.obj for lack of <pbin.v2\standalone\msvc\msvc-14.3>msvc-setup.nup...
+...skipped <pbin.v2\libs\system\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threading-multi>libboost_system-vc143-mt-x64-1_81.lib for lack of <pbin.v2\libs\system\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threading-multi>error_code.obj...
+...skipped <pC:\dev\boost_1_81_0\stage\lib>libboost_system-vc143-mt-x64-1_81.lib for lack of <pbin.v2\libs\system\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threading-multi>libboost_system-vc143-mt-x64-1_81.lib...
+...skipped <pbin.v2\libs\system\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threading-multi>libboost_system-variant-vc143-mt-x64-1_81-static.cmake for lack of <pbin.v2\libs\system\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threading-multi>libboost_system-vc143-mt-x64-1_81.lib...
+...skipped <pC:\dev\boost_1_81_0\stage\lib\cmake\boost_system-1.81.0>libboost_system-variant-vc143-mt-x64-1_81-static.cmake for lack of <pbin.v2\libs\system\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threading-multi>libboost_system-variant-vc143-mt-x64-1_81-static.cmake...
+common.copy C:\dev\boost_1_81_0\stage\lib\cmake\boost_system-1.81.0\boost_system-config-version.cmake
+bin.v2\libs\system\build\stage\boost_system-config-version.cmake
+        1 file(s) copied.
+common.copy C:\dev\boost_1_81_0\stage\lib\cmake\boost_headers-1.81.0\boost_headers-config-version.cmake
+bin.v2\libs\headers\build\stage\boost_headers-config-version.cmake
+        1 file(s) copied.
+common.copy C:\dev\boost_1_81_0\stage\lib\cmake\boost_chrono-1.81.0\boost_chrono-config-version.cmake
+bin.v2\libs\chrono\build\stage\boost_chrono-config-version.cmake
+        1 file(s) copied.
+...skipped <pbin.v2\libs\chrono\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threading-multi>chrono.obj for lack of <pbin.v2\standalone\msvc\msvc-14.3>msvc-setup.nup...
+...skipped <pbin.v2\libs\chrono\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threading-multi>thread_clock.obj for lack of <pbin.v2\standalone\msvc\msvc-14.3>msvc-setup.nup...
+...skipped <pbin.v2\libs\chrono\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threading-multi>process_cpu_clocks.obj for lack of <pbin.v2\standalone\msvc\msvc-14.3>msvc-setup.nup...
+...skipped <pbin.v2\libs\chrono\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threading-multi>libboost_chrono-vc143-mt-x64-1_81.lib for lack of <pbin.v2\libs\chrono\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threading-multi>chrono.obj...
+...skipped <pC:\dev\boost_1_81_0\stage\lib>libboost_chrono-vc143-mt-x64-1_81.lib for lack of <pbin.v2\libs\chrono\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threading-multi>libboost_chrono-vc143-mt-x64-1_81.lib...
+...skipped <pbin.v2\libs\chrono\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threading-multi>libboost_chrono-variant-vc143-mt-x64-1_81-static.cmake for lack of <pbin.v2\libs\chrono\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threading-multi>libboost_chrono-vc143-mt-x64-1_81.lib...
+...skipped <pC:\dev\boost_1_81_0\stage\lib\cmake\boost_chrono-1.81.0>libboost_chrono-variant-vc143-mt-x64-1_81-static.cmake for lack of <pbin.v2\libs\chrono\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threading-multi>libboost_chrono-variant-vc143-mt-x64-1_81-static.cmake...
+...skipped <pbin.v2\libs\thread\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threadapi-win32\threading-multi>future.obj for lack of <pbin.v2\standalone\msvc\msvc-14.3>msvc-setup.nup...
+...skipped <pbin.v2\libs\thread\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threadapi-win32\threading-multi>win32\thread.obj for lack of <pbin.v2\standalone\msvc\msvc-14.3>msvc-setup.nup...
+...skipped <pbin.v2\libs\thread\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threadapi-win32\threading-multi>win32\tss_dll.obj for lack of <pbin.v2\standalone\msvc\msvc-14.3>msvc-setup.nup...
+...skipped <pbin.v2\libs\thread\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threadapi-win32\threading-multi>win32\tss_pe.obj for lack of <pbin.v2\standalone\msvc\msvc-14.3>msvc-setup.nup...
+...skipped <pbin.v2\libs\thread\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threadapi-win32\threading-multi>win32\thread_primitives.obj for lack of <pbin.v2\standalone\msvc\msvc-14.3>msvc-setup.nup...
+...skipped <pbin.v2\libs\thread\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threadapi-win32\threading-multi>libboost_thread-vc143-mt-x64-1_81.lib for lack of <pbin.v2\libs\thread\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threadapi-win32\threading-multi>win32\thread.obj...
+...skipped <pC:\dev\boost_1_81_0\stage\lib>libboost_thread-vc143-mt-x64-1_81.lib for lack of <pbin.v2\libs\thread\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threadapi-win32\threading-multi>libboost_thread-vc143-mt-x64-1_81.lib...
+...skipped <pbin.v2\libs\thread\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threadapi-win32\threading-multi>libboost_thread-variant-vc143-mt-x64-1_81-static.cmake for lack of <pbin.v2\libs\thread\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threadapi-win32\threading-multi>libboost_thread-vc143-mt-x64-1_81.lib...
+...skipped <pC:\dev\boost_1_81_0\stage\lib\cmake\boost_thread-1.81.0>libboost_thread-variant-vc143-mt-x64-1_81-static.cmake for lack of <pbin.v2\libs\thread\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threadapi-win32\threading-multi>libboost_thread-variant-vc143-mt-x64-1_81-static.cmake...
+...skipped 21 targets...
+...updated 62 targets...
+**********************************************************************
+** Visual Studio 2022 Developer Command Prompt v17.14.28
+** Copyright (c) 2025 Microsoft Corporation
+**********************************************************************
+Performing configuration checks
+
+    - default address-model    : none (cached) [1]
+    - default architecture     : none (cached) [1]
+
+[1] msvc-14.3
+
+Component configuration:
+
+    - atomic                   : not building
+    - chrono                   : not building
+    - container                : not building
+    - context                  : not building
+    - contract                 : not building
+    - coroutine                : not building
+    - date_time                : not building
+    - exception                : not building
+    - fiber                    : not building
+    - filesystem               : not building
+    - graph                    : not building
+    - graph_parallel           : not building
+    - headers                  : not building
+    - iostreams                : not building
+    - json                     : not building
+    - locale                   : not building
+    - log                      : not building
+    - math                     : not building
+    - mpi                      : not building
+    - nowide                   : not building
+    - program_options          : not building
+    - python                   : not building
+    - random                   : not building
+    - regex                    : not building
+    - serialization            : not building
+    - stacktrace               : not building
+    - system                   : building
+    - test                     : not building
+    - thread                   : building
+    - timer                    : not building
+    - type_erasure             : not building
+    - url                      : not building
+    - wave                     : not building
+
+don't know how to make <p/C:/dev/boost_1_81_0>C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\bin\Hostx64\vcvarsall.bat
+...patience...
+...patience...
+...found 1577 targets...
+...updating 21 targets...
+...can't find 1 target...
+...can't make 2 targets...
+...skipped <pbin.v2\standalone\msvc\msvc-14.3>msvc-setup.read for lack of <p/C:/dev/boost_1_81_0>C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\bin\Hostx64\vcvarsall.bat...
+...skipped <pbin.v2\standalone\msvc\msvc-14.3>msvc-setup.bat for lack of <p/C:/dev/boost_1_81_0>C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\bin\Hostx64\vcvarsall.bat...
+...skipped <pbin.v2\libs\system\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threading-multi>error_code.obj for lack of <pbin.v2\standalone\msvc\msvc-14.3>msvc-setup.nup...
+...skipped <pbin.v2\libs\system\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threading-multi>libboost_system-vc143-mt-x64-1_81.lib for lack of <pbin.v2\libs\system\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threading-multi>error_code.obj...
+...skipped <pC:\dev\boost_1_81_0\stage\lib>libboost_system-vc143-mt-x64-1_81.lib for lack of <pbin.v2\libs\system\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threading-multi>libboost_system-vc143-mt-x64-1_81.lib...
+...skipped <pbin.v2\libs\system\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threading-multi>libboost_system-variant-vc143-mt-x64-1_81-static.cmake for lack of <pbin.v2\libs\system\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threading-multi>libboost_system-vc143-mt-x64-1_81.lib...
+...skipped <pC:\dev\boost_1_81_0\stage\lib\cmake\boost_system-1.81.0>libboost_system-variant-vc143-mt-x64-1_81-static.cmake for lack of <pbin.v2\libs\system\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threading-multi>libboost_system-variant-vc143-mt-x64-1_81-static.cmake...
+...skipped <pbin.v2\libs\chrono\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threading-multi>chrono.obj for lack of <pbin.v2\standalone\msvc\msvc-14.3>msvc-setup.nup...
+...skipped <pbin.v2\libs\chrono\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threading-multi>thread_clock.obj for lack of <pbin.v2\standalone\msvc\msvc-14.3>msvc-setup.nup...
+...skipped <pbin.v2\libs\chrono\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threading-multi>process_cpu_clocks.obj for lack of <pbin.v2\standalone\msvc\msvc-14.3>msvc-setup.nup...
+...skipped <pbin.v2\libs\chrono\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threading-multi>libboost_chrono-vc143-mt-x64-1_81.lib for lack of <pbin.v2\libs\chrono\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threading-multi>chrono.obj...
+...skipped <pC:\dev\boost_1_81_0\stage\lib>libboost_chrono-vc143-mt-x64-1_81.lib for lack of <pbin.v2\libs\chrono\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threading-multi>libboost_chrono-vc143-mt-x64-1_81.lib...
+...skipped <pbin.v2\libs\thread\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threadapi-win32\threading-multi>win32\thread.obj for lack of <pbin.v2\standalone\msvc\msvc-14.3>msvc-setup.nup...
+...skipped <pbin.v2\libs\thread\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threadapi-win32\threading-multi>win32\tss_dll.obj for lack of <pbin.v2\standalone\msvc\msvc-14.3>msvc-setup.nup...
+...skipped <pbin.v2\libs\thread\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threadapi-win32\threading-multi>win32\tss_pe.obj for lack of <pbin.v2\standalone\msvc\msvc-14.3>msvc-setup.nup...
+...skipped <pbin.v2\libs\thread\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threadapi-win32\threading-multi>win32\thread_primitives.obj for lack of <pbin.v2\standalone\msvc\msvc-14.3>msvc-setup.nup...
+...skipped <pbin.v2\libs\thread\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threadapi-win32\threading-multi>future.obj for lack of <pbin.v2\standalone\msvc\msvc-14.3>msvc-setup.nup...
+...skipped <pbin.v2\libs\thread\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threadapi-win32\threading-multi>libboost_thread-vc143-mt-x64-1_81.lib for lack of <pbin.v2\libs\thread\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threadapi-win32\threading-multi>win32\thread.obj...
+...skipped <pC:\dev\boost_1_81_0\stage\lib>libboost_thread-vc143-mt-x64-1_81.lib for lack of <pbin.v2\libs\thread\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threadapi-win32\threading-multi>libboost_thread-vc143-mt-x64-1_81.lib...
+...skipped <pbin.v2\libs\thread\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threadapi-win32\threading-multi>libboost_thread-variant-vc143-mt-x64-1_81-static.cmake for lack of <pbin.v2\libs\thread\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threadapi-win32\threading-multi>libboost_thread-vc143-mt-x64-1_81.lib...
+...skipped <pC:\dev\boost_1_81_0\stage\lib\cmake\boost_thread-1.81.0>libboost_thread-variant-vc143-mt-x64-1_81-static.cmake for lack of <pbin.v2\libs\thread\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threadapi-win32\threading-multi>libboost_thread-variant-vc143-mt-x64-1_81-static.cmake...
+...skipped <pbin.v2\libs\chrono\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threading-multi>libboost_chrono-variant-vc143-mt-x64-1_81-static.cmake for lack of <pbin.v2\libs\chrono\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threading-multi>libboost_chrono-vc143-mt-x64-1_81.lib...
+...skipped <pC:\dev\boost_1_81_0\stage\lib\cmake\boost_chrono-1.81.0>libboost_chrono-variant-vc143-mt-x64-1_81-static.cmake for lack of <pbin.v2\libs\chrono\build\msvc-14.3\release\address-model-64\architecture-x86\link-static\threading-multi>libboost_chrono-variant-vc143-mt-x64-1_81-static.cmake...
+...skipped 23 targets...

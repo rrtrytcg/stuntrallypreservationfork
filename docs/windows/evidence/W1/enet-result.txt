@@ -1,0 +1,10 @@
+# ENet W1 Result
+Version: 1.3.17
+Root: C:\dev\enet-1.3.17
+Source: git tag v1.3.17
+Build: CMake, Visual Studio 17 2022, x64, Release
+Result: success
+Outputs: build\Release\enet.lib
+Runtime model: VS Release /MD by generated project default.
+Deviation: this CMake project did not generate an INSTALL target, so W1 built ALL_BUILD and recorded build output directly.
+Later SR3 note: docs/BuildingVS.md says winmm.lib and Ws2_32.lib may need to be added when linking ENet consumers.

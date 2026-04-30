@@ -1,0 +1,34 @@
+# libogg build
+PWD: C:\dev\libogg-1.3.5
+CMD: cmake --build build --config Release --target INSTALL
+
+**********************************************************************
+** Visual Studio 2022 Developer Command Prompt v17.14.28
+** Copyright (c) 2025 Microsoft Corporation
+**********************************************************************
+MSBuild version 17.14.40+3e7442088 for .NET Framework
+
+  1>Checking Build System
+  Building Custom Rule C:/dev/libogg-1.3.5/CMakeLists.txt
+  bitwise.c
+  framing.c
+  Generating Code...
+  ogg.vcxproj -> C:\dev\libogg-1.3.5\build\Release\ogg.lib
+  Building Custom Rule C:/dev/libogg-1.3.5/CMakeLists.txt
+  bitwise.c
+  test_bitwise.vcxproj -> C:\dev\libogg-1.3.5\build\Release\test_bitwise.exe
+  Building Custom Rule C:/dev/libogg-1.3.5/CMakeLists.txt
+  framing.c
+  test_framing.vcxproj -> C:\dev\libogg-1.3.5\build\Release\test_framing.exe
+  Building Custom Rule C:/dev/libogg-1.3.5/CMakeLists.txt
+  1>
+  -- Install configuration: "Release"
+  -- Installing: C:/dev/libogg-1.3.5/install/lib/ogg.lib
+  -- Installing: C:/dev/libogg-1.3.5/install/include/ogg/config_types.h
+  -- Installing: C:/dev/libogg-1.3.5/install/include/ogg/ogg.h
+  -- Installing: C:/dev/libogg-1.3.5/install/include/ogg/os_types.h
+  -- Installing: C:/dev/libogg-1.3.5/install/lib/cmake/Ogg/OggTargets.cmake
+  -- Installing: C:/dev/libogg-1.3.5/install/lib/cmake/Ogg/OggTargets-release.cmake
+  -- Installing: C:/dev/libogg-1.3.5/install/lib/cmake/Ogg/OggConfig.cmake
+  -- Installing: C:/dev/libogg-1.3.5/install/lib/cmake/Ogg/OggConfigVersion.cmake
+  -- Installing: C:/dev/libogg-1.3.5/install/lib/pkgconfig/ogg.pc

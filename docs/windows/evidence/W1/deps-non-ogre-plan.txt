@@ -1,0 +1,21 @@
+# W1 Non-Ogre Dependency Plan
+Date: 2026-04-30
+Scope: reproduce tinyxml2, Bullet, Boost, ENet, Ogg, Vorbis, and OpenAL Soft only. SR3 configure/build remains out of scope.
+
+Planned root:
+C:\dev
+
+Planned dependency roots:
+C:\dev\tinyxml2-9.0.0
+C:\dev\bullet3-3.25
+C:\dev\boost_1_81_0-msvc-14.3
+C:\dev\enet-1.3.17
+C:\dev\libogg-1.3.5
+C:\dev\libvorbis-1.3.7
+C:\dev\openal-soft-1.23.1
+
+Source policy:
+- Use docs/BuildingVS.md versions.
+- Use VS2022 Build Tools lane already selected for W1.
+- Prefer output shapes expected by CMakeLists-WindowsRelease.txt for the later SR3 configure pass.
+- Do not configure or build SR3 in this pass.

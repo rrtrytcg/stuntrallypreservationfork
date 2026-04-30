@@ -78,8 +78,9 @@ W1 layout pass status:
 - `$PACKAGE_ROOT` exists and remains the known-good packaged binary specimen.
 - `$SR3_ROOT` exists and is the clean Git source fork for source-build reproduction.
 - `$DEPS_ROOT`, `$OGRE_ROOT`, and `$MYGUI_ROOT` now exist.
-- Ogre-Next and MyGUI-next Release outputs exist; non-Ogre SR3 dependencies are still pending.
+- Ogre-Next, MyGUI-next, and non-Ogre SR3 dependency Release outputs exist.
 - `docs/windows/evidence/W1/dependency-layout-plan.txt` records the full folder plan and current missing paths.
+- `docs/windows/evidence/W1/deps-non-ogre-outputs.txt` records the verified non-Ogre dependency outputs.
 
 W1 must freeze exact dependency paths and versions here after a successful source build.
 
@@ -89,13 +90,13 @@ Starting point from `docs/BuildingVS.md`:
 
 | Library | Upstream documented version | W1 reproduced version |
 | --- | --- | --- |
-| tinyxml2 | 9.0.0 | TBD |
-| Bullet | 3.25 | TBD |
-| Boost | 1.81 | TBD |
-| Enet | 1.3.17 | TBD |
-| Ogg | 1.3.5 | TBD |
-| Vorbis | 1.3.7 | TBD |
-| OpenAL Soft | 1.23.1 | TBD |
+| tinyxml2 | 9.0.0 | 9.0.0, git tag `9.0.0`, Release static lib built |
+| Bullet | 3.25 | 3.25, git tag `3.25`, premake VS2010 output built with VS2022 `v143` override |
+| Boost | 1.81 | 1.81.0, SourceForge `msvc-14.3` x64 binary package installed after source-build blocker |
+| Enet | 1.3.17 | 1.3.17, git tag `v1.3.17`, Release static lib built |
+| Ogg | 1.3.5 | 1.3.5, Xiph release archive, Release static lib built |
+| Vorbis | 1.3.7 | 1.3.7, Xiph release archive, Release static libs built against Ogg install |
+| OpenAL Soft | 1.23.1 | 1.23.1, git tag `1.23.1`, Release shared DLL/import lib built |
 | Ogre-Next | 3.0 / branch `v3-0` | branch `v3-0`, commit `20da67178c571efe1c909db73b710698d60bf3b3` |
 | MyGUI-next | branch `ogre3` | branch `ogre3`, commit `a1490ffe01d503c31a00d8277007ffcb27a4258e` |
 
@@ -134,6 +135,25 @@ W1 must verify and record:
 - Release outputs produced: `MyGUIEngine.dll`, `MyGUIEngine.lib`, `MyGUI.Ogre2Platform.lib`.
 - Windows CMake replacements: `FindFreetype_Windows.cmake` copied over `FindFreetype.cmake`; `FindOGRE_next_WindowsRelease.cmake` copied over `FindOGRE_next.cmake`.
 - Focused external dependency-tree fix: `FindFreetype.cmake` links Ogre deps Release `zlib.lib` with `freetype.lib`.
+
+## Non-Ogre Dependency Outputs
+
+W1 verified these Release x64 dependency roots and outputs under `C:\dev`:
+
+- tinyxml2: `C:\dev\tinyxml2-9.0.0`; `build\Release\tinyxml2.lib`; `install\lib\tinyxml2.lib`; configured with `BUILD_SHARED_LIBS=OFF`.
+- Bullet: `C:\dev\bullet3-3.25`; `bin\BulletCollision_vs2010_x64_release.lib`, `BulletDynamics_vs2010_x64_release.lib`, `BulletFileLoader_vs2010_x64_release.lib`, `BulletWorldImporter_vs2010_x64_release.lib`, and `LinearMath_vs2010_x64_release.lib`; premake used `--dynamic-runtime` and did not use `--double`.
+- Boost: `C:\dev\boost_1_81_0-msvc-14.3`; selected VS2022/v143 candidate libs are under `lib64-msvc-14.3`, including `boost_system-vc143-mt-x64-1_81.lib`, `boost_thread-vc143-mt-x64-1_81.lib`, `libboost_system-vc143-mt-x64-1_81.lib`, and `libboost_thread-vc143-mt-x64-1_81.lib`.
+- ENet: `C:\dev\enet-1.3.17`; `build\Release\enet.lib`; no install target was generated.
+- Ogg: `C:\dev\libogg-1.3.5`; `build\Release\ogg.lib`; `install\lib\ogg.lib`; configured with `BUILD_SHARED_LIBS=OFF`.
+- Vorbis: `C:\dev\libvorbis-1.3.7`; `build\lib\Release\vorbis.lib`; `build\lib\Release\vorbisfile.lib`; configured with `CMAKE_PREFIX_PATH` and `OGG_ROOT` pointing to `C:\dev\libogg-1.3.5\install`.
+- OpenAL Soft: `C:\dev\openal-soft-1.23.1`; `build\Release\OpenAL32.dll`; `build\Release\OpenAL32.lib`; install copies under `install\bin` and `install\lib`; configured with `LIBTYPE=SHARED`.
+
+Runtime/linkage notes verified during W1:
+
+- CMake/VS Release dependency builds use the Visual Studio Release `/MD` runtime model unless later SR3 link evidence proves otherwise.
+- Bullet compile output explicitly shows `/MD`.
+- Boost source build with `runtime-link=shared` failed before producing libraries; the installed `msvc-14.3` package contains multiple variants, and the non-suffixed `vc143-mt-x64` libraries are the current SR3 configure candidates.
+- ENet consumers may still need `winmm.lib` and `Ws2_32.lib` at the SR3 link step, as noted by `docs/BuildingVS.md`.
 
 ## Runtime Bundle Contract
 

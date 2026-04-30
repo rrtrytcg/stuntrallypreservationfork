@@ -1,0 +1,27 @@
+# tinyxml2 build
+PWD: C:\dev\tinyxml2-9.0.0
+CMD: cmake --build build --config Release --target INSTALL
+
+**********************************************************************
+** Visual Studio 2022 Developer Command Prompt v17.14.28
+** Copyright (c) 2025 Microsoft Corporation
+**********************************************************************
+MSBuild version 17.14.40+3e7442088 for .NET Framework
+
+  1>Checking Build System
+  Building Custom Rule C:/dev/tinyxml2-9.0.0/CMakeLists.txt
+  tinyxml2.cpp
+  tinyxml2.vcxproj -> C:\dev\tinyxml2-9.0.0\build\Release\tinyxml2.lib
+  Building Custom Rule C:/dev/tinyxml2-9.0.0/CMakeLists.txt
+  xmltest.cpp
+  xmltest.vcxproj -> C:\dev\tinyxml2-9.0.0\build\Release\xmltest.exe
+  Building Custom Rule C:/dev/tinyxml2-9.0.0/CMakeLists.txt
+  1>
+  -- Install configuration: "Release"
+  -- Installing: C:/dev/tinyxml2-9.0.0/install/lib/tinyxml2.lib
+  -- Installing: C:/dev/tinyxml2-9.0.0/install/lib/cmake/tinyxml2/tinyxml2-static-targets.cmake
+  -- Installing: C:/dev/tinyxml2-9.0.0/install/lib/cmake/tinyxml2/tinyxml2-static-targets-release.cmake
+  -- Installing: C:/dev/tinyxml2-9.0.0/install/lib/cmake/tinyxml2/tinyxml2-config.cmake
+  -- Installing: C:/dev/tinyxml2-9.0.0/install/lib/cmake/tinyxml2/tinyxml2-config-version.cmake
+  -- Installing: C:/dev/tinyxml2-9.0.0/install/include/tinyxml2.h
+  -- Installing: C:/dev/tinyxml2-9.0.0/install/lib/pkgconfig/tinyxml2.pc

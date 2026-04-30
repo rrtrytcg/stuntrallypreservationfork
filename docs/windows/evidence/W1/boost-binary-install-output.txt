@@ -1,0 +1,10 @@
+# Boost binary install
+CMD: "C:\dev\boost_1_81_0-msvc-14.3-64.exe" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /DIR="C:\dev\boost_1_81_0-msvc-14.3"
+
+ExitCode: 0
+
+FullName                      LastWriteTime
+--------                      -------------
+C:\dev\boost_1_81_0           30/4/2026 8:35:17 pm
+C:\dev\boost_1_81_0-msvc-14.3 30/4/2026 8:37:30 pm
+

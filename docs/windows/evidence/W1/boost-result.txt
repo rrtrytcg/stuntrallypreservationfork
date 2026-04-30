@@ -1,0 +1,9 @@
+# Boost W1 Result
+Version: 1.81.0
+Source attempt: C:\dev\boost_1_81_0 from official source archive
+Prebuilt used: C:\dev\boost_1_81_0-msvc-14.3-64.exe from SourceForge boost-binaries 1.81.0
+Extract root: C:\dev\boost_1_81_0-msvc-14.3
+Result: source build failed; VS2022-compatible msvc-14.3 binary package installed successfully
+Outputs selected for later SR3 /MD lane: lib64-msvc-14.3\boost_system-vc143-mt-x64-1_81.lib; boost_thread-vc143-mt-x64-1_81.lib; also static libboost_* variants exist.
+Runtime model: binary package includes multiple variants; non-suffixed vc143 mt x64 libs selected as shared-runtime-compatible candidates. Exact SR3 link choice remains a next-pass configure concern.
+Deviation: docs/BuildingVS.md used msvc-14.2 for VS2019; W1 used msvc-14.3 because first lane is VS2022/v143.

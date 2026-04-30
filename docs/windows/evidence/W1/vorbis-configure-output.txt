@@ -1,0 +1,37 @@
+# libvorbis configure
+PWD: C:\dev\libvorbis-1.3.7
+CMD: cmake -S . -B build -G "Visual Studio 17 2022" -A x64 -DBUILD_SHARED_LIBS=OFF -DCMAKE_PREFIX_PATH=C:/dev/libogg-1.3.5/install -DOGG_ROOT=C:/dev/libogg-1.3.5/install -DCMAKE_INSTALL_PREFIX=C:/dev/libvorbis-1.3.7/install
+
+**********************************************************************
+** Visual Studio 2022 Developer Command Prompt v17.14.28
+** Copyright (c) 2025 Microsoft Corporation
+**********************************************************************
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.26200.
+-- The C compiler identification is MSVC 19.44.35224.0
+-- The CXX compiler identification is MSVC 19.44.35224.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring vorbis 1.3.7
+-- Looking for floor in m
+-- Looking for floor in m - not found
+-- Found Ogg: C:/dev/libogg-1.3.5/install/lib/ogg.lib
+-- Configuring done (2.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: C:/dev/libvorbis-1.3.7/build

@@ -1,0 +1,10 @@
+# Vorbis W1 Result
+Version: 1.3.7
+Root: C:\dev\libvorbis-1.3.7
+Source: Xiph release archive libvorbis-1.3.7.zip
+Build: CMake, Visual Studio 17 2022, x64, Release
+Settings: BUILD_SHARED_LIBS=OFF; CMAKE_PREFIX_PATH and OGG_ROOT point to C:\dev\libogg-1.3.5\install
+Result: success with upstream compiler warnings
+Outputs: build\lib\Release\vorbis.lib; build\lib\Release\vorbisfile.lib; install\lib\vorbis.lib; install\lib\vorbisfile.lib
+Ogg relationship: configure found Ogg at C:/dev/libogg-1.3.5/install/lib/ogg.lib.
+Runtime model: VS Release /MD by generated project default.

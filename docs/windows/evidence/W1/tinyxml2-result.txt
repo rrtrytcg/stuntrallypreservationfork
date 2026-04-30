@@ -1,0 +1,9 @@
+# tinyxml2 W1 Result
+Version: 9.0.0
+Root: C:\dev\tinyxml2-9.0.0
+Source: git tag 9.0.0
+Build: CMake, Visual Studio 17 2022, x64, Release
+Settings: BUILD_SHARED_LIBS=OFF
+Result: success
+Outputs: build\Release\tinyxml2.lib; install\lib\tinyxml2.lib
+Runtime model: VS Release /MD by generated project default.

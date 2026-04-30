@@ -1,0 +1,221 @@
+# Non-Ogre dependency fetch evidence
+Date: 2026-04-30
+
+
+## tinyxml2 9.0.0
+C:\dev\tinyxml2-9.0.0
+git clone --branch 9.0.0 --single-branch https://github.com/leethomason/tinyxml2.git C:\dev\tinyxml2-9.0.0
+Cloning into 'C:\dev\tinyxml2-9.0.0'...
+Note: switching to '1dee28e51f9175a31955b9791c74c430fe13dc82'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+
+## Bullet 3.25
+C:\dev\bullet3-3.25
+git clone --branch 3.25 --single-branch https://github.com/bulletphysics/bullet3.git C:\dev\bullet3-3.25
+Cloning into 'C:\dev\bullet3-3.25'...
+Note: switching to '2c204c49e56ed15ec5fcfa71d199ab6d6570b3f5'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+Updating files:  19% (1489/7600)
+Updating files:  20% (1520/7600)
+Updating files:  21% (1596/7600)
+Updating files:  22% (1672/7600)
+Updating files:  23% (1748/7600)
+Updating files:  24% (1824/7600)
+Updating files:  25% (1900/7600)
+Updating files:  26% (1976/7600)
+Updating files:  27% (2052/7600)
+Updating files:  28% (2128/7600)
+Updating files:  29% (2204/7600)
+Updating files:  30% (2280/7600)
+Updating files:  31% (2356/7600)
+Updating files:  32% (2432/7600)
+Updating files:  33% (2508/7600)
+Updating files:  34% (2584/7600)
+Updating files:  35% (2660/7600)
+Updating files:  36% (2736/7600)
+Updating files:  37% (2812/7600)
+Updating files:  38% (2888/7600)
+Updating files:  39% (2964/7600)
+Updating files:  39% (3015/7600)
+Updating files:  40% (3040/7600)
+Updating files:  41% (3116/7600)
+Updating files:  42% (3192/7600)
+Updating files:  43% (3268/7600)
+Updating files:  44% (3344/7600)
+Updating files:  45% (3420/7600)
+Updating files:  46% (3496/7600)
+Updating files:  47% (3572/7600)
+Updating files:  48% (3648/7600)
+Updating files:  49% (3724/7600)
+Updating files:  50% (3800/7600)
+Updating files:  51% (3876/7600)
+Updating files:  52% (3952/7600)
+Updating files:  53% (4028/7600)
+Updating files:  54% (4104/7600)
+Updating files:  55% (4180/7600)
+Updating files:  56% (4256/7600)
+Updating files:  57% (4332/7600)
+Updating files:  58% (4408/7600)
+Updating files:  59% (4484/7600)
+Updating files:  60% (4560/7600)
+Updating files:  61% (4636/7600)
+Updating files:  62% (4712/7600)
+Updating files:  63% (4788/7600)
+Updating files:  64% (4864/7600)
+Updating files:  65% (4940/7600)
+Updating files:  66% (5016/7600)
+Updating files:  67% (5092/7600)
+Updating files:  68% (5168/7600)
+Updating files:  69% (5244/7600)
+Updating files:  70% (5320/7600)
+Updating files:  71% (5396/7600)
+Updating files:  72% (5472/7600)
+Updating files:  73% (5548/7600)
+Updating files:  74% (5624/7600)
+Updating files:  75% (5700/7600)
+Updating files:  76% (5776/7600)
+Updating files:  76% (5779/7600)
+Updating files:  77% (5852/7600)
+Updating files:  78% (5928/7600)
+Updating files:  79% (6004/7600)
+Updating files:  80% (6080/7600)
+Updating files:  81% (6156/7600)
+Updating files:  82% (6232/7600)
+Updating files:  83% (6308/7600)
+Updating files:  84% (6384/7600)
+Updating files:  85% (6460/7600)
+Updating files:  86% (6536/7600)
+Updating files:  87% (6612/7600)
+Updating files:  88% (6688/7600)
+Updating files:  89% (6764/7600)
+Updating files:  90% (6840/7600)
+Updating files:  91% (6916/7600)
+Updating files:  92% (6992/7600)
+Updating files:  93% (7068/7600)
+Updating files:  94% (7144/7600)
+Updating files:  95% (7220/7600)
+Updating files:  96% (7296/7600)
+Updating files:  97% (7372/7600)
+Updating files:  98% (7448/7600)
+Updating files:  99% (7524/7600)
+Updating files: 100% (7600/7600)
+Updating files: 100% (7600/7600), done.
+
+## ENet 1.3.17
+C:\dev\enet-1.3.17
+git clone --branch v1.3.17 --single-branch https://github.com/lsalzman/enet.git C:\dev\enet-1.3.17
+Cloning into 'C:\dev\enet-1.3.17'...
+Note: switching to 'e0e7045b7e056b454b5093cb34df49dc4cee0bee'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+
+## OpenAL Soft 1.23.1
+C:\dev\openal-soft-1.23.1
+git clone --branch 1.23.1 --single-branch https://github.com/kcat/openal-soft.git C:\dev\openal-soft-1.23.1
+Cloning into 'C:\dev\openal-soft-1.23.1'...
+Note: switching to 'd3875f333fb6abe2f39d82caca329414871ae53b'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+
+Fetch explicit clone phase complete.
+
+## download/extract libogg 1.3.5
+URL: https://downloads.xiph.org/releases/ogg/libogg-1.3.5.zip
+ZIP: C:\dev\libogg-1.3.5.zip
+DIR: C:\dev\libogg-1.3.5
+Downloaded
+Extracted
+
+## download/extract libvorbis 1.3.7
+URL: https://downloads.xiph.org/releases/vorbis/libvorbis-1.3.7.zip
+ZIP: C:\dev\libvorbis-1.3.7.zip
+DIR: C:\dev\libvorbis-1.3.7
+Downloaded
+Extracted
+
+## download/extract Boost 1.81.0 source
+URL: https://archives.boost.io/release/1.81.0/source/boost_1_81_0.zip
+ZIP: C:\dev\boost_1_81_0.zip
+DIR: C:\dev\boost_1_81_0
+Downloaded
+Extracted
+
+Fetch archive phase complete.
+
+## download Boost 1.81 msvc-14.3 x64 binary
+URL: https://sourceforge.net/projects/boost/files/boost-binaries/1.81.0/boost_1_81_0-msvc-14.3-64.exe/download
+OUT: C:\dev\boost_1_81_0-msvc-14.3-64.exe
+Downloaded
+
+## Boost binary download correction
+The first SourceForge /download URL saved an HTML redirect page at 136743 bytes and was replaced.
+Actual binary URL used:
+https://downloads.sourceforge.net/project/boost/boost-binaries/1.81.0/boost_1_81_0-msvc-14.3-64.exe
+Output:
+C:\dev\boost_1_81_0-msvc-14.3-64.exe
+Size:
+196953438 bytes
+
+Algorithm : SHA256
+Hash      : CE4E83A389BCF58FF9304D3F5F1E5208D59CB25CA73644B1850DF9A17FA46B73
+Path      : C:\dev\boost_1_81_0-msvc-14.3-64.exe
+
+

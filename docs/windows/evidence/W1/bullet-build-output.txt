@@ -1,0 +1,448 @@
+# Bullet Release x64 required libs build
+PWD: C:\dev\bullet3-3.25\build3\vs2010
+CMD: msbuild 0_Bullet3Solution.sln /m /p:Configuration=Release /p:Platform=x64 /t:BulletCollision;BulletDynamics;BulletFileLoader;BulletWorldImporter;LinearMath
+
+**********************************************************************
+** Visual Studio 2022 Developer Command Prompt v17.14.28
+** Copyright (c) 2025 Microsoft Corporation
+**********************************************************************
+MSBuild version 17.14.40+3e7442088 for .NET Framework
+Build started 30/4/2026 8:33:57 pm.
+
+     1>Project "C:\dev\bullet3-3.25\build3\vs2010\0_Bullet3Solution.sln" on node 1 (BulletCollision;BulletDynamics;BulletFileLoader;BulletWorldImporter;LinearMath target(s)).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Release|x64".
+     1>Project "C:\dev\bullet3-3.25\build3\vs2010\0_Bullet3Solution.sln" (1) is building "C:\dev\bullet3-3.25\build3\vs2010\BulletCollision.vcxproj" (2) on node 1 (default targets).
+     2>C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(463,5): error MSB8020: The build tools for Visual Studio 2010 (Platform Toolset = 'v100') cannot be found. To build using the v100 build tools, please install Visual Studio 2010 build tools.  Alternatively, you may upgrade to the current Visual Studio tools by selecting the Project menu or right-click the solution, and then selecting "Retarget solution". [C:\dev\bullet3-3.25\build3\vs2010\BulletCollision.vcxproj]
+     2>Done Building Project "C:\dev\bullet3-3.25\build3\vs2010\BulletCollision.vcxproj" (default targets) -- FAILED.
+     1>Done Building Project "C:\dev\bullet3-3.25\build3\vs2010\0_Bullet3Solution.sln" (BulletCollision;BulletDynamics;BulletFileLoader;BulletWorldImporter;LinearMath target(s)) -- FAILED.
+
+Build FAILED.
+
+       "C:\dev\bullet3-3.25\build3\vs2010\0_Bullet3Solution.sln" (BulletCollision;BulletDynamics;BulletFileLoader;BulletWorldImporter;LinearMath target) (1) ->
+       "C:\dev\bullet3-3.25\build3\vs2010\BulletCollision.vcxproj" (default target) (2) ->
+       (PrepareForBuild target) -> 
+         C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(463,5): error MSB8020: The build tools for Visual Studio 2010 (Platform Toolset = 'v100') cannot be found. To build using the v100 build tools, please install Visual Studio 2010 build tools.  Alternatively, you may upgrade to the current Visual Studio tools by selecting the Project menu or right-click the solution, and then selecting "Retarget solution". [C:\dev\bullet3-3.25\build3\vs2010\BulletCollision.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.18
+**********************************************************************
+** Visual Studio 2022 Developer Command Prompt v17.14.28
+** Copyright (c) 2025 Microsoft Corporation
+**********************************************************************
+MSBuild version 17.14.40+3e7442088 for .NET Framework
+Build started 30/4/2026 8:34:11 pm.
+
+     1>Project "C:\dev\bullet3-3.25\build3\vs2010\0_Bullet3Solution.sln" on node 1 (BulletCollision;BulletDynamics;BulletFileLoader;BulletWorldImporter;LinearMath target(s)).
+     1>ValidateSolutionConfiguration:
+         Building solution configuration "Release|x64".
+     1>Project "C:\dev\bullet3-3.25\build3\vs2010\0_Bullet3Solution.sln" (1) is building "C:\dev\bullet3-3.25\build3\vs2010\BulletCollision.vcxproj" (2) on node 1 (default targets).
+     2>PrepareForBuild:
+         Creating directory "obj\x64\Release\BulletCollision\".
+         Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+         Creating directory "..\..\bin\".
+         Creating directory "obj\x64\Release\BulletCollision\BulletCollision.tlog\".
+       InitializeBuildStatus:
+         Creating "obj\x64\Release\BulletCollision\BulletCollision.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+         Touching "obj\x64\Release\BulletCollision\BulletCollision.tlog\unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\CL.exe /c /I..\..\src /nologo /W3 /WX- /diagnostics:column /Ox /GF /Gm- /EHsc /MD /GS /Gy /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"obj\x64\Release\BulletCollision\\" /Fd"..\..\bin\BulletCollision_vs2010_x64_release.pdb" /external:W3 /Gd /TP /FC /errorReport:queue /MP /wd4244 /wd4267 ..\..\src\BulletCollision\BroadphaseCollision\btAxisSweep3.cpp ..\..\src\BulletCollision\BroadphaseCollision\btBroadphaseProxy.cpp ..\..\src\BulletCollision\BroadphaseCollision\btCollisionAlgorithm.cpp ..\..\src\BulletCollision\BroadphaseCollision\btDbvt.cpp ..\..\src\BulletCollision\BroadphaseCollision\btDbvtBroadphase.cpp ..\..\src\BulletCollision\BroadphaseCollision\btDispatcher.cpp ..\..\src\BulletCollision\BroadphaseCollision\btOverlappingPairCache.cpp ..\..\src\BulletCollision\BroadphaseCollision\btQuantizedBvh.cpp ..\..\src\BulletCollision\BroadphaseCollision\btSimpleBroadphase.cpp ..\..\src\BulletCollision\CollisionDispatch\btActivatingCollisionAlgorithm.cpp ..\..\src\BulletCollision\CollisionDispatch\btBox2dBox2dCollisionAlgorithm.cpp ..\..\src\BulletCollision\CollisionDispatch\btBoxBoxCollisionAlgorithm.cpp ..\..\src\BulletCollision\CollisionDispatch\btBoxBoxDetector.cpp ..\..\src\BulletCollision\CollisionDispatch\btCollisionDispatcher.cpp ..\..\src\BulletCollision\CollisionDispatch\btCollisionDispatcherMt.cpp ..\..\src\BulletCollision\CollisionDispatch\btCollisionObject.cpp ..\..\src\BulletCollision\CollisionDispatch\btCollisionWorld.cpp ..\..\src\BulletCollision\CollisionDispatch\btCollisionWorldImporter.cpp ..\..\src\BulletCollision\CollisionDispatch\btCompoundCollisionAlgorithm.cpp ..\..\src\BulletCollision\CollisionDispatch\btCompoundCompoundCollisionAlgorithm.cpp ..\..\src\BulletCollision\CollisionDispatch\btConvex2dConvex2dAlgorithm.cpp ..\..\src\BulletCollision\CollisionDispatch\btConvexConcaveCollisionAlgorithm.cpp ..\..\src\BulletCollision\CollisionDispatch\btConvexConvexAlgorithm.cpp ..\..\src\BulletCollision\CollisionDispatch\btConvexPlaneCollisionAlgorithm.cpp ..\..\src\BulletCollision\CollisionDispatch\btDefaultCollisionConfiguration.cpp ..\..\src\BulletCollision\CollisionDispatch\btEmptyCollisionAlgorithm.cpp ..\..\src\BulletCollision\CollisionDispatch\btGhostObject.cpp ..\..\src\BulletCollision\CollisionDispatch\btHashedSimplePairCache.cpp ..\..\src\BulletCollision\CollisionDispatch\btInternalEdgeUtility.cpp ..\..\src\BulletCollision\CollisionDispatch\btManifoldResult.cpp ..\..\src\BulletCollision\CollisionDispatch\btSimulationIslandManager.cpp ..\..\src\BulletCollision\CollisionDispatch\btSphereBoxCollisionAlgorithm.cpp ..\..\src\BulletCollision\CollisionDispatch\btSphereSphereCollisionAlgorithm.cpp ..\..\src\BulletCollision\CollisionDispatch\btSphereTriangleCollisionAlgorithm.cpp ..\..\src\BulletCollision\CollisionDispatch\btUnionFind.cpp ..\..\src\BulletCollision\CollisionDispatch\SphereTriangleDetector.cpp ..\..\src\BulletCollision\CollisionShapes\btBox2dShape.cpp ..\..\src\BulletCollision\CollisionShapes\btBoxShape.cpp ..\..\src\BulletCollision\CollisionShapes\btBvhTriangleMeshShape.cpp ..\..\src\BulletCollision\CollisionShapes\btCapsuleShape.cpp ..\..\src\BulletCollision\CollisionShapes\btCollisionShape.cpp ..\..\src\BulletCollision\CollisionShapes\btCompoundShape.cpp ..\..\src\BulletCollision\CollisionShapes\btConcaveShape.cpp ..\..\src\BulletCollision\CollisionShapes\btConeShape.cpp ..\..\src\BulletCollision\CollisionShapes\btConvex2dShape.cpp ..\..\src\BulletCollision\CollisionShapes\btConvexHullShape.cpp ..\..\src\BulletCollision\CollisionShapes\btConvexInternalShape.cpp ..\..\src\BulletCollision\CollisionShapes\btConvexPointCloudShape.cpp ..\..\src\BulletCollision\CollisionShapes\btConvexPolyhedron.cpp ..\..\src\BulletCollision\CollisionShapes\btConvexShape.cpp ..\..\src\BulletCollision\CollisionShapes\btConvexTriangleMeshShape.cpp ..\..\src\BulletCollision\CollisionShapes\btCylinderShape.cpp ..\..\src\BulletCollision\CollisionShapes\btEmptyShape.cpp ..\..\src\BulletCollision\CollisionShapes\btHeightfieldTerrainShape.cpp ..\..\src\BulletCollision\CollisionShapes\btMiniSDF.cpp ..\..\src\BulletCollision\CollisionShapes\btMinkowskiSumShape.cpp ..\..\src\BulletCollision\CollisionShapes\btMultimaterialTriangleMeshShape.cpp ..\..\src\BulletCollision\CollisionShapes\btMultiSphereShape.cpp ..\..\src\BulletCollision\CollisionShapes\btOptimizedBvh.cpp ..\..\src\BulletCollision\CollisionShapes\btPolyhedralConvexShape.cpp ..\..\src\BulletCollision\CollisionShapes\btScaledBvhTriangleMeshShape.cpp ..\..\src\BulletCollision\CollisionShapes\btSdfCollisionShape.cpp ..\..\src\BulletCollision\CollisionShapes\btShapeHull.cpp ..\..\src\BulletCollision\CollisionShapes\btSphereShape.cpp ..\..\src\BulletCollision\CollisionShapes\btStaticPlaneShape.cpp ..\..\src\BulletCollision\CollisionShapes\btStridingMeshInterface.cpp ..\..\src\BulletCollision\CollisionShapes\btTetrahedronShape.cpp ..\..\src\BulletCollision\CollisionShapes\btTriangleBuffer.cpp ..\..\src\BulletCollision\CollisionShapes\btTriangleCallback.cpp ..\..\src\BulletCollision\CollisionShapes\btTriangleIndexVertexArray.cpp ..\..\src\BulletCollision\CollisionShapes\btTriangleIndexVertexMaterialArray.cpp ..\..\src\BulletCollision\CollisionShapes\btTriangleMesh.cpp ..\..\src\BulletCollision\CollisionShapes\btTriangleMeshShape.cpp ..\..\src\BulletCollision\CollisionShapes\btUniformScalingShape.cpp ..\..\src\BulletCollision\Gimpact\btContactProcessing.cpp ..\..\src\BulletCollision\Gimpact\btGenericPoolAllocator.cpp ..\..\src\BulletCollision\Gimpact\btGImpactBvh.cpp ..\..\src\BulletCollision\Gimpact\btGImpactCollisionAlgorithm.cpp ..\..\src\BulletCollision\Gimpact\btGImpactQuantizedBvh.cpp ..\..\src\BulletCollision\Gimpact\btGImpactShape.cpp ..\..\src\BulletCollision\Gimpact\btTriangleShapeEx.cpp ..\..\src\BulletCollision\Gimpact\gim_box_set.cpp ..\..\src\BulletCollision\Gimpact\gim_contact.cpp ..\..\src\BulletCollision\Gimpact\gim_memory.cpp ..\..\src\BulletCollision\Gimpact\gim_tri_collision.cpp ..\..\src\BulletCollision\NarrowPhaseCollision\btContinuousConvexCollision.cpp ..\..\src\BulletCollision\NarrowPhaseCollision\btConvexCast.cpp ..\..\src\BulletCollision\NarrowPhaseCollision\btGjkConvexCast.cpp ..\..\src\BulletCollision\NarrowPhaseCollision\btGjkEpa2.cpp ..\..\src\BulletCollision\NarrowPhaseCollision\btGjkEpaPenetrationDepthSolver.cpp ..\..\src\BulletCollision\NarrowPhaseCollision\btGjkPairDetector.cpp ..\..\src\BulletCollision\NarrowPhaseCollision\btMinkowskiPenetrationDepthSolver.cpp ..\..\src\BulletCollision\NarrowPhaseCollision\btPersistentManifold.cpp ..\..\src\BulletCollision\NarrowPhaseCollision\btPolyhedralContactClipping.cpp ..\..\src\BulletCollision\NarrowPhaseCollision\btRaycastCallback.cpp ..\..\src\BulletCollision\NarrowPhaseCollision\btSubSimplexConvexCast.cpp ..\..\src\BulletCollision\NarrowPhaseCollision\btVoronoiSimplexSolver.cpp
+         btAxisSweep3.cpp
+         btBroadphaseProxy.cpp
+         btCollisionAlgorithm.cpp
+         btDbvt.cpp
+         btDbvtBroadphase.cpp
+         btDispatcher.cpp
+         btOverlappingPairCache.cpp
+         btQuantizedBvh.cpp
+         btSimpleBroadphase.cpp
+         btActivatingCollisionAlgorithm.cpp
+         btBox2dBox2dCollisionAlgorithm.cpp
+         btBoxBoxCollisionAlgorithm.cpp
+         btBoxBoxDetector.cpp
+         btCollisionDispatcher.cpp
+         btCollisionDispatcherMt.cpp
+         btCollisionObject.cpp
+         btCollisionWorld.cpp
+         btCollisionWorldImporter.cpp
+         btCompoundCollisionAlgorithm.cpp
+         btCompoundCompoundCollisionAlgorithm.cpp
+         btConvex2dConvex2dAlgorithm.cpp
+         btConvexConcaveCollisionAlgorithm.cpp
+         btConvexConvexAlgorithm.cpp
+         btConvexPlaneCollisionAlgorithm.cpp
+         btDefaultCollisionConfiguration.cpp
+         btEmptyCollisionAlgorithm.cpp
+         btGhostObject.cpp
+         btHashedSimplePairCache.cpp
+         btInternalEdgeUtility.cpp
+         btManifoldResult.cpp
+         btSimulationIslandManager.cpp
+         btSphereBoxCollisionAlgorithm.cpp
+         btSphereSphereCollisionAlgorithm.cpp
+         btSphereTriangleCollisionAlgorithm.cpp
+         btUnionFind.cpp
+         SphereTriangleDetector.cpp
+         btBox2dShape.cpp
+         btBoxShape.cpp
+         btBvhTriangleMeshShape.cpp
+         btCapsuleShape.cpp
+         btCollisionShape.cpp
+         btCompoundShape.cpp
+         btConcaveShape.cpp
+         btConeShape.cpp
+         btConvex2dShape.cpp
+         btConvexHullShape.cpp
+         btConvexInternalShape.cpp
+         btConvexPointCloudShape.cpp
+         btConvexPolyhedron.cpp
+         btConvexShape.cpp
+         btConvexTriangleMeshShape.cpp
+         btCylinderShape.cpp
+         btEmptyShape.cpp
+         btHeightfieldTerrainShape.cpp
+         btMiniSDF.cpp
+         btMinkowskiSumShape.cpp
+         btMultimaterialTriangleMeshShape.cpp
+         btMultiSphereShape.cpp
+         btOptimizedBvh.cpp
+         btPolyhedralConvexShape.cpp
+         btScaledBvhTriangleMeshShape.cpp
+         btSdfCollisionShape.cpp
+         btShapeHull.cpp
+         btSphereShape.cpp
+         btStaticPlaneShape.cpp
+         btStridingMeshInterface.cpp
+         btTetrahedronShape.cpp
+         btTriangleBuffer.cpp
+         btTriangleCallback.cpp
+         btTriangleIndexVertexArray.cpp
+         btTriangleIndexVertexMaterialArray.cpp
+         btTriangleMesh.cpp
+         btTriangleMeshShape.cpp
+         btUniformScalingShape.cpp
+         btContactProcessing.cpp
+         btGenericPoolAllocator.cpp
+         btGImpactBvh.cpp
+         btGImpactCollisionAlgorithm.cpp
+         btGImpactQuantizedBvh.cpp
+         btGImpactShape.cpp
+         btTriangleShapeEx.cpp
+         gim_box_set.cpp
+         gim_contact.cpp
+         gim_memory.cpp
+         gim_tri_collision.cpp
+         btContinuousConvexCollision.cpp
+         btConvexCast.cpp
+         btGjkConvexCast.cpp
+         btGjkEpa2.cpp
+         btGjkEpaPenetrationDepthSolver.cpp
+         btGjkPairDetector.cpp
+         btMinkowskiPenetrationDepthSolver.cpp
+         btPersistentManifold.cpp
+         btPolyhedralContactClipping.cpp
+         btRaycastCallback.cpp
+         btSubSimplexConvexCast.cpp
+         btVoronoiSimplexSolver.cpp
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\Lib.exe /OUT:"..\..\bin\BulletCollision_vs2010_x64_release.lib" /NOLOGO /MACHINE:X64 obj\x64\Release\BulletCollision\btAxisSweep3.obj
+         obj\x64\Release\BulletCollision\btBroadphaseProxy.obj
+         obj\x64\Release\BulletCollision\btCollisionAlgorithm.obj
+         obj\x64\Release\BulletCollision\btDbvt.obj
+         obj\x64\Release\BulletCollision\btDbvtBroadphase.obj
+         obj\x64\Release\BulletCollision\btDispatcher.obj
+         obj\x64\Release\BulletCollision\btOverlappingPairCache.obj
+         obj\x64\Release\BulletCollision\btQuantizedBvh.obj
+         obj\x64\Release\BulletCollision\btSimpleBroadphase.obj
+         obj\x64\Release\BulletCollision\btActivatingCollisionAlgorithm.obj
+         obj\x64\Release\BulletCollision\btBox2dBox2dCollisionAlgorithm.obj
+         obj\x64\Release\BulletCollision\btBoxBoxCollisionAlgorithm.obj
+         obj\x64\Release\BulletCollision\btBoxBoxDetector.obj
+         obj\x64\Release\BulletCollision\btCollisionDispatcher.obj
+         obj\x64\Release\BulletCollision\btCollisionDispatcherMt.obj
+         obj\x64\Release\BulletCollision\btCollisionObject.obj
+         obj\x64\Release\BulletCollision\btCollisionWorld.obj
+         obj\x64\Release\BulletCollision\btCollisionWorldImporter.obj
+         obj\x64\Release\BulletCollision\btCompoundCollisionAlgorithm.obj
+         obj\x64\Release\BulletCollision\btCompoundCompoundCollisionAlgorithm.obj
+         obj\x64\Release\BulletCollision\btConvex2dConvex2dAlgorithm.obj
+         obj\x64\Release\BulletCollision\btConvexConcaveCollisionAlgorithm.obj
+         obj\x64\Release\BulletCollision\btConvexConvexAlgorithm.obj
+         obj\x64\Release\BulletCollision\btConvexPlaneCollisionAlgorithm.obj
+         obj\x64\Release\BulletCollision\btDefaultCollisionConfiguration.obj
+         obj\x64\Release\BulletCollision\btEmptyCollisionAlgorithm.obj
+         obj\x64\Release\BulletCollision\btGhostObject.obj
+         obj\x64\Release\BulletCollision\btHashedSimplePairCache.obj
+         obj\x64\Release\BulletCollision\btInternalEdgeUtility.obj
+         obj\x64\Release\BulletCollision\btManifoldResult.obj
+         obj\x64\Release\BulletCollision\btSimulationIslandManager.obj
+         obj\x64\Release\BulletCollision\btSphereBoxCollisionAlgorithm.obj
+         obj\x64\Release\BulletCollision\btSphereSphereCollisionAlgorithm.obj
+         obj\x64\Release\BulletCollision\btSphereTriangleCollisionAlgorithm.obj
+         obj\x64\Release\BulletCollision\btUnionFind.obj
+         obj\x64\Release\BulletCollision\SphereTriangleDetector.obj
+         obj\x64\Release\BulletCollision\btBox2dShape.obj
+         obj\x64\Release\BulletCollision\btBoxShape.obj
+         obj\x64\Release\BulletCollision\btBvhTriangleMeshShape.obj
+         obj\x64\Release\BulletCollision\btCapsuleShape.obj
+         obj\x64\Release\BulletCollision\btCollisionShape.obj
+         obj\x64\Release\BulletCollision\btCompoundShape.obj
+         obj\x64\Release\BulletCollision\btConcaveShape.obj
+         obj\x64\Release\BulletCollision\btConeShape.obj
+         obj\x64\Release\BulletCollision\btConvex2dShape.obj
+         obj\x64\Release\BulletCollision\btConvexHullShape.obj
+         obj\x64\Release\BulletCollision\btConvexInternalShape.obj
+         obj\x64\Release\BulletCollision\btConvexPointCloudShape.obj
+         obj\x64\Release\BulletCollision\btConvexPolyhedron.obj
+         obj\x64\Release\BulletCollision\btConvexShape.obj
+         obj\x64\Release\BulletCollision\btConvexTriangleMeshShape.obj
+         obj\x64\Release\BulletCollision\btCylinderShape.obj
+         obj\x64\Release\BulletCollision\btEmptyShape.obj
+         obj\x64\Release\BulletCollision\btHeightfieldTerrainShape.obj
+         obj\x64\Release\BulletCollision\btMiniSDF.obj
+         obj\x64\Release\BulletCollision\btMinkowskiSumShape.obj
+         obj\x64\Release\BulletCollision\btMultimaterialTriangleMeshShape.obj
+         obj\x64\Release\BulletCollision\btMultiSphereShape.obj
+         obj\x64\Release\BulletCollision\btOptimizedBvh.obj
+         obj\x64\Release\BulletCollision\btPolyhedralConvexShape.obj
+         obj\x64\Release\BulletCollision\btScaledBvhTriangleMeshShape.obj
+         obj\x64\Release\BulletCollision\btSdfCollisionShape.obj
+         obj\x64\Release\BulletCollision\btShapeHull.obj
+         obj\x64\Release\BulletCollision\btSphereShape.obj
+         obj\x64\Release\BulletCollision\btStaticPlaneShape.obj
+         obj\x64\Release\BulletCollision\btStridingMeshInterface.obj
+         obj\x64\Release\BulletCollision\btTetrahedronShape.obj
+         obj\x64\Release\BulletCollision\btTriangleBuffer.obj
+         obj\x64\Release\BulletCollision\btTriangleCallback.obj
+         obj\x64\Release\BulletCollision\btTriangleIndexVertexArray.obj
+         obj\x64\Release\BulletCollision\btTriangleIndexVertexMaterialArray.obj
+         obj\x64\Release\BulletCollision\btTriangleMesh.obj
+         obj\x64\Release\BulletCollision\btTriangleMeshShape.obj
+         obj\x64\Release\BulletCollision\btUniformScalingShape.obj
+         obj\x64\Release\BulletCollision\btContactProcessing.obj
+         obj\x64\Release\BulletCollision\btGenericPoolAllocator.obj
+         obj\x64\Release\BulletCollision\btGImpactBvh.obj
+         obj\x64\Release\BulletCollision\btGImpactCollisionAlgorithm.obj
+         obj\x64\Release\BulletCollision\btGImpactQuantizedBvh.obj
+         obj\x64\Release\BulletCollision\btGImpactShape.obj
+         obj\x64\Release\BulletCollision\btTriangleShapeEx.obj
+         obj\x64\Release\BulletCollision\gim_box_set.obj
+         obj\x64\Release\BulletCollision\gim_contact.obj
+         obj\x64\Release\BulletCollision\gim_memory.obj
+         obj\x64\Release\BulletCollision\gim_tri_collision.obj
+         obj\x64\Release\BulletCollision\btContinuousConvexCollision.obj
+         obj\x64\Release\BulletCollision\btConvexCast.obj
+         obj\x64\Release\BulletCollision\btGjkConvexCast.obj
+         obj\x64\Release\BulletCollision\btGjkEpa2.obj
+         obj\x64\Release\BulletCollision\btGjkEpaPenetrationDepthSolver.obj
+         obj\x64\Release\BulletCollision\btGjkPairDetector.obj
+         obj\x64\Release\BulletCollision\btMinkowskiPenetrationDepthSolver.obj
+         obj\x64\Release\BulletCollision\btPersistentManifold.obj
+         obj\x64\Release\BulletCollision\btPolyhedralContactClipping.obj
+         obj\x64\Release\BulletCollision\btRaycastCallback.obj
+         obj\x64\Release\BulletCollision\btSubSimplexConvexCast.obj
+         obj\x64\Release\BulletCollision\btVoronoiSimplexSolver.obj
+         BulletCollision.vcxproj -> C:\dev\bullet3-3.25\bin\BulletCollision_vs2010_x64_release.lib
+       FinalizeBuildStatus:
+         Deleting file "obj\x64\Release\BulletCollision\BulletCollision.tlog\unsuccessfulbuild".
+         Touching "obj\x64\Release\BulletCollision\BulletCollision.tlog\BulletCollision.lastbuildstate".
+     2>Done Building Project "C:\dev\bullet3-3.25\build3\vs2010\BulletCollision.vcxproj" (default targets).
+     1>Project "C:\dev\bullet3-3.25\build3\vs2010\0_Bullet3Solution.sln" (1) is building "C:\dev\bullet3-3.25\build3\vs2010\BulletDynamics.vcxproj" (3) on node 1 (default targets).
+     3>PrepareForBuild:
+         Creating directory "obj\x64\Release\BulletDynamics\".
+         Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+         Creating directory "obj\x64\Release\BulletDynamics\BulletDynamics.tlog\".
+       InitializeBuildStatus:
+         Creating "obj\x64\Release\BulletDynamics\BulletDynamics.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+         Touching "obj\x64\Release\BulletDynamics\BulletDynamics.tlog\unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\CL.exe /c /I..\..\src /nologo /W3 /WX- /diagnostics:column /Ox /GF /Gm- /EHsc /MD /GS /Gy /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"obj\x64\Release\BulletDynamics\\" /Fd"..\..\bin\BulletDynamics_vs2010_x64_release.pdb" /external:W3 /Gd /TP /FC /errorReport:queue /MP /wd4244 /wd4267 ..\..\src\BulletDynamics\Dynamics\btDiscreteDynamicsWorld.cpp ..\..\src\BulletDynamics\Dynamics\btDiscreteDynamicsWorldMt.cpp ..\..\src\BulletDynamics\Dynamics\btRigidBody.cpp ..\..\src\BulletDynamics\Dynamics\btSimpleDynamicsWorld.cpp ..\..\src\BulletDynamics\Dynamics\btSimulationIslandManagerMt.cpp ..\..\src\BulletDynamics\ConstraintSolver\btBatchedConstraints.cpp ..\..\src\BulletDynamics\ConstraintSolver\btConeTwistConstraint.cpp ..\..\src\BulletDynamics\ConstraintSolver\btContactConstraint.cpp ..\..\src\BulletDynamics\ConstraintSolver\btFixedConstraint.cpp ..\..\src\BulletDynamics\ConstraintSolver\btGearConstraint.cpp ..\..\src\BulletDynamics\ConstraintSolver\btGeneric6DofConstraint.cpp ..\..\src\BulletDynamics\ConstraintSolver\btGeneric6DofSpring2Constraint.cpp ..\..\src\BulletDynamics\ConstraintSolver\btGeneric6DofSpringConstraint.cpp ..\..\src\BulletDynamics\ConstraintSolver\btHinge2Constraint.cpp ..\..\src\BulletDynamics\ConstraintSolver\btHingeConstraint.cpp ..\..\src\BulletDynamics\ConstraintSolver\btNNCGConstraintSolver.cpp ..\..\src\BulletDynamics\ConstraintSolver\btPoint2PointConstraint.cpp ..\..\src\BulletDynamics\ConstraintSolver\btSequentialImpulseConstraintSolver.cpp ..\..\src\BulletDynamics\ConstraintSolver\btSequentialImpulseConstraintSolverMt.cpp ..\..\src\BulletDynamics\ConstraintSolver\btSliderConstraint.cpp ..\..\src\BulletDynamics\ConstraintSolver\btSolve2LinearConstraint.cpp ..\..\src\BulletDynamics\ConstraintSolver\btTypedConstraint.cpp ..\..\src\BulletDynamics\ConstraintSolver\btUniversalConstraint.cpp ..\..\src\BulletDynamics\Featherstone\btMultiBody.cpp ..\..\src\BulletDynamics\Featherstone\btMultiBodyConstraint.cpp ..\..\src\BulletDynamics\Featherstone\btMultiBodyConstraintSolver.cpp ..\..\src\BulletDynamics\Featherstone\btMultiBodyDynamicsWorld.cpp ..\..\src\BulletDynamics\Featherstone\btMultiBodyFixedConstraint.cpp ..\..\src\BulletDynamics\Featherstone\btMultiBodyGearConstraint.cpp ..\..\src\BulletDynamics\Featherstone\btMultiBodyJointLimitConstraint.cpp ..\..\src\BulletDynamics\Featherstone\btMultiBodyJointMotor.cpp ..\..\src\BulletDynamics\Featherstone\btMultiBodyMLCPConstraintSolver.cpp ..\..\src\BulletDynamics\Featherstone\btMultiBodyPoint2Point.cpp ..\..\src\BulletDynamics\Featherstone\btMultiBodySliderConstraint.cpp ..\..\src\BulletDynamics\Featherstone\btMultiBodySphericalJointLimit.cpp ..\..\src\BulletDynamics\Featherstone\btMultiBodySphericalJointMotor.cpp ..\..\src\BulletDynamics\MLCPSolvers\btDantzigLCP.cpp ..\..\src\BulletDynamics\MLCPSolvers\btLemkeAlgorithm.cpp ..\..\src\BulletDynamics\MLCPSolvers\btMLCPSolver.cpp ..\..\src\BulletDynamics\Vehicle\btRaycastVehicle.cpp ..\..\src\BulletDynamics\Vehicle\btWheelInfo.cpp ..\..\src\BulletDynamics\Character\btKinematicCharacterController.cpp
+         btDiscreteDynamicsWorld.cpp
+         btDiscreteDynamicsWorldMt.cpp
+         btRigidBody.cpp
+         btSimpleDynamicsWorld.cpp
+         btSimulationIslandManagerMt.cpp
+         btBatchedConstraints.cpp
+         btConeTwistConstraint.cpp
+         btContactConstraint.cpp
+         btFixedConstraint.cpp
+         btGearConstraint.cpp
+         btGeneric6DofConstraint.cpp
+         btGeneric6DofSpring2Constraint.cpp
+         btGeneric6DofSpringConstraint.cpp
+         btHinge2Constraint.cpp
+         btHingeConstraint.cpp
+         btNNCGConstraintSolver.cpp
+         btPoint2PointConstraint.cpp
+         btSequentialImpulseConstraintSolver.cpp
+         btSequentialImpulseConstraintSolverMt.cpp
+         btSliderConstraint.cpp
+         btSolve2LinearConstraint.cpp
+         btTypedConstraint.cpp
+         btUniversalConstraint.cpp
+         btMultiBody.cpp
+         btMultiBodyConstraint.cpp
+         btMultiBodyConstraintSolver.cpp
+         btMultiBodyDynamicsWorld.cpp
+         btMultiBodyFixedConstraint.cpp
+         btMultiBodyGearConstraint.cpp
+         btMultiBodyJointLimitConstraint.cpp
+         btMultiBodyJointMotor.cpp
+         btMultiBodyMLCPConstraintSolver.cpp
+         btMultiBodyPoint2Point.cpp
+         btMultiBodySliderConstraint.cpp
+         btMultiBodySphericalJointLimit.cpp
+         btMultiBodySphericalJointMotor.cpp
+         btDantzigLCP.cpp
+         btLemkeAlgorithm.cpp
+         btMLCPSolver.cpp
+         btRaycastVehicle.cpp
+         btWheelInfo.cpp
+         btKinematicCharacterController.cpp
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\Lib.exe /OUT:"..\..\bin\BulletDynamics_vs2010_x64_release.lib" /NOLOGO /MACHINE:X64 obj\x64\Release\BulletDynamics\btDiscreteDynamicsWorld.obj
+         obj\x64\Release\BulletDynamics\btDiscreteDynamicsWorldMt.obj
+         obj\x64\Release\BulletDynamics\btRigidBody.obj
+         obj\x64\Release\BulletDynamics\btSimpleDynamicsWorld.obj
+         obj\x64\Release\BulletDynamics\btSimulationIslandManagerMt.obj
+         obj\x64\Release\BulletDynamics\btBatchedConstraints.obj
+         obj\x64\Release\BulletDynamics\btConeTwistConstraint.obj
+         obj\x64\Release\BulletDynamics\btContactConstraint.obj
+         obj\x64\Release\BulletDynamics\btFixedConstraint.obj
+         obj\x64\Release\BulletDynamics\btGearConstraint.obj
+         obj\x64\Release\BulletDynamics\btGeneric6DofConstraint.obj
+         obj\x64\Release\BulletDynamics\btGeneric6DofSpring2Constraint.obj
+         obj\x64\Release\BulletDynamics\btGeneric6DofSpringConstraint.obj
+         obj\x64\Release\BulletDynamics\btHinge2Constraint.obj
+         obj\x64\Release\BulletDynamics\btHingeConstraint.obj
+         obj\x64\Release\BulletDynamics\btNNCGConstraintSolver.obj
+         obj\x64\Release\BulletDynamics\btPoint2PointConstraint.obj
+         obj\x64\Release\BulletDynamics\btSequentialImpulseConstraintSolver.obj
+         obj\x64\Release\BulletDynamics\btSequentialImpulseConstraintSolverMt.obj
+         obj\x64\Release\BulletDynamics\btSliderConstraint.obj
+         obj\x64\Release\BulletDynamics\btSolve2LinearConstraint.obj
+         obj\x64\Release\BulletDynamics\btTypedConstraint.obj
+         obj\x64\Release\BulletDynamics\btUniversalConstraint.obj
+         obj\x64\Release\BulletDynamics\btMultiBody.obj
+         obj\x64\Release\BulletDynamics\btMultiBodyConstraint.obj
+         obj\x64\Release\BulletDynamics\btMultiBodyConstraintSolver.obj
+         obj\x64\Release\BulletDynamics\btMultiBodyDynamicsWorld.obj
+         obj\x64\Release\BulletDynamics\btMultiBodyFixedConstraint.obj
+         obj\x64\Release\BulletDynamics\btMultiBodyGearConstraint.obj
+         obj\x64\Release\BulletDynamics\btMultiBodyJointLimitConstraint.obj
+         obj\x64\Release\BulletDynamics\btMultiBodyJointMotor.obj
+         obj\x64\Release\BulletDynamics\btMultiBodyMLCPConstraintSolver.obj
+         obj\x64\Release\BulletDynamics\btMultiBodyPoint2Point.obj
+         obj\x64\Release\BulletDynamics\btMultiBodySliderConstraint.obj
+         obj\x64\Release\BulletDynamics\btMultiBodySphericalJointLimit.obj
+         obj\x64\Release\BulletDynamics\btMultiBodySphericalJointMotor.obj
+         obj\x64\Release\BulletDynamics\btDantzigLCP.obj
+         obj\x64\Release\BulletDynamics\btLemkeAlgorithm.obj
+         obj\x64\Release\BulletDynamics\btMLCPSolver.obj
+         obj\x64\Release\BulletDynamics\btRaycastVehicle.obj
+         obj\x64\Release\BulletDynamics\btWheelInfo.obj
+         obj\x64\Release\BulletDynamics\btKinematicCharacterController.obj
+         BulletDynamics.vcxproj -> C:\dev\bullet3-3.25\bin\BulletDynamics_vs2010_x64_release.lib
+       FinalizeBuildStatus:
+         Deleting file "obj\x64\Release\BulletDynamics\BulletDynamics.tlog\unsuccessfulbuild".
+         Touching "obj\x64\Release\BulletDynamics\BulletDynamics.tlog\BulletDynamics.lastbuildstate".
+     3>Done Building Project "C:\dev\bullet3-3.25\build3\vs2010\BulletDynamics.vcxproj" (default targets).
+     1>Project "C:\dev\bullet3-3.25\build3\vs2010\0_Bullet3Solution.sln" (1) is building "C:\dev\bullet3-3.25\build3\vs2010\BulletFileLoader.vcxproj" (4) on node 1 (default targets).
+     4>PrepareForBuild:
+         Creating directory "obj\x64\Release\BulletFileLoader\".
+         Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+         Creating directory "obj\x64\Release\BulletFileLoader\BulletFileLoader.tlog\".
+       InitializeBuildStatus:
+         Creating "obj\x64\Release\BulletFileLoader\BulletFileLoader.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+         Touching "obj\x64\Release\BulletFileLoader\BulletFileLoader.tlog\unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\CL.exe /c /I..\..\src /nologo /W3 /WX- /diagnostics:column /Ox /GF /Gm- /EHsc /MD /GS /Gy /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"obj\x64\Release\BulletFileLoader\\" /Fd"..\..\bin\BulletFileLoader_vs2010_x64_release.pdb" /external:W3 /Gd /TP /FC /errorReport:queue /MP /wd4244 /wd4267 ..\..\Extras\Serialize\BulletFileLoader\bChunk.cpp ..\..\Extras\Serialize\BulletFileLoader\bDNA.cpp ..\..\Extras\Serialize\BulletFileLoader\bFile.cpp ..\..\Extras\Serialize\BulletFileLoader\btBulletFile.cpp
+         bChunk.cpp
+         bDNA.cpp
+         bFile.cpp
+         btBulletFile.cpp
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\Lib.exe /OUT:"..\..\bin\BulletFileLoader_vs2010_x64_release.lib" /NOLOGO /MACHINE:X64 obj\x64\Release\BulletFileLoader\bChunk.obj
+         obj\x64\Release\BulletFileLoader\bDNA.obj
+         obj\x64\Release\BulletFileLoader\bFile.obj
+         obj\x64\Release\BulletFileLoader\btBulletFile.obj
+         BulletFileLoader.vcxproj -> C:\dev\bullet3-3.25\bin\BulletFileLoader_vs2010_x64_release.lib
+       FinalizeBuildStatus:
+         Deleting file "obj\x64\Release\BulletFileLoader\BulletFileLoader.tlog\unsuccessfulbuild".
+         Touching "obj\x64\Release\BulletFileLoader\BulletFileLoader.tlog\BulletFileLoader.lastbuildstate".
+     4>Done Building Project "C:\dev\bullet3-3.25\build3\vs2010\BulletFileLoader.vcxproj" (default targets).
+     1>Project "C:\dev\bullet3-3.25\build3\vs2010\0_Bullet3Solution.sln" (1) is building "C:\dev\bullet3-3.25\build3\vs2010\BulletWorldImporter.vcxproj" (5) on node 1 (default targets).
+     5>PrepareForBuild:
+         Creating directory "obj\x64\Release\BulletWorldImporter\".
+         Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+         Creating directory "obj\x64\Release\BulletWorldImporter\BulletWo.74C7E43F.tlog\".
+       InitializeBuildStatus:
+         Creating "obj\x64\Release\BulletWorldImporter\BulletWo.74C7E43F.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+         Touching "obj\x64\Release\BulletWorldImporter\BulletWo.74C7E43F.tlog\unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\CL.exe /c /I..\..\Extras\Serialize\BulletFileLoader /I..\..\src /nologo /W3 /WX- /diagnostics:column /Ox /GF /Gm- /EHsc /MD /GS /Gy /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"obj\x64\Release\BulletWorldImporter\\" /Fd"..\..\bin\BulletWorldImporter_vs2010_x64_release.pdb" /external:W3 /Gd /TP /FC /errorReport:queue /MP /wd4244 /wd4267 ..\..\Extras\Serialize\BulletWorldImporter\btBulletWorldImporter.cpp ..\..\Extras\Serialize\BulletWorldImporter\btMultiBodyWorldImporter.cpp ..\..\Extras\Serialize\BulletWorldImporter\btWorldImporter.cpp
+         btBulletWorldImporter.cpp
+         btMultiBodyWorldImporter.cpp
+         btWorldImporter.cpp
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\Lib.exe /OUT:"..\..\bin\BulletWorldImporter_vs2010_x64_release.lib" /NOLOGO /MACHINE:X64 obj\x64\Release\BulletWorldImporter\btBulletWorldImporter.obj
+         obj\x64\Release\BulletWorldImporter\btMultiBodyWorldImporter.obj
+         obj\x64\Release\BulletWorldImporter\btWorldImporter.obj
+         BulletWorldImporter.vcxproj -> C:\dev\bullet3-3.25\bin\BulletWorldImporter_vs2010_x64_release.lib
+       FinalizeBuildStatus:
+         Deleting file "obj\x64\Release\BulletWorldImporter\BulletWo.74C7E43F.tlog\unsuccessfulbuild".
+         Touching "obj\x64\Release\BulletWorldImporter\BulletWo.74C7E43F.tlog\BulletWorldImporter.lastbuildstate".
+     5>Done Building Project "C:\dev\bullet3-3.25\build3\vs2010\BulletWorldImporter.vcxproj" (default targets).
+     1>Project "C:\dev\bullet3-3.25\build3\vs2010\0_Bullet3Solution.sln" (1) is building "C:\dev\bullet3-3.25\build3\vs2010\LinearMath.vcxproj" (6) on node 1 (default targets).
+     6>PrepareForBuild:
+         Creating directory "obj\x64\Release\LinearMath\".
+         Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+         Creating directory "obj\x64\Release\LinearMath\LinearMath.tlog\".
+       InitializeBuildStatus:
+         Creating "obj\x64\Release\LinearMath\LinearMath.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+         Touching "obj\x64\Release\LinearMath\LinearMath.tlog\unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\CL.exe /c /I..\..\src /nologo /W3 /WX- /diagnostics:column /Ox /GF /Gm- /EHsc /MD /GS /Gy /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"obj\x64\Release\LinearMath\\" /Fd"..\..\bin\LinearMath_vs2010_x64_release.pdb" /external:W3 /Gd /TP /FC /errorReport:queue /MP /wd4244 /wd4267 ..\..\src\LinearMath\btAlignedAllocator.cpp ..\..\src\LinearMath\btConvexHull.cpp ..\..\src\LinearMath\btConvexHullComputer.cpp ..\..\src\LinearMath\btGeometryUtil.cpp ..\..\src\LinearMath\btPolarDecomposition.cpp ..\..\src\LinearMath\btQuickprof.cpp ..\..\src\LinearMath\btReducedVector.cpp ..\..\src\LinearMath\btSerializer.cpp ..\..\src\LinearMath\btSerializer64.cpp ..\..\src\LinearMath\btThreads.cpp ..\..\src\LinearMath\btVector3.cpp ..\..\src\LinearMath\TaskScheduler\btTaskScheduler.cpp ..\..\src\LinearMath\TaskScheduler\btThreadSupportPosix.cpp ..\..\src\LinearMath\TaskScheduler\btThreadSupportWin32.cpp
+         btAlignedAllocator.cpp
+         btConvexHull.cpp
+         btConvexHullComputer.cpp
+         btGeometryUtil.cpp
+         btPolarDecomposition.cpp
+         btQuickprof.cpp
+         btReducedVector.cpp
+         btSerializer.cpp
+         btSerializer64.cpp
+         btThreads.cpp
+         btVector3.cpp
+         btTaskScheduler.cpp
+         btThreadSupportPosix.cpp
+         btThreadSupportWin32.cpp
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\Lib.exe /OUT:"..\..\bin\LinearMath_vs2010_x64_release.lib" /NOLOGO /MACHINE:X64 obj\x64\Release\LinearMath\btAlignedAllocator.obj
+         obj\x64\Release\LinearMath\btConvexHull.obj
+         obj\x64\Release\LinearMath\btConvexHullComputer.obj
+         obj\x64\Release\LinearMath\btGeometryUtil.obj
+         obj\x64\Release\LinearMath\btPolarDecomposition.obj
+         obj\x64\Release\LinearMath\btQuickprof.obj
+         obj\x64\Release\LinearMath\btReducedVector.obj
+         obj\x64\Release\LinearMath\btSerializer.obj
+         obj\x64\Release\LinearMath\btSerializer64.obj
+         obj\x64\Release\LinearMath\btThreads.obj
+         obj\x64\Release\LinearMath\btVector3.obj
+         obj\x64\Release\LinearMath\btTaskScheduler.obj
+         obj\x64\Release\LinearMath\btThreadSupportPosix.obj
+         obj\x64\Release\LinearMath\btThreadSupportWin32.obj
+         LinearMath.vcxproj -> C:\dev\bullet3-3.25\bin\LinearMath_vs2010_x64_release.lib
+       FinalizeBuildStatus:
+         Deleting file "obj\x64\Release\LinearMath\LinearMath.tlog\unsuccessfulbuild".
+         Touching "obj\x64\Release\LinearMath\LinearMath.tlog\LinearMath.lastbuildstate".
+     6>Done Building Project "C:\dev\bullet3-3.25\build3\vs2010\LinearMath.vcxproj" (default targets).
+     1>Done Building Project "C:\dev\bullet3-3.25\build3\vs2010\0_Bullet3Solution.sln" (BulletCollision;BulletDynamics;BulletFileLoader;BulletWorldImporter;LinearMath target(s)).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:09.59

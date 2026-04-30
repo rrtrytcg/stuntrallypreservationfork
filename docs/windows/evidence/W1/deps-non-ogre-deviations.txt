@@ -1,0 +1,10 @@
+# Non-Ogre Dependency Deviations
+Date: 2026-04-30
+
+- VS2022 Build Tools and generator Visual Studio 17 2022 were used instead of the upstream VS2019 manual CMake-Gui/Visual Studio flow.
+- tinyxml2, Ogg, Vorbis, ENet, and OpenAL Soft were configured from shell CMake under the VS2022 developer environment rather than CMake-Gui. The generated VS solutions/build outputs are the same evidence target.
+- ENet 1.3.17 did not generate an INSTALL target; W1 built the Release ALL_BUILD target and kept output in build\Release.
+- Bullet used the upstream premake VS2010 path to preserve historical library names, but VS2022 cannot build v100 projects directly. First build failed with MSB8020; retry used /p:PlatformToolset=v143 without editing generated files.
+- Bullet retained --dynamic-runtime and removed --double, matching docs/BuildingVS.md guidance.
+- Boost source build was attempted first with runtime-link=shared but failed before compiling libraries because Boost.Build could not make the MSVC setup target under the mixed VS2022/VS2026 environment. A VS2022-compatible Boost 1.81 msvc-14.3 x64 binary package was installed instead.
+- Boost docs/BuildingVS.md reference msvc-14.2 for VS2019; W1 uses msvc-14.3/vc143 as the VS2022 lane. Exact SR3 CMake path/link edits remain for the next pass.

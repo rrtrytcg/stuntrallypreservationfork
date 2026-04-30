@@ -1,0 +1,10 @@
+# Bullet W1 Result
+Version: 3.25
+Root: C:\dev\bullet3-3.25
+Source: git tag 3.25
+Build: upstream premake VS2010 route, generated under build3\vs2010
+Settings: --dynamic-runtime retained; --double removed per docs/BuildingVS.md recommendation
+Result: success after focused VS2022 compatibility override /p:PlatformToolset=v143
+Outputs: bin\BulletCollision_vs2010_x64_release.lib; bin\BulletDynamics_vs2010_x64_release.lib; bin\BulletFileLoader_vs2010_x64_release.lib; bin\BulletWorldImporter_vs2010_x64_release.lib; bin\LinearMath_vs2010_x64_release.lib
+Runtime model: /MD verified in compiler command; no --double used.
+Deviation: first MSBuild failed because generated projects target v100; retry used /p:PlatformToolset=v143 without editing generated files.

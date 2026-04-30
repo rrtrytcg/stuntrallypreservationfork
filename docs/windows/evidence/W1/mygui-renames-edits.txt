@@ -1,0 +1,200 @@
+# MyGUI CMake renames/edits
+
+Date: 2026-04-30
+Scope: MyGUI-next reproduction only.
+
+Upstream README.md Windows instructions require replacing Windows-named CMake package files with the generic names used by configure.
+
+Actions performed:
+- Copied CMake\Packages\FindFreetype_Windows.cmake over CMake\Packages\FindFreetype.cmake.
+- Copied CMake\Packages\FindOGRE_next_WindowsRelease.cmake over CMake\Packages\FindOGRE_next.cmake.
+
+Reason:
+- Release build against Windows Ogre-Next output under C:\dev\Ogre\ogre-next.
+- This is the exact replacement step described in C:\dev\mygui-next\README.md for Windows Release builds.
+
+MyGUI git diff after replacement:
+```diff
+diff --git a/CMake/Packages/FindFreetype.cmake b/CMake/Packages/FindFreetype.cmake
+index b08f1bcfc..c1754e1df 100644
+--- a/CMake/Packages/FindFreetype.cmake
++++ b/CMake/Packages/FindFreetype.cmake
+@@ -1,49 +1,20 @@
+-# - Try to find FreeType
+-# Once done, this will define
+-#
+-#  FREETYPE_FOUND - system has FreeType
+-#  FREETYPE_INCLUDE_DIRS - the FreeType include directories 
+-#  FREETYPE_LIBRARIES - link these to use FreeType
++# Set OGRE-next includes and library
+ 
+-include(FindPkgMacros)
+-findpkg_begin(FREETYPE)
++message(STATUS "Freetype:  Setting fixed paths, one up")
+ 
+-# Get path, convert backslashes as ${ENV_${var}}
+-getenv_path(FREETYPE_HOME)
++get_filename_component(DIR_ONE_ABOVE ../ ABSOLUTE)
++message(STATUS ${DIR_ONE_ABOVE})
+ 
+-# construct search paths
+-set(FREETYPE_PREFIX_PATH ${FREETYPE_HOME} ${ENV_FREETYPE_HOME})
+-create_search_paths(FREETYPE)
+-# redo search if prefix path changed
+-clear_if_changed(FREETYPE_PREFIX_PATH
+-  FREETYPE_LIBRARY_FWK
+-  FREETYPE_LIBRARY_REL
+-  FREETYPE_LIBRARY_DBG
+-  FREETYPE_INCLUDE_DIR
+-)
++set(OGRE_DEPS ${DIR_ONE_ABOVE}/Ogre/ogre-next-deps)
+ 
+-set(FREETYPE_LIBRARY_NAMES freetype253 freetype252 freetype251 freetype2501 freetype250 freetype2412 freetype2411 freetype2410 freetype249 freetype248 freetype246 freetype2311 freetype239 freetype238 freetype235 freetype219 freetype)
+-get_debug_names(FREETYPE_LIBRARY_NAMES)
++set(FREETYPE_INCLUDE_DIR ${OGRE_DEPS}/src/freetype/include)
++set(FREETYPE_FT2BUILD_INCLUDE_DIR ${OGRE_DEPS}/src/freetype/include)
++set(FREETYPE_LIBRARIES ${OGRE_DEPS}/build/src/freetype/Release/freetype.lib)
++set(FREETYPE_LIBRARY_DBG ${OGRE_DEPS}/build/src/freetype/Debug/freetype_d.lib)
++#set(FREETYPE_LIBRARY_FWK 
++set(FREETYPE_LIBRARY_REL ${OGRE_DEPS}/build/src/freetype/Release/freetype.lib)
+ 
+-use_pkgconfig(FREETYPE_PKGC freetype2)
++message(STATUS "freetype   include: " ${FREETYPE_INCLUDE_DIR})
++message(STATUS "freetype libraries: " ${FREETYPE_LIBRARY_REL})
+ 
+-# prefer static library over framework 
+-set(CMAKE_FIND_FRAMEWORK "LAST")
+-
+-findpkg_framework(FREETYPE)
+-message(STATUS "CMAKE_PREFIX_PATH: ${CMAKE_PREFIX_PATH}")
+-
+-find_path(FREETYPE_INCLUDE_DIR NAMES freetype.h freetype/freetype.h HINTS ${FREETYPE_INC_SEARCH_PATH} ${FREETYPE_PKGC_INCLUDE_DIRS} PATH_SUFFIXES freetype2)
+-find_path(FREETYPE_FT2BUILD_INCLUDE_DIR NAMES ft2build.h HINTS ${FREETYPE_INC_SEARCH_PATH} ${FREETYPE_PKGC_INCLUDE_DIRS}  PATH_SUFFIXES freetype2)
+-find_library(FREETYPE_LIBRARY_REL NAMES ${FREETYPE_LIBRARY_NAMES} HINTS ${FREETYPE_LIB_SEARCH_PATH} ${FREETYPE_PKGC_LIBRARY_DIRS} PATH_SUFFIXES "" release relwithdebinfo minsizerel)
+-find_library(FREETYPE_LIBRARY_DBG NAMES ${FREETYPE_LIBRARY_NAMES_DBG} HINTS ${FREETYPE_LIB_SEARCH_PATH} ${FREETYPE_PKGC_LIBRARY_DIRS} PATH_SUFFIXES "" debug)
+-make_library_set(FREETYPE_LIBRARY)
+-
+-findpkg_finish(FREETYPE)
+-mark_as_advanced(FREETYPE_FT2BUILD_INCLUDE_DIR)
+-if (NOT FREETYPE_FT2BUILD_INCLUDE_DIR STREQUAL FREETYPE_INCLUDE_DIR)
+-  set(FREETYPE_INCLUDE_DIRS ${FREETYPE_INCLUDE_DIRS} ${FREETYPE_FT2BUILD_INCLUDE_DIR})
+-endif ()
+-
+-# Reset framework finding
+-set(CMAKE_FIND_FRAMEWORK "FIRST")
++SET(FREETYPE_FOUND TRUE)
+diff --git a/CMake/Packages/FindOGRE_next.cmake b/CMake/Packages/FindOGRE_next.cmake
+index de43200a9..e191e407d 100644
+--- a/CMake/Packages/FindOGRE_next.cmake
++++ b/CMake/Packages/FindOGRE_next.cmake
+@@ -8,10 +8,11 @@ message(STATUS ${DIR_ONE_ABOVE})
+ set(OGRE_NEXT ${DIR_ONE_ABOVE}/Ogre/ogre-next)
+ #set(OGRE_NEXT "../Ogre/ogre-next")
+ 
+-set(OGRE_CONFIG_INCLUDE_DIR ${OGRE_NEXT}/build/${CMAKE_BUILD_TYPE}/include)
++#set(OGRE_CONFIG_INCLUDE_DIR ${OGRE_NEXT}/build/Release/include)
++set(OGRE_CONFIG_INCLUDE_DIR ${OGRE_NEXT}/build/include)
+ set(OGRE_INCLUDE_DIR ${OGRE_NEXT}/OgreMain/include)
+-set(OGRE_LIBRARIES ${OGRE_NEXT}/build/${CMAKE_BUILD_TYPE}/lib/libOgreMain.so.3.0)
+-set(OGRE_LIB_DIR ${OGRE_NEXT}/build/${CMAKE_BUILD_TYPE}/lib)
++set(OGRE_LIBRARIES ${OGRE_NEXT}/build/lib/Release/OgreMain.lib)
++set(OGRE_LIB_DIR ${OGRE_NEXT}/build/lib/Release)
+ 
+ message(STATUS "Ogre3    config: " ${OGRE_CONFIG_INCLUDE_DIR})
+ message(STATUS "Ogre3   include: " ${OGRE_INCLUDE_DIR})
+```
+
+Focused link fix after first Release build failure:
+- Added Ogre deps zlib Release library to CMake\Packages\FindFreetype.cmake because freetype.lib referenced inflate/inflateEnd/inflateReset/inflateInit2_ and did not link zlib.
+- This is limited to the Windows Freetype find module copied per upstream README; no SR3 or Ogre files were changed.
+
+MyGUI git diff after focused fix:
+```diff
+diff --git a/CMake/Packages/FindFreetype.cmake b/CMake/Packages/FindFreetype.cmake
+index b08f1bcfc..f66ca5777 100644
+--- a/CMake/Packages/FindFreetype.cmake
++++ b/CMake/Packages/FindFreetype.cmake
+@@ -1,49 +1,20 @@
+-# - Try to find FreeType
+-# Once done, this will define
+-#
+-#  FREETYPE_FOUND - system has FreeType
+-#  FREETYPE_INCLUDE_DIRS - the FreeType include directories 
+-#  FREETYPE_LIBRARIES - link these to use FreeType
++# Set OGRE-next includes and library
+ 
+-include(FindPkgMacros)
+-findpkg_begin(FREETYPE)
++message(STATUS "Freetype:  Setting fixed paths, one up")
+ 
+-# Get path, convert backslashes as ${ENV_${var}}
+-getenv_path(FREETYPE_HOME)
++get_filename_component(DIR_ONE_ABOVE ../ ABSOLUTE)
++message(STATUS ${DIR_ONE_ABOVE})
+ 
+-# construct search paths
+-set(FREETYPE_PREFIX_PATH ${FREETYPE_HOME} ${ENV_FREETYPE_HOME})
+-create_search_paths(FREETYPE)
+-# redo search if prefix path changed
+-clear_if_changed(FREETYPE_PREFIX_PATH
+-  FREETYPE_LIBRARY_FWK
+-  FREETYPE_LIBRARY_REL
+-  FREETYPE_LIBRARY_DBG
+-  FREETYPE_INCLUDE_DIR
+-)
++set(OGRE_DEPS ${DIR_ONE_ABOVE}/Ogre/ogre-next-deps)
+ 
+-set(FREETYPE_LIBRARY_NAMES freetype253 freetype252 freetype251 freetype2501 freetype250 freetype2412 freetype2411 freetype2410 freetype249 freetype248 freetype246 freetype2311 freetype239 freetype238 freetype235 freetype219 freetype)
+-get_debug_names(FREETYPE_LIBRARY_NAMES)
++set(FREETYPE_INCLUDE_DIR ${OGRE_DEPS}/src/freetype/include)
++set(FREETYPE_FT2BUILD_INCLUDE_DIR ${OGRE_DEPS}/src/freetype/include)
++set(FREETYPE_LIBRARIES ${OGRE_DEPS}/build/src/freetype/Release/freetype.lib ${OGRE_DEPS}/build/src/zlib/Release/zlib.lib)
++set(FREETYPE_LIBRARY_DBG ${OGRE_DEPS}/build/src/freetype/Debug/freetype_d.lib)
++#set(FREETYPE_LIBRARY_FWK 
++set(FREETYPE_LIBRARY_REL ${OGRE_DEPS}/build/src/freetype/Release/freetype.lib ${OGRE_DEPS}/build/src/zlib/Release/zlib.lib)
+ 
+-use_pkgconfig(FREETYPE_PKGC freetype2)
++message(STATUS "freetype   include: " ${FREETYPE_INCLUDE_DIR})
++message(STATUS "freetype libraries: " ${FREETYPE_LIBRARY_REL})
+ 
+-# prefer static library over framework 
+-set(CMAKE_FIND_FRAMEWORK "LAST")
+-
+-findpkg_framework(FREETYPE)
+-message(STATUS "CMAKE_PREFIX_PATH: ${CMAKE_PREFIX_PATH}")
+-
+-find_path(FREETYPE_INCLUDE_DIR NAMES freetype.h freetype/freetype.h HINTS ${FREETYPE_INC_SEARCH_PATH} ${FREETYPE_PKGC_INCLUDE_DIRS} PATH_SUFFIXES freetype2)
+-find_path(FREETYPE_FT2BUILD_INCLUDE_DIR NAMES ft2build.h HINTS ${FREETYPE_INC_SEARCH_PATH} ${FREETYPE_PKGC_INCLUDE_DIRS}  PATH_SUFFIXES freetype2)
+-find_library(FREETYPE_LIBRARY_REL NAMES ${FREETYPE_LIBRARY_NAMES} HINTS ${FREETYPE_LIB_SEARCH_PATH} ${FREETYPE_PKGC_LIBRARY_DIRS} PATH_SUFFIXES "" release relwithdebinfo minsizerel)
+-find_library(FREETYPE_LIBRARY_DBG NAMES ${FREETYPE_LIBRARY_NAMES_DBG} HINTS ${FREETYPE_LIB_SEARCH_PATH} ${FREETYPE_PKGC_LIBRARY_DIRS} PATH_SUFFIXES "" debug)
+-make_library_set(FREETYPE_LIBRARY)
+-
+-findpkg_finish(FREETYPE)
+-mark_as_advanced(FREETYPE_FT2BUILD_INCLUDE_DIR)
+-if (NOT FREETYPE_FT2BUILD_INCLUDE_DIR STREQUAL FREETYPE_INCLUDE_DIR)
+-  set(FREETYPE_INCLUDE_DIRS ${FREETYPE_INCLUDE_DIRS} ${FREETYPE_FT2BUILD_INCLUDE_DIR})
+-endif ()
+-
+-# Reset framework finding
+-set(CMAKE_FIND_FRAMEWORK "FIRST")
++SET(FREETYPE_FOUND TRUE)
+diff --git a/CMake/Packages/FindOGRE_next.cmake b/CMake/Packages/FindOGRE_next.cmake
+index de43200a9..e191e407d 100644
+--- a/CMake/Packages/FindOGRE_next.cmake
++++ b/CMake/Packages/FindOGRE_next.cmake
+@@ -8,10 +8,11 @@ message(STATUS ${DIR_ONE_ABOVE})
+ set(OGRE_NEXT ${DIR_ONE_ABOVE}/Ogre/ogre-next)
+ #set(OGRE_NEXT "../Ogre/ogre-next")
+ 
+-set(OGRE_CONFIG_INCLUDE_DIR ${OGRE_NEXT}/build/${CMAKE_BUILD_TYPE}/include)
++#set(OGRE_CONFIG_INCLUDE_DIR ${OGRE_NEXT}/build/Release/include)
++set(OGRE_CONFIG_INCLUDE_DIR ${OGRE_NEXT}/build/include)
+ set(OGRE_INCLUDE_DIR ${OGRE_NEXT}/OgreMain/include)
+-set(OGRE_LIBRARIES ${OGRE_NEXT}/build/${CMAKE_BUILD_TYPE}/lib/libOgreMain.so.3.0)
+-set(OGRE_LIB_DIR ${OGRE_NEXT}/build/${CMAKE_BUILD_TYPE}/lib)
++set(OGRE_LIBRARIES ${OGRE_NEXT}/build/lib/Release/OgreMain.lib)
++set(OGRE_LIB_DIR ${OGRE_NEXT}/build/lib/Release)
+ 
+ message(STATUS "Ogre3    config: " ${OGRE_CONFIG_INCLUDE_DIR})
+ message(STATUS "Ogre3   include: " ${OGRE_INCLUDE_DIR})
+```

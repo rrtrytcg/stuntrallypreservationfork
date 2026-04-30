@@ -1,0 +1,213 @@
+
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026>call "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\Tools\VsDevCmd.bat" -arch=x64 -host_arch=x64 
+**********************************************************************
+** Visual Studio 2022 Developer Command Prompt v17.14.28
+** Copyright (c) 2025 Microsoft Corporation
+**********************************************************************
+MSBuild version 17.14.40+3e7442088 for .NET Framework
+
+  1>Checking Build System
+  Building Custom Rule C:/dev/mygui-next/MyGUIEngine/CMakeLists.txt
+  MyGUI_Precompiled.cpp
+C:\dev\mygui-next\MyGUIEngine\include\MyGUI_Exception.h(18,15): warning C4275: non dll-interface class 'std::exception' used as base for dll-interface class 'MyGUI::Exception' [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+  (compiling source file '../../MyGUIEngine/src/MyGUI_Precompiled.cpp')
+      C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\vcruntime_exception.h(49,35):
+      see declaration of 'std::exception'
+      C:\dev\mygui-next\MyGUIEngine\include\MyGUI_Exception.h(17,21):
+      see declaration of 'MyGUI::Exception'
+  
+  MyGUI_ActionController.cpp
+  MyGUI_Any.cpp
+  MyGUI_BackwardCompatibility.cpp
+  MyGUI_BiIndexBase.cpp
+  MyGUI_Button.cpp
+  MyGUI_Canvas.cpp
+  MyGUI_ChildSkinInfo.cpp
+  MyGUI_ClipboardManager.cpp
+  MyGUI_WindowsClipboardHandler.cpp
+  MyGUI_Colour.cpp
+  MyGUI_ComboBox.cpp
+  MyGUI_ConsoleLogListener.cpp
+  MyGUI_Constants.cpp
+  MyGUI_ControllerEdgeHide.cpp
+  MyGUI_ControllerFadeAlpha.cpp
+  MyGUI_ControllerManager.cpp
+  MyGUI_ControllerPosition.cpp
+C:\dev\mygui-next\MyGUIEngine\include\MyGUI_ActionController.h(49,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+  (compiling source file '../../MyGUIEngine/src/MyGUI_ControllerPosition.cpp')
+      C:\dev\mygui-next\MyGUIEngine\include\MyGUI_ActionController.h(49,12):
+      the template instantiation context (the oldest one first) is
+          C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ControllerPosition.cpp(126,60):
+          see reference to function template instantiation 'void MyGUI::action::jumpMoveFunction<5>(const MyGUI::IntCoord &,const MyGUI::IntCoord &,MyGUI::IntCoord &,float)' being compiled
+  
+  MyGUI_ControllerRepeatClick.cpp
+  MyGUI_DDContainer.cpp
+  MyGUI_DataFileStream.cpp
+  Generating Code...
+  Compiling...
+  MyGUI_DataManager.cpp
+  MyGUI_DataMemoryStream.cpp
+  MyGUI_DataStream.cpp
+  MyGUI_DynLib.cpp
+  MyGUI_DynLibManager.cpp
+  MyGUI_EditBox.cpp
+C:\dev\mygui-next\MyGUIEngine\src\MyGUI_EditBox.cpp(1633,16): warning C4267: '=': conversion from 'size_t' to 'T', possible loss of data [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+C:\dev\mygui-next\MyGUIEngine\src\MyGUI_EditBox.cpp(1633,16): warning C4267:         with [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+C:\dev\mygui-next\MyGUIEngine\src\MyGUI_EditBox.cpp(1633,16): warning C4267:         [ [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+C:\dev\mygui-next\MyGUIEngine\src\MyGUI_EditBox.cpp(1633,16): warning C4267:             T=int [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+C:\dev\mygui-next\MyGUIEngine\src\MyGUI_EditBox.cpp(1633,16): warning C4267:         ] [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+  (compiling source file '../../MyGUIEngine/src/MyGUI_EditBox.cpp')
+  
+C:\dev\mygui-next\MyGUIEngine\src\MyGUI_EditBox.cpp(1639,17): warning C4267: '=': conversion from 'size_t' to 'T', possible loss of data [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+C:\dev\mygui-next\MyGUIEngine\src\MyGUI_EditBox.cpp(1639,17): warning C4267:         with [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+C:\dev\mygui-next\MyGUIEngine\src\MyGUI_EditBox.cpp(1639,17): warning C4267:         [ [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+C:\dev\mygui-next\MyGUIEngine\src\MyGUI_EditBox.cpp(1639,17): warning C4267:             T=int [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+C:\dev\mygui-next\MyGUIEngine\src\MyGUI_EditBox.cpp(1639,17): warning C4267:         ] [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+  (compiling source file '../../MyGUIEngine/src/MyGUI_EditBox.cpp')
+  
+C:\dev\mygui-next\MyGUIEngine\src\MyGUI_EditBox.cpp(1661,14): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+  (compiling source file '../../MyGUIEngine/src/MyGUI_EditBox.cpp')
+  
+C:\dev\mygui-next\MyGUIEngine\src\MyGUI_EditBox.cpp(1683,14): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+  (compiling source file '../../MyGUIEngine/src/MyGUI_EditBox.cpp')
+  
+C:\dev\mygui-next\MyGUIEngine\src\MyGUI_EditBox.cpp(1995,15): warning C4267: '=': conversion from 'size_t' to 'T', possible loss of data [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+C:\dev\mygui-next\MyGUIEngine\src\MyGUI_EditBox.cpp(1995,15): warning C4267:         with [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+C:\dev\mygui-next\MyGUIEngine\src\MyGUI_EditBox.cpp(1995,15): warning C4267:         [ [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+C:\dev\mygui-next\MyGUIEngine\src\MyGUI_EditBox.cpp(1995,15): warning C4267:             T=int [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+C:\dev\mygui-next\MyGUIEngine\src\MyGUI_EditBox.cpp(1995,15): warning C4267:         ] [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+  (compiling source file '../../MyGUIEngine/src/MyGUI_EditBox.cpp')
+  
+C:\dev\mygui-next\MyGUIEngine\src\MyGUI_EditBox.cpp(2022,16): warning C4267: '=': conversion from 'size_t' to 'T', possible loss of data [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+C:\dev\mygui-next\MyGUIEngine\src\MyGUI_EditBox.cpp(2022,16): warning C4267:         with [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+C:\dev\mygui-next\MyGUIEngine\src\MyGUI_EditBox.cpp(2022,16): warning C4267:         [ [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+C:\dev\mygui-next\MyGUIEngine\src\MyGUI_EditBox.cpp(2022,16): warning C4267:             T=int [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+C:\dev\mygui-next\MyGUIEngine\src\MyGUI_EditBox.cpp(2022,16): warning C4267:         ] [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+  (compiling source file '../../MyGUIEngine/src/MyGUI_EditBox.cpp')
+  
+  MyGUI_EditText.cpp
+  MyGUI_Exception.cpp
+  MyGUI_FactoryManager.cpp
+  MyGUI_FileLogListener.cpp
+  MyGUI_FontManager.cpp
+  MyGUI_GeometryUtility.cpp
+  MyGUI_Gui.cpp
+  MyGUI_ImageBox.cpp
+  MyGUI_InputManager.cpp
+  MyGUI_ItemBox.cpp
+C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ItemBox.cpp(688,35): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+  (compiling source file '../../MyGUIEngine/src/MyGUI_ItemBox.cpp')
+  
+  MyGUI_LanguageManager.cpp
+  MyGUI_LayerItem.cpp
+  MyGUI_LayerManager.cpp
+  MyGUI_LayerNode.cpp
+  Generating Code...
+  Compiling...
+  MyGUI_LayoutManager.cpp
+  MyGUI_LevelLogFilter.cpp
+  MyGUI_ListBox.cpp
+C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ListBox.cpp(882,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+  (compiling source file '../../MyGUIEngine/src/MyGUI_ListBox.cpp')
+  
+  MyGUI_LogManager.cpp
+  MyGUI_LogSource.cpp
+  MyGUI_MainSkin.cpp
+  MyGUI_MaskPickInfo.cpp
+  MyGUI_MenuBar.cpp
+  MyGUI_MenuControl.cpp
+  MyGUI_MenuItem.cpp
+  MyGUI_MultiListBox.cpp
+C:\dev\mygui-next\MyGUIEngine\src\MyGUI_MultiListBox.cpp(872,36): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+  (compiling source file '../../MyGUIEngine/src/MyGUI_MultiListBox.cpp')
+  
+C:\dev\mygui-next\MyGUIEngine\src\MyGUI_MultiListBox.cpp(925,23): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+  (compiling source file '../../MyGUIEngine/src/MyGUI_MultiListBox.cpp')
+  
+C:\dev\mygui-next\MyGUIEngine\src\MyGUI_MultiListBox.cpp(927,17): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+  (compiling source file '../../MyGUIEngine/src/MyGUI_MultiListBox.cpp')
+  
+  MyGUI_MultiListItem.cpp
+  MyGUI_OverlappedLayer.cpp
+C:\dev\mygui-next\MyGUIEngine\src\MyGUI_OverlappedLayer.cpp(25,3): warning C4297: 'MyGUI::OverlappedLayer::~OverlappedLayer': function assumed not to throw an exception but does [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+  (compiling source file '../../MyGUIEngine/src/MyGUI_OverlappedLayer.cpp')
+      C:\dev\mygui-next\MyGUIEngine\src\MyGUI_OverlappedLayer.cpp(25,3):
+      destructor or deallocator has a (possibly implicit) non-throwing exception specification
+  
+  MyGUI_PluginManager.cpp
+  MyGUI_PointerManager.cpp
+  MyGUI_PolygonalSkin.cpp
+  MyGUI_PopupMenu.cpp
+  MyGUI_ProgressBar.cpp
+  MyGUI_RenderItem.cpp
+  MyGUI_RenderManager.cpp
+  Generating Code...
+  Compiling...
+  MyGUI_ResourceImageSet.cpp
+  MyGUI_ResourceImageSetPointer.cpp
+  MyGUI_ResourceLayout.cpp
+  MyGUI_ResourceManager.cpp
+  MyGUI_ResourceManualFont.cpp
+  MyGUI_ResourceManualPointer.cpp
+  MyGUI_ResourceSkin.cpp
+  MyGUI_ResourceTrueTypeFont.cpp
+  MyGUI_RotatingSkin.cpp
+  MyGUI_ScrollBar.cpp
+C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ScrollBar.cpp(452,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+  (compiling source file '../../MyGUIEngine/src/MyGUI_ScrollBar.cpp')
+  
+C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ScrollBar.cpp(454,14): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+  (compiling source file '../../MyGUIEngine/src/MyGUI_ScrollBar.cpp')
+  
+C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ScrollBar.cpp(456,14): warning C4267: '-=': conversion from 'size_t' to 'int', possible loss of data [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+  (compiling source file '../../MyGUIEngine/src/MyGUI_ScrollBar.cpp')
+  
+C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ScrollBar.cpp(461,26): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+  (compiling source file '../../MyGUIEngine/src/MyGUI_ScrollBar.cpp')
+  
+  MyGUI_ScrollView.cpp
+C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ScrollView.cpp(125,45): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+  (compiling source file '../../MyGUIEngine/src/MyGUI_ScrollView.cpp')
+  
+C:\dev\mygui-next\MyGUIEngine\src\MyGUI_ScrollView.cpp(145,45): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+  (compiling source file '../../MyGUIEngine/src/MyGUI_ScrollView.cpp')
+  
+  MyGUI_ScrollViewBase.cpp
+  MyGUI_SharedLayer.cpp
+C:\dev\mygui-next\MyGUIEngine\src\MyGUI_SharedLayer.cpp(26,3): warning C4297: 'MyGUI::SharedLayer::~SharedLayer': function assumed not to throw an exception but does [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+  (compiling source file '../../MyGUIEngine/src/MyGUI_SharedLayer.cpp')
+      C:\dev\mygui-next\MyGUIEngine\src\MyGUI_SharedLayer.cpp(26,3):
+      destructor or deallocator has a (possibly implicit) non-throwing exception specification
+  
+  MyGUI_SharedLayerNode.cpp
+  MyGUI_SimpleText.cpp
+  MyGUI_SkinItem.cpp
+  MyGUI_SkinManager.cpp
+  MyGUI_SubSkin.cpp
+  MyGUI_SubWidgetBinding.cpp
+  MyGUI_SubWidgetManager.cpp
+  Generating Code...
+  Compiling...
+  MyGUI_TabControl.cpp
+  MyGUI_TabItem.cpp
+  MyGUI_TextBox.cpp
+  MyGUI_TextIterator.cpp
+  MyGUI_TextView.cpp
+  MyGUI_TextureUtility.cpp
+  MyGUI_TileRect.cpp
+  MyGUI_Timer.cpp
+  MyGUI_ToolTipManager.cpp
+  MyGUI_UString.cpp
+  MyGUI_Widget.cpp
+  MyGUI_WidgetInput.cpp
+  MyGUI_WidgetManager.cpp
+  MyGUI_WidgetUserData.cpp
+  MyGUI_Window.cpp
+  MyGUI_XmlDocument.cpp
+  Generating Code...
+     Creating library C:/dev/mygui-next/build/lib/Release/MyGUIEngine.lib and object C:/dev/mygui-next/build/lib/Release/MyGUIEngine.exp
+freetype.lib(ftgzip.obj) : error LNK2019: unresolved external symbol inflate referenced in function ft_gzip_file_fill_output [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+freetype.lib(ftgzip.obj) : error LNK2019: unresolved external symbol inflateEnd referenced in function ft_gzip_file_done [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+freetype.lib(ftgzip.obj) : error LNK2019: unresolved external symbol inflateReset referenced in function FT_Stream_OpenGzip [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+freetype.lib(ftgzip.obj) : error LNK2019: unresolved external symbol inflateInit2_ referenced in function FT_Stream_OpenGzip [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]
+C:\dev\mygui-next\build\bin\Release\MyGUIEngine.dll : fatal error LNK1120: 4 unresolved externals [C:\dev\mygui-next\build\MyGUIEngine\MyGUIEngine.vcxproj]

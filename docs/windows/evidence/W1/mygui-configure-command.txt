@@ -1,0 +1,13 @@
+# MyGUI configure command
+Date: 2026-04-30
+Scope: MyGUI-next Release configure only.
+
+VS2022 developer environment: C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\Tools\VsDevCmd.bat
+CMake: C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe
+Generator: Visual Studio 17 2022
+Platform: x64
+Source: C:\dev\mygui-next
+Build: C:\dev\mygui-next\build
+
+Command:
+cmake -G "Visual Studio 17 2022" -A x64 ..

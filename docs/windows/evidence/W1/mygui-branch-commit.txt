@@ -1,0 +1,16 @@
+# MyGUI branch and commit
+Date: 2026-04-30
+Root: C:\dev\mygui-next
+
+Branch:
+ogre3
+
+Commit:
+a1490ffe01d503c31a00d8277007ffcb27a4258e
+
+Commit summary:
+a1490ffe0 unique_ptr not auto_ptr
+
+Working tree changes intentionally left in external dependency tree:
+ M CMake/Packages/FindFreetype.cmake
+ M CMake/Packages/FindOGRE_next.cmake

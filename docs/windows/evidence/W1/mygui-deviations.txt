@@ -1,0 +1,26 @@
+# MyGUI W1 Deviations
+
+Date: 2026-04-30
+Scope: MyGUI-next reproduction only.
+
+## Deviations from docs/BuildingVS.md / MyGUI README
+
+1. Used VS2022 developer environment and generator `Visual Studio 17 2022` instead of an older VS2019-era Visual Studio flow. This follows the already recorded W1 first lane.
+2. Used VS2022 bundled CMake because plain-shell CMake is not on PATH.
+3. Applied the README-prescribed Windows CMake replacements:
+   - `CMake\Packages\FindFreetype_Windows.cmake` copied over `CMake\Packages\FindFreetype.cmake`.
+   - `CMake\Packages\FindOGRE_next_WindowsRelease.cmake` copied over `CMake\Packages\FindOGRE_next.cmake`.
+4. Configure emitted `ERROR    compiled OGRE DLL's wasn't found` but still found Ogre/Freetype, generated `MYGUI.sln`, and wrote CMakeCache. This is recorded as a non-fatal configure warning.
+5. First Release build failed at link because `freetype.lib` referenced zlib symbols (`inflate`, `inflateEnd`, `inflateReset`, `inflateInit2_`) but the Windows Freetype find module did not link zlib.
+6. One focused fix was applied to `CMake\Packages\FindFreetype.cmake`: add Ogre deps Release `zlib.lib` beside `freetype.lib` in `FREETYPE_LIBRARIES` and `FREETYPE_LIBRARY_REL`.
+7. After reconfigure, Release build succeeded.
+8. No install target was run because the MyGUI README's Windows section defines success as the produced `bin\release` DLL and `lib\Release` libraries, not an install step.
+
+## Non-deviations / preserved policy
+
+- MyGUI branch remained `ogre3`.
+- No MyGUI upgrade beyond branch `ogre3` was attempted.
+- No SR3 configure/build was started.
+- No SR3 CMake path assumptions were edited.
+- No Conan, vcpkg, or package-manager replacement was introduced.
+- No gameplay, UI, asset, or renderer policy changes were made.

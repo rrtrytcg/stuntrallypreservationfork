@@ -114,7 +114,7 @@ Checklist:
 - [x] Confirm planned source/specimen/dependency layout and capture current missing dependency folders.
 - [ ] Download/clone/build dependencies following `docs/BuildingVS.md` before attempting any package-manager replacement. Ogre-next-deps are built; non-Ogre SR3 dependencies remain pending.
 - [x] Build Ogre-Next branch `v3-0` with Atmosphere and Planar Reflections enabled.
-- [ ] Build MyGUI-next branch `ogre3` against the reproduced Ogre-Next output.
+- [x] Build MyGUI-next branch `ogre3` against the reproduced Ogre-Next output.
 - [ ] Configure SR3 Release x64 using the historical Windows release CMake route, documenting every path edit or file rename.
 - [ ] Build `StuntRally3.exe` and `SR-Editor3.exe`.
 - [ ] Stage runtime DLLs and `plugins.cfg` using the W3 scripts where possible.
@@ -241,6 +241,63 @@ Recorded deviations:
 Next recommended W1 step:
 
 - Begin MyGUI-next reproduction only: clone `https://github.com/cryham/mygui-next` branch `ogre3`, configure it against the verified Ogre-Next output at `C:\dev\Ogre\ogre-next`, capture the exact CMake settings/deviations, and stop after MyGUI build evidence. Do not configure or build SR3 yet.
+
+### W1 MyGUI-next Reproduction Evidence
+
+Full captured evidence:
+
+```text
+docs/windows/evidence/W1/mygui-fetch.txt
+docs/windows/evidence/W1/mygui-branch-commit.txt
+docs/windows/evidence/W1/mygui-configure-command.txt
+docs/windows/evidence/W1/mygui-configure-output.txt
+docs/windows/evidence/W1/mygui-cache-summary.txt
+docs/windows/evidence/W1/mygui-build-command.txt
+docs/windows/evidence/W1/mygui-build-output-first-failed.txt
+docs/windows/evidence/W1/mygui-build-output.txt
+docs/windows/evidence/W1/mygui-build-result.txt
+docs/windows/evidence/W1/mygui-renames-edits.txt
+docs/windows/evidence/W1/mygui-deviations.txt
+docs/windows/evidence/W1/build-layout-check-after-mygui.txt
+```
+
+Result:
+
+- MyGUI-next cloned to `C:\dev\mygui-next`.
+- MyGUI branch: `ogre3`.
+- MyGUI commit: `a1490ffe01d503c31a00d8277007ffcb27a4258e` (`a1490ffe0 unique_ptr not auto_ptr`).
+- Generator/toolchain: VS2022 developer environment, `Visual Studio 17 2022`, platform `x64`, bundled CMake `3.31.6-msvc6`.
+- Configure result: success with a non-fatal `compiled OGRE DLL's wasn't found` warning.
+- First Release build result: failed on unresolved zlib symbols from `freetype.lib`.
+- Focused fix: added Ogre deps Release `zlib.lib` to the Windows `FindFreetype.cmake` library list.
+- Retry Release build result: success.
+- Install/staging: no install target run; MyGUI README defines Windows success as generated DLL/lib outputs.
+
+Required MyGUI settings verified in `C:\dev\mygui-next\build\CMakeCache.txt`:
+
+- `MYGUI_RENDERSYSTEM:STRING=8`.
+- `MYGUI_USE_FREETYPE:BOOL=ON`.
+- `MYGUI_STATIC:BOOL=OFF`.
+- `MYGUI_BUILD_DEMOS:BOOL=OFF`.
+- `MYGUI_BUILD_PLUGINS:BOOL=OFF`.
+- `MYGUI_BUILD_TEST_APP:BOOL=OFF`.
+- `MYGUI_BUILD_TOOLS:BOOL=OFF`.
+- `MYGUI_BUILD_UNITTESTS:BOOL=OFF`.
+- `MYGUI_BUILD_WRAPPER:BOOL=OFF`.
+
+Produced Release outputs:
+
+- `C:\dev\mygui-next\build\bin\Release\MyGUIEngine.dll`.
+- `C:\dev\mygui-next\build\lib\Release\MyGUIEngine.lib`.
+- `C:\dev\mygui-next\build\lib\Release\MyGUI.Ogre2Platform.lib`.
+
+Layout checker result after MyGUI:
+
+- Passed. `C:\dev`, Ogre-Next root/output, MyGUI root/build, and source fork checks are present.
+
+Next recommended W1 step:
+
+- Reproduce the remaining non-Ogre SR3 dependencies only: tinyxml2, Bullet, Boost, Enet, Ogg, Vorbis, and OpenAL Soft. Do not configure SR3 until those dependency roots/build outputs are present and documented.
 
 ## W3 Script Inventory
 

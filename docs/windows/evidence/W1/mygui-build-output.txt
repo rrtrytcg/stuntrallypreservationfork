@@ -1,0 +1,66 @@
+
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026>call "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\Tools\VsDevCmd.bat" -arch=x64 -host_arch=x64 
+**********************************************************************
+** Visual Studio 2022 Developer Command Prompt v17.14.28
+** Copyright (c) 2025 Microsoft Corporation
+**********************************************************************
+MSBuild version 17.14.40+3e7442088 for .NET Framework
+
+  1>Checking Build System
+     Creating library C:/dev/mygui-next/build/lib/Release/MyGUIEngine.lib and object C:/dev/mygui-next/build/lib/Release/MyGUIEngine.exp
+  MyGUIEngine.vcxproj -> C:\dev\mygui-next\build\bin\Release\MyGUIEngine.dll
+  Building Custom Rule C:/dev/mygui-next/Platforms/Ogre2/Ogre2Platform/CMakeLists.txt
+  MyGUI_Ogre2DataManager.cpp
+C:\dev\mygui-next\MyGUIEngine\include\MyGUI_Exception.h(18,15): warning C4275: non dll-interface class 'std::exception' used as base for dll-interface class 'MyGUI::Exception' [C:\dev\mygui-next\build\Platforms\Ogre2\Ogre2Platform\MyGUI.Ogre2Platform.vcxproj]
+  (compiling source file '../../../../Platforms/Ogre2/Ogre2Platform/src/MyGUI_Ogre2DataManager.cpp')
+      C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\vcruntime_exception.h(49,35):
+      see declaration of 'std::exception'
+      C:\dev\mygui-next\MyGUIEngine\include\MyGUI_Exception.h(17,21):
+      see declaration of 'MyGUI::Exception'
+  
+C:\dev\mygui-next\Platforms\Ogre2\Ogre2Platform\src\MyGUI_Ogre2DataManager.cpp(105,33): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data [C:\dev\mygui-next\build\Platforms\Ogre2\Ogre2Platform\MyGUI.Ogre2Platform.vcxproj]
+  MyGUI_Ogre2DataStream.cpp
+C:\dev\mygui-next\MyGUIEngine\include\MyGUI_Exception.h(18,15): warning C4275: non dll-interface class 'std::exception' used as base for dll-interface class 'MyGUI::Exception' [C:\dev\mygui-next\build\Platforms\Ogre2\Ogre2Platform\MyGUI.Ogre2Platform.vcxproj]
+  (compiling source file '../../../../Platforms/Ogre2/Ogre2Platform/src/MyGUI_Ogre2DataStream.cpp')
+      C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\vcruntime_exception.h(49,35):
+      see declaration of 'std::exception'
+      C:\dev\mygui-next\MyGUIEngine\include\MyGUI_Exception.h(17,21):
+      see declaration of 'MyGUI::Exception'
+  
+C:\dev\mygui-next\Platforms\Ogre2\Ogre2Platform\src\MyGUI_Ogre2DataStream.cpp(19,11): warning C4996: 'Ogre::SharedPtr<Ogre::DataStream>::setNull': was declared deprecated [C:\dev\mygui-next\build\Platforms\Ogre2\Ogre2Platform\MyGUI.Ogre2Platform.vcxproj]
+C:\dev\mygui-next\Platforms\Ogre2\Ogre2Platform\src\MyGUI_Ogre2DataStream.cpp(24,18): warning C4996: 'Ogre::SharedPtr<Ogre::DataStream>::isNull': was declared deprecated [C:\dev\mygui-next\build\Platforms\Ogre2\Ogre2Platform\MyGUI.Ogre2Platform.vcxproj]
+C:\dev\mygui-next\Platforms\Ogre2\Ogre2Platform\src\MyGUI_Ogre2DataStream.cpp(29,18): warning C4996: 'Ogre::SharedPtr<Ogre::DataStream>::isNull': was declared deprecated [C:\dev\mygui-next\build\Platforms\Ogre2\Ogre2Platform\MyGUI.Ogre2Platform.vcxproj]
+C:\dev\mygui-next\Platforms\Ogre2\Ogre2Platform\src\MyGUI_Ogre2DataStream.cpp(34,15): warning C4996: 'Ogre::SharedPtr<Ogre::DataStream>::isNull': was declared deprecated [C:\dev\mygui-next\build\Platforms\Ogre2\Ogre2Platform\MyGUI.Ogre2Platform.vcxproj]
+C:\dev\mygui-next\Platforms\Ogre2\Ogre2Platform\src\MyGUI_Ogre2DataStream.cpp(44,15): warning C4996: 'Ogre::SharedPtr<Ogre::DataStream>::isNull': was declared deprecated [C:\dev\mygui-next\build\Platforms\Ogre2\Ogre2Platform\MyGUI.Ogre2Platform.vcxproj]
+  MyGUI_Ogre2RTTexture.cpp
+  MyGUI_Ogre2RenderManager.cpp
+C:\dev\mygui-next\MyGUIEngine\include\MyGUI_Exception.h(18,15): warning C4275: non dll-interface class 'std::exception' used as base for dll-interface class 'MyGUI::Exception' [C:\dev\mygui-next\build\Platforms\Ogre2\Ogre2Platform\MyGUI.Ogre2Platform.vcxproj]
+  (compiling source file '../../../../Platforms/Ogre2/Ogre2Platform/src/MyGUI_Ogre2RenderManager.cpp')
+      C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\vcruntime_exception.h(49,35):
+      see declaration of 'std::exception'
+      C:\dev\mygui-next\MyGUIEngine\include\MyGUI_Exception.h(17,21):
+      see declaration of 'MyGUI::Exception'
+  
+  MyGUI_Ogre2Texture.cpp
+C:\dev\mygui-next\MyGUIEngine\include\MyGUI_Exception.h(18,15): warning C4275: non dll-interface class 'std::exception' used as base for dll-interface class 'MyGUI::Exception' [C:\dev\mygui-next\build\Platforms\Ogre2\Ogre2Platform\MyGUI.Ogre2Platform.vcxproj]
+  (compiling source file '../../../../Platforms/Ogre2/Ogre2Platform/src/MyGUI_Ogre2Texture.cpp')
+      C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\vcruntime_exception.h(49,35):
+      see declaration of 'std::exception'
+      C:\dev\mygui-next\MyGUIEngine\include\MyGUI_Exception.h(17,21):
+      see declaration of 'MyGUI::Exception'
+  
+C:\dev\mygui-next\Platforms\Ogre2\Ogre2Platform\src\MyGUI_Ogre2Texture.cpp(183,76): warning C4267: 'argument': conversion from 'size_t' to 'Ogre::uint32', possible loss of data [C:\dev\mygui-next\build\Platforms\Ogre2\Ogre2Platform\MyGUI.Ogre2Platform.vcxproj]
+  MyGUI_Ogre2VertexBuffer.cpp
+C:\dev\mygui-next\MyGUIEngine\include\MyGUI_Exception.h(18,15): warning C4275: non dll-interface class 'std::exception' used as base for dll-interface class 'MyGUI::Exception' [C:\dev\mygui-next\build\Platforms\Ogre2\Ogre2Platform\MyGUI.Ogre2Platform.vcxproj]
+  (compiling source file '../../../../Platforms/Ogre2/Ogre2Platform/src/MyGUI_Ogre2VertexBuffer.cpp')
+      C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\vcruntime_exception.h(49,35):
+      see declaration of 'std::exception'
+      C:\dev\mygui-next\MyGUIEngine\include\MyGUI_Exception.h(17,21):
+      see declaration of 'MyGUI::Exception'
+  
+C:\dev\mygui-next\Platforms\Ogre2\Ogre2Platform\src\MyGUI_Ogre2VertexBuffer.cpp(64,17): warning C4996: 'Ogre::SharedPtr<Ogre::v1::HardwareVertexBuffer>::setNull': was declared deprecated [C:\dev\mygui-next\build\Platforms\Ogre2\Ogre2Platform\MyGUI.Ogre2Platform.vcxproj]
+  MyGUI_Ogre2GuiRenderable.cpp
+  Generating Code...
+C:\dev\mygui-next\Platforms\Ogre2\Ogre2Platform\include\MyGUI_Ogre2RenderManager.h(70,1): warning C4715: 'MyGUI::OgreCompositorPassProvider::addPassDef': not all control paths return a value [C:\dev\mygui-next\build\Platforms\Ogre2\Ogre2Platform\MyGUI.Ogre2Platform.vcxproj]
+  MyGUI.Ogre2Platform.vcxproj -> C:\dev\mygui-next\build\lib\Release\MyGUI.Ogre2Platform.lib
+  Building Custom Rule C:/dev/mygui-next/CMakeLists.txt

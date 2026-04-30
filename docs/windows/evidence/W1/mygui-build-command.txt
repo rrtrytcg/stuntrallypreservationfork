@@ -1,0 +1,6 @@
+# MyGUI build command
+Date: 2026-04-30
+Scope: MyGUI-next Release build only.
+
+Command:
+cmake --build C:\dev\mygui-next\build --config Release

@@ -1,0 +1,45 @@
+
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026>call "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\Tools\VsDevCmd.bat" -arch=x64 -host_arch=x64 
+**********************************************************************
+** Visual Studio 2022 Developer Command Prompt v17.14.28
+** Copyright (c) 2025 Microsoft Corporation
+**********************************************************************
+CMake Deprecation Warning at CMakeLists.txt:8 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.26200.
+-- Configuring MYGUI 3.2.3
+ERROR    compiled OGRE DLL's wasn't found
+-- Freetype:  Setting fixed paths, one up
+-- C:/dev
+-- freetype   include: C:/dev/Ogre/ogre-next-deps/src/freetype/include
+-- freetype libraries: C:/dev/Ogre/ogre-next-deps/build/src/freetype/Release/freetype.libC:/dev/Ogre/ogre-next-deps/build/src/zlib/Release/zlib.lib
+-- Ogre3:  Setting fixed paths, one up
+-- C:/dev
+-- Ogre3    config: C:/dev/Ogre/ogre-next/build/include
+-- Ogre3   include: C:/dev/Ogre/ogre-next/OgreMain/include
+-- Ogre3 libraries: C:/dev/Ogre/ogre-next/build/lib/Release/OgreMain.lib
+-- Ogre3   lib dir: C:/dev/Ogre/ogre-next/build/lib/Release
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+-- 
+-----------------------------------------------------------------------------
+-- The following external packages were located on your system.
+-- This installation will have the extra features provided by these packages.
++ freetype
++ ogre
+-----------------------------------------------------------------------------
+-- The following OPTIONAL packages could NOT be located on your system.
+-- Consider installing them to enable more features from this software.
++ Doxygen: Tool for building API documentation <http://doxygen.org>
+-----------------------------------------------------------------------------
+
+-- Platform Ogre-next:C:/dev/Ogre/ogre-next
+-- Configuring done (0.1s)
+-- Generating done (0.3s)
+-- Build files have been written to: C:/dev/mygui-next/build

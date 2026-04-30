@@ -77,7 +77,8 @@ W1 layout pass status:
 - `$SPECIMEN_ROOT` exists and remains the preserved binary/audit parent.
 - `$PACKAGE_ROOT` exists and remains the known-good packaged binary specimen.
 - `$SR3_ROOT` exists and is the clean Git source fork for source-build reproduction.
-- `$DEPS_ROOT`, `$OGRE_ROOT`, and `$MYGUI_ROOT` are planned but currently missing.
+- `$DEPS_ROOT`, `$OGRE_ROOT`, and `$MYGUI_ROOT` now exist.
+- Ogre-Next and MyGUI-next Release outputs exist; non-Ogre SR3 dependencies are still pending.
 - `docs/windows/evidence/W1/dependency-layout-plan.txt` records the full folder plan and current missing paths.
 
 W1 must freeze exact dependency paths and versions here after a successful source build.
@@ -96,7 +97,7 @@ Starting point from `docs/BuildingVS.md`:
 | Vorbis | 1.3.7 | TBD |
 | OpenAL Soft | 1.23.1 | TBD |
 | Ogre-Next | 3.0 / branch `v3-0` | branch `v3-0`, commit `20da67178c571efe1c909db73b710698d60bf3b3` |
-| MyGUI-next | branch `ogre3` | TBD |
+| MyGUI-next | branch `ogre3` | branch `ogre3`, commit `a1490ffe01d503c31a00d8277007ffcb27a4258e` |
 
 ## Ogre-Next Required Settings
 
@@ -116,12 +117,23 @@ W1 must verify and record:
 
 W1 must verify and record:
 
-- MyGUI-next branch.
-- Exact commit.
-- `MYGUI_RENDERSYSTEM=8 - Ogre 3.x`.
-- `MYGUI_USE_FREETYPE=ON`.
-- `MYGUI_STATIC=OFF`.
-- Which CMake files had to be renamed or edited.
+- MyGUI-next branch: `ogre3`.
+- Exact commit: `a1490ffe01d503c31a00d8277007ffcb27a4258e`.
+- Generator and architecture: `Visual Studio 17 2022`, `x64`, under VS2022 Build Tools.
+- CMake: VS2022 bundled CMake `3.31.6-msvc6`.
+- `MYGUI_RENDERSYSTEM:STRING=8`.
+- `MYGUI_USE_FREETYPE:BOOL=ON`.
+- `MYGUI_STATIC:BOOL=OFF`.
+- `MYGUI_BUILD_DEMOS:BOOL=OFF`.
+- `MYGUI_BUILD_PLUGINS:BOOL=OFF`.
+- `MYGUI_BUILD_TEST_APP:BOOL=OFF`.
+- `MYGUI_BUILD_TOOLS:BOOL=OFF`.
+- `MYGUI_BUILD_UNITTESTS:BOOL=OFF`.
+- `MYGUI_BUILD_WRAPPER:BOOL=OFF`.
+- Release configure/build result: success after one focused Freetype/zlib link fix.
+- Release outputs produced: `MyGUIEngine.dll`, `MyGUIEngine.lib`, `MyGUI.Ogre2Platform.lib`.
+- Windows CMake replacements: `FindFreetype_Windows.cmake` copied over `FindFreetype.cmake`; `FindOGRE_next_WindowsRelease.cmake` copied over `FindOGRE_next.cmake`.
+- Focused external dependency-tree fix: `FindFreetype.cmake` links Ogre deps Release `zlib.lib` with `freetype.lib`.
 
 ## Runtime Bundle Contract
 

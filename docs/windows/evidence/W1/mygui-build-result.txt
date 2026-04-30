@@ -1,0 +1,22 @@
+# MyGUI build result
+Date: 2026-04-30
+Branch: 
+ogre3
+Commit: 
+a1490ffe01d503c31a00d8277007ffcb27a4258e
+Generator: Visual Studio 17 2022
+Platform: x64
+Build config: Release
+Configure result: success with non-fatal OGRE DLL warning
+Initial build result: failed on freetype/zlib unresolved symbols
+Focused fix: added Ogre deps Release zlib.lib to Windows FindFreetype.cmake
+Retry build result: success
+
+Produced runtime/library candidates:
+
+## C:\dev\mygui-next\build\bin\Release
+MyGUIEngine.dll	1981952
+
+## C:\dev\mygui-next\build\lib\Release
+MyGUI.Ogre2Platform.lib	576004
+MyGUIEngine.lib	1561684

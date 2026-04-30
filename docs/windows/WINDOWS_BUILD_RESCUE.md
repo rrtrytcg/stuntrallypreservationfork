@@ -20,8 +20,8 @@ Core doctrine:
 | Milestone | Status | Closure rule |
 | --- | --- | --- |
 | W0 - Known-good Windows binary baseline | Closed enough to proceed | Hashes, logs, config snapshots, DLL/plugin manifest, and smoke notes are present in repo form; screenshots remain a follow-up evidence improvement. |
-| W1 - Reproduce existing Windows build manually once | Started | Release x64 game and editor are built from source and launched from the built tree. |
-| W2 - Freeze blessed dependency layout | Not started | `KNOWN_GOOD_2026.md` can guide a maintainer through the successful layout without undocumented steps. |
+| W1 - Reproduce existing Windows build manually once | Closed | Release x64 game and editor are built from source and launched from the built tree; launch evidence is initialization smoke with timeout caveat, not clean process-exit smoke. |
+| W2 - Freeze blessed dependency layout | Ready | `KNOWN_GOOD_2026.md` can guide a maintainer through the successful layout without undocumented steps. |
 | W3 - Script boring fragile parts | Started | Layout, runtime bundle, copy, smoke, manifest, and manifest comparison scripts work against known-good outputs. |
 | W4 - Reduce manual dependency pain | Blocked by W1 | Conan/vcpkg/prebuilt-cache options are compared against the reproduced W1 layout. |
 | W5 - CI or semi-CI Windows verification | Blocked by W3 | A fresh checkout can run validation and produce an artifact-structure report. |
@@ -119,7 +119,24 @@ Checklist:
 - [x] Build `StuntRally3.exe` and `SR-Editor3.exe`.
 - [x] Stage runtime DLLs and `plugins.cfg` using the W3 scripts where possible.
 - [x] Validate the built runtime bundle, generate a W1 manifest, and run launch smoke.
-- [ ] Promote the final successful machine/toolchain/dependency layout into `KNOWN_GOOD_2026.md`.
+- [x] Promote the final successful machine/toolchain/dependency layout into `KNOWN_GOOD_2026.md`.
+
+W1 closure verdict:
+
+- W1 is closed on 2026-04-30.
+- Source-built `StuntRally3.exe` and `SR-Editor3.exe` were configured, built, staged, validated, and launched from the W1 runtime root.
+- Runtime bundle validation passed before smoke.
+- Both executables initialized far enough to write fresh Ogre logs, load GL3Plus/Vulkan/ParticleFX, and enumerate GPUs.
+- The smoke helper timed out after 45 seconds and killed both processes, so the evidence is launch-initialization smoke rather than clean process-exit smoke.
+- No missing DLL, plugin, or config blocker remains in W1 evidence.
+
+Moved out of W1 closure:
+
+- Visible screenshot evidence.
+- Clean-exit smoke helper improvement.
+- Optional forced OpenGL game smoke/screenshot.
+- Output path cleanup for generated `bin\Release\Release` executables.
+- Dependency pain reduction, packaging automation, or CI/semi-CI validation.
 
 ### W1 Machine Detection Snapshot
 
@@ -582,6 +599,28 @@ Interpretation:
 Next recommended W1 step:
 
 - Run a W1 closure/promotion pass: mark W1 closed with the timeout caveat, promote the successful known-good ritual into `KNOWN_GOOD_2026.md`, and optionally add a narrow follow-up item for visible/OpenGL screenshot evidence without reopening build reproduction.
+
+### W1 Closure Summary
+
+Full captured evidence:
+
+```text
+docs/windows/evidence/W1/w1-closure-summary.txt
+```
+
+Final verdict:
+
+- W1 is closed.
+- The successful reproduced Windows 2026 ritual is promoted into `docs/windows/KNOWN_GOOD_2026.md`.
+- The closure caveat remains explicit: launch smoke proves initialization from the source-built runtime, not clean process exit.
+- No gameplay testing is claimed.
+- Direct3D11 remains out of W0-W3 acceptance scope.
+
+Recommended next milestones:
+
+- W2: freeze/refine the blessed dependency layout and turn the ritual into a maintainer-friendly reconstruction guide.
+- W3: improve guardrail scripts, especially runtime staging from multiple dependency roots and smoke behavior that can distinguish initialized-window evidence from timeout.
+- Follow-up evidence: capture visible screenshots, preferably including a forced OpenGL game run, without reopening W1 build reproduction.
 
 ## W3 Script Inventory
 

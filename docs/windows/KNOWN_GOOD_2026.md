@@ -1,13 +1,14 @@
 # Stunt Rally 3 Windows Known-Good 2026
 
-This document is the frozen record of the Windows build ritual once it has been reproduced in 2026.
+This document is the successful reproduced Windows build ritual for the 2026 Windows Build Rescue W1 pass.
 
 Policy: Windows Build Rescue is reproducibility first, not modernization. Do not upgrade Ogre, replace renderers, redesign CMake, change gameplay, replace UI, or automate dependencies before a manual successful Windows source build exists.
 
 ## Status
 
 - W0 packaged binary baseline: closed enough to proceed; screenshots remain a follow-up evidence improvement.
-- W1 source build reproduction: SR3 Release x64 configure/generate succeeded; game/editor build succeeded; runtime staging and bundle validation succeeded; launch smoke produced game/editor initialization evidence with timeout caveat.
+- W1 source build reproduction: closed on 2026-04-30.
+- W1 result: SR3 Release x64 configure/generate succeeded; game/editor build succeeded; runtime staging and bundle validation succeeded; launch smoke produced game/editor initialization evidence with timeout caveat.
 - Primary target: Windows 11, Release x64.
 - Primary renderer acceptance path: OpenGL 3+.
 - Secondary useful evidence: Vulkan plugin/device enumeration.
@@ -19,6 +20,31 @@ Policy: Windows Build Rescue is reproducibility first, not modernization. Do not
 - `docs/windows/KNOWN_GOOD_2026.md` is the successful reproduced ritual.
 - `docs/windows/WINDOWS_BUILD_RESCUE.md` is the evidence log.
 - `tools/windows/*.ps1` are guardrails, not magic.
+
+## W1 Verdict
+
+W1 succeeded:
+
+- Source-built `StuntRally3.exe` launches from the built W1 runtime.
+- Source-built `SR-Editor3.exe` launches from the built W1 runtime.
+- Both initialize far enough to write fresh Ogre logs.
+- Required plugins load: `RenderSystem_GL3Plus`, `RenderSystem_Vulkan`, and `Plugin_ParticleFX`.
+- GPUs enumerate: `NVIDIA GeForce RTX 4070 SUPER` and `AMD Radeon(TM) Graphics`.
+- Runtime bundle validation passes.
+- No missing DLL/plugin/config blocker appears.
+
+W1 caveat:
+
+- The hidden-window smoke helper timed out after 45 seconds and killed both processes.
+- This is launch-initialization evidence, not clean process-exit smoke.
+- The game used Vulkan config during this smoke run.
+- The editor used OpenGL 3+ config during this smoke run.
+
+Non-claims:
+
+- No broad gameplay testing is claimed.
+- No Direct3D11 acceptance is required.
+- No package-manager replacement or dependency automation was introduced.
 
 ## W0 Packaged Binary Baseline
 
@@ -43,7 +69,7 @@ W0 remains open until screenshots are attached and the baseline is reviewed as a
 
 ## Toolchain Record
 
-W1 must fill this section from the machine that successfully reproduces the build.
+Toolchain used for the successful W1 reproduction:
 
 ```text
 Windows version: Windows 11 Home 10.0.26200 build 26200, 64-bit
@@ -57,7 +83,7 @@ Git: 2.53.0.windows.2
 PowerShell: 7.6.0
 ```
 
-W1 rule: try Visual Studio 2022 first. If Ogre/MyGUI/SR3 dependency friction exceeds one focused pass, fall back to Visual Studio 2019 and document the blocker here.
+W1 rule followed: Visual Studio 2022 was tried first and completed W1 successfully, so no VS2019 fallback was required.
 
 ## Dependency Layout
 
@@ -82,7 +108,7 @@ W1 layout pass status:
 - `docs/windows/evidence/W1/dependency-layout-plan.txt` records the full folder plan and current missing paths.
 - `docs/windows/evidence/W1/deps-non-ogre-outputs.txt` records the verified non-Ogre dependency outputs.
 
-W1 must freeze exact dependency paths and versions here after a successful source build.
+These paths are the W1 known-good dependency layout.
 
 ## SR3 Release Configure
 
@@ -114,13 +140,13 @@ Verified configure-path notes:
 - `WBR_SKIP_CONFIGURE_DLL_COPY=ON` prevents the manual Ogre helper from staging runtime DLLs during configure.
 - The first configure attempt failed because Ogre's SDL2 CMake package referenced a non-existent unconfigured `Dependencies/bin/SDL2.dll`; the successful retry uses verified Ogre deps SDL2 paths under `C:/dev/Ogre/ogre-next-deps`.
 
-Build status:
+Build/runtime status:
 
 - `StuntRally3.exe` built successfully from `build-windows-release\StuntRally3.sln`.
 - `SR-Editor3.exe` built successfully from `build-windows-release\StuntRally3.sln`.
 - Built executable path note: current generated output directory is `bin\Release\Release`, not historical runtime root `bin\Release`.
 - Runtime staging and bundle validation succeeded.
-- Smoke tests not run yet.
+- Launch smoke completed with timeout caveat.
 
 ## SR3 Release Build
 
@@ -255,7 +281,7 @@ Starting point from `docs/BuildingVS.md`:
 
 ## Ogre-Next Required Settings
 
-W1 must verify and record:
+W1 verified and recorded:
 
 - Ogre-Next branch: `v3-0`.
 - Exact commit: `20da67178c571efe1c909db73b710698d60bf3b3`.
@@ -269,7 +295,7 @@ W1 must verify and record:
 
 ## MyGUI-next Required Settings
 
-W1 must verify and record:
+W1 verified and recorded:
 
 - MyGUI-next branch: `ogre3`.
 - Exact commit: `a1490ffe01d503c31a00d8277007ffcb27a4258e`.

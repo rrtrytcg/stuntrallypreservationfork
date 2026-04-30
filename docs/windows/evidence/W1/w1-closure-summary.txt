@@ -1,0 +1,53 @@
+# Windows Build Rescue W1 Closure Summary
+Date: 2026-04-30
+
+Final verdict:
+- W1 is closed.
+- Stunt Rally 3.3 was manually reproduced on Windows 11 using the VS2022 first lane.
+- `StuntRally3.exe` and `SR-Editor3.exe` were built from source, staged into the W1 runtime root, validated, and launched.
+- The successful reproduced ritual is promoted into `docs/windows/KNOWN_GOOD_2026.md`.
+
+Successful evidence groups:
+- Toolchain detection: `toolchain-detection.txt`.
+- Dependency layout: `dependency-layout-plan.txt`, `build-layout-check*.txt`.
+- Ogre-Next reproduction: `ogre-*`.
+- MyGUI-next reproduction: `mygui-*`.
+- Non-Ogre dependencies: `deps-non-ogre-*`, `*-result.txt`.
+- SR3 configure: `sr3-configure-*`, `sr3-dependency-paths.txt`.
+- SR3 build: `sr3-build-*`.
+- Runtime staging/validation: `runtime-staging-*`, `runtime-bundle-report.txt`, `runtime-manifest.csv`.
+- Launch smoke: `smoke-*`, `runtime-bundle-report-after-smoke.txt`, `runtime-manifest-after-smoke.csv`, `logs-after-smoke/`, `config-after-smoke/`.
+
+Produced executables:
+- `C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release\Release\StuntRally3.exe` (`4248064` bytes).
+- `C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release\Release\SR-Editor3.exe` (`3037696` bytes).
+- The W1 staging pass copied both into `C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release`.
+
+Runtime root:
+- `C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\bin\Release`.
+
+Launch smoke result:
+- Runtime bundle validation passed before smoke.
+- Source-built game launched from the W1 runtime and wrote fresh `Ogre.log`.
+- Source-built editor launched from the W1 runtime and wrote fresh `Ogre_ed.log`.
+- Both logs show GL3Plus, Vulkan, and ParticleFX plugin loading.
+- Both logs enumerate `NVIDIA GeForce RTX 4070 SUPER` and `AMD Radeon(TM) Graphics`.
+- No missing DLL/plugin/config blocker appeared.
+
+Smoke caveat:
+- The hidden-window smoke helper timed out after 45 seconds and killed both processes.
+- This is launch-initialization evidence, not clean process-exit smoke.
+- Game config selected Vulkan during this run.
+- Editor config selected OpenGL 3+ during this run.
+
+Moved out of W1 closure:
+- Visible screenshot evidence.
+- Clean-exit smoke improvement.
+- Optional forced OpenGL game smoke/screenshot.
+- Output path cleanup from `bin\Release\Release`.
+- Dependency pain reduction, package-manager evaluation, and CI/semi-CI validation.
+
+Recommended next milestones:
+- W2: freeze and polish the blessed dependency layout into a maintainer reconstruction guide.
+- W3: improve guardrail scripts for multi-root runtime staging and clearer smoke semantics.
+- Follow-up evidence: capture visible screenshot/OpenGL game evidence without reopening W1 build reproduction.

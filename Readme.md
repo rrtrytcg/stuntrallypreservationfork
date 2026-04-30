@@ -1,3 +1,104 @@
+# Stunt Rally 3.3 Preservation Fork
+
+This fork is a preservation and build-reproducibility fork for Stunt Rally 3.3.
+
+It is not an attempted takeover of the original project, not a gameplay redesign, not a renderer modernization fork, and not a broad CMake cleanup. The first goal is narrower and more practical: preserve a reproducible Windows source build path and document what a future maintainer needs to rebuild and launch the game.
+
+## Current Status
+
+Windows Build Rescue W1 is closed.
+
+What has been verified on Windows 11:
+
+- Visual Studio 2022 source build route reproduced.
+- `StuntRally3.exe` builds from source.
+- `SR-Editor3.exe` builds from source.
+- Runtime DLL staging and bundle validation pass.
+- Game and editor launch from the source-built runtime.
+- A visible OpenGL 3+ follow-up reaches the Stunt Rally 3 tutorial / track selection UI after restoring the separate `tracks3` checkout.
+
+Important caveats:
+
+- Clean process-exit smoke is not claimed yet.
+- Broad gameplay testing is not claimed yet.
+- Direct3D11 is not required for the preservation evidence path.
+
+## Track Content Is A Separate Checkout
+
+This preservation fork does not vendor the full Stunt Rally track corpus directly into the parent repository history.
+
+The game expects tracks at:
+
+```text
+data/tracks
+```
+
+Restore them with:
+
+```powershell
+cd data
+git clone https://github.com/stuntrally/tracks3.git tracks
+```
+
+Without this checkout, the source-built game can initialize successfully but may exit with:
+
+```text
+Error: NO tracks !!! in data/tracks/ crashing.
+```
+
+The Windows 2026 evidence pass verified visible OpenGL launch after restoring `tracks3` at:
+
+```text
+84d77b69b512e4bde2fc1faaa5d51ab010bbaf76
+```
+
+That tested checkout had 267 `scene.xml` files. The track checkout remains separate so the main preservation fork history stays focused on source, build documentation, and evidence.
+
+## Quick Checkout Notes
+
+Clone this fork, then restore the separate track corpus:
+
+```powershell
+git clone https://github.com/rrtrytcg/stuntrallypreservationfork.git
+cd stuntrallypreservationfork
+cd data
+git clone https://github.com/stuntrally/tracks3.git tracks
+```
+
+The documented Windows 2026 dependency/build route is in:
+
+- [docs/windows/KNOWN_GOOD_2026.md](docs/windows/KNOWN_GOOD_2026.md)
+- [docs/windows/WINDOWS_BUILD_RESCUE.md](docs/windows/WINDOWS_BUILD_RESCUE.md)
+- [docs/BuildingVS.md](docs/BuildingVS.md)
+
+## Windows Build Evidence
+
+Key evidence checkpoints:
+
+- W1 closure summary: [docs/windows/evidence/W1/w1-closure-summary.txt](docs/windows/evidence/W1/w1-closure-summary.txt)
+- Missing tracks investigation: [docs/windows/evidence/W1-followups/no-tracks/no-tracks-result.txt](docs/windows/evidence/W1-followups/no-tracks/no-tracks-result.txt)
+- Visible OpenGL evidence after restoring `tracks3`: [docs/windows/evidence/W1-followups/tracks3-visible-opengl/tracks3-result.txt](docs/windows/evidence/W1-followups/tracks3-visible-opengl/tracks3-result.txt)
+- Screenshot evidence: [docs/windows/evidence/W1-followups/tracks3-visible-opengl/screenshot-after-tracks3-opengl.png](docs/windows/evidence/W1-followups/tracks3-visible-opengl/screenshot-after-tracks3-opengl.png)
+
+## What This Fork Is Not
+
+- Not a replacement for upstream Stunt Rally.
+- Not a gameplay fork.
+- Not a UI redesign.
+- Not a renderer-policy change.
+- Not a package-manager rewrite.
+- Not a claim that all game content and gameplay flows are fully tested.
+
+## Next Possible Work
+
+- Turn the reproduced Windows route into a cleaner W2 maintainer reconstruction guide.
+- Improve the W3 PowerShell guardrails for validation, staging, and smoke evidence.
+- Add cleaner visible screenshot evidence for game and editor.
+- Investigate clean-exit smoke automation.
+- Later, evaluate dependency-pain reduction without erasing the documented manual ritual.
+
+---
+
 ![](/data/hud/stuntrally-logo.jpg)
 
 [![Build game](https://github.com/stuntrally/stuntrally3/actions/workflows/build-game.yml/badge.svg)](https://github.com/stuntrally/stuntrally3/actions/workflows/build-game.yml)

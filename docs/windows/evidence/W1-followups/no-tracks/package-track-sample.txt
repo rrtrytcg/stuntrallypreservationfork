@@ -1,0 +1,44 @@
+# Packaged Track Corpus Sample
+Date: 2026-04-30
+
+Track dirs: 268
+
+scene.xml files: 267
+
+Sample scene.xml paths:
+
+
+FullName                                                                                           Length
+--------                                                                                           ------
+C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Aln1-AlienBase\scene.xml      18620
+C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Aln2-Freefall\scene.xml       27242
+C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Aln3-MushroomBeach\scene.xml  13377
+C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Aln4-EjeloOutpost\scene.xml   14502
+C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Aln5-WhiteLemon\scene.xml     13589
+C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Aln6-Overgrowth\scene.xml     18491
+C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Ano0-AnomalyFun\scene.xml     18690
+C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Ano0-AnomalyFun2\scene.xml    24644
+C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Ano1-Glitchy\scene.xml        33479
+C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Ano2-Bug\scene.xml            32461
+C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Ano3-Oversize\scene.xml       30028
+C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Apo1-TarFields\scene.xml      55864
+C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Apo2-Toxicity\scene.xml       30266
+C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Atm1-Autumn\scene.xml         12413
+C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Atm10-LakeCity\scene.xml      26890
+C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Atm2-RedOakPark\scene.xml     11848
+C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Atm3-Orange\scene.xml         14847
+C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Atm4-Scary\scene.xml          13385
+C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Atm5-Twister\scene.xml        11544
+C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Atm6-Sunset\scene.xml         12378
+C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Atm7-Industrial\scene.xml     25720
+C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Atm8-Ultima\scene.xml         10895
+C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Atm9-SchwabAutumn\scene.xml   21172
+C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Aus1-StuntPark\scene.xml      12153
+C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Aus10-PreythCity\scene.xml    20160
+C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Aus2-PipeCoil\scene.xml       11132
+C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Aus3-Canyon\scene.xml         19641
+C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Aus4-Snake\scene.xml          11913
+C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Aus5-TopTwist\scene.xml       12915
+C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Aus6-Cannon\scene.xml         13146
+
+

@@ -289,6 +289,27 @@ Caveat:
 - No tracks were cloned, copied, or junctioned during this follow-up.
 - This does not reopen W1 closure because W1 build/runtime-bundle reproduction remains valid; it identifies the next runtime-content evidence gap.
 
+## W1 Follow-up: Track Corpus Status
+
+Follow-up investigation on 2026-04-30 found:
+
+- The clean source fork has no `data\tracks` directory.
+- The preserved packaged specimen has `data\tracks` with 268 top-level entries, including `_previews`, and 267 `scene.xml` files.
+- The source fork does include `config\tracks.ini`.
+- The source fork's `config\resources3.cfg` references `FileSystem=tracks/_previews`.
+- Existing `sr3_track_index.csv/json` artifacts identify the packaged specimen as the currently indexed known-good track corpus.
+- `docs/BuildingVS.md` expects the track corpus to come from the separate `https://github.com/stuntrally/tracks3.git` repository cloned into `data/tracks`.
+- No active `.gitignore`, `.gitattributes`, `.gitmodules`, submodule, or Git LFS entry accounts for the missing tracks.
+
+Recommended content restoration route:
+
+```powershell
+cd C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data
+git clone https://github.com/stuntrally/tracks3.git tracks
+```
+
+Do not treat this as a W1 build-reproduction failure. It is a runtime-content corpus follow-up needed for visible menu/gameplay evidence after W1.
+
 ## Dependency Versions
 
 Starting point from `docs/BuildingVS.md`:

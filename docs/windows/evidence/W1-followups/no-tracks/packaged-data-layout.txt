@@ -1,0 +1,76 @@
+# Packaged Data Layout
+Date: 2026-04-30
+PackageRoot: C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3
+
+
+Top-level data entries:
+
+
+Name      Mode  Length LastWriteTime
+----      ----  ------ -------------
+cars      d----        29/4/2026 9:45:14 pm
+carsim    d----        29/4/2026 9:45:14 pm
+ghosts    d----        29/4/2026 9:45:17 pm
+gui       d----        29/4/2026 9:45:18 pm
+Hlms      d----        29/4/2026 9:45:18 pm
+hud       d----        29/4/2026 9:45:18 pm
+materials d----        29/4/2026 9:45:18 pm
+models    d----        29/4/2026 9:45:39 pm
+particles d----        29/4/2026 9:45:40 pm
+sounds    d----        29/4/2026 9:45:42 pm
+textures  d----        29/4/2026 9:45:52 pm
+tracks    d----        29/4/2026 9:46:43 pm
+
+
+
+packaged data\\tracks exists: True
+
+Track directory count: 268
+
+First 40 track dirs:
+
+
+Name               LastWriteTime
+----               -------------
+_previews          29/4/2026 9:46:43 pm
+Aln1-AlienBase     29/4/2026 9:46:03 pm
+Aln2-Freefall      29/4/2026 9:46:03 pm
+Aln3-MushroomBeach 29/4/2026 9:46:03 pm
+Aln4-EjeloOutpost  29/4/2026 9:46:03 pm
+Aln5-WhiteLemon    29/4/2026 9:46:03 pm
+Aln6-Overgrowth    29/4/2026 9:46:03 pm
+Ano0-AnomalyFun    29/4/2026 9:46:03 pm
+Ano0-AnomalyFun2   29/4/2026 9:46:03 pm
+Ano1-Glitchy       29/4/2026 9:46:04 pm
+Ano2-Bug           29/4/2026 9:46:04 pm
+Ano3-Oversize      29/4/2026 9:46:04 pm
+Apo1-TarFields     29/4/2026 9:46:04 pm
+Apo2-Toxicity      29/4/2026 9:46:04 pm
+Atm1-Autumn        29/4/2026 9:46:04 pm
+Atm10-LakeCity     29/4/2026 9:46:05 pm
+Atm2-RedOakPark    29/4/2026 9:46:05 pm
+Atm3-Orange        29/4/2026 9:46:05 pm
+Atm4-Scary         29/4/2026 9:46:05 pm
+Atm5-Twister       29/4/2026 9:46:05 pm
+Atm6-Sunset        29/4/2026 9:46:05 pm
+Atm7-Industrial    29/4/2026 9:46:06 pm
+Atm8-Ultima        29/4/2026 9:46:06 pm
+Atm9-SchwabAutumn  29/4/2026 9:46:06 pm
+Aus1-StuntPark     29/4/2026 9:46:06 pm
+Aus10-PreythCity   29/4/2026 9:46:06 pm
+Aus2-PipeCoil      29/4/2026 9:46:06 pm
+Aus3-Canyon        29/4/2026 9:46:07 pm
+Aus4-Snake         29/4/2026 9:46:07 pm
+Aus5-TopTwist      29/4/2026 9:46:07 pm
+Aus6-Cannon        29/4/2026 9:46:08 pm
+Aus7-MiningCity    29/4/2026 9:46:08 pm
+Aus8-Cliff         29/4/2026 9:46:08 pm
+Aus9-RedDesert     29/4/2026 9:46:08 pm
+Blk1-Darkness      29/4/2026 9:46:08 pm
+Blk2-Sawtooth      29/4/2026 9:46:09 pm
+Can1-Hairpins      29/4/2026 9:46:09 pm
+Can10-SandyCanyon  29/4/2026 9:46:09 pm
+Can2-CanyonRun     29/4/2026 9:46:09 pm
+Can3-Vast          29/4/2026 9:46:10 pm
+
+

@@ -1,0 +1,30 @@
+# No-Tracks Root Cause
+Date: 2026-04-30
+
+Failure under investigation:
+
+`Error: NO tracks !!!  in data/tracks/  crashing.`
+
+Root cause:
+
+The source fork checkout does not contain the required track content corpus at:
+
+`C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data\tracks`
+
+This is not a Windows build, DLL, plugin, renderer, or CMake failure. The visible OpenGL follow-up reached renderer/audio/UI initialization and then failed when runtime track content was missing.
+
+Evidence:
+
+- `source-data-layout.txt` records that the source `data` directory exists and contains assets such as `cars`, `gui`, `materials`, `models`, `sounds`, and `textures`, but no `tracks` directory.
+- `source-track-errors.txt` records fresh OpenGL log lines attempting to load `scene.xml` files under `data/tracks/...`, then reporting `Error: NO tracks !!!  in data/tracks/  crashing.`
+- `tracks-config-check.txt` records that the source fork has `config\tracks.ini` and `config\resources3.cfg` references `tracks/_previews`.
+- `docs/BuildingVS.md` explicitly says to clone the separate SR3 tracks repository inside `data/tracks`:
+  - `cd sr3/data`
+  - `git clone https://github.com/stuntrally/tracks3.git tracks`
+- `.gitignore` does not actively ignore `data/tracks`; the relevant `#tracks*` and `#data` lines are commented.
+- No `.gitattributes`, `.gitmodules`, submodule entry, or Git LFS-tracked files were found for tracks in this checkout.
+
+Interpretation:
+
+The clean source fork contains the game/source-side track metadata and references, but the runtime track corpus is a separate content repository expected by the upstream ritual. The corpus was not cloned into the preservation fork's `data\tracks` path.
+

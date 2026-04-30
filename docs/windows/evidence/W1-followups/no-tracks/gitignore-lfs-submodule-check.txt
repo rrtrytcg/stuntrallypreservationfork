@@ -1,0 +1,50 @@
+# Gitignore/LFS/Submodule Check
+Date: 2026-04-30
+
+
+Git status short:
+
+?? docs/windows/evidence/W1-followups/no-tracks/
+
+
+.gitignore files:
+
+
+FullName
+--------
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\.gitignore
+
+
+
+Relevant ignore lines:
+
+
+.gitignore:10:#  data
+.gitignore:13:data/gui/core_language_*_tag.xml
+.gitignore:14:!data/gui/core_language_en_tag.xml
+.gitignore:18:#tracks*
+.gitignore:23:data/ghosts/original/
+.gitignore:25:#data/Hlms/
+.gitignore:26:#data/models/objects*/
+.gitignore:27:#data/models/*
+.gitignore:28:#data/textures/road/
+.gitignore:30:#data
+.gitignore:31:#data/materials/*
+
+
+
+.gitattributes:
+
+No .gitattributes found.
+
+.gitmodules:
+
+No .gitmodules found.
+
+Submodule status:
+
+
+
+LFS files/config:
+
+

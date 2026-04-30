@@ -1,0 +1,27 @@
+# No-Tracks Investigation Result
+Date: 2026-04-30
+
+Verdict:
+
+The visible OpenGL follow-up failed because the source fork is missing the runtime track content corpus at `data\tracks`.
+
+Findings:
+
+- Source fork `data\tracks`: absent.
+- Packaged specimen `data\tracks`: present.
+- Packaged specimen track entries: 268 top-level directories including `_previews`.
+- Packaged specimen `scene.xml` files: 267.
+- Track metadata/config in source fork: present via `config\tracks.ini`.
+- Runtime resource reference in source fork: `config\resources3.cfg` includes `FileSystem=tracks/_previews`.
+- Existing track index artifacts: `sr3_track_index.csv` and `sr3_track_index.json` are present in the source fork and identify the packaged specimen as the indexed track root.
+- Upstream ritual: `docs/BuildingVS.md` instructs maintainers to clone `https://github.com/stuntrally/tracks3.git` into `data/tracks`.
+- Git mechanics: no active `.gitignore`, `.gitattributes`, `.gitmodules`, submodule, or LFS evidence explains the absence. Tracks are expected as a separate checkout.
+
+W1 impact:
+
+W1 remains closed. This is follow-up runtime-content evidence, not a reopened Windows build-reproduction failure.
+
+Next step:
+
+Run a separate content-corpus restoration pass, preferably by cloning `https://github.com/stuntrally/tracks3.git` into `data\tracks`, then compare it against the packaged specimen and rerun visible OpenGL menu evidence.
+

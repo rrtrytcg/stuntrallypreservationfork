@@ -1,0 +1,42 @@
+# No-Tracks Recommended Fix
+Date: 2026-04-30
+
+Recommended next action:
+
+Run a narrow content-corpus restoration pass. Do not reopen W1 build reproduction.
+
+Preferred source-style restoration:
+
+```powershell
+cd C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data
+git clone https://github.com/stuntrally/tracks3.git tracks
+```
+
+Then record:
+
+- Exact `tracks3` remote URL.
+- Exact branch and commit.
+- Track directory count.
+- `scene.xml` count.
+- Whether `tracks/_previews` exists.
+- Comparison against the packaged specimen and existing `sr3_track_index.csv/json`.
+- Whether source-built OpenGL launch reaches the visible menu after tracks are restored.
+
+Preservation fallback:
+
+If the live `tracks3` repository no longer matches the packaged 3.3 runtime corpus, use the preserved packaged specimen as the known-good content source:
+
+`C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks`
+
+The packaged specimen currently contains 268 top-level entries under `data\tracks`, including `_previews`, and 267 `scene.xml` files. Existing `sr3_track_index.csv/json` identify the packaged specimen as the currently indexed known-good corpus.
+
+Do not silently copy packaged content into the source fork. If the packaged corpus is imported, record the source path, destination path, copy command, file counts, and any licensing/provenance caveat.
+
+Validation after restoration:
+
+1. Confirm `data\tracks` exists in the source fork.
+2. Confirm `data\tracks\_previews` exists.
+3. Confirm representative `scene.xml` files exist.
+4. Run the runtime bundle validator.
+5. Run a visible OpenGL launch and capture fresh logs/config/screenshots.
+

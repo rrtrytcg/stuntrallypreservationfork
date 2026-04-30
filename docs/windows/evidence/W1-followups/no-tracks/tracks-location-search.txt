@@ -1,0 +1,26 @@
+# Tracks Location Search
+Date: 2026-04-30
+Search root: C:\Games\stuntrally3-3.3
+
+
+FullName                                                              LastWriteTime
+--------                                                              -------------
+C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks 29/4/2026 9:46:43 pm
+
+
+
+Track index artifacts:
+
+
+FullName                                                                    Length LastWriteTime
+--------                                                                    ------ -------------
+C:\Games\stuntrally3-3.3\sr3_track_index.csv                                 77401 29/4/2026 10:08:52 pm
+C:\Games\stuntrally3-3.3\sr3_track_index.json                               380231 29/4/2026 10:08:52 pm
+C:\Games\stuntrally3-3.3\config\tracks.ini                                   35716 29/4/2026 8:57:38 pm
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\sr3_track_index.csv           77401 29/4/2026 10:08:52 pm
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\sr3_track_index.json         380231 29/4/2026 10:08:52 pm
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\config\tracks.ini             38392 30/4/2026 7:29:45 pm
+C:\Games\stuntrally3-3.3\tools\sr3_track_indexer.py                          18433 29/4/2026 10:08:30 pm
+C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\config\tracks.ini  35716 28/12/2024 10:59:46 pm
+
+

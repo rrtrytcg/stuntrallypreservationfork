@@ -1,0 +1,14 @@
+# No Tracks Investigation Commands
+Date: 2026-04-30
+
+Scope:
+Investigate `Error: NO tracks !!! in data/tracks/ crashing.` as a missing runtime-content corpus issue after W1 closure.
+
+Commands/evidence groups:
+- Inspect source `data` folder and absence/presence of `data\tracks`.
+- Inspect preserved packaged specimen `data` folder and track corpus.
+- Search `C:\Games\stuntrally3-3.3` for `tracks` folders and track index artifacts.
+- Inspect `.gitignore`, `.gitattributes`, `.gitmodules`, Git LFS config, and submodule status.
+- Inspect docs/readme references for tracks3, data/tracks, or separate track download expectations.
+- Inspect source config files for track references.
+- Record root cause and recommended next action without copying the track corpus.

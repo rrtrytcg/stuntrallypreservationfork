@@ -1,0 +1,75 @@
+# Track Index Check
+Date: 2026-04-30
+
+
+--- sr3_track_index.csv ---
+
+
+FullName      : C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\sr3_track_index.csv
+Length        : 77401
+LastWriteTime : 29/4/2026 10:08:52 pm
+
+
+track_id,has_scene,road_file_count,road_point_count_total,checkpoint_count_total,heightmap_count,object_count,fluid_count,base_track,sky_material,road_materials,pipe_materials,wall_materials,has_pipe_signals,has_stunt_signals,complexity_score,category_guess,has_gallery_preview,has_preview_view,has_preview_road,has_preview_terrain,has_road_density_png,terrain_surfaces,ini_num,ini_scenery,ini_objects,ini_obstacles,ini_fluids,ini_bumps,ini_jumps,ini_loops,ini_pipes,ini_banked,ini_frenzy,ini_underwater,ini_narrow,ini_longn,ini_diff,ini_rating,ini_time,ini_author,ini_created_ver
+Aln1-AlienBase,1,1,137,35,2,56,5,TestC4-ow,sky/space_nebula_04_aln,roadAlienD;roadAlien;roadAlienStone,pipeGlassAlienGreen;pipeGlassAlienLime;wallP_metal_03_green,road_wall_Alien;wallP_metal_03_green,1,1,84.8,sci-fi,1,1,1,1,1,DesertFast;DesertBumpy;Rocks;GrassJungle;Default;roadForest;roadJungle,168,Alien,0,2,3,3,1,0,1,2,2,0,1,6,4,5,226.0,CH,2.5
+Aln2-Freefall,1,1,173,48,3,87,2,test-new,sky/space_nebula_04_aln,roadAlienD;roadAlien;roadAlienStone,pipeGlassAlienGreen;pipeGlassAlienBlue;pipeGlassAlienLime;pipeGlassAlien;pipe_wall_Alien,road_wall_Alien;pipe_wall_Alien,1,1,88.1,sci-fi,1,1,1,1,1,DesertBumpy;DesertFast;Rocks;Default;roadSnow;roadJungle,171,Alien,2,3,1,2,2,1,3,3,3,0,2,6,6,4,246.0,"rubberduck,CryHam",2.5
+Aln3-MushroomBeach,1,1,168,38,2,2,1,Grc8-SlopeCity,sky/space_nebula_04_aln,roadSandShore;roadAlien;roadSandMagic,pipeGlassAlienLime;pipe_wall_Orange,road_wall_Red;pipe_wall_Orange,1,1,70.9,sci-fi,1,1,1,1,1,DesertFast;Rocks;Default;roadGravel;roadJungle,198,Alien,0,0,1,1,0,3,2,4,2,0,1,4,5,4,165.0,"EP,CryHam,rubberduck",2.7
+Aln4-EjeloOutpost,1,1,218,35,2,11,2,Mos2-Mouse,sky/cloudy_02_toxic,roadAlien;roadSandMagic;roadAlienStone;roadMud,pipeGlassYellow;pipeGlassCrystal;pipeGlassAlienLime;pipeMetalBlue;pipe_wall_JDark,road_wall_JDark;pipe_wall_JDark,1,1,76.5,sci-fi,1,1,1,1,1,DesertFast;DesertBumpy;Rocks;Default;roadJungle;roadGravel;roadForest,211,Alien,0,0,1,0,1,0,1,1,3,0,1,8,3,3,298.0,"EP,rubberduck,CryHam",2.7
+Aln5-WhiteLemon,1,1,161,31,2,0,1,W14-DangerRoad,sky/overcast_02_green,roadSnow;roadSnowGrn;roadIce;roadAsphalt,pipeGlass;pipeGlassCyan,road_wall_Winter,1,1,68.3,sci-fi,1,1,1,1,1,SnowDeep;DesertFast;DesertBumpy;Rocks;Default;roadSnow;roadForestWet;roadSnowIce;AsphaltWet,212,Alien,0,0,0,1,1,1,1,4,2,0,1,4,4,4,153.0,"EP,rubberduck",2.7
+Aln6-Overgrowth,1,2,91,20,2,59,3,,sky/space_nebula_01_blue,roadAlien;roadAlienTransp;roadInvisibleJungle;roadInvisibleSnow;River_Oil,pipeGlassAlienBlue;pipeMetalBlue;pipeGlassAlienLime;pipeGlass,,1,1,65.7,sci-fi,1,1,1,1,1,DesertFast;DesertBumpy;Rocks;Default;roadDesert;roadJungle;roadSnow,224,Alien,1,0,1,1,0,0,1,1,3,0,3,1,3,3,121.0,rubberduck,2.8
+Ano0-AnomalyFun,1,2,68,17,1,63,9,,sky/anomaly_03,River_anomaly_blue;roadMossAnomaly2;roadMetal2Anomaly;wallP_mining_truck_anomaly;River_Anomaly_jelly_2;wallP_space_x_anomaly;wall_mining_truck_anomaly,pipeGlassAnomaly1Orange;pipeGlassAnomaly3Cyan;River_anomaly_blue;roadAsphaltAnomalyStreaks;pipe_wall_metal_02_anomaly;pipeGlassAnomalySpace;pipeGlassAnomalySpaceDark;pipeAsphaltAnomalySpaceStreaks;pipeAsphaltAnomalyStreaks;wallP_mining_truck_anomaly,wall_mining_truck_anomaly;pipe_wall_metal_02_anomaly;pipe_wall_wheel_anomaly;wallP_mining_truck_anomaly,1,1,69.4,stunt,1,1,1,1,1,GrassJungle;Rocks;Metal;SnowDeep;Default;roadDesert;Asphalt,94,Anomaly,2,3,1,2,1,1,1,1,2,0,2,2,4,5,71.0,"rubberduck,CryHam",2.8
+
+
+--- sr3_track_index.json ---
+
+
+FullName      : C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\sr3_track_index.json
+Length        : 380231
+LastWriteTime : 29/4/2026 10:08:52 pm
+
+
+{
+  "summary": {
+    "track_root": "C:\\Games\\stuntrally3-3.3\\windows binaries\\Stunt Rally 3.3\\data\\tracks",
+    "tracks_ini": "C:\\Games\\stuntrally3-3.3\\config\\tracks.ini",
+    "track_count": 267,
+    "category_counts": {
+      "sci-fi": 34,
+      "stunt": 189,
+
+
+--- C:\Games\stuntrally3-3.3\sr3_track_index.csv ---
+
+
+FullName      : C:\Games\stuntrally3-3.3\sr3_track_index.csv
+Length        : 77401
+LastWriteTime : 29/4/2026 10:08:52 pm
+
+
+track_id,has_scene,road_file_count,road_point_count_total,checkpoint_count_total,heightmap_count,object_count,fluid_count,base_track,sky_material,road_materials,pipe_materials,wall_materials,has_pipe_signals,has_stunt_signals,complexity_score,category_guess,has_gallery_preview,has_preview_view,has_preview_road,has_preview_terrain,has_road_density_png,terrain_surfaces,ini_num,ini_scenery,ini_objects,ini_obstacles,ini_fluids,ini_bumps,ini_jumps,ini_loops,ini_pipes,ini_banked,ini_frenzy,ini_underwater,ini_narrow,ini_longn,ini_diff,ini_rating,ini_time,ini_author,ini_created_ver
+Aln1-AlienBase,1,1,137,35,2,56,5,TestC4-ow,sky/space_nebula_04_aln,roadAlienD;roadAlien;roadAlienStone,pipeGlassAlienGreen;pipeGlassAlienLime;wallP_metal_03_green,road_wall_Alien;wallP_metal_03_green,1,1,84.8,sci-fi,1,1,1,1,1,DesertFast;DesertBumpy;Rocks;GrassJungle;Default;roadForest;roadJungle,168,Alien,0,2,3,3,1,0,1,2,2,0,1,6,4,5,226.0,CH,2.5
+Aln2-Freefall,1,1,173,48,3,87,2,test-new,sky/space_nebula_04_aln,roadAlienD;roadAlien;roadAlienStone,pipeGlassAlienGreen;pipeGlassAlienBlue;pipeGlassAlienLime;pipeGlassAlien;pipe_wall_Alien,road_wall_Alien;pipe_wall_Alien,1,1,88.1,sci-fi,1,1,1,1,1,DesertBumpy;DesertFast;Rocks;Default;roadSnow;roadJungle,171,Alien,2,3,1,2,2,1,3,3,3,0,2,6,6,4,246.0,"rubberduck,CryHam",2.5
+Aln3-MushroomBeach,1,1,168,38,2,2,1,Grc8-SlopeCity,sky/space_nebula_04_aln,roadSandShore;roadAlien;roadSandMagic,pipeGlassAlienLime;pipe_wall_Orange,road_wall_Red;pipe_wall_Orange,1,1,70.9,sci-fi,1,1,1,1,1,DesertFast;Rocks;Default;roadGravel;roadJungle,198,Alien,0,0,1,1,0,3,2,4,2,0,1,4,5,4,165.0,"EP,CryHam,rubberduck",2.7
+Aln4-EjeloOutpost,1,1,218,35,2,11,2,Mos2-Mouse,sky/cloudy_02_toxic,roadAlien;roadSandMagic;roadAlienStone;roadMud,pipeGlassYellow;pipeGlassCrystal;pipeGlassAlienLime;pipeMetalBlue;pipe_wall_JDark,road_wall_JDark;pipe_wall_JDark,1,1,76.5,sci-fi,1,1,1,1,1,DesertFast;DesertBumpy;Rocks;Default;roadJungle;roadGravel;roadForest,211,Alien,0,0,1,0,1,0,1,1,3,0,1,8,3,3,298.0,"EP,rubberduck,CryHam",2.7
+Aln5-WhiteLemon,1,1,161,31,2,0,1,W14-DangerRoad,sky/overcast_02_green,roadSnow;roadSnowGrn;roadIce;roadAsphalt,pipeGlass;pipeGlassCyan,road_wall_Winter,1,1,68.3,sci-fi,1,1,1,1,1,SnowDeep;DesertFast;DesertBumpy;Rocks;Default;roadSnow;roadForestWet;roadSnowIce;AsphaltWet,212,Alien,0,0,0,1,1,1,1,4,2,0,1,4,4,4,153.0,"EP,rubberduck",2.7
+Aln6-Overgrowth,1,2,91,20,2,59,3,,sky/space_nebula_01_blue,roadAlien;roadAlienTransp;roadInvisibleJungle;roadInvisibleSnow;River_Oil,pipeGlassAlienBlue;pipeMetalBlue;pipeGlassAlienLime;pipeGlass,,1,1,65.7,sci-fi,1,1,1,1,1,DesertFast;DesertBumpy;Rocks;Default;roadDesert;roadJungle;roadSnow,224,Alien,1,0,1,1,0,0,1,1,3,0,3,1,3,3,121.0,rubberduck,2.8
+Ano0-AnomalyFun,1,2,68,17,1,63,9,,sky/anomaly_03,River_anomaly_blue;roadMossAnomaly2;roadMetal2Anomaly;wallP_mining_truck_anomaly;River_Anomaly_jelly_2;wallP_space_x_anomaly;wall_mining_truck_anomaly,pipeGlassAnomaly1Orange;pipeGlassAnomaly3Cyan;River_anomaly_blue;roadAsphaltAnomalyStreaks;pipe_wall_metal_02_anomaly;pipeGlassAnomalySpace;pipeGlassAnomalySpaceDark;pipeAsphaltAnomalySpaceStreaks;pipeAsphaltAnomalyStreaks;wallP_mining_truck_anomaly,wall_mining_truck_anomaly;pipe_wall_metal_02_anomaly;pipe_wall_wheel_anomaly;wallP_mining_truck_anomaly,1,1,69.4,stunt,1,1,1,1,1,GrassJungle;Rocks;Metal;SnowDeep;Default;roadDesert;Asphalt,94,Anomaly,2,3,1,2,1,1,1,1,2,0,2,2,4,5,71.0,"rubberduck,CryHam",2.8
+
+
+--- C:\Games\stuntrally3-3.3\sr3_track_index.json ---
+
+
+FullName      : C:\Games\stuntrally3-3.3\sr3_track_index.json
+Length        : 380231
+LastWriteTime : 29/4/2026 10:08:52 pm
+
+
+{
+  "summary": {
+    "track_root": "C:\\Games\\stuntrally3-3.3\\windows binaries\\Stunt Rally 3.3\\data\\tracks",
+    "tracks_ini": "C:\\Games\\stuntrally3-3.3\\config\\tracks.ini",
+    "track_count": 267,
+    "category_counts": {
+      "sci-fi": 34,
+      "stunt": 189,
+

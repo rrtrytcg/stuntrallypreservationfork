@@ -652,6 +652,41 @@ Result:
 - No tracks were cloned, copied, or junctioned in this pass.
 - W1 remains closed; this follow-up records an honest runtime-content/layout blocker for fuller visible menu evidence.
 
+### W1 Follow-up: Missing Track Corpus
+
+Full captured evidence:
+
+```text
+docs/windows/evidence/W1-followups/no-tracks/no-tracks-command.txt
+docs/windows/evidence/W1-followups/no-tracks/source-data-layout.txt
+docs/windows/evidence/W1-followups/no-tracks/packaged-data-layout.txt
+docs/windows/evidence/W1-followups/no-tracks/tracks-location-search.txt
+docs/windows/evidence/W1-followups/no-tracks/gitignore-lfs-submodule-check.txt
+docs/windows/evidence/W1-followups/no-tracks/tracks-config-check.txt
+docs/windows/evidence/W1-followups/no-tracks/track-index-check.txt
+docs/windows/evidence/W1-followups/no-tracks/source-track-errors.txt
+docs/windows/evidence/W1-followups/no-tracks/package-track-sample.txt
+docs/windows/evidence/W1-followups/no-tracks/no-tracks-root-cause.txt
+docs/windows/evidence/W1-followups/no-tracks/no-tracks-recommended-fix.txt
+docs/windows/evidence/W1-followups/no-tracks/no-tracks-result.txt
+docs/windows/evidence/W1-followups/no-tracks/no-tracks-deviations.txt
+```
+
+Result:
+
+- The source fork has `data` assets but no `data\tracks` directory.
+- The preserved packaged specimen has `data\tracks` with 268 top-level entries, including `_previews`, and 267 `scene.xml` files.
+- `config\tracks.ini` exists in the source fork, and `config\resources3.cfg` references `tracks/_previews`.
+- Existing `sr3_track_index.csv/json` artifacts identify the packaged specimen's track root as the currently indexed known-good corpus.
+- `docs/BuildingVS.md` explains the missing layout: SR3 tracks are a separate repository expected to be cloned with `git clone https://github.com/stuntrally/tracks3.git tracks` inside `data`.
+- No active `.gitignore`, `.gitattributes`, `.gitmodules`, submodule, or Git LFS evidence explains the absence. This is an un-restored separate content checkout, not a source-build failure.
+- W1 remains closed. This follow-up identifies the next runtime-content preservation task.
+
+Recommended next action:
+
+- Run a narrow content-corpus restoration pass. Prefer cloning `https://github.com/stuntrally/tracks3.git` into `$SR3_ROOT\data\tracks`, record branch/commit/counts, compare with the packaged 3.3 specimen, then rerun visible OpenGL menu evidence.
+- If the live `tracks3` repository does not match the packaged 3.3 corpus, document the mismatch and consider a separate packaged-corpus preservation import from `C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks`.
+
 ## W3 Script Inventory
 
 Scripts live in `tools/windows/`.

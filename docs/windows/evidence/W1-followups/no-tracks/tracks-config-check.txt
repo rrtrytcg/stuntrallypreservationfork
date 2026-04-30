@@ -1,0 +1,292 @@
+# Tracks Config And Docs Check
+Date: 2026-04-30
+
+
+Config files matching tracks*.ini or containing tracks references:
+
+
+FullName                                                                     Length
+--------                                                                     ------
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\config\tracks.ini              38392
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\docs\tracks.md                  5923
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\src\common\data\TracksXml.cpp  11168
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\src\common\data\TracksXml.h     3603
+C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\src\vdrift\tracksurface.h       1554
+
+
+
+References in docs/source/config to tracks3 or data/tracks:
+
+rg: README*: The filename, directory name, or volume label syntax is incorrect. (os error 123)
+rg: *.md: The filename, directory name, or volume label syntax is incorrect. (os error 123)
+rg: CMakeLists*.txt: The filename, directory name, or volume label syntax is incorrect. (os error 123)
+config\resources3.cfg:5:FileSystem=tracks/_previews
+docs\windows\WINDOWS_BUILD_RESCUE.md:651:- The run exited before a menu screenshot could be captured because `data\tracks` is missing in the source worktree.
+docs\windows\KNOWN_GOOD_2026.md:287:- The run exited after OpenGL/MyGUI initialization because the source worktree has no `data\tracks` directory.
+docs\windows\KNOWN_GOOD_2026.md:288:- Fresh `Ogre.log` reports: `Error: NO tracks !!!  in data/tracks/  crashing.`
+docs\windows\evidence\W1-followups\visible-opengl-result.txt:39:- `Ogre.log` reports: `Error: NO tracks !!!  in data/tracks/  crashing.`
+docs\windows\evidence\W1-followups\visible-opengl-result.txt:40:- `data\tracks` does not exist in the source worktree.
+docs\windows\evidence\W1-followups\visible-opengl-result.txt:46:- A visible game menu screenshot was not captured because the run stopped on missing `data/tracks` content.
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:75:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:860:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/TestC12-SR/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:76:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:861:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/TestC12-SR/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:77:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:862:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/TestC12-SR/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:78:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:863:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/TestC12-SR/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:79:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:864:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Sav3-Loops/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:80:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:865:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Jng3-Rocky/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:81:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:866:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Sav4-Hills/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:82:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:867:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Sav4-Hills/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:83:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:868:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Des1-Dunes/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:84:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:869:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Des4-SBridge/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:85:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:870:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Des5-LowJumps/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:86:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:871:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Des6-HighJumps/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:87:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:872:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Des8-Technical/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:88:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:873:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Sav7-HighMadness/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:89:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:874:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Jng6-Fun/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:90:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:875:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Mud2-Bumps/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:91:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:876:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Jng11-Temple/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:92:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:877:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Jng11-Temple/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:93:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:878:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/For9-MadMntnDark/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:94:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:879:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Grc1-Long/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:95:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:880:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Aus3-Canyon/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:96:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:881:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Vlc1-Dark/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:97:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:882:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Isl5-Shore/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:98:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:883:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Sav13-Hole/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:99:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:884:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Sav13-Hole/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:100:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:885:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Sav13-Hole/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:101:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:886:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/For12-HighPeaks/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:102:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:887:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Can1-Hairpins/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:103:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:888:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/For13-Castle/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:104:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:889:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/For13-Castle/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:105:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:890:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/For13-Castle/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:106:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:891:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Atm3-Orange/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:107:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:892:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Wnt17-FrozenGarden/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:108:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:893:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Uni7-GlassStairs/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:109:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:894:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Uni7-GlassStairs/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:110:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:895:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Uni7-GlassStairs/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:111:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:896:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Uni7-GlassStairs/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:112:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:897:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Uni7-GlassStairs/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:113:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:898:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Sur7-UaraHills/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:114:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:899:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Cry5-CrystalIslands/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:115:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:900:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Spc4-Crossing/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:116:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:901:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Spc4-Crossing/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:117:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:902:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/TestC6-Temp/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:118:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:903:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/TestC6-Temp/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:119:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:904:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/TestC6-Temp/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:120:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:905:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/TestC4-Ow/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:121:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:906:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Test13-Hills/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:122:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:907:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Test14-Terrains/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log-summary.txt:124:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:926:21:21:58: Error: NO tracks !!!  in data/tracks/  crashing.
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:624:21:21:58: Added resource location 'C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/_previews' of type 'FileSystem' to resource group 'Essential'
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:860:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/TestC12-SR/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:861:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/TestC12-SR/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:862:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/TestC12-SR/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:863:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/TestC12-SR/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:864:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Sav3-Loops/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:865:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Jng3-Rocky/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:866:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Sav4-Hills/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:867:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Sav4-Hills/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:868:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Des1-Dunes/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:869:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Des4-SBridge/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:870:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Des5-LowJumps/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:871:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Des6-HighJumps/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:872:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Des8-Technical/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:873:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Sav7-HighMadness/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:874:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Jng6-Fun/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:875:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Mud2-Bumps/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:876:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Jng11-Temple/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:877:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Jng11-Temple/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:878:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/For9-MadMntnDark/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:879:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Grc1-Long/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:880:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Aus3-Canyon/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:881:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Vlc1-Dark/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:882:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Isl5-Shore/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:883:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Sav13-Hole/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:884:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Sav13-Hole/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:885:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Sav13-Hole/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:886:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/For12-HighPeaks/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:887:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Can1-Hairpins/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:888:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/For13-Castle/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:889:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/For13-Castle/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:890:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/For13-Castle/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:891:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Atm3-Orange/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:892:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Wnt17-FrozenGarden/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:893:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Uni7-GlassStairs/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:894:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Uni7-GlassStairs/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:895:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Uni7-GlassStairs/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:896:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Uni7-GlassStairs/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:897:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Uni7-GlassStairs/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:898:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Sur7-UaraHills/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:899:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Cry5-CrystalIslands/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:900:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Spc4-Crossing/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:901:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Spc4-Crossing/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:902:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/TestC6-Temp/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:903:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/TestC6-Temp/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:904:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/TestC6-Temp/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:905:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/TestC4-Ow/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:906:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Test13-Hills/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:907:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Test14-Terrains/scene.xml
+docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:926:21:21:58: Error: NO tracks !!!  in data/tracks/  crashing.
+docs\windows\evidence\W1-followups\visible-opengl-deviations.txt:9:- The precise blocker was missing track content: `Error: NO tracks !!!  in data/tracks/  crashing.`
+docs\windows\evidence\W1-followups\visible-opengl-deviations.txt:23:- Add a narrow runtime-content evidence pass that obtains the documented `tracks3` data into `data/tracks` or records the intended external track-data layout, then repeats visible OpenGL screenshot evidence.
+docs\windows\evidence\W1-followups\no-tracks\tracks-location-search.txt:8:C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks 29/4/2026 9:46:43 pm
+docs\windows\evidence\W1-followups\no-tracks\tracks-location-search.txt:19:C:\Games\stuntrally3-3.3\config\tracks.ini                                   35716 29/4/2026 8:57:38 pm
+docs\windows\evidence\W1-followups\no-tracks\tracks-location-search.txt:22:C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\config\tracks.ini             38392 30/4/2026 7:29:45 pm
+docs\windows\evidence\W1-followups\no-tracks\tracks-location-search.txt:24:C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\config\tracks.ini  35716 28/12/2024 10:59:46 pm
+docs\windows\evidence\W1-followups\no-tracks\tracks-config-check.txt:10:C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\config\tracks.ini              38392
+docs\windows\evidence\W1-followups\no-tracks\tracks-config-check.txt:18:References in docs/source/config to tracks3 or data/tracks:
+docs\windows\evidence\W1-followups\no-tracks\track-index-check.txt:34:    "tracks_ini": "C:\\Games\\stuntrally3-3.3\\config\\tracks.ini",
+docs\windows\evidence\W1-followups\no-tracks\track-index-check.txt:70:    "tracks_ini": "C:\\Games\\stuntrally3-3.3\\config\\tracks.ini",
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:10:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:624:21:21:58: Added resource location 'C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/_previews' of type 'FileSystem' to resource group 'Essential'
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:14:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:860:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/TestC12-SR/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:15:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:861:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/TestC12-SR/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:16:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:862:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/TestC12-SR/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:17:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:863:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/TestC12-SR/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:18:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:864:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Sav3-Loops/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:19:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:865:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Jng3-Rocky/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:20:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:866:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Sav4-Hills/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:21:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:867:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Sav4-Hills/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:22:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:868:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Des1-Dunes/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:23:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:869:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Des4-SBridge/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:24:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:870:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Des5-LowJumps/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:25:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:871:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Des6-HighJumps/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:26:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:872:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Des8-Technical/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:27:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:873:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Sav7-HighMadness/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:28:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:874:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Jng6-Fun/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:29:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:875:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Mud2-Bumps/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:30:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:876:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Jng11-Temple/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:31:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:877:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Jng11-Temple/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:32:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:878:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/For9-MadMntnDark/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:33:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:879:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Grc1-Long/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:34:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:880:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Aus3-Canyon/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:35:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:881:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Vlc1-Dark/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:36:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:882:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Isl5-Shore/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:37:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:883:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Sav13-Hole/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:38:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:884:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Sav13-Hole/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:39:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:885:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Sav13-Hole/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:40:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:886:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/For12-HighPeaks/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:41:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:887:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Can1-Hairpins/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:42:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:888:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/For13-Castle/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:43:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:889:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/For13-Castle/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:44:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:890:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/For13-Castle/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:45:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:891:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Atm3-Orange/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:46:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:892:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Wnt17-FrozenGarden/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:47:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:893:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Uni7-GlassStairs/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:48:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:894:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Uni7-GlassStairs/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:49:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:895:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Uni7-GlassStairs/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:50:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:896:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Uni7-GlassStairs/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:51:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:897:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Uni7-GlassStairs/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:52:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:898:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Sur7-UaraHills/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:53:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:899:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Cry5-CrystalIslands/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:54:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:900:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Spc4-Crossing/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:55:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:901:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Spc4-Crossing/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:56:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:902:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/TestC6-Temp/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:57:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:903:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/TestC6-Temp/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:58:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:904:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/TestC6-Temp/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:59:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:905:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/TestC4-Ow/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:60:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:906:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Test13-Hills/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:61:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:907:21:21:58: !Error: Can't load scene.xml: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026\data/tracks/Test14-Terrains/scene.xml
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:64:docs\windows\evidence\W1-followups\visible-opengl-log\Ogre.log:926:21:21:58: Error: NO tracks !!!  in data/tracks/  crashing.
+docs\windows\evidence\W1-followups\no-tracks\source-track-errors.txt:72:Source data/tracks exists:
+docs\windows\evidence\W1-followups\no-tracks\package-track-sample.txt:13:C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Aln1-AlienBase\scene.xml      18620
+docs\windows\evidence\W1-followups\no-tracks\package-track-sample.txt:14:C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Aln2-Freefall\scene.xml       27242
+docs\windows\evidence\W1-followups\no-tracks\package-track-sample.txt:15:C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Aln3-MushroomBeach\scene.xml  13377
+docs\windows\evidence\W1-followups\no-tracks\package-track-sample.txt:16:C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Aln4-EjeloOutpost\scene.xml   14502
+docs\windows\evidence\W1-followups\no-tracks\package-track-sample.txt:17:C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Aln5-WhiteLemon\scene.xml     13589
+docs\windows\evidence\W1-followups\no-tracks\package-track-sample.txt:18:C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Aln6-Overgrowth\scene.xml     18491
+docs\windows\evidence\W1-followups\no-tracks\package-track-sample.txt:19:C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Ano0-AnomalyFun\scene.xml     18690
+docs\windows\evidence\W1-followups\no-tracks\package-track-sample.txt:20:C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Ano0-AnomalyFun2\scene.xml    24644
+docs\windows\evidence\W1-followups\no-tracks\package-track-sample.txt:21:C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Ano1-Glitchy\scene.xml        33479
+docs\windows\evidence\W1-followups\no-tracks\package-track-sample.txt:22:C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Ano2-Bug\scene.xml            32461
+docs\windows\evidence\W1-followups\no-tracks\package-track-sample.txt:23:C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Ano3-Oversize\scene.xml       30028
+docs\windows\evidence\W1-followups\no-tracks\package-track-sample.txt:24:C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Apo1-TarFields\scene.xml      55864
+docs\windows\evidence\W1-followups\no-tracks\package-track-sample.txt:25:C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Apo2-Toxicity\scene.xml       30266
+docs\windows\evidence\W1-followups\no-tracks\package-track-sample.txt:26:C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Atm1-Autumn\scene.xml         12413
+docs\windows\evidence\W1-followups\no-tracks\package-track-sample.txt:27:C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Atm10-LakeCity\scene.xml      26890
+docs\windows\evidence\W1-followups\no-tracks\package-track-sample.txt:28:C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Atm2-RedOakPark\scene.xml     11848
+docs\windows\evidence\W1-followups\no-tracks\package-track-sample.txt:29:C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Atm3-Orange\scene.xml         14847
+docs\windows\evidence\W1-followups\no-tracks\package-track-sample.txt:30:C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Atm4-Scary\scene.xml          13385
+docs\windows\evidence\W1-followups\no-tracks\package-track-sample.txt:31:C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Atm5-Twister\scene.xml        11544
+docs\windows\evidence\W1-followups\no-tracks\package-track-sample.txt:32:C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Atm6-Sunset\scene.xml         12378
+docs\windows\evidence\W1-followups\no-tracks\package-track-sample.txt:33:C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Atm7-Industrial\scene.xml     25720
+docs\windows\evidence\W1-followups\no-tracks\package-track-sample.txt:34:C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Atm8-Ultima\scene.xml         10895
+docs\windows\evidence\W1-followups\no-tracks\package-track-sample.txt:35:C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Atm9-SchwabAutumn\scene.xml   21172
+docs\windows\evidence\W1-followups\no-tracks\package-track-sample.txt:36:C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Aus1-StuntPark\scene.xml      12153
+docs\windows\evidence\W1-followups\no-tracks\package-track-sample.txt:37:C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Aus10-PreythCity\scene.xml    20160
+docs\windows\evidence\W1-followups\no-tracks\package-track-sample.txt:38:C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Aus2-PipeCoil\scene.xml       11132
+docs\windows\evidence\W1-followups\no-tracks\package-track-sample.txt:39:C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Aus3-Canyon\scene.xml         19641
+docs\windows\evidence\W1-followups\no-tracks\package-track-sample.txt:40:C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Aus4-Snake\scene.xml          11913
+docs\windows\evidence\W1-followups\no-tracks\package-track-sample.txt:41:C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Aus5-TopTwist\scene.xml       12915
+docs\windows\evidence\W1-followups\no-tracks\package-track-sample.txt:42:C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data\tracks\Aus6-Cannon\scene.xml         13146
+docs\windows\evidence\W1-followups\no-tracks\no-tracks-command.txt:5:Investigate `Error: NO tracks !!! in data/tracks/ crashing.` as a missing runtime-content corpus issue after W1 closure.
+docs\windows\evidence\W1-followups\no-tracks\no-tracks-command.txt:8:- Inspect source `data` folder and absence/presence of `data\tracks`.
+docs\windows\evidence\W1-followups\no-tracks\no-tracks-command.txt:12:- Inspect docs/readme references for tracks3, data/tracks, or separate track download expectations.
+docs\windows\evidence\W1-followups\no-tracks\gitignore-lfs-submodule-check.txt:7:?? docs/windows/evidence/W1-followups/no-tracks/
+src\common\GuiCom_TrackUpd.cpp:45:	if (t1.ti && t2.ti)  // both are in tracks.ini
+src\common\GuiCom_Track.cpp:334:		LogO("Error: NO tracks !!!  in data/tracks/  crashing.");
+src\common\GuiCom.h:174:	//  ?? st- road stats, dim  inf- tracks.ini ratings
+src\common\data\TracksXml.h:96:	int width = 3;  // used in CData::GetDrivability, with tracks.ini narrow
+src\common\data\TracksXml.h:101:	int underwater = 0;  // 1 if cant go,  used with tracks.ini underwater
+src\common\data\TracksXml.cpp:42:	//  fill all from tracks.ini
+src\common\data\TracksXml.cpp:104://  ??? Load  tracks.ini ??
+src\common\data\TracksXml.cpp:193:		LogO("))) Checking: tracks.ini");
+src\common\data\TracksXml.cpp:250:		//  not in tracks.ini
+docs\trees.md:397:Changes can be seen on Aln, Uni tracks in our browser. E.g. [Aln here](https://stuntrally.tuxfamily.org/tracks3?id=Aln3-MushroomBeach), [or here](https://stuntrally.tuxfamily.org/tracks3?id=Aln1-AlienBase), [Uni here](https://stuntrally.tuxfamily.org/tracks3?id=Uni3-Cloud), [and here](https://stuntrally.tuxfamily.org/tracks3?id=Uni2-Swirl) etc.
+src\common\data\CData.h:39:	TracksIni* tracks =0;	// tracks.ini info for Gui
+src\common\data\CData.cpp:73:	tracks->LoadIni(path + "/tracks.ini", check);
+docs\tracks.md:6:??To be informed about **new official tracks**, see [Changelog](Changelog.md) for count and [tracks3](https://github.com/stuntrally/tracks3/commits/main) repo **commits** for new names.
+docs\tracks.md:27:In SR3 you can now do the Track's ghost yourself. And this will be helpful, if it's done properly, same like the rest was. This and filling tracks.ini is described in new docs [chapter on Editor](Editor.md#steps-after) page.
+docs\tracks.md:34:Tracks should be done as PR (pull requests to tracks3 repo).
+src\common\CGui_Tools.cpp:469:		//  T= from tracks.ini
+src\common\CGui_Tools.cpp:522://  time should be like in tracks.ini or less (last T= )
+docs\Running.md:201:  check - Does a check for tracks.ini, championships.xml, challenges.xml, missing track ghosts, etc.
+docs\Running.md:206:     Time should be like in tracks.ini or less (last T= )
+docs\Release.md:13:      - add to [ini](../config/tracks.ini), [champs](../config/championships.xml) and [challs](../config/challenges.xml) xml files (all in config/)  
+docs\Release.md:15:      - update tracks `_previews`, run `tracks/previews.py`  
+docs\Release.md:48:  * Once the packages work _(or before)_, **git tag** the version number to all repositories (stuntrally3 and tracks3)
+docs\Release.md:57:    * rename [tracks.ini](../config/tracks.ini) to .txt, use [make_roadstats_xml.py](../dist/make_roadstats_xml.py), copy into CMS
+src\game\Game_SceneInit.cpp:52:		cout << "  check - Does a check for tracks.ini, championships.xml, challenges.xml, missing track ghosts, etc.\n";
+src\game\Game_SceneInit.cpp:57:		cout << "     Time should be like in tracks.ini or less (last T= )\n";
+src\favorites.txt:18:/home/user/_sr/config/tracks.ini|tracks ini ???
+src\editor\ExportRoR_Tools.cpp:381:		// tracks/Dust  tracks/Clump-  tracks/Dri-  tracks/Splash  tracks/Ripple
+src\editor\ExportRoR_Tools.cpp:382:		// tracks/Mud  tracks/Smoke  tracks/Snow-  tracks/particles/water1
+src\editor\ExportRoR.cpp:235:	string pathPrv = pSet->pathExportOldSR + "tracks/" + name + "/preview/";  // old SR
+src\editor\ExportRoR.cpp:240:	//  get Authors etc from tracks.ini
+src\editor\ExportRoR.cpp:255:		gui->Exp(CGui::ERR, "Track not in tracks.ini, no guid id or authors set.");
+src\editor\ExportRoR.cpp:287:	trn << "SandStormCubeMap = tracks/skyboxcol\n";  // sky meh-
+docs\EditorExportRoR.md:27:SR repo *tracks3* has a special [branch ror](https://github.com/stuntrally/tracks3/commits/ror) with changes done for the tracks version going for RoR.  
+docs\EditorExportRoR.md:29:This link shows [comparison](https://github.com/stuntrally/tracks3/compare/main...ror), changes visible on road.png.  
+docs\EditorExportRoR.md:34:It is also easy to contribute any tracks or changes by forking [*tracks3*](https://github.com/stuntrally/tracks3/) repo.  
+docs\EditorExportRoR.md:72:Download all SR packs (from [topic](https://github.com/stuntrally/tracks3/compare/main...ror) _or in future RoR repository, or you could already have them in *mods*_)  
+docs\Editor.md:195:Filling ?? `config/tracks.ini` is done by CryHam to have some consistency for all tracks so far.  
+docs\Editor.md:196:Adding a line to tracks.ini at end, with your track's name (put it in original tracks/ dir) will show difficulty ratings, time, etc on Gui tab Track.  
+docs\Editor.md:197:See inside [tracks.ini](../config/tracks.ini) for more info about syntax and values.  
+docs\Editor.md:200:After modifying a track (tracks3 PR was merged), you can edit [tracks.ini](../config/tracks.ini) and add yourself to authors (last `a:`)  
+docs\Editor.md:220:     Adjust last value `T=` in `tracks.ini` so that it gives about 12 points for this ES ghost drive.  
+docs\Changelog.md:3:This section lists changes not yet released, but committed to repositories stuntrally3 and tracks3.  
+docs\BuildingVS.md:187:## 6. Clone SR3
+docs\BuildingVS.md:189:Clone SR3 (this repo) and [SR3 tracks](https://github.com/stuntrally/tracks3) inside `data/tracks`:  
+docs\BuildingVS.md:194:git clone https://github.com/stuntrally/tracks3.git tracks
+docs\help.md:43:- Firstly for the freshest updates you can check latest commits in git: [stuntrally3](https://github.com/stuntrally/stuntrally3/commits/main) and [tracks3](https://github.com/stuntrally/tracks3/commits/main).  
+docs\Building-old.md:118:## 6. Clone SR3
+docs\Building-old.md:120:Clone SR3 (this repo) and [SR3 tracks](https://github.com/stuntrally/tracks3) inside `data/tracks`:  
+docs\Building-old.md:126:git clone https://github.com/stuntrally/tracks3.git tracks
+docs\Building-old.md:189:         tracks - has Test1-Flat, Test3-Bumps - cloned tracks3 repo (or old tracks)
+docs\Features.md:32:    ??[Jungle](https://cryham.org/stuntrally/tracks/?id=Jng13-Tropic), [JungleDark](https://cryham.org/stuntrally/tracks/?id=Jng20-JungleMaze), [Moss](https://cryham.org/stuntrally/tracks/?id=Mos6-TaraMosses),  
+docs\Features.md:33:    ??[Forest](https://cryham.org/stuntrally/tracks/?id=For3-Snail), [ForestYellow](https://cryham.org/stuntrally/tracks/?id=For7-Blur), ???[ForestMntn](https://cryham.org/stuntrally/tracks/?id=For12-HighPeaks), [Finland](https://cryham.org/stuntrally/tracks/?id=Fin3-TreeTops), [Mud](https://cryham.org/stuntrally/tracks/?id=Mud3-Mudlake),  
+docs\Features.md:34:    ???[Desert](https://cryham.org/stuntrally/tracks/?id=Des1-Dunes), [Australia](https://cryham.org/stuntrally/tracks/?id=Aus5-TopTwist), [Canyon](https://cryham.org/stuntrally/tracks/?id=Can2-CanyonRun), [Savanna](https://cryham.org/stuntrally/tracks/?id=Sav4-Hills), [SavannaDry](https://cryham.org/stuntrally/tracks/?id=Sav15-Scorpio),  
+docs\Features.md:35:    ??[Greece](https://cryham.org/stuntrally/tracks/?id=Grc2-Coast), [GreeceWhite](https://cryham.org/stuntrally/tracks/?id=Grc8-SlopeCity), ??[GreeceRocky](https://cryham.org/stuntrally/tracks/?id=Grc13-YeleyStunts), ???[Islands](https://cryham.org/stuntrally/tracks/?id=Isl19-Shocacosh), [IslandDark](https://cryham.org/stuntrally/tracks/?id=Isl5-Shore),  
+docs\Features.md:36:    ???[Winter](https://cryham.org/stuntrally/tracks/?id=Wnt15-SkiJump), [WinterWet](https://cryham.org/stuntrally/tracks/?id=Wnt2-Wet), ??[Autumn](https://cryham.org/stuntrally/tracks/?id=Atm1-Autumn), [AutumnDark](https://cryham.org/stuntrally/tracks/?id=Atm4-Scary), [Spring](https://cryham.org/stuntrally/tracks/?id=Spr1-Rise),
+docs\Features.md:37:    - Extreme: ??[Volcanic](https://cryham.org/stuntrally/tracks/?id=Vlc2-Volcanic), [VolcanicDark](https://cryham.org/stuntrally/tracks/?id=Vlc9-Craters), ??[Stone](https://cryham.org/stuntrally/tracks/?id=Stn2-UltraFrenzy), ??[Toxic](https://cryham.org/stuntrally/tracks/?id=Tox1-Radioactive), [PostApo](https://cryham.org/stuntrally/tracks/?id=Apo1-TarFields), 
+docs\Features.md:38:    - other Planets: ??[Unidentified](https://cryham.org/stuntrally/tracks/?id=Uni4-Pipeline), ??[Mars](https://cryham.org/stuntrally/tracks/?id=Mrs1-Mars), ??[Alien](https://cryham.org/stuntrally/tracks/?id=Aln2-Freefall), ??[CrystalMoon](https://cryham.org/stuntrally/tracks/?id=Cry5-CrystalIslands), ??[Space](https://cryham.org/stuntrally/tracks/?id=Spc2-SpaceMine), ?[BlackDesert](https://cryham.org/stuntrally/tracks/?id=Blk1-Darkness)
+docs\Features.md:39:    - and Surreal places: ???[Surreal](https://cryham.org/stuntrally/tracks/?id=Sur1-Surreal), ??[SurrealSpace](https://cryham.org/stuntrally/tracks/?id=Sur5-FreshBreeze), [Marble](https://cryham.org/stuntrally/tracks/?id=Mar3-Plateaus), ??[Anomaly](https://cryham.org/stuntrally/tracks/?id=Ano3-Oversize)
+docs\Features.md:53:  - ? [obstacles](https://cryham.org/stuntrally/tracks/?id=Can5-Obstacles) - to avoid on road or in pipes
+docs\Features.md:54:  - / \ [jumps](https://cryham.org/stuntrally/tracks/?id=Des7-CrossJumps) - with shown required speed
+docs\Features.md:55:  - ? [loops](https://cryham.org/stuntrally/tracks/?id=Sav3-Loops): straight, skewed, [side](https://cryham.org/stuntrally/tracks/?id=Grc13-YeleyStunts), [barrel](https://cryham.org/stuntrally/tracks/?id=Mos5-Factory), double, [unique](https://cryham.org/stuntrally/tracks/?id=Spc3-HyperLoops), etc
+docs\Features.md:56:  - ? [pipes](https://cryham.org/stuntrally/tracks/?id=Sav6-PipeCrazy) (closed), [half](https://cryham.org/stuntrally/tracks/?id=Grc6-Halfpipes) pipes (open), on pipe drives
+docs\Features.md:57:  - ?? very [twisted](https://cryham.org/stuntrally/tracks/?id=Apo1-TarFields) bridges and highly [banked](https://cryham.org/stuntrally/tracks/?id=Can2-CanyonRun) (up to 90?)
+docs\Features.md:58:  - ?? Drives through [water](https://cryham.org/stuntrally/tracks/?id=Isl3-Islands) or [mud areas](https://cryham.org/stuntrally/tracks/?id=Jng16-MudBath) (all are safe, won't get stuck)
+docs\windows\evidence\W0\logs\Ogre_ed.log:626:21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/tracks/_previews' of type 'FileSystem' to resource group 'Essential'
+docs\windows\evidence\W0\logs\Ogre_ed.log:884:21:58:07: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/tracks/Aln1-AlienBase/objects' of type 'FileSystem' to resource group 'General'
+docs\windows\evidence\W0\logs\Ogre.log:489:21:56:00: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/tracks/_previews' of type 'FileSystem' to resource group 'Essential'
+docs\vehicles.md:119:Hovercrafts (H1, H2) do hover over fluids, but if you turn it to side (with flip Q or W) then you can force it to go underwater. So I was actually able to drive H2 on Atlantis. But Track Drivability will now show such tracks (marked as u1 in tracks.ini as having part needing underwater) as 0% i.e. undrivable.
+

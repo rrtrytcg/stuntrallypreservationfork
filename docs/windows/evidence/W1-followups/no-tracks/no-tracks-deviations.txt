@@ -1,0 +1,16 @@
+# No-Tracks Investigation Deviations
+Date: 2026-04-30
+
+Scope deviations:
+
+- None. No dependencies were rebuilt.
+- No SR3 configure or build was run.
+- No runtime DLL staging was changed.
+- No source, CMake, gameplay, renderer, UI, or asset files were modified.
+- The full track corpus was not copied, cloned, junctioned, or imported.
+
+Evidence capture notes:
+
+- `tracks-config-check.txt` includes a noisy failed `rg` invocation caused by PowerShell wildcard handling for `README*`, `*.md`, and `CMakeLists*.txt`. Useful references were still captured from config, docs, source, and evidence files.
+- `gitignore-lfs-submodule-check.txt` records the no-tracks evidence directory as untracked at capture time. That was expected before committing this evidence pass.
+

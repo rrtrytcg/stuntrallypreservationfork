@@ -1,0 +1,30 @@
+# Source Data Layout
+Date: 2026-04-30
+Root: C:\Games\stuntrally3-3.3\fork\stuntrally3-2026
+
+
+Top-level data entries:
+
+
+Name      Mode  Length LastWriteTime
+----      ----  ------ -------------
+cars      d----        30/4/2026 7:29:46 pm
+carsim    d----        30/4/2026 7:29:46 pm
+ghosts    d----        30/4/2026 7:29:46 pm
+gui       d----        30/4/2026 7:29:46 pm
+Hlms      d----        30/4/2026 7:29:45 pm
+hud       d----        30/4/2026 7:29:46 pm
+materials d----        30/4/2026 7:29:47 pm
+models    d----        30/4/2026 7:29:49 pm
+particles d----        30/4/2026 7:29:49 pm
+sounds    d----        30/4/2026 7:29:50 pm
+textures  d----        30/4/2026 7:29:51 pm
+
+
+
+data\\tracks exists: False
+
+
+Directory count under data:
+
+168

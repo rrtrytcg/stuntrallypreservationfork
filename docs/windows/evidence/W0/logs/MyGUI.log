@@ -1,0 +1,114 @@
+21:56:00  |  Platform  |  Info  |  * Initialise: RenderManager  |  D:\_\sr\og3\mygui-next\Platforms\Ogre2\Ogre2Platform\src\MyGUI_Ogre2RenderManager.cpp  |  79
+21:56:00  |  Platform  |  Info  |  RenderManager successfully initialized  |  D:\_\sr\og3\mygui-next\Platforms\Ogre2\Ogre2Platform\src\MyGUI_Ogre2RenderManager.cpp  |  114
+21:56:00  |  Platform  |  Info  |  * Initialise: DataManager  |  D:\_\sr\og3\mygui-next\Platforms\Ogre2\Ogre2Platform\src\MyGUI_Ogre2DataManager.cpp  |  27
+21:56:00  |  Platform  |  Info  |  DataManager successfully initialized  |  D:\_\sr\og3\mygui-next\Platforms\Ogre2\Ogre2Platform\src\MyGUI_Ogre2DataManager.cpp  |  35
+21:56:00  |  Core  |  Info  |  * Initialise: Gui  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_Gui.cpp  |  61
+21:56:00  |  Core  |  Info  |  * MyGUI version 3.2.3  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_Gui.cpp  |  66
+21:56:00  |  Core  |  Info  |  * Initialise: ResourceManager  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ResourceManager.cpp  |  32
+21:56:00  |  Core  |  Info  |  ResourceManager successfully initialized  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ResourceManager.cpp  |  40
+21:56:00  |  Core  |  Info  |  * Initialise: LayerManager  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_LayerManager.cpp  |  33
+21:56:00  |  Core  |  Info  |  LayerManager successfully initialized  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_LayerManager.cpp  |  41
+21:56:00  |  Core  |  Info  |  * Initialise: WidgetManager  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_WidgetManager.cpp  |  53
+21:56:00  |  Core  |  Info  |  WidgetManager successfully initialized  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_WidgetManager.cpp  |  84
+21:56:00  |  Core  |  Info  |  * Initialise: InputManager  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_InputManager.cpp  |  46
+21:56:00  |  Core  |  Info  |  InputManager successfully initialized  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_InputManager.cpp  |  66
+21:56:00  |  Core  |  Info  |  * Initialise: SubWidgetManager  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_SubWidgetManager.cpp  |  36
+21:56:00  |  Core  |  Info  |  SubWidgetManager successfully initialized  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_SubWidgetManager.cpp  |  56
+21:56:00  |  Core  |  Info  |  * Initialise: SkinManager  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_SkinManager.cpp  |  36
+21:56:00  |  Core  |  Info  |  SkinManager successfully initialized  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_SkinManager.cpp  |  46
+21:56:00  |  Core  |  Info  |  * Initialise: FontManager  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_FontManager.cpp  |  32
+21:56:00  |  Core  |  Info  |  FontManager successfully initialized  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_FontManager.cpp  |  42
+21:56:00  |  Core  |  Info  |  * Initialise: ControllerManager  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ControllerManager.cpp  |  33
+21:56:00  |  Core  |  Info  |  ControllerManager successfully initialized  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ControllerManager.cpp  |  42
+21:56:00  |  Core  |  Info  |  * Initialise: PointerManager  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_PointerManager.cpp  |  43
+21:56:00  |  Core  |  Info  |  PointerManager successfully initialized  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_PointerManager.cpp  |  62
+21:56:00  |  Core  |  Info  |  * Initialise: ClipboardManager  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ClipboardManager.cpp  |  32
+21:56:00  |  Core  |  Info  |  ClipboardManager successfully initialized  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ClipboardManager.cpp  |  39
+21:56:00  |  Core  |  Info  |  * Initialise: LayoutManager  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_LayoutManager.cpp  |  28
+21:56:00  |  Core  |  Info  |  LayoutManager successfully initialized  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_LayoutManager.cpp  |  35
+21:56:00  |  Core  |  Info  |  * Initialise: DynLibManager  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_DynLibManager.cpp  |  26
+21:56:00  |  Core  |  Info  |  DynLibManager successfully initialized  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_DynLibManager.cpp  |  30
+21:56:00  |  Core  |  Info  |  * Initialise: PluginManager  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_PluginManager.cpp  |  30
+21:56:00  |  Core  |  Info  |  PluginManager successfully initialized  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_PluginManager.cpp  |  34
+21:56:00  |  Core  |  Info  |  * Initialise: LanguageManager  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_LanguageManager.cpp  |  30
+21:56:00  |  Core  |  Info  |  LanguageManager successfully initialized  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_LanguageManager.cpp  |  34
+21:56:00  |  Core  |  Info  |  * Initialise: FactoryManager  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_FactoryManager.cpp  |  25
+21:56:00  |  Core  |  Info  |  FactoryManager successfully initialized  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_FactoryManager.cpp  |  27
+21:56:00  |  Core  |  Info  |  * Initialise: ToolTipManager  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ToolTipManager.cpp  |  33
+21:56:00  |  Core  |  Info  |  ToolTipManager successfully initialized  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ToolTipManager.cpp  |  45
+21:56:00  |  Core  |  Info  |  Load ini file 'core_font.xml'  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ResourceManager.cpp  |  114
+21:56:00  |  Core  |  Info  |  Load ini file 'core_images.xml'  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ResourceManager.cpp  |  114
+21:56:00  |  Core  |  Info  |  Load ini file 'core_commonskins.xml'  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ResourceManager.cpp  |  114
+21:56:00  |  Core  |  Info  |  Load ini file 'core_blackbluetheme.xml'  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ResourceManager.cpp  |  114
+21:56:00  |  Core  |  Info  |  Load ini file 'core_blackblueimages.xml'  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ResourceManager.cpp  |  114
+21:56:00  |  Core  |  Info  |  Load ini file 'core_blackblueskins.xml'  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ResourceManager.cpp  |  114
+21:56:00  |  Core  |  Info  |  Load ini file 'core_blackbluetemplates.xml'  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ResourceManager.cpp  |  114
+21:56:00  |  Core  |  Info  |  Load ini file 'core_pointers.xml'  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ResourceManager.cpp  |  114
+21:56:00  |  Core  |  Info  |  Load ini file 'core_layers.xml'  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ResourceManager.cpp  |  114
+21:56:00  |  Core  |  Info  |  Load ini file 'core_language.xml'  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ResourceManager.cpp  |  114
+21:56:00  |  Core  |  Info  |  Load ini file 'core_settings.xml'  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ResourceManager.cpp  |  114
+21:56:00  |  Core  |  Info  |  Load ini file 'MessageBoxIcons.xml'  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ResourceManager.cpp  |  114
+21:56:00  |  Core  |  Info  |  Gui successfully initialized  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_Gui.cpp  |  111
+21:56:00  |  Core  |  Info  |  ResourceTrueTypeFont: Font 'font.small' using texture size 512 x 256.  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ResourceTrueTypeFont.cpp  |  787
+21:56:00  |  Core  |  Info  |  ResourceTrueTypeFont: Font 'font.small' using real height 21 pixels.  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ResourceTrueTypeFont.cpp  |  788
+21:56:00  |  Core  |  Info  |  ResourceTrueTypeFont: Font 'font.normal' using texture size 512 x 256.  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ResourceTrueTypeFont.cpp  |  787
+21:56:00  |  Core  |  Info  |  ResourceTrueTypeFont: Font 'font.normal' using real height 24 pixels.  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ResourceTrueTypeFont.cpp  |  788
+21:56:00  |  Core  |  Info  |  ResourceTrueTypeFont: Font 'font.big' using texture size 512 x 256.  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ResourceTrueTypeFont.cpp  |  787
+21:56:00  |  Core  |  Info  |  ResourceTrueTypeFont: Font 'font.big' using real height 26 pixels.  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ResourceTrueTypeFont.cpp  |  788
+21:56:00  |  Core  |  Info  |  ResourceTrueTypeFont: Font 'hud.text' using texture size 512 x 512.  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ResourceTrueTypeFont.cpp  |  787
+21:56:00  |  Core  |  Info  |  ResourceTrueTypeFont: Font 'hud.text' using real height 30 pixels.  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ResourceTrueTypeFont.cpp  |  788
+21:56:00  |  Core  |  Warning  |  : Property 'SpaceWidth' in font '' is deprecated; remove it to use automatic calculation.  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ResourceTrueTypeFont.cpp  |  326
+21:56:00  |  Core  |  Info  |  ResourceTrueTypeFont: Font 'hud.replay' using texture size 128 x 128.  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ResourceTrueTypeFont.cpp  |  787
+21:56:00  |  Core  |  Info  |  ResourceTrueTypeFont: Font 'hud.replay' using real height 24 pixels.  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ResourceTrueTypeFont.cpp  |  788
+21:56:00  |  Core  |  Warning  |  : Property 'SpaceWidth' in font '' is deprecated; remove it to use automatic calculation.  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ResourceTrueTypeFont.cpp  |  326
+21:56:00  |  Core  |  Info  |  ResourceTrueTypeFont: Font 'DigGear' using texture size 256 x 256.  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ResourceTrueTypeFont.cpp  |  787
+21:56:00  |  Core  |  Info  |  ResourceTrueTypeFont: Font 'DigGear' using real height 69 pixels.  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ResourceTrueTypeFont.cpp  |  788
+21:56:00  |  Core  |  Warning  |  : Property 'SpaceWidth' in font '' is deprecated; remove it to use automatic calculation.  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ResourceTrueTypeFont.cpp  |  326
+21:56:00  |  Core  |  Info  |  ResourceTrueTypeFont: Font 'hud.fps' using texture size 256 x 128.  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ResourceTrueTypeFont.cpp  |  787
+21:56:00  |  Core  |  Info  |  ResourceTrueTypeFont: Font 'hud.fps' using real height 21 pixels.  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ResourceTrueTypeFont.cpp  |  788
+21:56:01  |  Core  |  Warning  |  Widget property 'FontName' not found [Game.layout]  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_Widget.cpp  |  1208
+21:56:01  |  Core  |  Warning  |  Widget property 'TextColour' not found [Game.layout]  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_Widget.cpp  |  1208
+21:56:26  |  Core  |  Info  |  * Shutdown: Gui  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_Gui.cpp  |  125
+21:56:26  |  Core  |  Info  |  * Shutdown: PointerManager  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_PointerManager.cpp  |  69
+21:56:26  |  Core  |  Info  |  PointerManager successfully shutdown  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_PointerManager.cpp  |  86
+21:56:26  |  Core  |  Info  |  * Shutdown: InputManager  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_InputManager.cpp  |  73
+21:56:26  |  Core  |  Info  |  InputManager successfully shutdown  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_InputManager.cpp  |  78
+21:56:26  |  Core  |  Info  |  * Shutdown: SkinManager  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_SkinManager.cpp  |  53
+21:56:26  |  Core  |  Info  |  SkinManager successfully shutdown  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_SkinManager.cpp  |  60
+21:56:26  |  Core  |  Info  |  * Shutdown: SubWidgetManager  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_SubWidgetManager.cpp  |  63
+21:56:26  |  Core  |  Info  |  SubWidgetManager successfully shutdown  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_SubWidgetManager.cpp  |  83
+21:56:26  |  Core  |  Info  |  * Shutdown: LayerManager  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_LayerManager.cpp  |  48
+21:56:26  |  Core  |  Info  |  destroy layer 'Back'  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_LayerManager.cpp  |  208
+21:56:26  |  Core  |  Info  |  destroy layer 'Overlapped'  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_LayerManager.cpp  |  208
+21:56:26  |  Core  |  Info  |  destroy layer 'Main'  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_LayerManager.cpp  |  208
+21:56:26  |  Core  |  Info  |  destroy layer 'Popup'  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_LayerManager.cpp  |  208
+21:56:26  |  Core  |  Info  |  destroy layer 'ToolTip'  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_LayerManager.cpp  |  208
+21:56:26  |  Core  |  Info  |  destroy layer 'Pointer'  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_LayerManager.cpp  |  208
+21:56:26  |  Core  |  Info  |  LayerManager successfully shutdown  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_LayerManager.cpp  |  59
+21:56:26  |  Core  |  Info  |  * Shutdown: FontManager  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_FontManager.cpp  |  49
+21:56:26  |  Core  |  Info  |  FontManager successfully shutdown  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_FontManager.cpp  |  57
+21:56:26  |  Core  |  Info  |  * Shutdown: ControllerManager  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ControllerManager.cpp  |  49
+21:56:26  |  Core  |  Info  |  ControllerManager successfully shutdown  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ControllerManager.cpp  |  59
+21:56:26  |  Core  |  Info  |  * Shutdown: ClipboardManager  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ClipboardManager.cpp  |  46
+21:56:26  |  Core  |  Info  |  ClipboardManager successfully shutdown  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ClipboardManager.cpp  |  54
+21:56:26  |  Core  |  Info  |  * Shutdown: LayoutManager  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_LayoutManager.cpp  |  42
+21:56:26  |  Core  |  Info  |  LayoutManager successfully shutdown  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_LayoutManager.cpp  |  49
+21:56:26  |  Core  |  Info  |  * Shutdown: PluginManager  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_PluginManager.cpp  |  41
+21:56:26  |  Core  |  Info  |  PluginManager successfully shutdown  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_PluginManager.cpp  |  46
+21:56:26  |  Core  |  Info  |  * Shutdown: DynLibManager  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_DynLibManager.cpp  |  37
+21:56:26  |  Core  |  Info  |  DynLibManager successfully shutdown  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_DynLibManager.cpp  |  44
+21:56:26  |  Core  |  Info  |  * Shutdown: LanguageManager  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_LanguageManager.cpp  |  41
+21:56:26  |  Core  |  Info  |  LanguageManager successfully shutdown  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_LanguageManager.cpp  |  45
+21:56:26  |  Core  |  Info  |  * Shutdown: ResourceManager  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ResourceManager.cpp  |  47
+21:56:26  |  Core  |  Info  |  ResourceManager successfully shutdown  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ResourceManager.cpp  |  57
+21:56:26  |  Core  |  Info  |  * Shutdown: FactoryManager  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_FactoryManager.cpp  |  34
+21:56:26  |  Core  |  Info  |  FactoryManager successfully shutdown  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_FactoryManager.cpp  |  36
+21:56:26  |  Core  |  Info  |  * Shutdown: ToolTipManager  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ToolTipManager.cpp  |  52
+21:56:26  |  Core  |  Info  |  ToolTipManager successfully shutdown  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_ToolTipManager.cpp  |  57
+21:56:26  |  Core  |  Info  |  * Shutdown: WidgetManager  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_WidgetManager.cpp  |  91
+21:56:26  |  Core  |  Info  |  WidgetManager successfully shutdown  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_WidgetManager.cpp  |  100
+21:56:26  |  Core  |  Info  |  Gui successfully shutdown  |  D:\_\sr\og3\mygui\MyGUIEngine\src\MyGUI_Gui.cpp  |  171
+21:56:26  |  Platform  |  Info  |  * Shutdown: RenderManager  |  D:\_\sr\og3\mygui-next\Platforms\Ogre2\Ogre2Platform\src\MyGUI_Ogre2RenderManager.cpp  |  121
+21:56:26  |  Platform  |  Info  |  RenderManager successfully shutdown  |  D:\_\sr\og3\mygui-next\Platforms\Ogre2\Ogre2Platform\src\MyGUI_Ogre2RenderManager.cpp  |  140
+21:56:26  |  Platform  |  Info  |  * Shutdown: DataManager  |  D:\_\sr\og3\mygui-next\Platforms\Ogre2\Ogre2Platform\src\MyGUI_Ogre2DataManager.cpp  |  42
+21:56:26  |  Platform  |  Info  |  DataManager successfully shutdown  |  D:\_\sr\og3\mygui-next\Platforms\Ogre2\Ogre2Platform\src\MyGUI_Ogre2DataManager.cpp  |  44

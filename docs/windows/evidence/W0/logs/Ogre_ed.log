@@ -1,0 +1,1022 @@
+21:57:53: Creating resource group General
+21:57:53: Creating resource group Internal
+21:57:53: Creating resource group Autodetect
+21:57:53: SceneManagerFactory for type 'DefaultSceneManager' registered.
+21:57:53: Registering ResourceManager for type Material
+21:57:53: Registering ResourceManager for type Mesh
+21:57:53: Registering ResourceManager for type Mesh2
+21:57:53: Registering ResourceManager for type OldSkeleton
+21:57:53: MovableObjectFactory for type 'ParticleSystem' registered.
+21:57:53: ArchiveFactory for archive type FileSystem registered.
+21:57:53: ArchiveFactory for archive type Zip registered.
+21:57:53: ArchiveFactory for archive type EmbeddedZip registered.
+21:57:53: DDS codec registering
+21:57:53: FreeImage version: 3.18.0
+21:57:53: This program uses FreeImage, a free, open source image library supporting all common bitmap formats. See http://freeimage.sourceforge.net for details
+21:57:53: Supported formats: bmp,ico,jpg,jif,jpeg,jpe,jng,koa,iff,lbm,mng,pbm,pbm,pcd,pcx,pgm,pgm,png,ppm,ppm,ras,tga,targa,tif,tiff,wap,wbmp,wbm,psd,psb,cut,xbm,xpm,gif,hdr,g3,sgi,rgb,rgba,bw,exr,j2k,j2c,jp2,pfm,pct,pict,pic,3fr,arw,bay,bmq,cap,cine,cr2,crw,cs1,dc2,dcr,drf,dsc,dng,erf,fff,ia,iiq,k25,kc2,kdc,mdc,mef,mos,mrw,nef,nrw,orf,pef,ptx,pxn,qtk,raf,raw,rdc,rw2,rwl,rwz,sr2,srf,srw,sti,x3f,webp
+21:57:53: ETC codec registering
+21:57:53: OITD codec registering
+21:57:53: Registering ResourceManager for type HighLevelGpuProgram
+21:57:53: MovableObjectFactory for type 'Decal' registered.
+21:57:53: MovableObjectFactory for type 'InternalCubemapProbe' registered.
+21:57:53: MovableObjectFactory for type 'Entity' registered.
+21:57:53: MovableObjectFactory for type 'Item' registered.
+21:57:53: MovableObjectFactory for type 'Light' registered.
+21:57:53: MovableObjectFactory for type 'Rectangle2Dv2' registered.
+21:57:53: MovableObjectFactory for type 'BillboardSet' registered.
+21:57:53: MovableObjectFactory for type 'ManualObject2' registered.
+21:57:53: MovableObjectFactory for type 'BillboardChain' registered.
+21:57:53: MovableObjectFactory for type 'RibbonTrail' registered.
+21:57:53: MovableObjectFactory for type 'WireAabb' registered.
+21:57:53: Loading library .\RenderSystem_GL3Plus
+21:57:53: Installing plugin: GL 3+ RenderSystem
+21:57:53: OpenGL 3+ Rendering Subsystem created.
+21:57:53: Plugin successfully installed
+21:57:53: Loading library .\RenderSystem_Vulkan
+21:57:53: Installing plugin: Vulkan RenderSystem
+21:57:53: [Vulkan] Initializing VkInstance
+21:57:53: Found instance extension: VK_KHR_device_group_creation
+21:57:53: Found instance extension: VK_KHR_display
+21:57:53: Found instance extension: VK_KHR_external_fence_capabilities
+21:57:53: Found instance extension: VK_KHR_external_memory_capabilities
+21:57:53: Found instance extension: VK_KHR_external_semaphore_capabilities
+21:57:53: Found instance extension: VK_KHR_get_display_properties2
+21:57:53: Found instance extension: VK_KHR_get_physical_device_properties2
+21:57:53: Found instance extension: VK_KHR_get_surface_capabilities2
+21:57:53: Found instance extension: VK_KHR_surface
+21:57:53: Found instance extension: VK_KHR_surface_maintenance1
+21:57:53: Found instance extension: VK_KHR_surface_protected_capabilities
+21:57:53: Found instance extension: VK_KHR_win32_surface
+21:57:53: Found instance extension: VK_EXT_debug_report
+21:57:53: Found instance extension: VK_EXT_debug_utils
+21:57:53: Found instance extension: VK_EXT_direct_mode_display
+21:57:53: Found instance extension: VK_EXT_surface_maintenance1
+21:57:53: Found instance extension: VK_EXT_swapchain_colorspace
+21:57:53: Found instance extension: VK_NV_external_memory_capabilities
+21:57:53: Found instance extension: VK_KHR_portability_enumeration
+21:57:53: Found instance extension: VK_LUNARG_direct_driver_loading
+21:57:53: Found instance layer: VK_LAYER_NV_optimus
+21:57:53: Found instance layer: VK_LAYER_NV_present
+21:57:53: Found instance layer: VK_LAYER_AMD_switchable_graphics
+21:57:53: Found instance layer: VK_LAYER_OBS_HOOK
+21:57:53: Requesting Instance Extension: VK_KHR_get_physical_device_properties2
+21:57:53: Requesting Instance Extension: VK_KHR_win32_surface
+21:57:53: Requesting Instance Extension: VK_KHR_surface
+21:57:53: [Vulkan] Found 2 devices
+21:57:53: [Vulkan] Found devices:
+21:57:53: NVIDIA GeForce RTX 4070 SUPER #0
+21:57:53: AMD Radeon(TM) Graphics #1
+21:57:53: Plugin successfully installed
+21:57:53: Loading library .\Plugin_ParticleFX
+21:57:53: Installing plugin: ParticleFX
+21:57:53: Particle Emitter Type 'Point' registered
+21:57:53: Particle Emitter Type 'Box' registered
+21:57:53: Particle Emitter Type 'Ellipsoid' registered
+21:57:53: Particle Emitter Type 'Cylinder' registered
+21:57:53: Particle Emitter Type 'Ring' registered
+21:57:53: Particle Emitter Type 'HollowEllipsoid' registered
+21:57:53: Particle Affector Type 'LinearForce' registered
+21:57:53: Particle Affector Type 'ColourFader' registered
+21:57:53: Particle Affector Type 'ColourFader2' registered
+21:57:53: Particle Affector Type 'ColourImage' registered
+21:57:53: Particle Affector Type 'ColourInterpolator' registered
+21:57:53: Particle Affector Type 'ScaleInterpolator' registered
+21:57:53: Particle Affector Type 'Scaler' registered
+21:57:53: Particle Affector Type 'Rotator' registered
+21:57:53: Particle Affector Type 'DirectionRandomiser' registered
+21:57:53: Particle Affector Type 'DeflectorPlane' registered
+21:57:53: Plugin successfully installed
+21:57:53: *-*-* OGRE Initialising
+21:57:53: *-*-* Version 3.0.0 (Eris)
+21:57:53: OGRE EXCEPTION(6:FileNotFoundException): 'C:/Users/julie/AppData/Roaming\stuntrally3/ogre_ed.cfg' file not found! in ConfigFile::load at D:\_\sr\og3\Ogre\ogre-next\OgreMain\src\OgreConfigFile.cpp (line 82)
+21:58:06: CPU Identifier & Features
+21:58:06: -------------------------
+21:58:06:  *   CPU ID: AuthenticAMD: AMD Ryzen 7 7700 8-Core Processor
+21:58:06:  *   Logical cores: 16
+21:58:06:  *      SSE: yes
+21:58:06:  *     SSE2: yes
+21:58:06:  *     SSE3: yes
+21:58:06:  *      MMX: yes
+21:58:06:  *   MMXEXT: yes
+21:58:06:  *    3DNOW: no
+21:58:06:  * 3DNOWEXT: no
+21:58:06:  *     CMOV: yes
+21:58:06:  *      TSC: yes
+21:58:06:  *      FPU: yes
+21:58:06:  *      PRO: yes
+21:58:06:  *       HT: no
+21:58:06: -------------------------
+21:58:06: *** Starting Win32GL Subsystem ***
+21:58:06: GL3PlusRenderSystem::_createRenderWindow "Stunt Rally 3 Track Editor", 1920x1080 fullscreen  miscParams: FSAA=1 externalWindowHandle=1050560 gamma=Yes reverse_depth=Yes title=Stunt Rally 3 Track Editor vsync=No 
+21:58:06: Created GL 4.5 context
+21:58:06: GL Version = 4.5.0.0
+21:58:06: GL_VERSION = 4.5.0 NVIDIA 591.86
+21:58:06: GL_VENDOR = NVIDIA Corporation
+21:58:06: GL_RENDERER = NVIDIA GeForce RTX 4070 SUPER/PCIe/SSE2
+21:58:06: GL_EXTENSIONS = 
+21:58:06: GL_AMD_multi_draw_indirect
+21:58:06: GL_AMD_seamless_cubemap_per_texture
+21:58:06: GL_AMD_vertex_shader_viewport_index
+21:58:06: GL_AMD_vertex_shader_layer
+21:58:06: GL_ARB_arrays_of_arrays
+21:58:06: GL_ARB_base_instance
+21:58:06: GL_ARB_bindless_texture
+21:58:06: GL_ARB_blend_func_extended
+21:58:06: GL_ARB_buffer_storage
+21:58:06: GL_ARB_clear_buffer_object
+21:58:06: GL_ARB_clear_texture
+21:58:06: GL_ARB_clip_control
+21:58:06: GL_ARB_color_buffer_float
+21:58:06: GL_ARB_compressed_texture_pixel_storage
+21:58:06: GL_ARB_conservative_depth
+21:58:06: GL_ARB_compute_shader
+21:58:06: GL_ARB_compute_variable_group_size
+21:58:06: GL_ARB_conditional_render_inverted
+21:58:06: GL_ARB_copy_buffer
+21:58:06: GL_ARB_copy_image
+21:58:06: GL_ARB_cull_distance
+21:58:06: GL_ARB_debug_output
+21:58:06: GL_ARB_depth_buffer_float
+21:58:06: GL_ARB_depth_clamp
+21:58:06: GL_ARB_depth_texture
+21:58:06: GL_ARB_derivative_control
+21:58:06: GL_ARB_direct_state_access
+21:58:06: GL_ARB_draw_buffers
+21:58:06: GL_ARB_draw_buffers_blend
+21:58:06: GL_ARB_draw_indirect
+21:58:06: GL_ARB_draw_elements_base_vertex
+21:58:06: GL_ARB_draw_instanced
+21:58:06: GL_ARB_enhanced_layouts
+21:58:06: GL_ARB_ES2_compatibility
+21:58:06: GL_ARB_ES3_compatibility
+21:58:06: GL_ARB_ES3_1_compatibility
+21:58:06: GL_ARB_ES3_2_compatibility
+21:58:06: GL_ARB_explicit_attrib_location
+21:58:06: GL_ARB_explicit_uniform_location
+21:58:06: GL_ARB_fragment_coord_conventions
+21:58:06: GL_ARB_fragment_layer_viewport
+21:58:06: GL_ARB_fragment_program
+21:58:06: GL_ARB_fragment_program_shadow
+21:58:06: GL_ARB_fragment_shader
+21:58:06: GL_ARB_fragment_shader_interlock
+21:58:06: GL_ARB_framebuffer_no_attachments
+21:58:06: GL_ARB_framebuffer_object
+21:58:06: GL_ARB_framebuffer_sRGB
+21:58:06: GL_ARB_geometry_shader4
+21:58:06: GL_ARB_get_program_binary
+21:58:06: GL_ARB_get_texture_sub_image
+21:58:06: GL_ARB_gl_spirv
+21:58:06: GL_ARB_gpu_shader5
+21:58:06: GL_ARB_gpu_shader_fp64
+21:58:06: GL_ARB_gpu_shader_int64
+21:58:06: GL_ARB_half_float_pixel
+21:58:06: GL_ARB_half_float_vertex
+21:58:06: GL_ARB_imaging
+21:58:06: GL_ARB_indirect_parameters
+21:58:06: GL_ARB_instanced_arrays
+21:58:06: GL_ARB_internalformat_query
+21:58:06: GL_ARB_internalformat_query2
+21:58:06: GL_ARB_invalidate_subdata
+21:58:06: GL_ARB_map_buffer_alignment
+21:58:06: GL_ARB_map_buffer_range
+21:58:06: GL_ARB_multi_bind
+21:58:06: GL_ARB_multi_draw_indirect
+21:58:06: GL_ARB_multisample
+21:58:06: GL_ARB_multitexture
+21:58:06: GL_ARB_occlusion_query
+21:58:06: GL_ARB_occlusion_query2
+21:58:06: GL_ARB_parallel_shader_compile
+21:58:06: GL_ARB_pipeline_statistics_query
+21:58:06: GL_ARB_pixel_buffer_object
+21:58:06: GL_ARB_point_parameters
+21:58:06: GL_ARB_point_sprite
+21:58:06: GL_ARB_polygon_offset_clamp
+21:58:06: GL_ARB_post_depth_coverage
+21:58:06: GL_ARB_program_interface_query
+21:58:06: GL_ARB_provoking_vertex
+21:58:06: GL_ARB_query_buffer_object
+21:58:06: GL_ARB_robust_buffer_access_behavior
+21:58:06: GL_ARB_robustness
+21:58:06: GL_ARB_sample_locations
+21:58:06: GL_ARB_sample_shading
+21:58:06: GL_ARB_sampler_objects
+21:58:06: GL_ARB_seamless_cube_map
+21:58:06: GL_ARB_seamless_cubemap_per_texture
+21:58:06: GL_ARB_separate_shader_objects
+21:58:06: GL_ARB_shader_atomic_counter_ops
+21:58:06: GL_ARB_shader_atomic_counters
+21:58:06: GL_ARB_shader_ballot
+21:58:06: GL_ARB_shader_bit_encoding
+21:58:06: GL_ARB_shader_clock
+21:58:06: GL_ARB_shader_draw_parameters
+21:58:06: GL_ARB_shader_group_vote
+21:58:06: GL_ARB_shader_image_load_store
+21:58:06: GL_ARB_shader_image_size
+21:58:06: GL_ARB_shader_objects
+21:58:06: GL_ARB_shader_precision
+21:58:06: GL_ARB_shader_storage_buffer_object
+21:58:06: GL_ARB_shader_subroutine
+21:58:06: GL_ARB_shader_texture_image_samples
+21:58:06: GL_ARB_shader_texture_lod
+21:58:06: GL_ARB_shading_language_100
+21:58:06: GL_ARB_shader_viewport_layer_array
+21:58:06: GL_ARB_shading_language_420pack
+21:58:06: GL_ARB_shading_language_include
+21:58:06: GL_ARB_shading_language_packing
+21:58:06: GL_ARB_shadow
+21:58:06: GL_ARB_sparse_buffer
+21:58:06: GL_ARB_sparse_texture
+21:58:06: GL_ARB_sparse_texture2
+21:58:06: GL_ARB_sparse_texture_clamp
+21:58:06: GL_ARB_spirv_extensions
+21:58:06: GL_ARB_stencil_texturing
+21:58:06: GL_ARB_sync
+21:58:06: GL_ARB_tessellation_shader
+21:58:06: GL_ARB_texture_barrier
+21:58:06: GL_ARB_texture_border_clamp
+21:58:06: GL_ARB_texture_buffer_object
+21:58:06: GL_ARB_texture_buffer_object_rgb32
+21:58:06: GL_ARB_texture_buffer_range
+21:58:06: GL_ARB_texture_compression
+21:58:06: GL_ARB_texture_compression_bptc
+21:58:06: GL_ARB_texture_compression_rgtc
+21:58:06: GL_ARB_texture_cube_map
+21:58:06: GL_ARB_texture_cube_map_array
+21:58:06: GL_ARB_texture_env_add
+21:58:06: GL_ARB_texture_env_combine
+21:58:06: GL_ARB_texture_env_crossbar
+21:58:06: GL_ARB_texture_env_dot3
+21:58:06: GL_ARB_texture_filter_anisotropic
+21:58:06: GL_ARB_texture_filter_minmax
+21:58:06: GL_ARB_texture_float
+21:58:06: GL_ARB_texture_gather
+21:58:06: GL_ARB_texture_mirror_clamp_to_edge
+21:58:06: GL_ARB_texture_mirrored_repeat
+21:58:06: GL_ARB_texture_multisample
+21:58:06: GL_ARB_texture_non_power_of_two
+21:58:06: GL_ARB_texture_query_levels
+21:58:06: GL_ARB_texture_query_lod
+21:58:06: GL_ARB_texture_rectangle
+21:58:06: GL_ARB_texture_rg
+21:58:06: GL_ARB_texture_rgb10_a2ui
+21:58:06: GL_ARB_texture_stencil8
+21:58:06: GL_ARB_texture_storage
+21:58:06: GL_ARB_texture_storage_multisample
+21:58:06: GL_ARB_texture_swizzle
+21:58:06: GL_ARB_texture_view
+21:58:06: GL_ARB_timer_query
+21:58:06: GL_ARB_transform_feedback2
+21:58:06: GL_ARB_transform_feedback3
+21:58:06: GL_ARB_transform_feedback_instanced
+21:58:06: GL_ARB_transform_feedback_overflow_query
+21:58:06: GL_ARB_transpose_matrix
+21:58:06: GL_ARB_uniform_buffer_object
+21:58:06: GL_ARB_vertex_array_bgra
+21:58:06: GL_ARB_vertex_array_object
+21:58:06: GL_ARB_vertex_attrib_64bit
+21:58:06: GL_ARB_vertex_attrib_binding
+21:58:06: GL_ARB_vertex_buffer_object
+21:58:06: GL_ARB_vertex_program
+21:58:06: GL_ARB_vertex_shader
+21:58:06: GL_ARB_vertex_type_10f_11f_11f_rev
+21:58:06: GL_ARB_vertex_type_2_10_10_10_rev
+21:58:06: GL_ARB_viewport_array
+21:58:06: GL_ARB_window_pos
+21:58:06: GL_ATI_draw_buffers
+21:58:06: GL_ATI_texture_float
+21:58:06: GL_ATI_texture_mirror_once
+21:58:06: GL_S3_s3tc
+21:58:06: GL_EXT_texture_env_add
+21:58:06: GL_EXT_abgr
+21:58:06: GL_EXT_bgra
+21:58:06: GL_EXT_bindable_uniform
+21:58:06: GL_EXT_blend_color
+21:58:06: GL_EXT_blend_equation_separate
+21:58:06: GL_EXT_blend_func_separate
+21:58:06: GL_EXT_blend_minmax
+21:58:06: GL_EXT_blend_subtract
+21:58:06: GL_EXT_compiled_vertex_array
+21:58:06: GL_EXT_Cg_shader
+21:58:06: GL_EXT_depth_bounds_test
+21:58:06: GL_EXT_direct_state_access
+21:58:06: GL_EXT_draw_buffers2
+21:58:06: GL_EXT_draw_instanced
+21:58:06: GL_EXT_draw_range_elements
+21:58:06: GL_EXT_fog_coord
+21:58:06: GL_EXT_framebuffer_blit
+21:58:06: GL_EXT_framebuffer_multisample
+21:58:06: GL_EXTX_framebuffer_mixed_formats
+21:58:06: GL_EXT_framebuffer_multisample_blit_scaled
+21:58:06: GL_EXT_framebuffer_object
+21:58:06: GL_EXT_framebuffer_sRGB
+21:58:06: GL_EXT_geometry_shader4
+21:58:06: GL_EXT_gpu_program_parameters
+21:58:06: GL_EXT_gpu_shader4
+21:58:06: GL_EXT_multi_draw_arrays
+21:58:06: GL_EXT_multiview_texture_multisample
+21:58:06: GL_EXT_multiview_timer_query
+21:58:06: GL_EXT_packed_depth_stencil
+21:58:06: GL_EXT_packed_float
+21:58:06: GL_EXT_packed_pixels
+21:58:06: GL_EXT_pixel_buffer_object
+21:58:06: GL_EXT_point_parameters
+21:58:06: GL_EXT_polygon_offset_clamp
+21:58:06: GL_EXT_post_depth_coverage
+21:58:06: GL_EXT_provoking_vertex
+21:58:06: GL_EXT_raster_multisample
+21:58:06: GL_EXT_rescale_normal
+21:58:06: GL_EXT_secondary_color
+21:58:06: GL_EXT_separate_shader_objects
+21:58:06: GL_EXT_separate_specular_color
+21:58:06: GL_EXT_shader_image_load_formatted
+21:58:06: GL_EXT_shader_image_load_store
+21:58:06: GL_EXT_shader_integer_mix
+21:58:06: GL_EXT_shadow_funcs
+21:58:06: GL_EXT_sparse_texture2
+21:58:06: GL_EXT_stencil_two_side
+21:58:06: GL_EXT_stencil_wrap
+21:58:06: GL_EXT_texture3D
+21:58:06: GL_EXT_texture_array
+21:58:06: GL_EXT_texture_buffer_object
+21:58:06: GL_EXT_texture_compression_dxt1
+21:58:06: GL_EXT_texture_compression_latc
+21:58:06: GL_EXT_texture_compression_rgtc
+21:58:06: GL_EXT_texture_compression_s3tc
+21:58:06: GL_EXT_texture_cube_map
+21:58:06: GL_EXT_texture_edge_clamp
+21:58:06: GL_EXT_texture_env_combine
+21:58:06: GL_EXT_texture_env_dot3
+21:58:06: GL_EXT_texture_filter_anisotropic
+21:58:06: GL_EXT_texture_filter_minmax
+21:58:06: GL_EXT_texture_integer
+21:58:06: GL_EXT_texture_lod
+21:58:06: GL_EXT_texture_lod_bias
+21:58:06: GL_EXT_texture_mirror_clamp
+21:58:06: GL_EXT_texture_object
+21:58:06: GL_EXT_texture_shadow_lod
+21:58:06: GL_EXT_texture_shared_exponent
+21:58:06: GL_EXT_texture_sRGB
+21:58:06: GL_EXT_texture_sRGB_R8
+21:58:06: GL_EXT_texture_sRGB_decode
+21:58:06: GL_EXT_texture_storage
+21:58:06: GL_EXT_texture_swizzle
+21:58:06: GL_EXT_timer_query
+21:58:06: GL_EXT_transform_feedback2
+21:58:06: GL_EXT_vertex_array
+21:58:06: GL_EXT_vertex_array_bgra
+21:58:06: GL_EXT_vertex_attrib_64bit
+21:58:06: GL_EXT_window_rectangles
+21:58:06: GL_EXT_import_sync_object
+21:58:06: GL_IBM_rasterpos_clip
+21:58:06: GL_IBM_texture_mirrored_repeat
+21:58:06: GL_KHR_context_flush_control
+21:58:06: GL_KHR_debug
+21:58:06: GL_EXT_memory_object
+21:58:06: GL_EXT_memory_object_win32
+21:58:06: GL_NV_memory_object_sparse
+21:58:06: GL_EXT_win32_keyed_mutex
+21:58:06: GL_KHR_parallel_shader_compile
+21:58:06: GL_KHR_no_error
+21:58:06: GL_KHR_robust_buffer_access_behavior
+21:58:06: GL_KHR_robustness
+21:58:06: GL_EXT_semaphore
+21:58:06: GL_EXT_semaphore_win32
+21:58:06: GL_NV_timeline_semaphore
+21:58:06: GL_KHR_shader_subgroup
+21:58:06: GL_KTX_buffer_region
+21:58:06: GL_NV_alpha_to_coverage_dither_control
+21:58:06: GL_NV_bindless_multi_draw_indirect
+21:58:06: GL_NV_bindless_multi_draw_indirect_count
+21:58:06: GL_NV_bindless_texture
+21:58:06: GL_NV_blend_equation_advanced
+21:58:06: GL_NV_blend_equation_advanced_coherent
+21:58:06: GL_NVX_blend_equation_advanced_multi_draw_buffers
+21:58:06: GL_NV_blend_minmax_factor
+21:58:06: GL_NV_blend_square
+21:58:06: GL_NV_clip_space_w_scaling
+21:58:06: GL_NV_command_list
+21:58:06: GL_NV_compute_program5
+21:58:06: GL_NV_compute_shader_derivatives
+21:58:06: GL_NV_conditional_render
+21:58:06: GL_NV_conservative_raster
+21:58:06: GL_NV_conservative_raster_dilate
+21:58:06: GL_NV_conservative_raster_pre_snap
+21:58:06: GL_NV_conservative_raster_pre_snap_triangles
+21:58:06: GL_NV_conservative_raster_underestimation
+21:58:06: GL_NV_copy_depth_to_color
+21:58:06: GL_NV_copy_image
+21:58:06: GL_NV_depth_buffer_float
+21:58:06: GL_NV_depth_clamp
+21:58:06: GL_NV_draw_texture
+21:58:06: GL_NV_draw_vulkan_image
+21:58:06: GL_NV_ES1_1_compatibility
+21:58:06: GL_NV_ES3_1_compatibility
+21:58:06: GL_NV_explicit_multisample
+21:58:06: GL_NV_feature_query
+21:58:06: GL_NV_fence
+21:58:06: GL_NV_fill_rectangle
+21:58:06: GL_NV_float_buffer
+21:58:06: GL_NV_fog_distance
+21:58:06: GL_NV_fragment_coverage_to_color
+21:58:06: GL_NV_fragment_program
+21:58:06: GL_NV_fragment_program_option
+21:58:06: GL_NV_fragment_program2
+21:58:06: GL_NV_fragment_shader_barycentric
+21:58:06: GL_NV_fragment_shader_interlock
+21:58:06: GL_NV_framebuffer_mixed_samples
+21:58:06: GL_NV_framebuffer_multisample_coverage
+21:58:06: GL_NV_geometry_shader4
+21:58:06: GL_NV_geometry_shader_passthrough
+21:58:06: GL_NV_gpu_program4
+21:58:06: GL_NV_internalformat_sample_query
+21:58:06: GL_NV_gpu_program4_1
+21:58:06: GL_NV_gpu_program5
+21:58:06: GL_NV_gpu_program5_mem_extended
+21:58:06: GL_NV_gpu_program_fp64
+21:58:06: GL_NV_gpu_program_multiview
+21:58:06: GL_NV_gpu_shader5
+21:58:06: GL_NV_half_float
+21:58:06: GL_NV_light_max_exponent
+21:58:06: GL_NV_memory_attachment
+21:58:06: GL_NV_mesh_shader
+21:58:06: GL_NV_multisample_coverage
+21:58:06: GL_NV_multisample_filter_hint
+21:58:06: GL_NV_occlusion_query
+21:58:06: GL_NV_packed_depth_stencil
+21:58:06: GL_NV_parameter_buffer_object
+21:58:06: GL_NV_parameter_buffer_object2
+21:58:06: GL_NV_path_rendering
+21:58:06: GL_NV_path_rendering_shared_edge
+21:58:06: GL_NV_pixel_data_range
+21:58:06: GL_NV_point_sprite
+21:58:06: GL_NV_primitive_restart
+21:58:06: GL_NV_primitive_shading_rate
+21:58:06: GL_NV_query_resource
+21:58:06: GL_NV_query_resource_tag
+21:58:06: GL_NV_register_combiners
+21:58:06: GL_NV_register_combiners2
+21:58:06: GL_NV_representative_fragment_test
+21:58:06: GL_NV_sample_locations
+21:58:06: GL_NV_sample_mask_override_coverage
+21:58:06: GL_NV_scissor_exclusive
+21:58:06: GL_NV_shader_atomic_counters
+21:58:06: GL_NV_shader_atomic_float
+21:58:06: GL_NV_shader_atomic_float64
+21:58:06: GL_NV_shader_atomic_fp16_vector
+21:58:06: GL_NV_shader_atomic_int64
+21:58:06: GL_NV_shader_buffer_load
+21:58:06: GL_NV_shader_storage_buffer_object
+21:58:06: GL_NV_shader_subgroup_partitioned
+21:58:06: GL_NV_shader_texture_footprint
+21:58:06: GL_NV_shading_rate_image
+21:58:06: GL_NV_stereo_view_rendering
+21:58:06: GL_NV_texgen_reflection
+21:58:06: GL_NV_texture_barrier
+21:58:06: GL_NV_texture_compression_vtc
+21:58:06: GL_NV_texture_dirty_tile_map
+21:58:06: GL_NV_texture_env_combine4
+21:58:06: GL_NV_texture_multisample
+21:58:06: GL_NV_texture_rectangle
+21:58:06: GL_NV_texture_rectangle_compressed
+21:58:06: GL_NV_texture_shader
+21:58:06: GL_NV_texture_shader2
+21:58:06: GL_NV_texture_shader3
+21:58:06: GL_NV_transform_feedback
+21:58:06: GL_NV_transform_feedback2
+21:58:06: GL_NV_uniform_buffer_unified_memory
+21:58:06: GL_NV_uniform_buffer_std430_layout
+21:58:06: GL_NV_vertex_array_range
+21:58:06: GL_NV_vertex_array_range2
+21:58:06: GL_NV_vertex_attrib_integer_64bit
+21:58:06: GL_NV_vertex_buffer_unified_memory
+21:58:06: GL_NV_vertex_program
+21:58:06: GL_NV_vertex_program1_1
+21:58:06: GL_NV_vertex_program2
+21:58:06: GL_NV_vertex_program2_option
+21:58:06: GL_NV_vertex_program3
+21:58:06: GL_NV_viewport_array2
+21:58:06: GL_NV_viewport_swizzle
+21:58:06: GL_NVX_conditional_render
+21:58:06: GL_NVX_linked_gpu_multicast
+21:58:06: GL_NV_gpu_multicast
+21:58:06: GL_NVX_gpu_multicast2
+21:58:06: GL_NVX_progress_fence
+21:58:06: GL_NVX_gpu_memory_info
+21:58:06: GL_NVX_multigpu_info
+21:58:06: GL_NVX_nvenc_interop
+21:58:06: GL_NV_shader_thread_group
+21:58:06: GL_NV_shader_thread_shuffle
+21:58:06: GL_KHR_blend_equation_advanced
+21:58:06: GL_KHR_blend_equation_advanced_coherent
+21:58:06: GL_OVR_multiview
+21:58:06: GL_OVR_multiview2
+21:58:06: GL_SGIS_generate_mipmap
+21:58:06: GL_SGIS_texture_lod
+21:58:06: GL_SGIX_depth_texture
+21:58:06: GL_SGIX_shadow
+21:58:06: GL_SUN_slice_accum
+21:58:06: GL_WIN_swap_hint
+21:58:06: WGL_EXT_swap_control
+21:58:06: Supported WGL extensions: WGL_ARB_buffer_region WGL_ARB_create_context WGL_ARB_create_context_no_error WGL_ARB_create_context_profile WGL_ARB_create_context_robustness WGL_ARB_context_flush_control WGL_ARB_extensions_string WGL_ARB_make_current_read WGL_ARB_multisample WGL_ARB_pbuffer WGL_ARB_pixel_format WGL_ARB_pixel_format_float WGL_ARB_render_texture WGL_ATI_pixel_format_float WGL_EXT_colorspace WGL_EXT_create_context_es_profile WGL_EXT_create_context_es2_profile WGL_EXT_extensions_string WGL_EXT_framebuffer_sRGB WGL_EXT_pixel_format_packed_float WGL_EXT_swap_control WGL_EXT_swap_control_tear WGL_NVX_DX_interop WGL_NV_DX_interop WGL_NV_DX_interop2 WGL_NV_copy_image WGL_NV_delay_before_swap WGL_NV_float_buffer WGL_NV_multisample_coverage WGL_NV_multigpu_context WGL_NV_render_depth_texture WGL_NV_render_texture_rectangle 
+21:58:06: **************************************
+21:58:06: ***   OpenGL 3+ Renderer Started   ***
+21:58:06: **************************************
+21:58:06: Registering ResourceManager for type GpuProgram
+21:58:06: RenderSystem capabilities
+21:58:06: -------------------------
+21:58:06: RenderSystem Name: OpenGL 3+ Rendering Subsystem
+21:58:06: GPU Vendor: nvidia
+21:58:06: Device Name: NVIDIA GeForce RTX 4070 SUPER/PCIe/SSE2
+21:58:06: Driver Version: 4.5.0.0
+21:58:06:  * Fixed function pipeline: no
+21:58:06:  * Hardware generation of mipmaps: yes
+21:58:06:  * Texture blending: yes
+21:58:06:  * Anisotropic texture filtering: yes
+21:58:06:  * Dot product texture operation: yes
+21:58:06:  * Cube mapping: yes
+21:58:06:  * Hardware stencil buffer: yes
+21:58:06:    - Stencil depth: 8
+21:58:06:    - Two sided stencil support: yes
+21:58:06:    - Wrap stencil values: yes
+21:58:06:  * Hardware vertex / index buffers: yes
+21:58:06:  * 32-bit index buffers: yes
+21:58:06:  * Vertex programs: yes
+21:58:06:  * Number of floating-point constants for vertex programs: 4096
+21:58:06:  * Number of integer constants for vertex programs: 4096
+21:58:06:  * Number of boolean constants for vertex programs: 4096
+21:58:06:  * Fragment programs: yes
+21:58:06:  * Number of floating-point constants for fragment programs: 4096
+21:58:06:  * Number of integer constants for fragment programs: 4096
+21:58:06:  * Number of boolean constants for fragment programs: 4096
+21:58:06:  * Geometry programs: yes
+21:58:06:  * Number of floating-point constants for geometry programs: 2048
+21:58:06:  * Number of integer constants for geometry programs: 2048
+21:58:06:  * Number of boolean constants for geometry programs: 2048
+21:58:06:  * Tessellation Hull programs: yes
+21:58:06:  * Number of floating-point constants for tessellation hull programs: 2048
+21:58:06:  * Number of integer constants for tessellation hull programs: 2048
+21:58:06:  * Number of boolean constants for tessellation hull programs: 2048
+21:58:06:  * Tessellation Domain programs: yes
+21:58:06:  * Number of floating-point constants for tessellation domain programs: 2048
+21:58:06:  * Number of integer constants for tessellation domain programs: 2048
+21:58:06:  * Number of boolean constants for tessellation domain programs: 2048
+21:58:06:  * Compute programs: yes
+21:58:06:  * Number of floating-point constants for compute programs: 2048
+21:58:06:  * Number of integer constants for compute programs: 2048
+21:58:06:  * Number of boolean constants for compute programs: 2048
+21:58:06:  * Supported Shader Profiles: glsl glsl130 glsl140 glsl150 glsl330 glsl400 glsl410 glsl420 glsl430 glsl440
+21:58:06:  * Texture Compression: yes
+21:58:06:    - DXT: yes
+21:58:06:    - VTC: yes
+21:58:06:    - PVRTC: no
+21:58:06:    - ATC: no
+21:58:06:    - ETC1: no
+21:58:06:    - ETC2: yes
+21:58:06:    - BC4/BC5: yes
+21:58:06:    - BC6H/BC7: yes
+21:58:06:    - ASTC: no
+21:58:06:  * Hardware Occlusion Query: yes
+21:58:06:  * User clip planes: yes
+21:58:06:  * VET_UBYTE4 vertex element type: yes
+21:58:06:  * Infinite far plane projection: yes
+21:58:06:  * Hardware render-to-texture: yes
+21:58:06:  * Floating point textures: yes
+21:58:06:  * Non-power-of-two textures: yes
+21:58:06:  * 1d textures: yes
+21:58:06:  * Volume textures: yes
+21:58:06:  * Max Texture resolution (2D) 32768
+21:58:06:  * Max Texture resolution (3D) 16384
+21:58:06:  * Max Texture resolution (Cubemaps) 32768
+21:58:06:  * Multiple Render Targets: 8
+21:58:06:    - With different bit depths: yes
+21:58:06:  * Point Sprites: yes
+21:58:06:  * Extended point parameters: yes
+21:58:06:  * Max Point Size: 2047
+21:58:06:  * Vertex texture fetch: yes
+21:58:06:  * Number of world matrices: 0
+21:58:06:  * Number of texture units: 16
+21:58:06:  * Stencil buffer depth: 8
+21:58:06:  * Number of vertex blend matrices: 0
+21:58:06:    - Max vertex textures: 32
+21:58:06:    - Vertex textures shared: yes
+21:58:06:  * Render to Vertex Buffer : yes
+21:58:06:  * Hardware Atomic Counters: yes
+21:58:06:  * Shader 16-bit floating point (half): no
+21:58:06:  * Compute max threads per threadgroup per axis: 1024, 1024, 64
+21:58:06:  * Compute max threads per threadgroup total: 1024
+21:58:06:  * GL 1.5 without VBO workaround: no
+21:58:06:  * Frame Buffer objects: yes
+21:58:06:  * Frame Buffer objects (ARB extension): no
+21:58:06:  * Frame Buffer objects (ATI extension): no
+21:58:06:  * PBuffer support: no
+21:58:06:  * GL 1.5 without HW-occlusion workaround: no
+21:58:06:  * Vertex Array Objects: yes
+21:58:06:  * Using Reverse Z: yes
+21:58:06: Using FSAA.
+21:58:06: DefaultWorkQueue('Root') initialising on thread main.
+21:58:06: Particle Renderer Type 'billboard' registered
+21:58:06: OverlayElementFactory for type Panel registered.
+21:58:06: OverlayElementFactory for type BorderPanel registered.
+21:58:06: OverlayElementFactory for type TextArea registered.
+21:58:06: Registering ResourceManager for type Font
+21:58:06: Creating resource group Essential
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/hud' of type 'FileSystem' to resource group 'Essential'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/gui' of type 'FileSystem' to resource group 'Essential'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/cars/_previews' of type 'FileSystem' to resource group 'Essential'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/tracks/_previews' of type 'FileSystem' to resource group 'Essential'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/materials/Common' of type 'FileSystem' to resource group 'General'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/materials/Common/Any' of type 'FileSystem' to resource group 'General'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/materials/Common/GLSL' of type 'FileSystem' to resource group 'General'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/materials/Common/HLSL' of type 'FileSystem' to resource group 'General'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/materials/Terrain' of type 'FileSystem' to resource group 'General'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/materials/Terrain/GLSL' of type 'FileSystem' to resource group 'General'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/materials/Terrain/HLSL' of type 'FileSystem' to resource group 'General'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/materials/Terrain/Metal' of type 'FileSystem' to resource group 'General'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/materials/Pbs' of type 'FileSystem' to resource group 'General'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/Hlms/Common/Any' of type 'FileSystem' to resource group 'General'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/Hlms/Common/GLSL' of type 'FileSystem' to resource group 'General'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/Hlms/Common/HLSL' of type 'FileSystem' to resource group 'General'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/Hlms/Compute/Tools' of type 'FileSystem' to resource group 'General'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/Hlms/Compute/Tools/Any' of type 'FileSystem' to resource group 'General'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/Hlms/Compute/Tools/GLSL' of type 'FileSystem' to resource group 'General'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/Hlms/Compute/Tools/HLSL' of type 'FileSystem' to resource group 'General'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/Hlms/Compute/Tools/Metal' of type 'FileSystem' to resource group 'General'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/Hlms/Compute/Algorithms/IBL' of type 'FileSystem' to resource group 'General'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/Hlms/Compute/Algorithms/IrradianceFields' of type 'FileSystem' to resource group 'General'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/Hlms/Compute/Algorithms/IrradianceFields/Visualizer' of type 'FileSystem' to resource group 'General'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/Hlms/VCT' of type 'FileSystem' to resource group 'General'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/Hlms/VCT/ImageVoxelizer' of type 'FileSystem' to resource group 'General'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/Hlms/VCT/Visualizer' of type 'FileSystem' to resource group 'General'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/Hlms/Pbs/Any' of type 'FileSystem' to resource group 'General'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/sounds' of type 'FileSystem' to resource group 'General'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/sounds/crash' of type 'FileSystem' to resource group 'General'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/sounds/engines' of type 'FileSystem' to resource group 'General'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/sounds/fluids' of type 'FileSystem' to resource group 'General'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/sounds/hit' of type 'FileSystem' to resource group 'General'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/sounds/hud' of type 'FileSystem' to resource group 'General'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/sounds/surface' of type 'FileSystem' to resource group 'General'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/sounds/vehicle' of type 'FileSystem' to resource group 'General'
+21:58:06: Creating resource group Popular
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/materials' of type 'FileSystem' to resource group 'Popular'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/particles' of type 'FileSystem' to resource group 'Popular'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/models/objects' of type 'FileSystem' to resource group 'Popular'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/models/objects0' of type 'FileSystem' to resource group 'Popular'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/models/objects2' of type 'FileSystem' to resource group 'Popular'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/models/objectsC' of type 'FileSystem' to resource group 'Popular'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/models/gems' of type 'FileSystem' to resource group 'Popular'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/models/obstacles' of type 'FileSystem' to resource group 'Popular'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/models/rocks' of type 'FileSystem' to resource group 'Popular'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/models/rockshex' of type 'FileSystem' to resource group 'Popular'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/models/bush' of type 'FileSystem' to resource group 'Popular'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/models/trees' of type 'FileSystem' to resource group 'Popular'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/models/trees2' of type 'FileSystem' to resource group 'Popular'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/models/trees-old' of type 'FileSystem' to resource group 'Popular'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/textures/road' of type 'FileSystem' to resource group 'Popular'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/textures/grass' of type 'FileSystem' to resource group 'Popular'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/textures/terrain' of type 'FileSystem' to resource group 'Popular'
+21:58:06: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/textures/skies' of type 'FileSystem' to resource group 'Popular'
+21:58:06: HLMS Library path 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/Hlms/Pbs/Any/Atmosphere' has no piece files. Are you sure you provided the right path with read access?
+21:58:06: HLMS Library path 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/Hlms/Pbs/Any/Atmosphere' has no piece files. Are you sure you provided the right path with read access?
+21:58:06: Loading HlmsDiskCache from hlmsCache1.bin
+21:58:06: Applying HlmsDiskCache 1
+21:58:06: INFO: The cached Hlms is for shader profile in 'glslvk' but it does not match the current one 'glsl'. This increases loading times.
+21:58:06: Loading HlmsDiskCache from hlmsCache3.bin
+21:58:06: Applying HlmsDiskCache 3
+21:58:06: INFO: The cached Hlms is for shader profile in 'glslvk' but it does not match the current one 'glsl'. This increases loading times.
+21:58:06: Loading HlmsDiskCache from hlmsCache7.bin
+21:58:06: Applying HlmsDiskCache 7
+21:58:06: INFO: The cached Hlms is for shader profile in 'glslvk' but it does not match the current one 'glsl'. This increases loading times.
+21:58:06: Parsing scripts for resource group Autodetect
+21:58:06: Finished parsing scripts for resource group Autodetect
+21:58:06: Creating resources for group Autodetect
+21:58:06: All done
+21:58:06: Parsing scripts for resource group Essential
+21:58:06: Parsing script DebugFont.fontdef
+21:58:06: Finished parsing scripts for resource group Essential
+21:58:06: Creating resources for group Essential
+21:58:06: All done
+21:58:06: Parsing scripts for resource group General
+21:58:06: Parsing script Quad.program
+21:58:06: Parsing script Copyback.material
+21:58:06: Parsing script DepthUtils.material
+21:58:06: Parsing script DPM.material
+21:58:06: Parsing script DPSM.material
+21:58:06: Parsing script EsmGaussianBlurLogFilter.material
+21:58:06: Parsing script HDR.material
+21:58:06: Parsing script HDR_AA.material
+21:58:06: Parsing script HiddenAreaMeshVr.material
+21:58:06: Parsing script PccDepthCompressor.material
+21:58:06: Parsing script RadialDensityMask.material
+21:58:06: Parsing script Sky.material
+21:58:06: Parsing script SplitScreen.material
+21:58:06: Parsing script SR3_LensFlare.material
+21:58:06: Parsing script SR3_SunBeams.material
+21:58:06: Parsing script SSAO_HS.material
+21:58:06: Parsing script GpuBlendMapper.material
+21:58:06: Parsing script GpuNormalMapper.material
+21:58:06: Parsing script hud.material
+21:58:06: Parsing script weather.material
+21:58:06: Parsing script IfdVisualizer.material
+21:58:06: Parsing script VoxelVisualizer.material
+21:58:06: Parsing script GpuBlendlMapper.compositor
+21:58:06: Parsing script GpuNormalMapper.compositor
+21:58:06: Parsing script TerraShadowGenerator.compositor
+21:58:06: Parsing script IrradianceField.compositor
+21:58:06: Parsing script VctTexDownsample.compositor
+21:58:06: Parsing script EsmGaussianBlurLogFilter.material.json
+21:58:06: Parsing script Mipmaps.material.json
+21:58:06: Parsing script TerraShadowGenerator.material.json
+21:58:06: Parsing script bush.material.json
+21:58:06: Parsing script collect.material.json
+21:58:06: Parsing script fluid.material.json
+21:58:06: WARNING: PBS Datablock 'Acid_green' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Alien_acid' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Anomaly_jelly_1' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Anomaly_jelly_2' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Anomaly_jelly_3' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Blue_jelly' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Grease_jelly' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Green_slime' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Ice' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Ice_bright' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Ice_blue' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Ice_bumpy' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Ice_cyan' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'LavaBlk' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'LavaHot' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'LavaOrn' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Liquid_gas' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Liquid_gas2' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Liquid_gas_space' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Mud_blue' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Mud_brown' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Mud_brown_JD' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Mud_cyan' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Mud_dark' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Mud_dark_JD' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Mud_orange' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Mud_orange_JD' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Mud_white' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Mud_white_anomaly' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Oil' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Pink_jelly' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Water_anomaly_blue' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Water_blue' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Water_blue_dark' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Water_clear_blue' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Water_clear_green' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Water_clear_pink' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Water_clear_shore' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Water_clear_sunset' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Water_clear_white' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Water_cyan' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Water_dark' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Water_green' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Water_marble' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Water_milky_blue' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Water_milky_blue_2' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Water_milky_cyan' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Water_milky_cyan_2' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Water_milky_white' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Water_milky_white_2' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Water_moss' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Water_pink' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Water_shore' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Water_strange' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Water_strange2' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Water_strange_anomaly' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Water_strange2_anomaly' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Water_sunset' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Water_sunset_cyan' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: WARNING: PBS Datablock 'Water_white' enabling transparency but forcing a blendblock to avoid alpha blending. Results may not look as expected.
+21:58:06: Parsing script fluid_lq.material.json
+21:58:06: Parsing script fluid_river.material.json
+21:58:06: Parsing script fluid_river_lq.material.json
+21:58:06: Parsing script grass.material.json
+21:58:06: Parsing script hud.material.json
+21:58:06: Parsing script object.material.json
+21:58:06: Parsing script pipe.material.json
+21:58:06: Parsing script road.material.json
+21:58:06: Parsing script rock.material.json
+21:58:06: Parsing script sky.material.json
+21:58:06: Parsing script tree.material.json
+21:58:06: Parsing script vehicle.material.json
+21:58:06: Parsing script wall.material.json
+21:58:06: Parsing script ClearUav.material.json
+21:58:06: Parsing script IBL.material.json
+21:58:06: Parsing script IrradianceField.material.json
+21:58:06: Parsing script Voxelizer.material.json
+21:58:06: Finished parsing scripts for resource group General
+21:58:06: Creating resources for group General
+21:58:06: All done
+21:58:06: Parsing scripts for resource group Internal
+21:58:06: Finished parsing scripts for resource group Internal
+21:58:06: Creating resources for group Internal
+21:58:06: All done
+21:58:06: Parsing scripts for resource group Popular
+21:58:06: Parsing script car.particle
+21:58:06: Parsing script emitters.particle
+21:58:06: Parsing script fluids.particle
+21:58:06: Parsing script tires.particle
+21:58:06: Parsing script weather.particle
+21:58:06: Parsing script SR3.compositor
+21:58:06: Finished parsing scripts for resource group Popular
+21:58:06: Creating resources for group Popular
+21:58:06: All done
+21:58:06: >>>>>>>> Init SR ed --------
+21:58:06: A--- Cmd Line Arguments: 1
+21:58:06: A--- exe path: C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\bin\Release\SR-Editor3.exe
+21:58:06: >>>> Init editor ----
+21:58:06: L*** Loaded Fluids: 102
+21:58:06: L*** Loaded Vegetation collisions: 95
+21:58:06: L*** Loaded Reverbs sets: 17
+21:58:06: L*** Loaded Presets  sky: 66  ter: 166  road: 349  grass: 97  veget: 328  obj: 130  col: 9
+21:58:06: :::* Time load xmls:   9 ms
+21:58:06: C--- create Cursors
+21:58:06: Mesh: Loading car.mesh.
+21:58:06: Mesh: Loading cube.mesh.
+21:58:06: Mesh: Loading box_fluids.mesh.
+21:58:06: Mesh: Loading box_obj.mesh.
+21:58:06: C::# Init MyGui
+21:58:06: C--# Create Fonts ----
+21:58:06: C--# Created Font: font.small  size: 23.64
+21:58:06: C--# Created Font: font.normal  size: 26.79
+21:58:06: C--# Created Font: font.big  size: 30.73
+21:58:06: C--# Created Font: hud.text  size: 33.60
+21:58:06: C--# Created Font: hud.replay  size: 25.60
+21:58:06: C--# Created Font: DigGear  size: 76.80
+21:58:06: C--# Created Font: hud.fps  size: 25.60
+21:58:06: :::# Init Gui ----
+21:58:06: L*** Loaded brushes: 169
+21:58:07: :::* Time Init Gui: 520 ms
+21:58:07: CC## Setup Compositor     worksp: 0 (0) workdef: 0 node: 0 rtt: 0
+21:58:07: DD## Destroy Compositor   worksp: 0 (0) workdef: 0 node: 0 rtt: 0
+21:58:07: C:## CreateCubeReflect    worksp: 0 (0) workdef: 0 node: 0 rtt: 0
+21:58:07: IBL: 1.00
+21:58:07: C-*# Add Reflect Cube     worksp: 1 (0) workdef: 0 node: 0 rtt: 0
+21:58:07: DD## destroy Cameras-
+21:58:07: c--: new cam: Player
+21:58:07: CC+# Create Compositor    worksp: 1 (0) workdef: 0 node: 0 rtt: 0
+21:58:07: CC-# Single screen -1
+21:58:07: CC+# view dim: 1.00 1.00
+21:58:07: C+-* Add Node SR3_0_prepare-0
+21:58:07: C+-* Add Node SR3_1_First-0
+21:58:07: C+-* Add Node SR3_2_depth-0
+21:58:07: C+-* Add Node SR3_3_Final-0
+21:58:07: C+-# Add Work SR3_New_WS0
+21:58:07: CC## Done Compositor ===  worksp: 2 (0) workdef: 1 node: 4 rtt: 0
+21:58:07: C--- Create previews tex
+21:58:07: HudR New  material: edBrush  Tri_List  count: 1
+21:58:07: HudR New  material: edTerGen  Tri_List  count: 1
+21:58:07: C--P PreviewScene Create
+21:58:07: A--- Cmd Line Arguments: 1
+21:58:07: A--- exe path: C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\bin\Release\SR-Editor3.exe
+21:58:07: []-- WindowResized
+21:58:07: D--- destroy SkyDomes
+21:58:07: D--- destroy Weather
+21:58:07: D--- destroy Atmosphere
+21:58:07: D--G destroy Grass
+21:58:07: D--V destroy Veget Trees
+21:58:07: D~~~ destroy Fluids
+21:58:07: D--- destroy Emitters
+21:58:07: D-=E ed Destroy Rnd2Tex
+21:58:07: ------  Loading track: Aln1-AlienBase
+21:58:07: Added resource location 'C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\data/tracks/Aln1-AlienBase/objects' of type 'FileSystem' to resource group 'General'
+21:58:07: DD== MinimizeMemory ====DD
+21:58:07: D:## Grid - Destroy ##
+21:58:07: D~~~ destroy Fluids
+21:58:07: D~~~ destroy Fluids RTT
+21:58:07: ! UpdRevSet no pReverbsXml
+21:58:07: C--- create Sun
+21:58:07: C--- create Atmosphere
+21:58:07: C--- create Weather
+21:58:07: C--- create SkyDomes
+21:58:07: WARNING: Mesh2 instance 'skymesh0' was defined as manually loaded, but no manual loader was provided. This Resource will be lost if it has to be reloaded.
+21:58:07: WARNING: Mesh2 instance 'skymesh1' was defined as manually loaded, but no manual loader was provided. This Resource will be lost if it has to be reloaded.
+21:58:07: WARNING: Mesh2 instance 'skymesh2' was defined as manually loaded, but no manual loader was provided. This Resource will be lost if it has to be reloaded.
+21:58:07: C--- create Emitters
+21:58:07: C~~~ create Fluids RTT
+21:58:07: --++ WS add:  Planar Reflect, all: 2
+21:58:07: --++ WS add:  Planar Reflect, all: 2
+21:58:07: --++ WS add:  Planar Reflect, all: 2
+21:58:07: --++ WS add:  Planar Reflect, all: 2
+21:58:07: --++ WS add:  Planar Reflect, all: 2
+21:58:07: --++ WS add Listener
+21:58:07: C~~~ create Fluids
+21:58:07: :::* Time ter-1 Hmap:   0 ms
+21:58:07: C--T Terrain create mat 0
+21:58:07: C--T Terrain tripl layers: 1 ter: 1 tex: 1
+21:58:07: * Ter lay: alien_sand_d.jpg  _s from: desert_sand_s.jpg  met:0.40  ro: 0.41
+21:58:07: * Ter lay: alien_sand_big_d.jpg  _s from: desert_sand_big_s.jpg  met:0.50  ro: 0.47
+21:58:07: * Ter lay: alien_mntn_d.jpg  _s from: desert_mntn_s.jpg  met:0.50  ro: 0.74
+21:58:07: ---T Terrain create 0  n 0
+21:58:07: ---T Terrain Hmap load
+21:58:07: Terrain Hmap dim 512 x 512  512
+21:58:07: --++ WS add:  Ter Normals 0, all: 2
+21:58:07: --++ WS add:  Ter Blendmap 0, all: 2
+21:58:07: Terrain shadowmap format (17): 17
+21:58:07: ---T Terrain shadows  Pbs + set Listener
+21:58:07: C--T Terrain created 0
+21:58:07: :::* Time ter-1 Ter:  82 ms
+21:58:07: :::* Time ter-2 Hmap:   1 ms
+21:58:07: C--T Terrain create mat 1
+21:58:07: C--T Terrain tripl layers: 1 ter: 0 tex: 1
+21:58:07: * Ter lay: alien_sand_d.jpg  _s from: desert_sand_s.jpg  met:0.40  ro: 0.41
+21:58:07: * Ter lay: alien_sand_big_d.jpg  _s from: desert_sand_big_s.jpg  met:0.50  ro: 0.47
+21:58:07: * Ter lay: alien_mntn_d.jpg  _s from: desert_mntn_s.jpg  met:0.50  ro: 0.74
+21:58:07: ---T Terrain create 1  n 1
+21:58:07: ---T Terrain Hmap load
+21:58:07: Terrain Hmap dim 512 x 512  512
+21:58:07: --++ WS add:  Ter Normals 1, all: 2
+21:58:07: --++ WS add:  Ter Blendmap 1, all: 2
+21:58:07: Terrain shadowmap format (17): 17
+21:58:07: C--T Terrain created 1
+21:58:07: :::* Time ter-2 Ter:   6 ms
+21:58:07: C-+E ed Create Rnd2Tex
+21:58:07: --++ WS add:  Ed Rtt_RoadDens  EdRttWrk0  all: 2
+21:58:07: HudR New  material: ed_Rtt_0  Tri_List  count: 1
+21:58:07: --++ WS add:  Ed Rtt_RoadPreview  EdRttWrk1  all: 2
+21:58:07: HudR New  material: ed_Rtt_1  Tri_List  count: 1
+21:58:07: CC+# Create Compositor    worksp: 2 (2) workdef: 1 node: 4 rtt: 0
+21:58:07: CC+# Editor RTT 4
+21:58:07: CC+# view dim: 1.00 1.00
+21:58:07: C+-* Add Node SR3_0_prepare-5ed
+21:58:07: C+-* Add Node SR3_1_First-5ed
+21:58:07: C+-* Add Node SR3_2_depth-5ed
+21:58:07: C+-* Add Node SR3_3_Final-5ed
+21:58:07: C+-# Add Work SR3_New_WS5ed
+21:58:07: --++ WS add:  Ed Rtt_Terrain  SR3_New_WS5ed  all: 2
+21:58:07: HudR New  material: ed_Rtt_2  Tri_List  count: 1
+21:58:07: CC+# Create Compositor    worksp: 2 (2) workdef: 2 node: 8 rtt: 0
+21:58:07: CC+# Editor RTT 5
+21:58:07: CC+# view dim: 1.00 1.00
+21:58:07: C+-* Add Node SR3_0_prepare-6ed
+21:58:07: C+-* Add Node SR3_1_First-6ed
+21:58:07: C+-* Add Node SR3_2_depth-6ed
+21:58:07: C+-* Add Node SR3_3_Final-6ed
+21:58:07: C+-# Add Work SR3_New_WS6ed
+21:58:07: --++ WS add:  Ed Rtt_View3D  SR3_New_WS6ed  all: 2
+21:58:07: HudR New  material: ed_Rtt_3  Tri_List  count: 1
+21:58:07: --++ WS add:  Ed Rtt_ObjPrv3D  EdRttWrk4  all: 2
+21:58:07: HudR New  material: ed_Rtt_4  Tri_List  count: 1
+21:58:07: HudR New  material: ed_Bck  Tri_List  count: 1
+21:58:07: HudR New  material: hud/CarPos  Tri_List  count: 1
+21:58:07: C~~R create road 0 from: road.xml
+21:58:07: Mesh: Loading sphere.mesh.
+21:58:07: Mesh: Loading alien_ufo_stand.mesh.
+21:58:07: Mesh: Loading alien_ufo_fly.mesh.
+21:58:07: Mesh: Loading alien_base1.mesh.
+21:58:07: Mesh: Loading alien_base2.mesh.
+21:58:07: Mesh: Loading alien_tower.mesh.
+21:58:07: Mesh: Loading alien_tower2.mesh.
+21:58:07: Mesh: Loading alien_antenna.mesh.
+21:58:07: Mesh: Loading alien_base4.mesh.
+21:58:07: Mesh: Loading alien_base5.mesh.
+21:58:07: Mesh: Loading alien_base6.mesh.
+21:58:07: Mesh: Loading alien_base7.mesh.
+21:58:07: Mesh: Loading alien_base8.mesh.
+21:58:07: Mesh: Loading alien_base9.mesh.
+21:58:07: Mesh: Loading alien_base10.mesh.
+21:58:07: Mesh: Loading alien_ufo_big.mesh.
+21:58:07: Mesh: Loading alien_stand1.mesh.
+21:58:07: Mesh: Loading alien_corridor.mesh.
+21:58:07: Mesh: Loading alien_pipes_curly.mesh.
+21:58:07: Mesh: Loading alien_pipes_curly_st.mesh.
+21:58:07: Mesh: Loading alien_pipes_st1.mesh.
+21:58:07: Mesh: Loading alien_pipes_st3.mesh.
+21:58:07: Mesh: Loading alien_pipes_up.mesh.
+21:58:07: Mesh: Loading alien_stand2.mesh.
+21:58:07: Mesh: Loading alien_base3.mesh.
+21:58:07: Mesh: Loading alien_corridor2.mesh.
+21:58:07: Mesh: Loading obstacle3.mesh.
+21:58:07: Mesh: Loading obstacle1.mesh.
+21:58:07: Mesh: Loading satellite3.mesh.
+21:58:07: roadDensity: 1024
+21:58:07: C--V Create Vegetation
+21:58:07: Mesh: Loading jungle_tree_alien.mesh.
+21:58:07: Tree:  jungle_tree_alien.mesh	 cnt: 85 / 153
+21:58:07: Mesh: Loading gum_tree_alien.mesh.
+21:58:07: Tree:  gum_tree_alien.mesh	 cnt: 136 / 214
+21:58:07: Mesh: Loading rock24alienTriangle.mesh.
+21:58:07: Tree:  rock24alienTriangle.mesh	 cnt: 233 / 454
+21:58:07: Mesh: Loading mushrooms2.mesh.
+21:58:07: Tree:  mushrooms2.mesh	 cnt: 134 / 234
+21:58:07: Mesh: Loading mushrooms3.mesh.
+21:58:07: Tree:  mushrooms3.mesh	 cnt: 233 / 268
+21:58:07: Mesh: Loading shrooms_tall.mesh.
+21:58:07: Tree:  shrooms_tall.mesh	 cnt: 137 / 351
+21:58:07: Mesh: Loading rock23alienBlock.mesh.
+21:58:07: Tree:  rock23alienBlock.mesh	 cnt: 284 / 422
+21:58:07: Mesh: Loading rock47alienRound1Green.mesh.
+21:58:07: Tree:  rock47alienRound1Green.mesh	 cnt: 115 / 217
+21:58:07: Mesh: Loading rock48alienRound2Green.mesh.
+21:58:07: Tree:  rock48alienRound2Green.mesh	 cnt: 86 / 154
+21:58:07: Mesh: Loading shroom_tree.mesh.
+21:58:07: Tree:  shroom_tree.mesh	 cnt: 76 / 133
+21:58:07: ***** Vegetation models count: 1519  shapes: 0
+21:58:07: C--V Create Vegetation on Horizon
+21:58:07: :::* Time Trees:  59 ms
+21:58:07: C--G Create Grass: 
+21:58:07: Grass page size: 213.448
+21:58:07: grass x 32713  pages 25  mtr grass4v-alien
+21:58:08: grass x  9992  pages 25  mtr grassX10b-alien

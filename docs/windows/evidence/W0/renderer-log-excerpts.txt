@@ -1,0 +1,47 @@
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre.log:31:21:55:56: Loading library .\RenderSystem_GL3Plus
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre.log:32:21:55:56: Installing plugin: GL 3+ RenderSystem
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre.log:33:21:55:56: OpenGL 3+ Rendering Subsystem created.
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre.log:35:21:55:56: Loading library .\RenderSystem_Vulkan
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre.log:36:21:55:56: Installing plugin: Vulkan RenderSystem
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre.log:66:21:55:56: [Vulkan] Found devices:
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre.log:67:21:55:56: NVIDIA GeForce RTX 4070 SUPER #0
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre.log:68:21:55:56: AMD Radeon(TM) Graphics #1
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre.log:70:21:55:56: Loading library .\Plugin_ParticleFX
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre.log:71:21:55:56: Installing plugin: ParticleFX
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre.log:388:21:56:00: RenderSystem Name: Vulkan Rendering Subsystem
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre.log:389:21:56:00: GPU Vendor: nvidia
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre.log:390:21:56:00: Device Name: NVIDIA GeForce RTX 4070 SUPER
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre.log:648:21:56:00: OGRE EXCEPTION(5:ItemIdentityException): Parameter called sliceIdx does not exist.  in GpuProgramParameters::_findNamedConstantDefinition at D:\_\sr\og3\Ogre\ogre-next\OgreMain\src\OgreGpuProgramParams.cpp (line 2209)
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre.log:649:21:56:00: Compiler error: invalid parameters in Sky.material(127): setting of constant failed
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre.log:671:21:56:00: Vulkan GLSL compiler error in SplitScreen_5h_ps_VK:
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre.log:710:21:56:00: OGRE EXCEPTION(3:RenderingAPIException): Fragment Program SplitScreen_5h_ps_VK failed to compile. See compile log above for details. in VulkanProgram::compile at D:\_\sr\og3\Ogre\ogre-next\RenderSystems\Vulkan\src\OgreVulkanProgram.cpp (line 677)
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre.log:712:OGRE EXCEPTION(3:RenderingAPIException): Fragment Program SplitScreen_5h_ps_VK failed to compile. See compile log above for details. in VulkanProgram::compile at D:\_\sr\og3\Ogre\ogre-next\RenderSystems\Vulkan\src\OgreVulkanProgram.cpp (line 677)
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre.log:718:21:56:00: Vulkan GLSL compiler error in SplitScreen_5v_ps_VK:
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre.log:757:21:56:00: OGRE EXCEPTION(3:RenderingAPIException): Fragment Program SplitScreen_5v_ps_VK failed to compile. See compile log above for details. in VulkanProgram::compile at D:\_\sr\og3\Ogre\ogre-next\RenderSystems\Vulkan\src\OgreVulkanProgram.cpp (line 677)
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre.log:759:OGRE EXCEPTION(3:RenderingAPIException): Fragment Program SplitScreen_5v_ps_VK failed to compile. See compile log above for details. in VulkanProgram::compile at D:\_\sr\og3\Ogre\ogre-next\RenderSystems\Vulkan\src\OgreVulkanProgram.cpp (line 677)
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre.log:765:21:56:00: Vulkan GLSL compiler error in SplitScreen_6_ps_VK:
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre.log:804:21:56:00: OGRE EXCEPTION(3:RenderingAPIException): Fragment Program SplitScreen_6_ps_VK failed to compile. See compile log above for details. in VulkanProgram::compile at D:\_\sr\og3\Ogre\ogre-next\RenderSystems\Vulkan\src\OgreVulkanProgram.cpp (line 677)
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre.log:806:OGRE EXCEPTION(3:RenderingAPIException): Fragment Program SplitScreen_6_ps_VK failed to compile. See compile log above for details. in VulkanProgram::compile at D:\_\sr\og3\Ogre\ogre-next\RenderSystems\Vulkan\src\OgreVulkanProgram.cpp (line 677)
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre.log:1147:21:56:26: Uninstalling plugin: ParticleFX
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre.log:1149:21:56:26: Unloading library .\Plugin_ParticleFX
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre.log:1150:21:56:26: Uninstalling plugin: Vulkan RenderSystem
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre.log:1153:21:56:26: Unloading library .\RenderSystem_Vulkan
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre.log:1154:21:56:26: Uninstalling plugin: GL 3+ RenderSystem
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre.log:1157:21:56:26: Unloading library .\RenderSystem_GL3Plus
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre_ed.log:31:21:57:53: Loading library .\RenderSystem_GL3Plus
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre_ed.log:32:21:57:53: Installing plugin: GL 3+ RenderSystem
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre_ed.log:33:21:57:53: OpenGL 3+ Rendering Subsystem created.
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre_ed.log:35:21:57:53: Loading library .\RenderSystem_Vulkan
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre_ed.log:36:21:57:53: Installing plugin: Vulkan RenderSystem
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre_ed.log:66:21:57:53: [Vulkan] Found devices:
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre_ed.log:67:21:57:53: NVIDIA GeForce RTX 4070 SUPER #0
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre_ed.log:68:21:57:53: AMD Radeon(TM) Graphics #1
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre_ed.log:70:21:57:53: Loading library .\Plugin_ParticleFX
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre_ed.log:71:21:57:53: Installing plugin: ParticleFX
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre_ed.log:91:21:57:53: OGRE EXCEPTION(6:FileNotFoundException): 'C:/Users/julie/AppData/Roaming\stuntrally3/ogre_ed.cfg' file not found! in ConfigFile::load at D:\_\sr\og3\Ogre\ogre-next\OgreMain\src\OgreConfigFile.cpp (line 82)
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre_ed.log:113:21:58:06: GL_VERSION = 4.5.0 NVIDIA 591.86
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre_ed.log:114:21:58:06: GL_VENDOR = NVIDIA Corporation
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre_ed.log:115:21:58:06: GL_RENDERER = NVIDIA GeForce RTX 4070 SUPER/PCIe/SSE2
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre_ed.log:527:21:58:06: RenderSystem Name: OpenGL 3+ Rendering Subsystem
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre_ed.log:528:21:58:06: GPU Vendor: nvidia
+C:\Users\julie\AppData\Roaming\stuntrally3\Ogre_ed.log:529:21:58:06: Device Name: NVIDIA GeForce RTX 4070 SUPER/PCIe/SSE2

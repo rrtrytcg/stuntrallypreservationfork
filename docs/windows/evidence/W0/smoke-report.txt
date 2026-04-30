@@ -1,0 +1,17 @@
+Starting smoke: C:\Games\stuntrally3-3.3\windows binaries\Stunt Rally 3.3\bin\Release\StuntRally3.exe check
+WARNING: Smoke timed out after 45 seconds; stopping process id 16228.
+Game smoke exit code: 124
+Expected log/config directory: C:\Users\julie\AppData\Roaming\stuntrally3
+
+Name         Length LastWriteTime       
+----         ------ -------------       
+editor.cfg     3231 29/4/2026 9:57:53 pm
+game.cfg       6097 29/4/2026 9:56:26 pm
+MyGUI.log     16311 29/4/2026 9:56:26 pm
+MyGUI_ed.log  11388 29/4/2026 9:58:06 pm
+ogre.cfg        511 29/4/2026 9:56:00 pm
+Ogre.log          0 30/4/2026 6:55:06 pm
+ogre_ed.cfg     515 29/4/2026 9:58:06 pm
+Ogre_ed.log   60523 29/4/2026 9:58:08 pm
+
+
